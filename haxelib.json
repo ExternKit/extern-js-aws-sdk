@@ -1,0 +1,14 @@
+{
+    "name": "extern-js-aws-sdk",
+    "url" : "https://github.com/ExternKit/extern-js-aws-sdk/",
+    "license": "MIT",
+    "tags": ["extern", "js", "aws", "aws-sdk", "node", "browser"],
+    "description": "aws sdk extern",
+    "version": "1.0.0",
+    "releasenote": "Initial release",
+    "classPath": "./src",
+    "contributors": [
+        "Fabien Antoine"
+    ],
+    "dependencies": {}
+}
