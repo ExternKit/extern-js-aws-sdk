@@ -12,52 +12,52 @@ extern class CloudSearch extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function buildSuggesters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function buildSuggesters(params : BuildSuggestersInput, cb : Callback<BuildSuggestersOutput>) : Request;
     
-    public function createDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createDomain(params : CreateDomainInput, cb : Callback<CreateDomainOutput>) : Request;
     
-    public function defineAnalysisScheme(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function defineAnalysisScheme(params : DefineAnalysisSchemeInput, cb : Callback<DefineAnalysisSchemeOutput>) : Request;
     
-    public function defineExpression(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function defineExpression(params : DefineExpressionInput, cb : Callback<DefineExpressionOutput>) : Request;
     
-    public function defineIndexField(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function defineIndexField(params : DefineIndexFieldInput, cb : Callback<DefineIndexFieldOutput>) : Request;
     
-    public function defineSuggester(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function defineSuggester(params : DefineSuggesterInput, cb : Callback<DefineSuggesterOutput>) : Request;
     
-    public function deleteAnalysisScheme(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteAnalysisScheme(params : DeleteAnalysisSchemeInput, cb : Callback<DeleteAnalysisSchemeOutput>) : Request;
     
-    public function deleteDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteDomain(params : DeleteDomainInput, cb : Callback<DeleteDomainOutput>) : Request;
     
-    public function deleteExpression(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteExpression(params : DeleteExpressionInput, cb : Callback<DeleteExpressionOutput>) : Request;
     
-    public function deleteIndexField(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteIndexField(params : DeleteIndexFieldInput, cb : Callback<DeleteIndexFieldOutput>) : Request;
     
-    public function deleteSuggester(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteSuggester(params : DeleteSuggesterInput, cb : Callback<DeleteSuggesterOutput>) : Request;
     
-    public function describeAnalysisSchemes(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAnalysisSchemes(params : DescribeAnalysisSchemesInput, cb : Callback<DescribeAnalysisSchemesOutput>) : Request;
     
-    public function describeAvailabilityOptions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAvailabilityOptions(params : DescribeAvailabilityOptionsInput, cb : Callback<DescribeAvailabilityOptionsOutput>) : Request;
     
-    public function describeDomains(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeDomains(params : DescribeDomainsInput, cb : Callback<DescribeDomainsOutput>) : Request;
     
-    public function describeExpressions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeExpressions(params : DescribeExpressionsInput, cb : Callback<DescribeExpressionsOutput>) : Request;
     
-    public function describeIndexFields(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeIndexFields(params : DescribeIndexFieldsInput, cb : Callback<DescribeIndexFieldsOutput>) : Request;
     
-    public function describeScalingParameters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeScalingParameters(params : DescribeScalingParametersInput, cb : Callback<DescribeScalingParametersOutput>) : Request;
     
-    public function describeServiceAccessPolicies(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeServiceAccessPolicies(params : DescribeServiceAccessPoliciesInput, cb : Callback<DescribeServiceAccessPoliciesOutput>) : Request;
     
-    public function describeSuggesters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeSuggesters(params : DescribeSuggestersInput, cb : Callback<DescribeSuggestersOutput>) : Request;
     
-    public function indexDocuments(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function indexDocuments(params : IndexDocumentsInput, cb : Callback<IndexDocumentsOutput>) : Request;
     
-    public function listDomainNames(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listDomainNames(params : ListDomainNamesInput, cb : Callback<ListDomainNamesOutput>) : Request;
     
-    public function updateAvailabilityOptions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateAvailabilityOptions(params : UpdateAvailabilityOptionsInput, cb : Callback<UpdateAvailabilityOptionsOutput>) : Request;
     
-    public function updateScalingParameters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateScalingParameters(params : UpdateScalingParametersInput, cb : Callback<UpdateScalingParametersOutput>) : Request;
     
-    public function updateServiceAccessPolicies(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateServiceAccessPolicies(params : UpdateServiceAccessPoliciesInput, cb : Callback<UpdateServiceAccessPoliciesOutput>) : Request;
     
 }

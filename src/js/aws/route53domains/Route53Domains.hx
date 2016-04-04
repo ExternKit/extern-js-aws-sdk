@@ -12,40 +12,40 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
 
     public function new(?params : Dynamic) : Void;
     
-    public function checkDomainAvailability(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function checkDomainAvailability(params : CheckDomainAvailabilityInput, cb : Callback<CheckDomainAvailabilityOutput>) : Request;
     
-    public function deleteTagsForDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTagsForDomain(params : DeleteTagsForDomainInput, cb : Callback<DeleteTagsForDomainOutput>) : Request;
     
-    public function disableDomainAutoRenew(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disableDomainAutoRenew(params : DisableDomainAutoRenewInput, cb : Callback<DisableDomainAutoRenewOutput>) : Request;
     
-    public function disableDomainTransferLock(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disableDomainTransferLock(params : DisableDomainTransferLockInput, cb : Callback<DisableDomainTransferLockOutput>) : Request;
     
-    public function enableDomainAutoRenew(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function enableDomainAutoRenew(params : EnableDomainAutoRenewInput, cb : Callback<EnableDomainAutoRenewOutput>) : Request;
     
-    public function enableDomainTransferLock(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function enableDomainTransferLock(params : EnableDomainTransferLockInput, cb : Callback<EnableDomainTransferLockOutput>) : Request;
     
-    public function getDomainDetail(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getDomainDetail(params : GetDomainDetailInput, cb : Callback<GetDomainDetailOutput>) : Request;
     
-    public function getOperationDetail(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getOperationDetail(params : GetOperationDetailInput, cb : Callback<GetOperationDetailOutput>) : Request;
     
-    public function listDomains(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listDomains(params : ListDomainsInput, cb : Callback<ListDomainsOutput>) : Request;
     
-    public function listOperations(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listOperations(params : ListOperationsInput, cb : Callback<ListOperationsOutput>) : Request;
     
-    public function listTagsForDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTagsForDomain(params : ListTagsForDomainInput, cb : Callback<ListTagsForDomainOutput>) : Request;
     
-    public function registerDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function registerDomain(params : RegisterDomainInput, cb : Callback<RegisterDomainOutput>) : Request;
     
-    public function retrieveDomainAuthCode(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function retrieveDomainAuthCode(params : RetrieveDomainAuthCodeInput, cb : Callback<RetrieveDomainAuthCodeOutput>) : Request;
     
-    public function transferDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function transferDomain(params : TransferDomainInput, cb : Callback<TransferDomainOutput>) : Request;
     
-    public function updateDomainContact(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateDomainContact(params : UpdateDomainContactInput, cb : Callback<UpdateDomainContactOutput>) : Request;
     
-    public function updateDomainContactPrivacy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateDomainContactPrivacy(params : UpdateDomainContactPrivacyInput, cb : Callback<UpdateDomainContactPrivacyOutput>) : Request;
     
-    public function updateDomainNameservers(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateDomainNameservers(params : UpdateDomainNameserversInput, cb : Callback<UpdateDomainNameserversOutput>) : Request;
     
-    public function updateTagsForDomain(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateTagsForDomain(params : UpdateTagsForDomainInput, cb : Callback<UpdateTagsForDomainOutput>) : Request;
     
 }

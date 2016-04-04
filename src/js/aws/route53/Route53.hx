@@ -12,100 +12,100 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function associateVPCWithHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function associateVPCWithHostedZone(params : AssociateVPCWithHostedZoneInput, cb : Callback<AssociateVPCWithHostedZoneOutput>) : Request;
     
-    public function changeResourceRecordSets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function changeResourceRecordSets(params : ChangeResourceRecordSetsInput, cb : Callback<ChangeResourceRecordSetsOutput>) : Request;
     
-    public function changeTagsForResource(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function changeTagsForResource(params : ChangeTagsForResourceInput, cb : Callback<ChangeTagsForResourceOutput>) : Request;
     
-    public function createHealthCheck(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createHealthCheck(params : CreateHealthCheckInput, cb : Callback<CreateHealthCheckOutput>) : Request;
     
-    public function createHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createHostedZone(params : CreateHostedZoneInput, cb : Callback<CreateHostedZoneOutput>) : Request;
     
-    public function createReusableDelegationSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createReusableDelegationSet(params : CreateReusableDelegationSetInput, cb : Callback<CreateReusableDelegationSetOutput>) : Request;
     
-    public function createTrafficPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTrafficPolicy(params : CreateTrafficPolicyInput, cb : Callback<CreateTrafficPolicyOutput>) : Request;
     
-    public function createTrafficPolicyInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTrafficPolicyInstance(params : CreateTrafficPolicyInstanceInput, cb : Callback<CreateTrafficPolicyInstanceOutput>) : Request;
     
-    public function createTrafficPolicyVersion(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTrafficPolicyVersion(params : CreateTrafficPolicyVersionInput, cb : Callback<CreateTrafficPolicyVersionOutput>) : Request;
     
-    public function deleteHealthCheck(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteHealthCheck(params : DeleteHealthCheckInput, cb : Callback<DeleteHealthCheckOutput>) : Request;
     
-    public function deleteHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteHostedZone(params : DeleteHostedZoneInput, cb : Callback<DeleteHostedZoneOutput>) : Request;
     
-    public function deleteReusableDelegationSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteReusableDelegationSet(params : DeleteReusableDelegationSetInput, cb : Callback<DeleteReusableDelegationSetOutput>) : Request;
     
-    public function deleteTrafficPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTrafficPolicy(params : DeleteTrafficPolicyInput, cb : Callback<DeleteTrafficPolicyOutput>) : Request;
     
-    public function deleteTrafficPolicyInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTrafficPolicyInstance(params : DeleteTrafficPolicyInstanceInput, cb : Callback<DeleteTrafficPolicyInstanceOutput>) : Request;
     
-    public function disassociateVPCFromHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disassociateVPCFromHostedZone(params : DisassociateVPCFromHostedZoneInput, cb : Callback<DisassociateVPCFromHostedZoneOutput>) : Request;
     
-    public function getChange(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getChange(params : GetChangeInput, cb : Callback<GetChangeOutput>) : Request;
     
-    public function getChangeDetails(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getChangeDetails(params : GetChangeDetailsInput, cb : Callback<GetChangeDetailsOutput>) : Request;
     
-    public function getCheckerIpRanges(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getCheckerIpRanges(params : GetCheckerIpRangesInput, cb : Callback<GetCheckerIpRangesOutput>) : Request;
     
-    public function getGeoLocation(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getGeoLocation(params : GetGeoLocationInput, cb : Callback<GetGeoLocationOutput>) : Request;
     
-    public function getHealthCheck(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHealthCheck(params : GetHealthCheckInput, cb : Callback<GetHealthCheckOutput>) : Request;
     
-    public function getHealthCheckCount(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHealthCheckCount(params : GetHealthCheckCountInput, cb : Callback<GetHealthCheckCountOutput>) : Request;
     
-    public function getHealthCheckLastFailureReason(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHealthCheckLastFailureReason(params : GetHealthCheckLastFailureReasonInput, cb : Callback<GetHealthCheckLastFailureReasonOutput>) : Request;
     
-    public function getHealthCheckStatus(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHealthCheckStatus(params : GetHealthCheckStatusInput, cb : Callback<GetHealthCheckStatusOutput>) : Request;
     
-    public function getHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHostedZone(params : GetHostedZoneInput, cb : Callback<GetHostedZoneOutput>) : Request;
     
-    public function getHostedZoneCount(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getHostedZoneCount(params : GetHostedZoneCountInput, cb : Callback<GetHostedZoneCountOutput>) : Request;
     
-    public function getReusableDelegationSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getReusableDelegationSet(params : GetReusableDelegationSetInput, cb : Callback<GetReusableDelegationSetOutput>) : Request;
     
-    public function getTrafficPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getTrafficPolicy(params : GetTrafficPolicyInput, cb : Callback<GetTrafficPolicyOutput>) : Request;
     
-    public function getTrafficPolicyInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getTrafficPolicyInstance(params : GetTrafficPolicyInstanceInput, cb : Callback<GetTrafficPolicyInstanceOutput>) : Request;
     
-    public function getTrafficPolicyInstanceCount(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getTrafficPolicyInstanceCount(params : GetTrafficPolicyInstanceCountInput, cb : Callback<GetTrafficPolicyInstanceCountOutput>) : Request;
     
-    public function listChangeBatchesByHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listChangeBatchesByHostedZone(params : ListChangeBatchesByHostedZoneInput, cb : Callback<ListChangeBatchesByHostedZoneOutput>) : Request;
     
-    public function listChangeBatchesByRRSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listChangeBatchesByRRSet(params : ListChangeBatchesByRRSetInput, cb : Callback<ListChangeBatchesByRRSetOutput>) : Request;
     
-    public function listGeoLocations(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listGeoLocations(params : ListGeoLocationsInput, cb : Callback<ListGeoLocationsOutput>) : Request;
     
-    public function listHealthChecks(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listHealthChecks(params : ListHealthChecksInput, cb : Callback<ListHealthChecksOutput>) : Request;
     
-    public function listHostedZones(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listHostedZones(params : ListHostedZonesInput, cb : Callback<ListHostedZonesOutput>) : Request;
     
-    public function listHostedZonesByName(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listHostedZonesByName(params : ListHostedZonesByNameInput, cb : Callback<ListHostedZonesByNameOutput>) : Request;
     
-    public function listResourceRecordSets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listResourceRecordSets(params : ListResourceRecordSetsInput, cb : Callback<ListResourceRecordSetsOutput>) : Request;
     
-    public function listReusableDelegationSets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listReusableDelegationSets(params : ListReusableDelegationSetsInput, cb : Callback<ListReusableDelegationSetsOutput>) : Request;
     
-    public function listTagsForResource(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTagsForResource(params : ListTagsForResourceInput, cb : Callback<ListTagsForResourceOutput>) : Request;
     
-    public function listTagsForResources(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTagsForResources(params : ListTagsForResourcesInput, cb : Callback<ListTagsForResourcesOutput>) : Request;
     
-    public function listTrafficPolicies(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTrafficPolicies(params : ListTrafficPoliciesInput, cb : Callback<ListTrafficPoliciesOutput>) : Request;
     
-    public function listTrafficPolicyInstances(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTrafficPolicyInstances(params : ListTrafficPolicyInstancesInput, cb : Callback<ListTrafficPolicyInstancesOutput>) : Request;
     
-    public function listTrafficPolicyInstancesByHostedZone(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTrafficPolicyInstancesByHostedZone(params : ListTrafficPolicyInstancesByHostedZoneInput, cb : Callback<ListTrafficPolicyInstancesByHostedZoneOutput>) : Request;
     
-    public function listTrafficPolicyInstancesByPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTrafficPolicyInstancesByPolicy(params : ListTrafficPolicyInstancesByPolicyInput, cb : Callback<ListTrafficPolicyInstancesByPolicyOutput>) : Request;
     
-    public function listTrafficPolicyVersions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTrafficPolicyVersions(params : ListTrafficPolicyVersionsInput, cb : Callback<ListTrafficPolicyVersionsOutput>) : Request;
     
-    public function updateHealthCheck(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateHealthCheck(params : UpdateHealthCheckInput, cb : Callback<UpdateHealthCheckOutput>) : Request;
     
-    public function updateHostedZoneComment(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateHostedZoneComment(params : UpdateHostedZoneCommentInput, cb : Callback<UpdateHostedZoneCommentOutput>) : Request;
     
-    public function updateTrafficPolicyComment(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateTrafficPolicyComment(params : UpdateTrafficPolicyCommentInput, cb : Callback<UpdateTrafficPolicyCommentOutput>) : Request;
     
-    public function updateTrafficPolicyInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateTrafficPolicyInstance(params : UpdateTrafficPolicyInstanceInput, cb : Callback<UpdateTrafficPolicyInstanceOutput>) : Request;
     
 }

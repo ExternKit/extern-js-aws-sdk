@@ -12,32 +12,32 @@ extern class DynamoDB extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function batchGetItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function batchGetItem(params : BatchGetItemInput, cb : Callback<BatchGetItemOutput>) : Request;
     
-    public function batchWriteItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function batchWriteItem(params : BatchWriteItemInput, cb : Callback<BatchWriteItemOutput>) : Request;
     
-    public function createTable(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTable(params : CreateTableInput, cb : Callback<CreateTableOutput>) : Request;
     
-    public function deleteItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteItem(params : DeleteItemInput, cb : Callback<DeleteItemOutput>) : Request;
     
-    public function deleteTable(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTable(params : DeleteTableInput, cb : Callback<DeleteTableOutput>) : Request;
     
-    public function describeLimits(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeLimits(params : DescribeLimitsInput, cb : Callback<DescribeLimitsOutput>) : Request;
     
-    public function describeTable(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeTable(params : DescribeTableInput, cb : Callback<DescribeTableOutput>) : Request;
     
-    public function getItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getItem(params : GetItemInput, cb : Callback<GetItemOutput>) : Request;
     
-    public function listTables(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTables(params : ListTablesInput, cb : Callback<ListTablesOutput>) : Request;
     
-    public function putItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putItem(params : PutItemInput, cb : Callback<PutItemOutput>) : Request;
     
-    public function query(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function query(params : QueryInput, cb : Callback<QueryOutput>) : Request;
     
-    public function scan(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function scan(params : ScanInput, cb : Callback<ScanOutput>) : Request;
     
-    public function updateItem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateItem(params : UpdateItemInput, cb : Callback<UpdateItemOutput>) : Request;
     
-    public function updateTable(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateTable(params : UpdateTableInput, cb : Callback<UpdateTableOutput>) : Request;
     
 }

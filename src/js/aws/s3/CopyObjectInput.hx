@@ -1,0 +1,35 @@
+package js.aws.s3;
+
+typedef CopyObjectInput = {
+    @:optional var ContentEncoding : String;
+    @:optional var GrantFullControl : String;
+    @:optional var SSECustomerKey : ShapeS18;
+    @:optional var CopySourceIfModifiedSince : Float;
+    @:optional var GrantReadACP : String;
+    @:optional var CopySourceIfMatch : String;
+    @:optional var MetadataDirective : String;
+    var CopySource : String;
+    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var CopySourceSSECustomerKeyMD5 : String;
+    @:optional var CopySourceIfUnmodifiedSince : Float;
+    @:optional var ContentDisposition : String;
+    @:optional var Expires : Float;
+    @:optional var ACL : String;
+    var Key : String;
+    var Bucket : String;
+    @:optional var ContentLanguage : String;
+    @:optional var ContentType : String;
+    @:optional var CacheControl : String;
+    @:optional var CopySourceIfNoneMatch : String;
+    @:optional var Metadata : ShapeS11;
+    @:optional var RequestPayer : String;
+    @:optional var WebsiteRedirectLocation : String;
+    @:optional var GrantWriteACP : String;
+    @:optional var SSECustomerAlgorithm : String;
+    @:optional var StorageClass : String;
+    @:optional var SSECustomerKeyMD5 : String;
+    @:optional var ServerSideEncryption : String;
+    @:optional var GrantRead : String;
+    @:optional var CopySourceSSECustomerKey : ShapeS1b;
+    @:optional var CopySourceSSECustomerAlgorithm : String;
+};

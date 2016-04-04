@@ -12,26 +12,26 @@ extern class EFS extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function createFileSystem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createFileSystem(params : CreateFileSystemInput, cb : Callback<CreateFileSystemOutput>) : Request;
     
-    public function createMountTarget(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createMountTarget(params : CreateMountTargetInput, cb : Callback<CreateMountTargetOutput>) : Request;
     
-    public function createTags(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTags(params : CreateTagsInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteFileSystem(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteFileSystem(params : DeleteFileSystemInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteMountTarget(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteMountTarget(params : DeleteMountTargetInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteTags(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTags(params : DeleteTagsInput, cb : Callback<Dynamic>) : Request;
     
-    public function describeFileSystems(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeFileSystems(params : DescribeFileSystemsInput, cb : Callback<DescribeFileSystemsOutput>) : Request;
     
-    public function describeMountTargetSecurityGroups(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeMountTargetSecurityGroups(params : DescribeMountTargetSecurityGroupsInput, cb : Callback<DescribeMountTargetSecurityGroupsOutput>) : Request;
     
-    public function describeMountTargets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeMountTargets(params : DescribeMountTargetsInput, cb : Callback<DescribeMountTargetsOutput>) : Request;
     
-    public function describeTags(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeTags(params : DescribeTagsInput, cb : Callback<DescribeTagsOutput>) : Request;
     
-    public function modifyMountTargetSecurityGroups(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function modifyMountTargetSecurityGroups(params : ModifyMountTargetSecurityGroupsInput, cb : Callback<Dynamic>) : Request;
     
 }

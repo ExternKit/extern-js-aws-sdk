@@ -12,119 +12,119 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function abortMultipartUpload(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function abortMultipartUpload(params : AbortMultipartUploadInput, cb : Callback<AbortMultipartUploadOutput>) : Request;
     
-    public function completeMultipartUpload(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function completeMultipartUpload(params : CompleteMultipartUploadInput, cb : Callback<CompleteMultipartUploadOutput>) : Request;
     
-    public function copyObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function copyObject(params : CopyObjectInput, cb : Callback<CopyObjectOutput>) : Request;
     
-    public function createBucket(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createBucket(params : CreateBucketInput, cb : Callback<CreateBucketOutput>) : Request;
     
-    public function createMultipartUpload(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createMultipartUpload(params : CreateMultipartUploadInput, cb : Callback<CreateMultipartUploadOutput>) : Request;
     
-    public function deleteBucket(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucket(params : DeleteBucketInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketCors(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketCors(params : DeleteBucketCorsInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketLifecycle(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketLifecycle(params : DeleteBucketLifecycleInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketPolicy(params : DeleteBucketPolicyInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketReplication(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketReplication(params : DeleteBucketReplicationInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketTagging(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketTagging(params : DeleteBucketTaggingInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteBucketWebsite(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteBucketWebsite(params : DeleteBucketWebsiteInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteObject(params : DeleteObjectInput, cb : Callback<DeleteObjectOutput>) : Request;
     
-    public function deleteObjects(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteObjects(params : DeleteObjectsInput, cb : Callback<DeleteObjectsOutput>) : Request;
     
-    public function getBucketAcl(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketAcl(params : GetBucketAclInput, cb : Callback<GetBucketAclOutput>) : Request;
     
-    public function getBucketCors(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketCors(params : GetBucketCorsInput, cb : Callback<GetBucketCorsOutput>) : Request;
     
-    public function getBucketLifecycle(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketLifecycle(params : GetBucketLifecycleInput, cb : Callback<GetBucketLifecycleOutput>) : Request;
     
-    public function getBucketLifecycleConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketLifecycleConfiguration(params : GetBucketLifecycleConfigurationInput, cb : Callback<GetBucketLifecycleConfigurationOutput>) : Request;
     
-    public function getBucketLocation(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketLocation(params : GetBucketLocationInput, cb : Callback<GetBucketLocationOutput>) : Request;
     
-    public function getBucketLogging(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketLogging(params : GetBucketLoggingInput, cb : Callback<GetBucketLoggingOutput>) : Request;
     
-    public function getBucketNotification(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketNotification(params : GetBucketNotificationInput, cb : Callback<GetBucketNotificationOutput>) : Request;
     
-    public function getBucketNotificationConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketNotificationConfiguration(params : GetBucketNotificationConfigurationInput, cb : Callback<GetBucketNotificationConfigurationOutput>) : Request;
     
-    public function getBucketPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketPolicy(params : GetBucketPolicyInput, cb : Callback<GetBucketPolicyOutput>) : Request;
     
-    public function getBucketReplication(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketReplication(params : GetBucketReplicationInput, cb : Callback<GetBucketReplicationOutput>) : Request;
     
-    public function getBucketRequestPayment(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketRequestPayment(params : GetBucketRequestPaymentInput, cb : Callback<GetBucketRequestPaymentOutput>) : Request;
     
-    public function getBucketTagging(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketTagging(params : GetBucketTaggingInput, cb : Callback<GetBucketTaggingOutput>) : Request;
     
-    public function getBucketVersioning(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketVersioning(params : GetBucketVersioningInput, cb : Callback<GetBucketVersioningOutput>) : Request;
     
-    public function getBucketWebsite(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getBucketWebsite(params : GetBucketWebsiteInput, cb : Callback<GetBucketWebsiteOutput>) : Request;
     
-    public function getObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getObject(params : GetObjectInput, cb : Callback<GetObjectOutput>) : Request;
     
-    public function getObjectAcl(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getObjectAcl(params : GetObjectAclInput, cb : Callback<GetObjectAclOutput>) : Request;
     
-    public function getObjectTorrent(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getObjectTorrent(params : GetObjectTorrentInput, cb : Callback<GetObjectTorrentOutput>) : Request;
     
-    public function headBucket(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function headBucket(params : HeadBucketInput, cb : Callback<Dynamic>) : Request;
     
-    public function headObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function headObject(params : HeadObjectInput, cb : Callback<HeadObjectOutput>) : Request;
     
-    public function listBuckets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listBuckets(params : ListBucketsInput, cb : Callback<ListBucketsOutput>) : Request;
     
-    public function listMultipartUploads(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listMultipartUploads(params : ListMultipartUploadsInput, cb : Callback<ListMultipartUploadsOutput>) : Request;
     
-    public function listObjectVersions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listObjectVersions(params : ListObjectVersionsInput, cb : Callback<ListObjectVersionsOutput>) : Request;
     
-    public function listObjects(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listObjects(params : ListObjectsInput, cb : Callback<ListObjectsOutput>) : Request;
     
-    public function listParts(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listParts(params : ListPartsInput, cb : Callback<ListPartsOutput>) : Request;
     
-    public function putBucketAcl(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketAcl(params : PutBucketAclInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketCors(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketCors(params : PutBucketCorsInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketLifecycle(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketLifecycle(params : PutBucketLifecycleInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketLifecycleConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketLifecycleConfiguration(params : PutBucketLifecycleConfigurationInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketLogging(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketLogging(params : PutBucketLoggingInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketNotification(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketNotification(params : PutBucketNotificationInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketNotificationConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketNotificationConfiguration(params : PutBucketNotificationConfigurationInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketPolicy(params : PutBucketPolicyInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketReplication(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketReplication(params : PutBucketReplicationInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketRequestPayment(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketRequestPayment(params : PutBucketRequestPaymentInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketTagging(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketTagging(params : PutBucketTaggingInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketVersioning(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketVersioning(params : PutBucketVersioningInput, cb : Callback<Dynamic>) : Request;
     
-    public function putBucketWebsite(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putBucketWebsite(params : PutBucketWebsiteInput, cb : Callback<Dynamic>) : Request;
     
-    public function putObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putObject(params : PutObjectInput, cb : Callback<PutObjectOutput>) : Request;
     
-    public function putObjectAcl(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putObjectAcl(params : PutObjectAclInput, cb : Callback<PutObjectAclOutput>) : Request;
     
-    public function restoreObject(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function restoreObject(params : RestoreObjectInput, cb : Callback<RestoreObjectOutput>) : Request;
     
 	@:overload(function (params : Dynamic, options : Dynamic, cb : Callback<Dynamic>) : ManagedUpload {})
     public function upload(params : Dynamic, cb : Callback<Dynamic>) : ManagedUpload;
     
-    public function uploadPart(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function uploadPart(params : UploadPartInput, cb : Callback<UploadPartOutput>) : Request;
     
-    public function uploadPartCopy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function uploadPartCopy(params : UploadPartCopyInput, cb : Callback<UploadPartCopyOutput>) : Request;
     
 }

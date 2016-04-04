@@ -12,48 +12,48 @@ extern class CloudFront extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function createCloudFrontOriginAccessIdentity(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createCloudFrontOriginAccessIdentity(params : CreateCloudFrontOriginAccessIdentityInput, cb : Callback<CreateCloudFrontOriginAccessIdentityOutput>) : Request;
     
-    public function createDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createDistribution(params : CreateDistributionInput, cb : Callback<CreateDistributionOutput>) : Request;
     
-    public function createInvalidation(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createInvalidation(params : CreateInvalidationInput, cb : Callback<CreateInvalidationOutput>) : Request;
     
-    public function createStreamingDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createStreamingDistribution(params : CreateStreamingDistributionInput, cb : Callback<CreateStreamingDistributionOutput>) : Request;
     
-    public function deleteCloudFrontOriginAccessIdentity(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteCloudFrontOriginAccessIdentity(params : DeleteCloudFrontOriginAccessIdentityInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteDistribution(params : DeleteDistributionInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteStreamingDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteStreamingDistribution(params : DeleteStreamingDistributionInput, cb : Callback<Dynamic>) : Request;
     
-    public function getCloudFrontOriginAccessIdentity(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getCloudFrontOriginAccessIdentity(params : GetCloudFrontOriginAccessIdentityInput, cb : Callback<GetCloudFrontOriginAccessIdentityOutput>) : Request;
     
-    public function getCloudFrontOriginAccessIdentityConfig(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getCloudFrontOriginAccessIdentityConfig(params : GetCloudFrontOriginAccessIdentityConfigInput, cb : Callback<GetCloudFrontOriginAccessIdentityConfigOutput>) : Request;
     
-    public function getDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getDistribution(params : GetDistributionInput, cb : Callback<GetDistributionOutput>) : Request;
     
-    public function getDistributionConfig(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getDistributionConfig(params : GetDistributionConfigInput, cb : Callback<GetDistributionConfigOutput>) : Request;
     
-    public function getInvalidation(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getInvalidation(params : GetInvalidationInput, cb : Callback<GetInvalidationOutput>) : Request;
     
-    public function getStreamingDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getStreamingDistribution(params : GetStreamingDistributionInput, cb : Callback<GetStreamingDistributionOutput>) : Request;
     
-    public function getStreamingDistributionConfig(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getStreamingDistributionConfig(params : GetStreamingDistributionConfigInput, cb : Callback<GetStreamingDistributionConfigOutput>) : Request;
     
-    public function listCloudFrontOriginAccessIdentities(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listCloudFrontOriginAccessIdentities(params : ListCloudFrontOriginAccessIdentitiesInput, cb : Callback<ListCloudFrontOriginAccessIdentitiesOutput>) : Request;
     
-    public function listDistributions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listDistributions(params : ListDistributionsInput, cb : Callback<ListDistributionsOutput>) : Request;
     
-    public function listDistributionsByWebACLId(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listDistributionsByWebACLId(params : ListDistributionsByWebACLIdInput, cb : Callback<ListDistributionsByWebACLIdOutput>) : Request;
     
-    public function listInvalidations(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listInvalidations(params : ListInvalidationsInput, cb : Callback<ListInvalidationsOutput>) : Request;
     
-    public function listStreamingDistributions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listStreamingDistributions(params : ListStreamingDistributionsInput, cb : Callback<ListStreamingDistributionsOutput>) : Request;
     
-    public function updateCloudFrontOriginAccessIdentity(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateCloudFrontOriginAccessIdentity(params : UpdateCloudFrontOriginAccessIdentityInput, cb : Callback<UpdateCloudFrontOriginAccessIdentityOutput>) : Request;
     
-    public function updateDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateDistribution(params : UpdateDistributionInput, cb : Callback<UpdateDistributionOutput>) : Request;
     
-    public function updateStreamingDistribution(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateStreamingDistribution(params : UpdateStreamingDistributionInput, cb : Callback<UpdateStreamingDistributionOutput>) : Request;
     
 }

@@ -14,6 +14,25 @@ typedef Metadata = {
     var file : String;
 };
 
+enum TypeDefinition {
+    TString;
+    TDate;
+    TBool;
+    TInt;
+    TFloat;
+    TMap;
+    TBlob;
+    TRef(name : String);
+    TObject(fields : Array<ObjectTypeDefinition>);
+    TArray(type : TypeDefinition);
+}
+
+typedef ObjectTypeDefinition = {
+    var name : String;
+    var type : TypeDefinition;
+    var optional : Bool;
+};
+
 class AwsImporter
 {
     private static inline var APIS_DIRECTORY : String = './node_modules/aws-sdk/apis';
@@ -28,7 +47,6 @@ class AwsImporter
         importer.loadTemplates();
         importer.parseMetadata();
         importer.importServices();
-        importer.dumpServices();
     }
 
     private var templates : DynamicAccess<Template>;
@@ -37,16 +55,24 @@ class AwsImporter
 
     private var services : Array<Dynamic>;
 
+    private var definitions : Map<String, String>;
+
+    private var directory : String;
+
     public function new()
     {
-        this.templates = {};
-        this.metadatas = new Map();
-        this.services  = [];
+        this.templates   = {};
+        this.metadatas   = new Map();
+        this.services    = [];
+        this.definitions = new Map();
     }
 
     private function loadTemplates() : Void
     {
-        this.templates['service'] = new Template(File.getContent('service.mtt'));
+        this.templates = {
+            'service'    : new Template(File.getContent('service.mtt')),
+            'definition' : new Template(File.getContent('definition.mtt')),
+        };
     }
 
     private function parseMetadata() : Void
@@ -116,31 +142,36 @@ class AwsImporter
             var json : DynamicAccess<Dynamic> = Json.parse(File.getContent('${APIS_DIRECTORY}/${meta.file}'));
             
             // Prepare folder
-            var directory = '${SRC_DIRECTORY}/${meta.prefix}';
-            if (!FileSystem.exists(directory)) {
-                FileSystem.createDirectory(directory);
+            this.directory = '${SRC_DIRECTORY}/${meta.prefix}';
+            if (!FileSystem.exists(this.directory)) {
+                FileSystem.createDirectory(this.directory);
             }
 
             trace('Importing ${meta.name}');
-            this.importService(json, directory, 'js.aws.${meta.prefix}', meta.prefix, meta.name);
+            this.importService(json, 'js.aws.${meta.prefix}', meta.prefix, meta.name);
         }
     }
 
-    private function importService(json : DynamicAccess<Dynamic>, directory : String, pack : String, prefix : String, className : String) : Void
+    private function importService(json : DynamicAccess<Dynamic>, pack : String, prefix : String, className : String) : Void
     {
+        // List available chapes
+        var shapes : DynamicAccess<Dynamic> = json['shapes'];
+
         // List operations
         var operations = [];
         var availableOperations : DynamicAccess<Dynamic> = json['operations'];
         var operationsNames = availableOperations.keys();
         for (operationName in operationsNames) {
+            var operation : DynamicAccess<Dynamic> = availableOperations[operationName];
+
             // Get operation name
             var name = operationName.substr(0, 1).toLowerCase() + operationName.substr(1);
             
             // Extract input
-            // TODO
+            var input = this.createType('${operationName}Input', pack, shapes, operation['input']).name;
 
             // Extract output
-            // TODO
+            var output = (operation.exists('output') ? this.createType('${operationName}Output', pack, shapes, operation['output']).name : 'Dynamic');
             
             // Store operation
             operations.push({
@@ -148,11 +179,11 @@ class AwsImporter
                 arguments: [
                     {
                         name: 'params',
-                        type: 'Dynamic',
+                        type: input,
                     },
                     {
                         name: 'cb',
-                        type: 'Callback<Dynamic>',
+                        type: 'Callback<$output>',
                     },
                 ],
                 returns: 'Request',
@@ -172,26 +203,92 @@ class AwsImporter
             return Reflect.compare(operation1.name, operation2.name);
         });
 
-        // Store informations
-        this.services.push({
-            directory: directory,
-            className: className,
+        // Write service file
+        this.writeTemplate('${this.directory}/${className}.hx', 'service', {
             pack: pack,
+            className: className,
             operations: operations,
         });
     }
 
-    private function dumpServices() : Void
+    private function createType(name : String, pack : String, shapes : DynamicAccess<Dynamic>, definition : DynamicAccess<Dynamic>) : Dynamic
     {
-        for (service in this.services) {
-            trace('Dumping ${service.className}');
+        var fullName = '$pack.$name';
 
-            // Write main file
-            this.writeTemplate('${service.directory}/${service.className}.hx', 'service', {
-                pack: service.pack,
-                className: service.className,
-                operations: service.operations,
-            });
+        // If definition already exists, return it
+        if (this.definitions.exists(fullName)) {
+            return {
+                name: this.definitions[fullName],
+                definition: null,
+            };
+        }
+
+        trace('Importing $name');
+
+        // Store type
+        this.definitions[fullName] = name;
+
+        // Extract type
+        var typeDefinition = this.extractType(pack, shapes, definition);
+
+        // Write definition file
+        this.writeTemplate('${this.directory}/${name}.hx', 'definition', {
+            pack: pack,
+            typeName: name,
+            definition: typeDefinition,
+        });
+
+        return {
+            name: name,
+            definition: typeDefinition
+        };
+    }
+
+    private function extractType(pack : String, shapes : DynamicAccess<Dynamic>, json : DynamicAccess<Dynamic>) : TypeDefinition
+    {
+        if (json.exists('shape')) {
+            var shape = json['shape'];
+            if (shape == 'Se') {
+
+            }
+            return TRef(this.createType('Shape' + shape, pack, shapes, shapes[shape]).name);
+        }
+
+        if (!json.exists('type')) {
+            return TString;
+        }
+
+        return switch (json['type']) {
+            case 'structure':
+                var fields : Array<ObjectTypeDefinition> = [];
+                var members : DynamicAccess<Dynamic>     = json['members'];
+                var required : Array<String>             = (json.exists('required') ? json['required'] : []);
+                for (member in members.keys()) {
+                    fields.push({
+                        name: member,
+                        type: this.extractType(pack, shapes, members[member]),
+                        optional: (required.indexOf(member) == -1),
+                    });
+                }
+                TObject(fields);
+            case 'list':
+                TArray(this.extractType(pack, shapes, json['member']));
+            case 'timestamp':
+                TDate;
+            case 'boolean':
+                TBool;
+            case 'integer', 'long':
+                TInt;
+            case 'float', 'double':
+                TFloat;
+            case 'map':
+                TMap;
+            case 'blob':
+                TBlob;
+            case 'string':
+                TString;
+            default:
+                throw 'Unsupported type ${json["type"]}';
         }
     }
 
@@ -203,6 +300,9 @@ class AwsImporter
             .execute(variables, {
                 dumpArguments: this.dumpArguments,
                 dumpOverloads: this.dumpOverloads,
+                dumpDefinition: function(resolve : String->Dynamic, definition : TypeDefinition) {
+                    return this.dumpDefinition(definition, []);
+                },
             })
         ;
 
@@ -212,14 +312,16 @@ class AwsImporter
         output.close();
     }
 
-    private function dumpArguments(resolve : String->Dynamic, arguments : Array<Dynamic>) : String {
+    private function dumpArguments(resolve : String->Dynamic, arguments : Array<Dynamic>) : String
+    {
         return [
             for (argument in arguments)
                 '${argument.name} : ${argument.type}'
         ].join(', ');
     }
 
-    private function dumpOverloads(resolve : String->Dynamic, overloads : Array<Dynamic>) : String {
+    private function dumpOverloads(resolve : String->Dynamic, overloads : Array<Dynamic>) : String
+    {
         if (0 == overloads.length) {
             return '';
         }
@@ -228,5 +330,62 @@ class AwsImporter
             for (overload in overloads)
                 '@:overload(function (${this.dumpArguments(resolve, overload.arguments)}) : ${overload.returns} {})'
         ].join('\n\t');
+    }
+
+    private function dumpDefinition(definition : TypeDefinition, tabs : Array<String>) : String
+    {
+        return switch (definition) {
+            case TString:
+                'String';
+            case TDate:
+                'Float';
+            case TBool:
+                'Bool';
+            case TInt:
+                'Int';
+            case TFloat:
+                'Float';
+            case TMap:
+                '{}';
+            case TBlob:
+                'Dynamic'; // TODO: Use 'Buffer || Typed Array || Blob || String || ReadableStream' instead
+            case TRef(name):
+                name;
+            case TObject(fields):
+                var buf = [];
+                buf.push('{');
+                for (field in fields) {
+                    var opt  = (field.optional ? '@:optional ' : '');
+                    var def  = this.dumpDefinition(field.type, this.tab(tabs));
+                    var name = this.filterName(field.name);
+                    buf.push(tabString(this.tab(tabs)) + '${opt}${name} : $def;');
+                }
+                buf.push(tabString(tabs) + '}');
+
+                buf.join('\n');
+            case TArray(type):
+                'Array<${this.dumpDefinition(type, tabs)}>';
+            default:
+                throw 'Invalid type definition $definition';
+        }
+    }
+
+    private function filterName(name : String) {
+        return switch(name) {
+            case 'return': '@:native(\'$name\') var ${name}_';
+            default: 'var $name';
+        }
+    }
+
+    private function tab(tabs : Array<String>) : Array<String>
+    {
+        var newTabs = tabs.copy();
+        newTabs.push('    ');
+        return newTabs;
+    }
+
+    private function tabString(tabs : Array<String>) : String
+    {
+        return tabs.join('');
     }
 }

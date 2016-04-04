@@ -12,38 +12,38 @@ extern class EMR extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function addInstanceGroups(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function addInstanceGroups(params : AddInstanceGroupsInput, cb : Callback<AddInstanceGroupsOutput>) : Request;
     
-    public function addJobFlowSteps(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function addJobFlowSteps(params : AddJobFlowStepsInput, cb : Callback<AddJobFlowStepsOutput>) : Request;
     
-    public function addTags(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function addTags(params : AddTagsInput, cb : Callback<AddTagsOutput>) : Request;
     
-    public function describeCluster(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeCluster(params : DescribeClusterInput, cb : Callback<DescribeClusterOutput>) : Request;
     
-    public function describeJobFlows(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeJobFlows(params : DescribeJobFlowsInput, cb : Callback<DescribeJobFlowsOutput>) : Request;
     
-    public function describeStep(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeStep(params : DescribeStepInput, cb : Callback<DescribeStepOutput>) : Request;
     
-    public function listBootstrapActions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listBootstrapActions(params : ListBootstrapActionsInput, cb : Callback<ListBootstrapActionsOutput>) : Request;
     
-    public function listClusters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listClusters(params : ListClustersInput, cb : Callback<ListClustersOutput>) : Request;
     
-    public function listInstanceGroups(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listInstanceGroups(params : ListInstanceGroupsInput, cb : Callback<ListInstanceGroupsOutput>) : Request;
     
-    public function listInstances(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listInstances(params : ListInstancesInput, cb : Callback<ListInstancesOutput>) : Request;
     
-    public function listSteps(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listSteps(params : ListStepsInput, cb : Callback<ListStepsOutput>) : Request;
     
-    public function modifyInstanceGroups(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function modifyInstanceGroups(params : ModifyInstanceGroupsInput, cb : Callback<Dynamic>) : Request;
     
-    public function removeTags(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function removeTags(params : RemoveTagsInput, cb : Callback<RemoveTagsOutput>) : Request;
     
-    public function runJobFlow(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function runJobFlow(params : RunJobFlowInput, cb : Callback<RunJobFlowOutput>) : Request;
     
-    public function setTerminationProtection(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function setTerminationProtection(params : SetTerminationProtectionInput, cb : Callback<Dynamic>) : Request;
     
-    public function setVisibleToAllUsers(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function setVisibleToAllUsers(params : SetVisibleToAllUsersInput, cb : Callback<Dynamic>) : Request;
     
-    public function terminateJobFlows(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function terminateJobFlows(params : TerminateJobFlowsInput, cb : Callback<Dynamic>) : Request;
     
 }

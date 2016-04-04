@@ -12,58 +12,58 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function createCluster(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createCluster(params : CreateClusterInput, cb : Callback<CreateClusterOutput>) : Request;
     
-    public function createService(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createService(params : CreateServiceInput, cb : Callback<CreateServiceOutput>) : Request;
     
-    public function deleteCluster(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteCluster(params : DeleteClusterInput, cb : Callback<DeleteClusterOutput>) : Request;
     
-    public function deleteService(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteService(params : DeleteServiceInput, cb : Callback<DeleteServiceOutput>) : Request;
     
-    public function deregisterContainerInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deregisterContainerInstance(params : DeregisterContainerInstanceInput, cb : Callback<DeregisterContainerInstanceOutput>) : Request;
     
-    public function deregisterTaskDefinition(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deregisterTaskDefinition(params : DeregisterTaskDefinitionInput, cb : Callback<DeregisterTaskDefinitionOutput>) : Request;
     
-    public function describeClusters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeClusters(params : DescribeClustersInput, cb : Callback<DescribeClustersOutput>) : Request;
     
-    public function describeContainerInstances(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeContainerInstances(params : DescribeContainerInstancesInput, cb : Callback<DescribeContainerInstancesOutput>) : Request;
     
-    public function describeServices(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeServices(params : DescribeServicesInput, cb : Callback<DescribeServicesOutput>) : Request;
     
-    public function describeTaskDefinition(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeTaskDefinition(params : DescribeTaskDefinitionInput, cb : Callback<DescribeTaskDefinitionOutput>) : Request;
     
-    public function describeTasks(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeTasks(params : DescribeTasksInput, cb : Callback<DescribeTasksOutput>) : Request;
     
-    public function discoverPollEndpoint(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function discoverPollEndpoint(params : DiscoverPollEndpointInput, cb : Callback<DiscoverPollEndpointOutput>) : Request;
     
-    public function listClusters(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listClusters(params : ListClustersInput, cb : Callback<ListClustersOutput>) : Request;
     
-    public function listContainerInstances(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listContainerInstances(params : ListContainerInstancesInput, cb : Callback<ListContainerInstancesOutput>) : Request;
     
-    public function listServices(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listServices(params : ListServicesInput, cb : Callback<ListServicesOutput>) : Request;
     
-    public function listTaskDefinitionFamilies(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTaskDefinitionFamilies(params : ListTaskDefinitionFamiliesInput, cb : Callback<ListTaskDefinitionFamiliesOutput>) : Request;
     
-    public function listTaskDefinitions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTaskDefinitions(params : ListTaskDefinitionsInput, cb : Callback<ListTaskDefinitionsOutput>) : Request;
     
-    public function listTasks(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listTasks(params : ListTasksInput, cb : Callback<ListTasksOutput>) : Request;
     
-    public function registerContainerInstance(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function registerContainerInstance(params : RegisterContainerInstanceInput, cb : Callback<RegisterContainerInstanceOutput>) : Request;
     
-    public function registerTaskDefinition(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function registerTaskDefinition(params : RegisterTaskDefinitionInput, cb : Callback<RegisterTaskDefinitionOutput>) : Request;
     
-    public function runTask(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function runTask(params : RunTaskInput, cb : Callback<RunTaskOutput>) : Request;
     
-    public function startTask(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function startTask(params : StartTaskInput, cb : Callback<StartTaskOutput>) : Request;
     
-    public function stopTask(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function stopTask(params : StopTaskInput, cb : Callback<StopTaskOutput>) : Request;
     
-    public function submitContainerStateChange(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function submitContainerStateChange(params : SubmitContainerStateChangeInput, cb : Callback<SubmitContainerStateChangeOutput>) : Request;
     
-    public function submitTaskStateChange(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function submitTaskStateChange(params : SubmitTaskStateChangeInput, cb : Callback<SubmitTaskStateChangeOutput>) : Request;
     
-    public function updateContainerAgent(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateContainerAgent(params : UpdateContainerAgentInput, cb : Callback<UpdateContainerAgentOutput>) : Request;
     
-    public function updateService(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateService(params : UpdateServiceInput, cb : Callback<UpdateServiceOutput>) : Request;
     
 }

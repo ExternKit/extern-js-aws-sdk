@@ -12,52 +12,52 @@ extern class CloudFormation extends Service implements js.extern.Extern<'aws-sdk
 
     public function new(?params : Dynamic) : Void;
     
-    public function cancelUpdateStack(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function cancelUpdateStack(params : CancelUpdateStackInput, cb : Callback<Dynamic>) : Request;
     
-    public function continueUpdateRollback(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function continueUpdateRollback(params : ContinueUpdateRollbackInput, cb : Callback<ContinueUpdateRollbackOutput>) : Request;
     
-    public function createChangeSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createChangeSet(params : CreateChangeSetInput, cb : Callback<CreateChangeSetOutput>) : Request;
     
-    public function createStack(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createStack(params : CreateStackInput, cb : Callback<CreateStackOutput>) : Request;
     
-    public function deleteChangeSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteChangeSet(params : DeleteChangeSetInput, cb : Callback<DeleteChangeSetOutput>) : Request;
     
-    public function deleteStack(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteStack(params : DeleteStackInput, cb : Callback<Dynamic>) : Request;
     
-    public function describeAccountLimits(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAccountLimits(params : DescribeAccountLimitsInput, cb : Callback<DescribeAccountLimitsOutput>) : Request;
     
-    public function describeChangeSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeChangeSet(params : DescribeChangeSetInput, cb : Callback<DescribeChangeSetOutput>) : Request;
     
-    public function describeStackEvents(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeStackEvents(params : DescribeStackEventsInput, cb : Callback<DescribeStackEventsOutput>) : Request;
     
-    public function describeStackResource(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeStackResource(params : DescribeStackResourceInput, cb : Callback<DescribeStackResourceOutput>) : Request;
     
-    public function describeStackResources(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeStackResources(params : DescribeStackResourcesInput, cb : Callback<DescribeStackResourcesOutput>) : Request;
     
-    public function describeStacks(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeStacks(params : DescribeStacksInput, cb : Callback<DescribeStacksOutput>) : Request;
     
-    public function estimateTemplateCost(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function estimateTemplateCost(params : EstimateTemplateCostInput, cb : Callback<EstimateTemplateCostOutput>) : Request;
     
-    public function executeChangeSet(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function executeChangeSet(params : ExecuteChangeSetInput, cb : Callback<ExecuteChangeSetOutput>) : Request;
     
-    public function getStackPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getStackPolicy(params : GetStackPolicyInput, cb : Callback<GetStackPolicyOutput>) : Request;
     
-    public function getTemplate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getTemplate(params : GetTemplateInput, cb : Callback<GetTemplateOutput>) : Request;
     
-    public function getTemplateSummary(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getTemplateSummary(params : GetTemplateSummaryInput, cb : Callback<GetTemplateSummaryOutput>) : Request;
     
-    public function listChangeSets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listChangeSets(params : ListChangeSetsInput, cb : Callback<ListChangeSetsOutput>) : Request;
     
-    public function listStackResources(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listStackResources(params : ListStackResourcesInput, cb : Callback<ListStackResourcesOutput>) : Request;
     
-    public function listStacks(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listStacks(params : ListStacksInput, cb : Callback<ListStacksOutput>) : Request;
     
-    public function setStackPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function setStackPolicy(params : SetStackPolicyInput, cb : Callback<Dynamic>) : Request;
     
-    public function signalResource(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function signalResource(params : SignalResourceInput, cb : Callback<Dynamic>) : Request;
     
-    public function updateStack(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateStack(params : UpdateStackInput, cb : Callback<UpdateStackOutput>) : Request;
     
-    public function validateTemplate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function validateTemplate(params : ValidateTemplateInput, cb : Callback<ValidateTemplateOutput>) : Request;
     
 }

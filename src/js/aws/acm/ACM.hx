@@ -12,16 +12,16 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function deleteCertificate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteCertificate(params : DeleteCertificateInput, cb : Callback<Dynamic>) : Request;
     
-    public function describeCertificate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeCertificate(params : DescribeCertificateInput, cb : Callback<DescribeCertificateOutput>) : Request;
     
-    public function getCertificate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getCertificate(params : GetCertificateInput, cb : Callback<GetCertificateOutput>) : Request;
     
-    public function listCertificates(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listCertificates(params : ListCertificatesInput, cb : Callback<ListCertificatesOutput>) : Request;
     
-    public function requestCertificate(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function requestCertificate(params : RequestCertificateInput, cb : Callback<RequestCertificateOutput>) : Request;
     
-    public function resendValidationEmail(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function resendValidationEmail(params : ResendValidationEmailInput, cb : Callback<Dynamic>) : Request;
     
 }

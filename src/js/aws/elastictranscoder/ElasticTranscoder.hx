@@ -12,38 +12,38 @@ extern class ElasticTranscoder extends Service implements js.extern.Extern<'aws-
 
     public function new(?params : Dynamic) : Void;
     
-    public function cancelJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function cancelJob(params : CancelJobInput, cb : Callback<CancelJobOutput>) : Request;
     
-    public function createJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createJob(params : CreateJobInput, cb : Callback<CreateJobOutput>) : Request;
     
-    public function createPipeline(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createPipeline(params : CreatePipelineInput, cb : Callback<CreatePipelineOutput>) : Request;
     
-    public function createPreset(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createPreset(params : CreatePresetInput, cb : Callback<CreatePresetOutput>) : Request;
     
-    public function deletePipeline(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deletePipeline(params : DeletePipelineInput, cb : Callback<DeletePipelineOutput>) : Request;
     
-    public function deletePreset(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deletePreset(params : DeletePresetInput, cb : Callback<DeletePresetOutput>) : Request;
     
-    public function listJobsByPipeline(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listJobsByPipeline(params : ListJobsByPipelineInput, cb : Callback<ListJobsByPipelineOutput>) : Request;
     
-    public function listJobsByStatus(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listJobsByStatus(params : ListJobsByStatusInput, cb : Callback<ListJobsByStatusOutput>) : Request;
     
-    public function listPipelines(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listPipelines(params : ListPipelinesInput, cb : Callback<ListPipelinesOutput>) : Request;
     
-    public function listPresets(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listPresets(params : ListPresetsInput, cb : Callback<ListPresetsOutput>) : Request;
     
-    public function readJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function readJob(params : ReadJobInput, cb : Callback<ReadJobOutput>) : Request;
     
-    public function readPipeline(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function readPipeline(params : ReadPipelineInput, cb : Callback<ReadPipelineOutput>) : Request;
     
-    public function readPreset(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function readPreset(params : ReadPresetInput, cb : Callback<ReadPresetOutput>) : Request;
     
-    public function testRole(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function testRole(params : TestRoleInput, cb : Callback<TestRoleOutput>) : Request;
     
-    public function updatePipeline(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updatePipeline(params : UpdatePipelineInput, cb : Callback<UpdatePipelineOutput>) : Request;
     
-    public function updatePipelineNotifications(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updatePipelineNotifications(params : UpdatePipelineNotificationsInput, cb : Callback<UpdatePipelineNotificationsOutput>) : Request;
     
-    public function updatePipelineStatus(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updatePipelineStatus(params : UpdatePipelineStatusInput, cb : Callback<UpdatePipelineStatusOutput>) : Request;
     
 }

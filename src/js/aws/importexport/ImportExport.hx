@@ -12,16 +12,16 @@ extern class ImportExport extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function cancelJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function cancelJob(params : CancelJobInput, cb : Callback<CancelJobOutput>) : Request;
     
-    public function createJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createJob(params : CreateJobInput, cb : Callback<CreateJobOutput>) : Request;
     
-    public function getShippingLabel(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getShippingLabel(params : GetShippingLabelInput, cb : Callback<GetShippingLabelOutput>) : Request;
     
-    public function getStatus(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getStatus(params : GetStatusInput, cb : Callback<GetStatusOutput>) : Request;
     
-    public function listJobs(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listJobs(params : ListJobsInput, cb : Callback<ListJobsOutput>) : Request;
     
-    public function updateJob(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateJob(params : UpdateJobInput, cb : Callback<UpdateJobOutput>) : Request;
     
 }

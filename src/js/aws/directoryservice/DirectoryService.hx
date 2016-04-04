@@ -12,54 +12,54 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
 
     public function new(?params : Dynamic) : Void;
     
-    public function connectDirectory(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function connectDirectory(params : ConnectDirectoryInput, cb : Callback<ConnectDirectoryOutput>) : Request;
     
-    public function createAlias(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createAlias(params : CreateAliasInput, cb : Callback<CreateAliasOutput>) : Request;
     
-    public function createComputer(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createComputer(params : CreateComputerInput, cb : Callback<CreateComputerOutput>) : Request;
     
-    public function createDirectory(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createDirectory(params : CreateDirectoryInput, cb : Callback<CreateDirectoryOutput>) : Request;
     
-    public function createMicrosoftAD(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createMicrosoftAD(params : CreateMicrosoftADInput, cb : Callback<CreateMicrosoftADOutput>) : Request;
     
-    public function createSnapshot(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createSnapshot(params : CreateSnapshotInput, cb : Callback<CreateSnapshotOutput>) : Request;
     
-    public function createTrust(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createTrust(params : CreateTrustInput, cb : Callback<CreateTrustOutput>) : Request;
     
-    public function deleteDirectory(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteDirectory(params : DeleteDirectoryInput, cb : Callback<DeleteDirectoryOutput>) : Request;
     
-    public function deleteSnapshot(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteSnapshot(params : DeleteSnapshotInput, cb : Callback<DeleteSnapshotOutput>) : Request;
     
-    public function deleteTrust(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteTrust(params : DeleteTrustInput, cb : Callback<DeleteTrustOutput>) : Request;
     
-    public function deregisterEventTopic(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deregisterEventTopic(params : DeregisterEventTopicInput, cb : Callback<DeregisterEventTopicOutput>) : Request;
     
-    public function describeDirectories(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeDirectories(params : DescribeDirectoriesInput, cb : Callback<DescribeDirectoriesOutput>) : Request;
     
-    public function describeEventTopics(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeEventTopics(params : DescribeEventTopicsInput, cb : Callback<DescribeEventTopicsOutput>) : Request;
     
-    public function describeSnapshots(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeSnapshots(params : DescribeSnapshotsInput, cb : Callback<DescribeSnapshotsOutput>) : Request;
     
-    public function describeTrusts(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeTrusts(params : DescribeTrustsInput, cb : Callback<DescribeTrustsOutput>) : Request;
     
-    public function disableRadius(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disableRadius(params : DisableRadiusInput, cb : Callback<DisableRadiusOutput>) : Request;
     
-    public function disableSso(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disableSso(params : DisableSsoInput, cb : Callback<DisableSsoOutput>) : Request;
     
-    public function enableRadius(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function enableRadius(params : EnableRadiusInput, cb : Callback<EnableRadiusOutput>) : Request;
     
-    public function enableSso(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function enableSso(params : EnableSsoInput, cb : Callback<EnableSsoOutput>) : Request;
     
-    public function getDirectoryLimits(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getDirectoryLimits(params : GetDirectoryLimitsInput, cb : Callback<GetDirectoryLimitsOutput>) : Request;
     
-    public function getSnapshotLimits(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getSnapshotLimits(params : GetSnapshotLimitsInput, cb : Callback<GetSnapshotLimitsOutput>) : Request;
     
-    public function registerEventTopic(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function registerEventTopic(params : RegisterEventTopicInput, cb : Callback<RegisterEventTopicOutput>) : Request;
     
-    public function restoreFromSnapshot(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function restoreFromSnapshot(params : RestoreFromSnapshotInput, cb : Callback<RestoreFromSnapshotOutput>) : Request;
     
-    public function updateRadius(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateRadius(params : UpdateRadiusInput, cb : Callback<UpdateRadiusOutput>) : Request;
     
-    public function verifyTrust(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function verifyTrust(params : VerifyTrustInput, cb : Callback<VerifyTrustOutput>) : Request;
     
 }

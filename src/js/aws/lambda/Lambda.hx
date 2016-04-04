@@ -12,52 +12,52 @@ extern class Lambda extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function addPermission(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function addPermission(params : AddPermissionInput, cb : Callback<AddPermissionOutput>) : Request;
     
-    public function createAlias(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createAlias(params : CreateAliasInput, cb : Callback<CreateAliasOutput>) : Request;
     
-    public function createEventSourceMapping(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createEventSourceMapping(params : CreateEventSourceMappingInput, cb : Callback<CreateEventSourceMappingOutput>) : Request;
     
-    public function createFunction(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createFunction(params : CreateFunctionInput, cb : Callback<CreateFunctionOutput>) : Request;
     
-    public function deleteAlias(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteAlias(params : DeleteAliasInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteEventSourceMapping(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteEventSourceMapping(params : DeleteEventSourceMappingInput, cb : Callback<DeleteEventSourceMappingOutput>) : Request;
     
-    public function deleteFunction(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteFunction(params : DeleteFunctionInput, cb : Callback<Dynamic>) : Request;
     
-    public function getAlias(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getAlias(params : GetAliasInput, cb : Callback<GetAliasOutput>) : Request;
     
-    public function getEventSourceMapping(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getEventSourceMapping(params : GetEventSourceMappingInput, cb : Callback<GetEventSourceMappingOutput>) : Request;
     
-    public function getFunction(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getFunction(params : GetFunctionInput, cb : Callback<GetFunctionOutput>) : Request;
     
-    public function getFunctionConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getFunctionConfiguration(params : GetFunctionConfigurationInput, cb : Callback<GetFunctionConfigurationOutput>) : Request;
     
-    public function getPolicy(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getPolicy(params : GetPolicyInput, cb : Callback<GetPolicyOutput>) : Request;
     
-    public function invoke(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function invoke(params : InvokeInput, cb : Callback<InvokeOutput>) : Request;
     
-    public function invokeAsync(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function invokeAsync(params : InvokeAsyncInput, cb : Callback<InvokeAsyncOutput>) : Request;
     
-    public function listAliases(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listAliases(params : ListAliasesInput, cb : Callback<ListAliasesOutput>) : Request;
     
-    public function listEventSourceMappings(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listEventSourceMappings(params : ListEventSourceMappingsInput, cb : Callback<ListEventSourceMappingsOutput>) : Request;
     
-    public function listFunctions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listFunctions(params : ListFunctionsInput, cb : Callback<ListFunctionsOutput>) : Request;
     
-    public function listVersionsByFunction(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listVersionsByFunction(params : ListVersionsByFunctionInput, cb : Callback<ListVersionsByFunctionOutput>) : Request;
     
-    public function publishVersion(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function publishVersion(params : PublishVersionInput, cb : Callback<PublishVersionOutput>) : Request;
     
-    public function removePermission(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function removePermission(params : RemovePermissionInput, cb : Callback<Dynamic>) : Request;
     
-    public function updateAlias(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateAlias(params : UpdateAliasInput, cb : Callback<UpdateAliasOutput>) : Request;
     
-    public function updateEventSourceMapping(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateEventSourceMapping(params : UpdateEventSourceMappingInput, cb : Callback<UpdateEventSourceMappingOutput>) : Request;
     
-    public function updateFunctionCode(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateFunctionCode(params : UpdateFunctionCodeInput, cb : Callback<UpdateFunctionCodeOutput>) : Request;
     
-    public function updateFunctionConfiguration(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function updateFunctionConfiguration(params : UpdateFunctionConfigurationInput, cb : Callback<UpdateFunctionConfigurationOutput>) : Request;
     
 }

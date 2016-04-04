@@ -12,26 +12,26 @@ extern class CloudWatch extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function deleteAlarms(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteAlarms(params : DeleteAlarmsInput, cb : Callback<Dynamic>) : Request;
     
-    public function describeAlarmHistory(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAlarmHistory(params : DescribeAlarmHistoryInput, cb : Callback<DescribeAlarmHistoryOutput>) : Request;
     
-    public function describeAlarms(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAlarms(params : DescribeAlarmsInput, cb : Callback<DescribeAlarmsOutput>) : Request;
     
-    public function describeAlarmsForMetric(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function describeAlarmsForMetric(params : DescribeAlarmsForMetricInput, cb : Callback<DescribeAlarmsForMetricOutput>) : Request;
     
-    public function disableAlarmActions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function disableAlarmActions(params : DisableAlarmActionsInput, cb : Callback<Dynamic>) : Request;
     
-    public function enableAlarmActions(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function enableAlarmActions(params : EnableAlarmActionsInput, cb : Callback<Dynamic>) : Request;
     
-    public function getMetricStatistics(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getMetricStatistics(params : GetMetricStatisticsInput, cb : Callback<GetMetricStatisticsOutput>) : Request;
     
-    public function listMetrics(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listMetrics(params : ListMetricsInput, cb : Callback<ListMetricsOutput>) : Request;
     
-    public function putMetricAlarm(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putMetricAlarm(params : PutMetricAlarmInput, cb : Callback<Dynamic>) : Request;
     
-    public function putMetricData(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function putMetricData(params : PutMetricDataInput, cb : Callback<Dynamic>) : Request;
     
-    public function setAlarmState(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function setAlarmState(params : SetAlarmStateInput, cb : Callback<Dynamic>) : Request;
     
 }

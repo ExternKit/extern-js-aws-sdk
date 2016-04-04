@@ -12,38 +12,38 @@ extern class SQS extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
-    public function addPermission(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function addPermission(params : AddPermissionInput, cb : Callback<Dynamic>) : Request;
     
-    public function changeMessageVisibility(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function changeMessageVisibility(params : ChangeMessageVisibilityInput, cb : Callback<Dynamic>) : Request;
     
-    public function changeMessageVisibilityBatch(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function changeMessageVisibilityBatch(params : ChangeMessageVisibilityBatchInput, cb : Callback<ChangeMessageVisibilityBatchOutput>) : Request;
     
-    public function createQueue(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function createQueue(params : CreateQueueInput, cb : Callback<CreateQueueOutput>) : Request;
     
-    public function deleteMessage(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteMessage(params : DeleteMessageInput, cb : Callback<Dynamic>) : Request;
     
-    public function deleteMessageBatch(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteMessageBatch(params : DeleteMessageBatchInput, cb : Callback<DeleteMessageBatchOutput>) : Request;
     
-    public function deleteQueue(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function deleteQueue(params : DeleteQueueInput, cb : Callback<Dynamic>) : Request;
     
-    public function getQueueAttributes(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getQueueAttributes(params : GetQueueAttributesInput, cb : Callback<GetQueueAttributesOutput>) : Request;
     
-    public function getQueueUrl(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function getQueueUrl(params : GetQueueUrlInput, cb : Callback<GetQueueUrlOutput>) : Request;
     
-    public function listDeadLetterSourceQueues(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listDeadLetterSourceQueues(params : ListDeadLetterSourceQueuesInput, cb : Callback<ListDeadLetterSourceQueuesOutput>) : Request;
     
-    public function listQueues(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function listQueues(params : ListQueuesInput, cb : Callback<ListQueuesOutput>) : Request;
     
-    public function purgeQueue(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function purgeQueue(params : PurgeQueueInput, cb : Callback<Dynamic>) : Request;
     
-    public function receiveMessage(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function receiveMessage(params : ReceiveMessageInput, cb : Callback<ReceiveMessageOutput>) : Request;
     
-    public function removePermission(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function removePermission(params : RemovePermissionInput, cb : Callback<Dynamic>) : Request;
     
-    public function sendMessage(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function sendMessage(params : SendMessageInput, cb : Callback<SendMessageOutput>) : Request;
     
-    public function sendMessageBatch(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function sendMessageBatch(params : SendMessageBatchInput, cb : Callback<SendMessageBatchOutput>) : Request;
     
-    public function setQueueAttributes(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    public function setQueueAttributes(params : SetQueueAttributesInput, cb : Callback<Dynamic>) : Request;
     
 }
