@@ -7,6 +7,8 @@ extern class Service implements js.extern.Extern<'aws-sdk'>
 {
     public var apiVersions(default, never) : Array<String>;
 
+    public var config(default, null) : Config;
+
     public function new(config : Dynamic) : Void;
 
     public function defineService(serviceIdentifier : String, versions : Array<String>, features : Dynamic) : Class<Service>;

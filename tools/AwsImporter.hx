@@ -47,6 +47,7 @@ class AwsImporter
         importer.loadTemplates();
         importer.parseMetadata();
         importer.importServices();
+        importer.updateConfig();
     }
 
     private var templates : DynamicAccess<Template>;
@@ -72,6 +73,7 @@ class AwsImporter
         this.templates = {
             'service'    : new Template(File.getContent('service.mtt')),
             'definition' : new Template(File.getContent('definition.mtt')),
+            'config'     : new Template(File.getContent('config.mtt')),
         };
     }
 
@@ -149,6 +151,7 @@ class AwsImporter
 
             trace('Importing ${meta.name}');
             this.importService(json, 'js.aws.${meta.prefix}', meta.prefix, meta.name);
+            this.services.push({ name : meta.prefix });
         }
     }
 
@@ -290,6 +293,21 @@ class AwsImporter
             default:
                 throw 'Unsupported type ${json["type"]}';
         }
+    }
+
+    private function updateConfig() : Void
+    {
+        trace('Generating Config');
+
+        // Sort services
+        this.services.sort(function (service1 : Dynamic, service2 : Dynamic) : Int {
+            return Reflect.compare(service1.name, service2.name);
+        });
+
+        // Write Config.hx file
+        this.writeTemplate('${SRC_DIRECTORY}/Config.hx', 'config', {
+            services: this.services,
+        });
     }
 
     private function writeTemplate(file : String, template : String, variables : Dynamic) : Void
