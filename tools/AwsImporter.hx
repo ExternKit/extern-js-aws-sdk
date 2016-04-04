@@ -18,6 +18,8 @@ class AwsImporter
 {
     private static inline var APIS_DIRECTORY : String = './node_modules/aws-sdk/apis';
 
+    private static inline var PATCHES_DIRECTORY : String = './patches';
+
     private static inline var SRC_DIRECTORY : String = './../src/js/aws';
 
     public static function main() : Void
@@ -26,16 +28,20 @@ class AwsImporter
         importer.loadTemplates();
         importer.parseMetadata();
         importer.importServices();
+        importer.dumpServices();
     }
 
     private var templates : DynamicAccess<Template>;
 
     private var metadatas : Map<String, Metadata>;
 
+    private var services : Array<Dynamic>;
+
     public function new()
     {
         this.templates = {};
         this.metadatas = new Map();
+        this.services  = [];
     }
 
     private function loadTemplates() : Void
@@ -116,39 +122,111 @@ class AwsImporter
             }
 
             trace('Importing ${meta.name}');
-            this.importService(json, directory, 'js.aws.${meta.prefix}', meta.name);
+            this.importService(json, directory, 'js.aws.${meta.prefix}', meta.prefix, meta.name);
         }
     }
 
-    private function importService(json : DynamicAccess<Dynamic>, directory : String, pack : String, className : String) : Void
+    private function importService(json : DynamicAccess<Dynamic>, directory : String, pack : String, prefix : String, className : String) : Void
     {
         // List operations
         var operations = [];
         var availableOperations : DynamicAccess<Dynamic> = json['operations'];
         var operationsNames = availableOperations.keys();
-        operationsNames.sort(Reflect.compare);
         for (operationName in operationsNames) {
+            // Get operation name
             var name = operationName.substr(0, 1).toLowerCase() + operationName.substr(1);
             
+            // Extract input
+            // TODO
+
+            // Extract output
+            // TODO
+            
+            // Store operation
             operations.push({
                 name: name,
+                arguments: [
+                    {
+                        name: 'params',
+                        type: 'Dynamic',
+                    },
+                    {
+                        name: 'cb',
+                        type: 'Callback<Dynamic>',
+                    },
+                ],
+                returns: 'Request',
+                overloads: [],
             });
         }
 
-        // Write main file
-        this.writeTemplate('${directory}/${className}.hx', 'service', {
-            pack: pack,
+        // Apply patches if available
+        var patch = '${PATCHES_DIRECTORY}/${prefix}.json';
+        if (FileSystem.exists(patch)) {
+            var loaded = Json.parse(File.getContent(patch));
+            operations = operations.concat(loaded);
+        }
+
+        // Sort operations
+        operations.sort(function (operation1 : Dynamic, operation2 : Dynamic) : Int {
+            return Reflect.compare(operation1.name, operation2.name);
+        });
+
+        // Store informations
+        this.services.push({
+            directory: directory,
             className: className,
+            pack: pack,
             operations: operations,
         });
     }
 
+    private function dumpServices() : Void
+    {
+        for (service in this.services) {
+            trace('Dumping ${service.className}');
+
+            // Write main file
+            this.writeTemplate('${service.directory}/${service.className}.hx', 'service', {
+                pack: service.pack,
+                className: service.className,
+                operations: service.operations,
+            });
+        }
+    }
+
     private function writeTemplate(file : String, template : String, variables : Dynamic) : Void
     {
-        var content = this.templates[template].execute(variables);
+        // Generate content
+        var content = this
+            .templates[template]
+            .execute(variables, {
+                dumpArguments: this.dumpArguments,
+                dumpOverloads: this.dumpOverloads,
+            })
+        ;
 
+        // Dump output
         var output = File.write(file);
         output.writeString(content);
         output.close();
+    }
+
+    private function dumpArguments(resolve : String->Dynamic, arguments : Array<Dynamic>) : String {
+        return [
+            for (argument in arguments)
+                '${argument.name} : ${argument.type}'
+        ].join(', ');
+    }
+
+    private function dumpOverloads(resolve : String->Dynamic, overloads : Array<Dynamic>) : String {
+        if (0 == overloads.length) {
+            return '';
+        }
+
+        return '\n\t' + [
+            for (overload in overloads)
+                '@:overload(function (${this.dumpArguments(resolve, overload.arguments)}) : ${overload.returns} {})'
+        ].join('\n\t');
     }
 }

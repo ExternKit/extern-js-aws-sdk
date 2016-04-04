@@ -1,0 +1,35 @@
+[
+    {
+        "name": "upload",
+        "arguments": [
+            {
+                "name": "params",
+                "type": "Dynamic"
+            },
+            {
+                "name": "cb",
+                "type": "Callback<Dynamic>"
+            }
+        ],
+        "returns": "ManagedUpload",
+        "overloads": [
+            {
+                "arguments": [
+                    {
+                        "name": "params",
+                        "type": "Dynamic"
+                    },
+                    {
+                        "name": "options",
+                        "type": "Dynamic"
+                    },
+                    {
+                        "name": "cb",
+                        "type": "Callback<Dynamic>"
+                    }
+                ],
+                "returns": "ManagedUpload"
+            }
+        ]
+    }
+]

@@ -1,5 +1,7 @@
 package js.aws.s3;
 
+import js.extern.Callback;
+
 typedef ManagedUploadData = {
     var Location : String;
     var ETag : String;

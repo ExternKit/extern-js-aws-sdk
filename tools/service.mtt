@@ -11,7 +11,7 @@ extern class ::className:: extends Service implements js.extern.Extern<'aws-sdk'
     public var endpoint : Endpoint;
 
     public function new(?params : Dynamic) : Void;
-    ::foreach operations::
-    public function ::name::(params : Dynamic, cb : Callback<Dynamic>) : Request;
+    ::foreach operations::$$dumpOverloads(::overloads::)
+    public function ::name::($$dumpArguments(::arguments::)) : ::returns::;
     ::end::
 }
