@@ -12,6 +12,7 @@ extern class MobileAnalytics extends Service implements js.extern.Extern<'aws-sd
 
     public function new(?params : Dynamic) : Void;
     
-    public function putEvents(params : PutEventsInput, cb : Callback<Dynamic>) : Request;
+	@:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function putEvents(params : PutEventsInput, ?cb : Callback<Dynamic>) : Request;
     
 }

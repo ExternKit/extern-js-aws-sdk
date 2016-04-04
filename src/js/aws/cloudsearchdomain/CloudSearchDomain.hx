@@ -12,10 +12,13 @@ extern class CloudSearchDomain extends Service implements js.extern.Extern<'aws-
 
     public function new(?params : Dynamic) : Void;
     
-    public function search(params : SearchInput, cb : Callback<SearchOutput>) : Request;
+	@:overload(function (?cb : Callback<SearchOutput>) : Request {})
+    public function search(params : SearchInput, ?cb : Callback<SearchOutput>) : Request;
     
-    public function suggest(params : SuggestInput, cb : Callback<SuggestOutput>) : Request;
+	@:overload(function (?cb : Callback<SuggestOutput>) : Request {})
+    public function suggest(params : SuggestInput, ?cb : Callback<SuggestOutput>) : Request;
     
-    public function uploadDocuments(params : UploadDocumentsInput, cb : Callback<UploadDocumentsOutput>) : Request;
+	@:overload(function (?cb : Callback<UploadDocumentsOutput>) : Request {})
+    public function uploadDocuments(params : UploadDocumentsInput, ?cb : Callback<UploadDocumentsOutput>) : Request;
     
 }

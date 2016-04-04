@@ -4,11 +4,13 @@
         "arguments": [
             {
                 "name": "params",
-                "type": "UploadInput"
+                "type": "UploadInput",
+                "optional": false
             },
             {
                 "name": "cb",
-                "type": "Callback<UploadOutput>"
+                "type": "Callback<UploadOutput>",
+                "optional": false
             }
         ],
         "returns": "ManagedUpload",
@@ -17,15 +19,18 @@
                 "arguments": [
                     {
                         "name": "params",
-                        "type": "UploadInput"
+                        "type": "UploadInput",
+                        "optional": false
                     },
                     {
                         "name": "options",
-                        "type": "Dynamic"
+                        "type": "Dynamic",
+                        "optional": false
                     },
                     {
                         "name": "cb",
-                        "type": "Callback<UploadOutput>"
+                        "type": "Callback<UploadOutput>",
+                        "optional": false
                     }
                 ],
                 "returns": "ManagedUpload"

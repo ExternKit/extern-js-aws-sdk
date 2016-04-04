@@ -12,12 +12,16 @@ extern class DynamoDBStreams extends Service implements js.extern.Extern<'aws-sd
 
     public function new(?params : Dynamic) : Void;
     
-    public function describeStream(params : DescribeStreamInput, cb : Callback<DescribeStreamOutput>) : Request;
+	@:overload(function (?cb : Callback<DescribeStreamOutput>) : Request {})
+    public function describeStream(params : DescribeStreamInput, ?cb : Callback<DescribeStreamOutput>) : Request;
     
-    public function getRecords(params : GetRecordsInput, cb : Callback<GetRecordsOutput>) : Request;
+	@:overload(function (?cb : Callback<GetRecordsOutput>) : Request {})
+    public function getRecords(params : GetRecordsInput, ?cb : Callback<GetRecordsOutput>) : Request;
     
-    public function getShardIterator(params : GetShardIteratorInput, cb : Callback<GetShardIteratorOutput>) : Request;
+	@:overload(function (?cb : Callback<GetShardIteratorOutput>) : Request {})
+    public function getShardIterator(params : GetShardIteratorInput, ?cb : Callback<GetShardIteratorOutput>) : Request;
     
-    public function listStreams(params : ListStreamsInput, cb : Callback<ListStreamsOutput>) : Request;
+	@:overload(function (?cb : Callback<ListStreamsOutput>) : Request {})
+    public function listStreams(params : ListStreamsInput, ?cb : Callback<ListStreamsOutput>) : Request;
     
 }

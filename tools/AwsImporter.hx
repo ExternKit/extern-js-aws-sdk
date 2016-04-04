@@ -183,14 +183,27 @@ class AwsImporter
                     {
                         name: 'params',
                         type: input,
+                        optional: false,
                     },
                     {
                         name: 'cb',
                         type: 'Callback<$output>',
+                        optional: true,
                     },
                 ],
                 returns: 'Request',
-                overloads: [],
+                overloads: [
+                    {
+                        arguments: [
+                            {
+                                name: 'cb',
+                                type: 'Callback<$output>',
+                                optional: true,
+                            },
+                        ],
+                        returns: 'Request',
+                    }
+                ],
             });
         }
 
@@ -282,11 +295,11 @@ class AwsImporter
                 TBool;
             case 'integer', 'long':
                 TInt;
-            case 'float', 'double':
+            case 'float', 'double', 'bigdecimal':
                 TFloat;
             case 'map':
                 TMap;
-            case 'blob':
+            case 'blob', 'binary64', 'binary':
                 TBlob;
             case 'string':
                 TString;
@@ -334,7 +347,7 @@ class AwsImporter
     {
         return [
             for (argument in arguments)
-                '${argument.name} : ${argument.type}'
+                (argument.optional ? '?' : '') + '${argument.name} : ${argument.type}'
         ].join(', ');
     }
 

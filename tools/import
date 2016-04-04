@@ -3,7 +3,7 @@
 pushd tools >/dev/null 2>&1
 
 # Get aws sdk
-#npm install aws-sdk && npm update
+npm install aws-sdk && npm update
 
 # Run aws importer
 haxe -main AwsImporter --interp

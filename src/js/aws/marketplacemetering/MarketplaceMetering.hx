@@ -12,6 +12,7 @@ extern class MarketplaceMetering extends Service implements js.extern.Extern<'aw
 
     public function new(?params : Dynamic) : Void;
     
-    public function meterUsage(params : MeterUsageInput, cb : Callback<MeterUsageOutput>) : Request;
+	@:overload(function (?cb : Callback<MeterUsageOutput>) : Request {})
+    public function meterUsage(params : MeterUsageInput, ?cb : Callback<MeterUsageOutput>) : Request;
     
 }
