@@ -120,8 +120,8 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
     
     public function restoreObject(params : RestoreObjectInput, cb : Callback<RestoreObjectOutput>) : Request;
     
-	@:overload(function (params : Dynamic, options : Dynamic, cb : Callback<Dynamic>) : ManagedUpload {})
-    public function upload(params : Dynamic, cb : Callback<Dynamic>) : ManagedUpload;
+	@:overload(function (params : UploadInput, options : Dynamic, cb : Callback<UploadOutput>) : ManagedUpload {})
+    public function upload(params : UploadInput, cb : Callback<UploadOutput>) : ManagedUpload;
     
     public function uploadPart(params : UploadPartInput, cb : Callback<UploadPartOutput>) : Request;
     

@@ -4,11 +4,11 @@
         "arguments": [
             {
                 "name": "params",
-                "type": "Dynamic"
+                "type": "UploadInput"
             },
             {
                 "name": "cb",
-                "type": "Callback<Dynamic>"
+                "type": "Callback<UploadOutput>"
             }
         ],
         "returns": "ManagedUpload",
@@ -17,7 +17,7 @@
                 "arguments": [
                     {
                         "name": "params",
-                        "type": "Dynamic"
+                        "type": "UploadInput"
                     },
                     {
                         "name": "options",
@@ -25,7 +25,7 @@
                     },
                     {
                         "name": "cb",
-                        "type": "Callback<Dynamic>"
+                        "type": "Callback<UploadOutput>"
                     }
                 ],
                 "returns": "ManagedUpload"
