@@ -41,7 +41,7 @@ class Main
       var params : UploadInput = { Key: 'myKey', Body: 'Hello!' };
       s3bucket.upload(params, function(error : Error, data : UploadOutput) : Void {
         if (null != error) {
-          trace('Error uploading data: $error");
+          trace('Error uploading data: $error');
         } else {
           trace("Successfully uploaded data to myBucket/myKey");
         }
