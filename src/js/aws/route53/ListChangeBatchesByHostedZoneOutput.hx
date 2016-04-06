@@ -5,5 +5,5 @@ typedef ListChangeBatchesByHostedZoneOutput = {
     @:optional var NextMarker : String;
     var Marker : String;
     @:optional var IsTruncated : Bool;
-    var ChangeBatchRecords : ShapeS4b;
+    var ChangeBatchRecords : ShapeS4s;
 };

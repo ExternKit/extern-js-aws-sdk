@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef ShapeS3i = {};
+typedef ShapeS3l = {};

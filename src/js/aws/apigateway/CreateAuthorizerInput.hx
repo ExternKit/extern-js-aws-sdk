@@ -8,5 +8,6 @@ typedef CreateAuthorizerInput = {
     @:optional var authorizerCredentials : String;
     var identitySource : String;
     @:optional var identityValidationExpression : String;
+    @:optional var authType : String;
     var authorizerUri : String;
 };

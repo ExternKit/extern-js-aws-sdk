@@ -1,6 +1,6 @@
 package js.aws.route53;
 
-typedef ShapeS2f = {
+typedef ShapeS2w = {
     var TrafficPolicyId : String;
     var HostedZoneId : String;
     var Message : String;

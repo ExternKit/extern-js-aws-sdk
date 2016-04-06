@@ -47,6 +47,7 @@ class AwsImporter
         importer.loadTemplates();
         importer.parseMetadata();
         importer.importServices();
+        importer.clearShapes();
         importer.updateConfig();
     }
 
@@ -150,15 +151,17 @@ class AwsImporter
             }
 
             trace('Importing ${meta.name}');
-            this.importService(json, 'js.aws.${meta.prefix}', meta.prefix, meta.name);
-            this.services.push({ name : meta.prefix });
+            this.services.push(
+                this.importService(json, 'js.aws.${meta.prefix}', meta.prefix, meta.name)
+            );
         }
     }
 
-    private function importService(json : DynamicAccess<Dynamic>, pack : String, prefix : String, className : String) : Void
+    private function importService(json : DynamicAccess<Dynamic>, pack : String, prefix : String, className : String) : Dynamic
     {
         // List available chapes
         var shapes : DynamicAccess<Dynamic> = json['shapes'];
+        var availableShapes = shapes.keys();
 
         // List operations
         var operations = [];
@@ -225,6 +228,12 @@ class AwsImporter
             className: className,
             operations: operations,
         });
+
+        return {
+            name : prefix,
+            shapes : availableShapes,
+            directory : this.directory,
+        };
     }
 
     private function createType(name : String, pack : String, shapes : DynamicAccess<Dynamic>, definition : DynamicAccess<Dynamic>) : Dynamic
@@ -308,6 +317,31 @@ class AwsImporter
         }
     }
 
+    private function clearShapes() : Void
+    {
+        var shapePattern = ~/Shape(S[a-z0-9]+)\.hx/g;
+        for (service in this.services) {
+            var shapes : Array<Dynamic> = service.shapes;
+            //trace(service.shapes);
+            for (file in FileSystem.readDirectory(service.directory)) {
+                // If file is not a shape, skip it
+                if (!shapePattern.match(file)) {
+                    continue;
+                }
+
+                // Check shape name
+                var shape = shapePattern.matched(1);
+                if (shapes.indexOf(shape) > -1) {
+                    continue;
+                }
+
+                // Delete unused shape
+                trace('Removing obsolete $file');
+                FileSystem.deleteFile('${service.directory}/$file');
+            }
+        }
+    }
+
     private function updateConfig() : Void
     {
         trace('Generating Config');
@@ -357,10 +391,10 @@ class AwsImporter
             return '';
         }
 
-        return '\n\t' + [
+        return '\n    ' + [
             for (overload in overloads)
                 '@:overload(function (${this.dumpArguments(resolve, overload.arguments)}) : ${overload.returns} {})'
-        ].join('\n\t');
+        ].join('\n    ');
     }
 
     private function dumpDefinition(definition : TypeDefinition, tabs : Array<String>) : String

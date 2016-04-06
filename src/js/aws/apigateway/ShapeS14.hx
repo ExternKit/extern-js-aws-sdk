@@ -5,4 +5,5 @@ typedef ShapeS14 = {
     @:optional var createdDate : Float;
     @:optional var description : String;
     @:optional var id : String;
+    @:optional var warnings : ShapeS7;
 };

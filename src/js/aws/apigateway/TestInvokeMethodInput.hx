@@ -5,7 +5,7 @@ typedef TestInvokeMethodInput = {
     @:optional var body : String;
     var restApiId : String;
     @:optional var stageVariables : ShapeSi;
-    @:optional var headers : ShapeS3i;
+    @:optional var headers : ShapeS3l;
     @:optional var pathWithQueryString : String;
     @:optional var clientCertificateId : String;
     var httpMethod : String;

@@ -1,6 +1,6 @@
 package js.aws.apigateway;
 
-typedef ShapeS3p = Array<{
+typedef ShapeS3s = Array<{
     @:optional var from : String;
     @:optional var path : String;
     @:optional var op : String;

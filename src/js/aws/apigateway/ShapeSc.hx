@@ -8,5 +8,6 @@ typedef ShapeSc = {
     @:optional var id : String;
     @:optional var identitySource : String;
     @:optional var identityValidationExpression : String;
+    @:optional var authType : String;
     @:optional var authorizerUri : String;
 };

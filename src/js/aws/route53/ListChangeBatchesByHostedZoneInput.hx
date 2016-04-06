@@ -4,6 +4,6 @@ typedef ListChangeBatchesByHostedZoneInput = {
     @:optional var MaxItems : String;
     var HostedZoneId : String;
     @:optional var Marker : String;
-    var EndDate : ShapeS46;
-    var StartDate : ShapeS46;
+    var EndDate : ShapeS4n;
+    var StartDate : ShapeS4n;
 };

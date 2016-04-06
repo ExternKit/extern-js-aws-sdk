@@ -1,6 +1,6 @@
 package js.aws.route53;
 
-typedef ShapeS2a = {
+typedef ShapeS2r = {
     var Version : Int;
     @:optional var Comment : String;
     var Document : String;
