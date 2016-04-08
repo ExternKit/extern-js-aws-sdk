@@ -5,11 +5,11 @@ typedef DescribeWorkflowExecutionOutput = {
         @:optional var taskPriority : String;
         @:optional var lambdaRole : String;
         var taskStartToCloseTimeout : String;
-        var taskList : ShapeSj;
+        var taskList : _ShapeSj;
         var childPolicy : String;
         var executionStartToCloseTimeout : String;
     };
-    var executionInfo : ShapeS19;
+    var executionInfo : _ShapeS19;
     var openCounts : {
         var openActivityTasks : Int;
         var openDecisionTasks : Int;

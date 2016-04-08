@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef PutIntegrationResponseOutput = ShapeS12;
+typedef PutIntegrationResponseOutput = _ShapeS12;

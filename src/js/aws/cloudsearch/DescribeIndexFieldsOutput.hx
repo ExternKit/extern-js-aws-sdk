@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef DescribeIndexFieldsOutput = {
-    var IndexFields : Array<ShapeS1n>;
+    var IndexFields : Array<_ShapeS1n>;
 };

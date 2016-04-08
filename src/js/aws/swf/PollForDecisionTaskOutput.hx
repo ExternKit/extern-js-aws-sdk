@@ -5,7 +5,7 @@ typedef PollForDecisionTaskOutput = {
     var taskToken : String;
     var startedEventId : Int;
     @:optional var previousStartedEventId : Int;
-    var workflowExecution : ShapeS16;
-    var events : ShapeS1t;
-    var workflowType : ShapeSr;
+    var workflowExecution : _ShapeS16;
+    var events : _ShapeS1t;
+    var workflowType : _ShapeSr;
 };

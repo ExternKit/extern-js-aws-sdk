@@ -1,7 +1,7 @@
 package js.aws.rds;
 
 typedef RestoreDBClusterToPointInTimeInput = {
-    @:optional var VpcSecurityGroupIds : ShapeS1d;
+    @:optional var VpcSecurityGroupIds : _ShapeS1d;
     @:optional var DBSubnetGroupName : String;
     var SourceDBClusterIdentifier : String;
     @:optional var RestoreToTime : Float;
@@ -10,5 +10,5 @@ typedef RestoreDBClusterToPointInTimeInput = {
     var DBClusterIdentifier : String;
     @:optional var OptionGroupName : String;
     @:optional var Port : Int;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
 };

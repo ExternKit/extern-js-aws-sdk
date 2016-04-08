@@ -1,5 +1,5 @@
 package js.aws.inspector;
 
 typedef DescribeAssessmentTargetsInput = {
-    var assessmentTargetArns : ShapeSv;
+    var assessmentTargetArns : _ShapeSv;
 };

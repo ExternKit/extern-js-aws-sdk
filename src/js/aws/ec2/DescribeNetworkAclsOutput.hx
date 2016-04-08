@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeNetworkAclsOutput = {
-    @:optional var NetworkAcls : Array<ShapeS46>;
+    @:optional var NetworkAcls : Array<_ShapeS46>;
 };

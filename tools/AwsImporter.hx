@@ -273,10 +273,7 @@ class AwsImporter
     {
         if (json.exists('shape')) {
             var shape = json['shape'];
-            if (shape == 'Se') {
-
-            }
-            return TRef(this.createType('Shape' + shape, pack, shapes, shapes[shape]).name);
+            return TRef(this.createType('_Shape' + shape, pack, shapes, shapes[shape]).name);
         }
 
         if (!json.exists('type')) {
@@ -319,7 +316,7 @@ class AwsImporter
 
     private function clearShapes() : Void
     {
-        var shapePattern = ~/Shape(S[a-z0-9]+)\.hx/g;
+        var shapePattern = ~/_?Shape(S[a-z0-9]+)\.hx/g;
         for (service in this.services) {
             var shapes : Array<Dynamic> = service.shapes;
             //trace(service.shapes);

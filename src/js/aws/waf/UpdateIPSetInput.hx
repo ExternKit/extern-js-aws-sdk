@@ -4,7 +4,7 @@ typedef UpdateIPSetInput = {
     var IPSetId : String;
     var Updates : Array<{
         var Action : String;
-        var IPSetDescriptor : ShapeSj;
+        var IPSetDescriptor : _ShapeSj;
     }>;
     var ChangeToken : String;
 };

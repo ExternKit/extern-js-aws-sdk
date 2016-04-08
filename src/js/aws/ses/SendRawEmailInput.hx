@@ -3,7 +3,7 @@ package js.aws.ses;
 typedef SendRawEmailInput = {
     @:optional var Source : String;
     @:optional var ReturnPathArn : String;
-    @:optional var Destinations : ShapeS37;
+    @:optional var Destinations : _ShapeS37;
     var RawMessage : {
         var Data : Dynamic;
     };

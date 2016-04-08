@@ -4,10 +4,10 @@ typedef RegisterDomainInput = {
     @:optional var PrivacyProtectTechContact : Bool;
     @:optional var PrivacyProtectAdminContact : Bool;
     @:optional var PrivacyProtectRegistrantContact : Bool;
-    var TechContact : ShapeSr;
+    var TechContact : _ShapeSr;
     @:optional var AutoRenew : Bool;
-    var AdminContact : ShapeSr;
-    var RegistrantContact : ShapeSr;
+    var AdminContact : _ShapeSr;
+    var RegistrantContact : _ShapeSr;
     var DurationInYears : Int;
     var DomainName : String;
     @:optional var IdnLangCode : String;

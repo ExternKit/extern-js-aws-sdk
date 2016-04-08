@@ -9,6 +9,7 @@ typedef DescribeTrustsOutput = {
         @:optional var StateLastUpdatedDateTime : Float;
         @:optional var CreatedDateTime : Float;
         @:optional var RemoteDomainName : String;
+        @:optional var TrustStateReason : String;
         @:optional var TrustType : String;
         @:optional var TrustDirection : String;
         @:optional var LastUpdatedDateTime : Float;

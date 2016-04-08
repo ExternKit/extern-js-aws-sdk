@@ -1,5 +1,5 @@
 package js.aws.ecr;
 
 typedef PutImageOutput = {
-    @:optional var image : ShapeSt;
+    @:optional var image : _ShapeSt;
 };

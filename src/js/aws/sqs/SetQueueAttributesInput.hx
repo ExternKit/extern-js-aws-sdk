@@ -1,6 +1,6 @@
 package js.aws.sqs;
 
 typedef SetQueueAttributesInput = {
-    var Attributes : ShapeSh;
+    var Attributes : _ShapeSh;
     var QueueUrl : String;
 };

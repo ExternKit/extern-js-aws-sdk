@@ -2,8 +2,8 @@ package js.aws.directoryservice;
 
 typedef CreateMicrosoftADInput = {
     @:optional var Description : String;
-    var VpcSettings : ShapeSw;
-    var Password : ShapeSv;
+    var VpcSettings : _ShapeSz;
+    var Password : _ShapeSy;
     var Name : String;
     @:optional var ShortName : String;
 };

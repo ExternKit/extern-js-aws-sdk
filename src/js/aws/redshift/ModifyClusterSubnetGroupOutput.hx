@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef ModifyClusterSubnetGroupOutput = {
-    @:optional var ClusterSubnetGroup : ShapeS1o;
+    @:optional var ClusterSubnetGroup : _ShapeS1o;
 };

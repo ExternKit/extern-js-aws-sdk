@@ -1,6 +1,6 @@
 package js.aws.ecs;
 
 typedef DescribeServicesInput = {
-    var services : ShapeSv;
+    var services : _ShapeSv;
     @:optional var cluster : String;
 };

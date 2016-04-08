@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef AttachVolumeOutput = ShapeSy;
+typedef AttachVolumeOutput = _ShapeSy;

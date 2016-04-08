@@ -5,7 +5,7 @@ typedef PutMetricDataInput = {
     var MetricData : Array<{
         @:optional var Value : Float;
         @:optional var Timestamp : Float;
-        @:optional var Dimensions : ShapeSv;
+        @:optional var Dimensions : _ShapeSv;
         @:optional var StatisticValues : {
             var SampleCount : Float;
             var Sum : Float;

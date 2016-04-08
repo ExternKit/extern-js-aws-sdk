@@ -1,6 +1,6 @@
 package js.aws.swf;
 
 typedef CountPendingActivityTasksInput = {
-    var taskList : ShapeSj;
+    var taskList : _ShapeSj;
     var domain : String;
 };

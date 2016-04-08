@@ -1,5 +1,5 @@
 package js.aws.cognitosync;
 
 typedef UpdateRecordsOutput = {
-    @:optional var Records : ShapeS1c;
+    @:optional var Records : _ShapeS1c;
 };

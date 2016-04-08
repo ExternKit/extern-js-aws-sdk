@@ -1,5 +1,5 @@
 package js.aws.opsworks;
 
 typedef DescribeTimeBasedAutoScalingInput = {
-    var InstanceIds : ShapeS3;
+    var InstanceIds : _ShapeS3;
 };

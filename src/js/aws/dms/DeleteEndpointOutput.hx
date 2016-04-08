@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef DeleteEndpointOutput = {
-    @:optional var Endpoint : ShapeSb;
+    @:optional var Endpoint : _ShapeSb;
 };

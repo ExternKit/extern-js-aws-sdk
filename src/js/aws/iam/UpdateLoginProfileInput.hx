@@ -2,6 +2,6 @@ package js.aws.iam;
 
 typedef UpdateLoginProfileInput = {
     var UserName : String;
-    @:optional var Password : ShapeSf;
+    @:optional var Password : _ShapeSf;
     @:optional var PasswordResetRequired : Bool;
 };

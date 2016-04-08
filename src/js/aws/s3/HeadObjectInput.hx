@@ -2,7 +2,7 @@ package js.aws.s3;
 
 typedef HeadObjectInput = {
     @:optional var IfNoneMatch : String;
-    @:optional var SSECustomerKey : ShapeS18;
+    @:optional var SSECustomerKey : _ShapeS18;
     @:optional var Range : String;
     var Key : String;
     var Bucket : String;

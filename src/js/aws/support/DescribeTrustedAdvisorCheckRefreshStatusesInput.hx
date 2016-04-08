@@ -1,5 +1,5 @@
 package js.aws.support;
 
 typedef DescribeTrustedAdvisorCheckRefreshStatusesInput = {
-    var checkIds : ShapeS1t;
+    var checkIds : _ShapeS1t;
 };

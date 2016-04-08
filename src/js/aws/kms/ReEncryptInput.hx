@@ -1,9 +1,9 @@
 package js.aws.kms;
 
 typedef ReEncryptInput = {
-    @:optional var SourceEncryptionContext : ShapeSb;
+    @:optional var SourceEncryptionContext : _ShapeSb;
     var DestinationKeyId : String;
-    @:optional var GrantTokens : ShapeSe;
-    @:optional var DestinationEncryptionContext : ShapeSb;
+    @:optional var GrantTokens : _ShapeSe;
+    @:optional var DestinationEncryptionContext : _ShapeSb;
     var CiphertextBlob : Dynamic;
 };

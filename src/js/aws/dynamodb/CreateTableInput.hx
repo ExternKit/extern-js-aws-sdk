@@ -2,19 +2,19 @@ package js.aws.dynamodb;
 
 typedef CreateTableInput = {
     @:optional var LocalSecondaryIndexes : Array<{
-        var KeySchema : ShapeS1j;
+        var KeySchema : _ShapeS1j;
         var IndexName : String;
-        var Projection : ShapeS1o;
+        var Projection : _ShapeS1o;
     }>;
     var TableName : String;
-    var ProvisionedThroughput : ShapeS1u;
-    @:optional var StreamSpecification : ShapeS1w;
+    var ProvisionedThroughput : _ShapeS1u;
+    @:optional var StreamSpecification : _ShapeS1w;
     @:optional var GlobalSecondaryIndexes : Array<{
-        var ProvisionedThroughput : ShapeS1u;
-        var KeySchema : ShapeS1j;
+        var ProvisionedThroughput : _ShapeS1u;
+        var KeySchema : _ShapeS1j;
         var IndexName : String;
-        var Projection : ShapeS1o;
+        var Projection : _ShapeS1o;
     }>;
-    var KeySchema : ShapeS1j;
-    var AttributeDefinitions : ShapeS1f;
+    var KeySchema : _ShapeS1j;
+    var AttributeDefinitions : _ShapeS1f;
 };

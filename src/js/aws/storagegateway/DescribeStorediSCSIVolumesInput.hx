@@ -1,5 +1,5 @@
 package js.aws.storagegateway;
 
 typedef DescribeStorediSCSIVolumesInput = {
-    var VolumeARNs : ShapeS2a;
+    var VolumeARNs : _ShapeS2a;
 };

@@ -1,6 +1,6 @@
 package js.aws.swf;
 
 typedef DeprecateActivityTypeInput = {
-    var activityType : ShapeSn;
+    var activityType : _ShapeSn;
     var domain : String;
 };

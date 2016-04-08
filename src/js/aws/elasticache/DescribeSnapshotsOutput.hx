@@ -2,5 +2,5 @@ package js.aws.elasticache;
 
 typedef DescribeSnapshotsOutput = {
     @:optional var Marker : String;
-    @:optional var Snapshots : Array<ShapeSd>;
+    @:optional var Snapshots : Array<_ShapeSd>;
 };

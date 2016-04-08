@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeVpnGatewaysOutput = {
-    @:optional var VpnGateways : Array<ShapeS6m>;
+    @:optional var VpnGateways : Array<_ShapeS6m>;
 };

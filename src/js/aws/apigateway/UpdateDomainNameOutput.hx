@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateDomainNameOutput = ShapeSo;
+typedef UpdateDomainNameOutput = _ShapeSo;

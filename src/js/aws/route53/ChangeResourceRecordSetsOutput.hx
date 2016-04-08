@@ -1,5 +1,5 @@
 package js.aws.route53;
 
 typedef ChangeResourceRecordSetsOutput = {
-    var ChangeInfo : ShapeS8;
+    var ChangeInfo : _ShapeS8;
 };

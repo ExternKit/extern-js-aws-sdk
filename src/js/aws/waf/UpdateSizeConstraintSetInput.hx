@@ -4,7 +4,7 @@ typedef UpdateSizeConstraintSetInput = {
     var SizeConstraintSetId : String;
     var Updates : Array<{
         var Action : String;
-        var SizeConstraint : ShapeSy;
+        var SizeConstraint : _ShapeSy;
     }>;
     var ChangeToken : String;
 };

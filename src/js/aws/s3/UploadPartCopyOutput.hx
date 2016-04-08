@@ -1,7 +1,7 @@
 package js.aws.s3;
 
 typedef UploadPartCopyOutput = {
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var CopyPartResult : {
         @:optional var LastModified : Float;
         @:optional var ETag : String;

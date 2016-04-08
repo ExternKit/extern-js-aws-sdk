@@ -5,7 +5,7 @@ typedef QueryObjectsInput = {
         @:optional var selectors : Array<{
             @:optional var operator : {
                 @:optional var type : String;
-                @:optional var values : ShapeS1x;
+                @:optional var values : _ShapeS1x;
             };
             @:optional var fieldName : String;
         }>;

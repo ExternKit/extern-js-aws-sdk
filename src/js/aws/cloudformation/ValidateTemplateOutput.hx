@@ -9,5 +9,5 @@ typedef ValidateTemplateOutput = {
         @:optional var DefaultValue : String;
     }>;
     @:optional var CapabilitiesReason : String;
-    @:optional var Capabilities : ShapeSf;
+    @:optional var Capabilities : _ShapeSf;
 };

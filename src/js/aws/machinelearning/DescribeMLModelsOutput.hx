@@ -4,7 +4,7 @@ typedef DescribeMLModelsOutput = {
     @:optional var NextToken : String;
     @:optional var Results : Array<{
         @:optional var LastUpdatedAt : Float;
-        @:optional var EndpointInfo : ShapeS1c;
+        @:optional var EndpointInfo : _ShapeS1c;
         @:optional var SizeInBytes : Int;
         @:optional var Message : String;
         @:optional var CreatedAt : Float;
@@ -12,7 +12,7 @@ typedef DescribeMLModelsOutput = {
         @:optional var CreatedByIamUser : String;
         @:optional var ScoreThresholdLastUpdatedAt : Float;
         @:optional var TrainingDataSourceId : String;
-        @:optional var TrainingParameters : ShapeS16;
+        @:optional var TrainingParameters : _ShapeS16;
         @:optional var MLModelType : String;
         @:optional var MLModelId : String;
         @:optional var ScoreThreshold : Float;

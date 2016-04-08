@@ -21,6 +21,9 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<CreateComputerOutput>) : Request {})
     public function createComputer(params : CreateComputerInput, ?cb : Callback<CreateComputerOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateConditionalForwarderOutput>) : Request {})
+    public function createConditionalForwarder(params : CreateConditionalForwarderInput, ?cb : Callback<CreateConditionalForwarderOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateDirectoryOutput>) : Request {})
     public function createDirectory(params : CreateDirectoryInput, ?cb : Callback<CreateDirectoryOutput>) : Request;
     
@@ -33,6 +36,9 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<CreateTrustOutput>) : Request {})
     public function createTrust(params : CreateTrustInput, ?cb : Callback<CreateTrustOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteConditionalForwarderOutput>) : Request {})
+    public function deleteConditionalForwarder(params : DeleteConditionalForwarderInput, ?cb : Callback<DeleteConditionalForwarderOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteDirectoryOutput>) : Request {})
     public function deleteDirectory(params : DeleteDirectoryInput, ?cb : Callback<DeleteDirectoryOutput>) : Request;
     
@@ -44,6 +50,9 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<DeregisterEventTopicOutput>) : Request {})
     public function deregisterEventTopic(params : DeregisterEventTopicInput, ?cb : Callback<DeregisterEventTopicOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeConditionalForwardersOutput>) : Request {})
+    public function describeConditionalForwarders(params : DescribeConditionalForwardersInput, ?cb : Callback<DescribeConditionalForwardersOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeDirectoriesOutput>) : Request {})
     public function describeDirectories(params : DescribeDirectoriesInput, ?cb : Callback<DescribeDirectoriesOutput>) : Request;
@@ -80,6 +89,9 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<RestoreFromSnapshotOutput>) : Request {})
     public function restoreFromSnapshot(params : RestoreFromSnapshotInput, ?cb : Callback<RestoreFromSnapshotOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateConditionalForwarderOutput>) : Request {})
+    public function updateConditionalForwarder(params : UpdateConditionalForwarderInput, ?cb : Callback<UpdateConditionalForwarderOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateRadiusOutput>) : Request {})
     public function updateRadius(params : UpdateRadiusInput, ?cb : Callback<UpdateRadiusOutput>) : Request;

@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef DetachVolumeOutput = ShapeSy;
+typedef DetachVolumeOutput = _ShapeSy;

@@ -1,5 +1,5 @@
 package js.aws.emr;
 
 typedef TerminateJobFlowsInput = {
-    var JobFlowIds : ShapeSs;
+    var JobFlowIds : _ShapeSs;
 };

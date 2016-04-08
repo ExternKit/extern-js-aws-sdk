@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateAuthorizerOutput = ShapeSc;
+typedef UpdateAuthorizerOutput = _ShapeSc;

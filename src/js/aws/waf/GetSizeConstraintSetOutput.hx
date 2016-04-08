@@ -1,5 +1,5 @@
 package js.aws.waf;
 
 typedef GetSizeConstraintSetOutput = {
-    @:optional var SizeConstraintSet : ShapeSw;
+    @:optional var SizeConstraintSet : _ShapeSw;
 };

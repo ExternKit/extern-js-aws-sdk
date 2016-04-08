@@ -2,5 +2,5 @@ package js.aws.swf;
 
 typedef ListActivityTypesOutput = {
     @:optional var nextPageToken : String;
-    var typeInfos : Array<ShapeSu>;
+    var typeInfos : Array<_ShapeSu>;
 };

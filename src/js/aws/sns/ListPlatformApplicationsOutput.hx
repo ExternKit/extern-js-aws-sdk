@@ -4,6 +4,6 @@ typedef ListPlatformApplicationsOutput = {
     @:optional var NextToken : String;
     @:optional var PlatformApplications : Array<{
         @:optional var PlatformApplicationArn : String;
-        @:optional var Attributes : ShapeSf;
+        @:optional var Attributes : _ShapeSf;
     }>;
 };

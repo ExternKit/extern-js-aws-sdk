@@ -4,7 +4,7 @@ typedef RestoreFromClusterSnapshotInput = {
     @:optional var ClusterSubnetGroupName : String;
     @:optional var ElasticIp : String;
     @:optional var AvailabilityZone : String;
-    @:optional var VpcSecurityGroupIds : ShapeSq;
+    @:optional var VpcSecurityGroupIds : _ShapeSq;
     @:optional var NodeType : String;
     var SnapshotIdentifier : String;
     @:optional var HsmClientCertificateIdentifier : String;
@@ -12,13 +12,13 @@ typedef RestoreFromClusterSnapshotInput = {
     @:optional var HsmConfigurationIdentifier : String;
     @:optional var KmsKeyId : String;
     @:optional var OwnerAccount : String;
-    @:optional var ClusterSecurityGroups : ShapeSp;
+    @:optional var ClusterSecurityGroups : _ShapeSp;
     var ClusterIdentifier : String;
     @:optional var PubliclyAccessible : Bool;
     @:optional var AllowVersionUpgrade : Bool;
     @:optional var ClusterParameterGroupName : String;
     @:optional var PreferredMaintenanceWindow : String;
-    @:optional var IamRoles : ShapeSt;
+    @:optional var IamRoles : _ShapeSt;
     @:optional var AutomatedSnapshotRetentionPeriod : Int;
     @:optional var AdditionalInfo : String;
     @:optional var Port : Int;

@@ -6,7 +6,7 @@ typedef DescribeTrustedAdvisorCheckSummariesOutput = {
         var status : String;
         var checkId : String;
         var timestamp : String;
-        var categorySpecificSummary : ShapeS23;
-        var resourcesSummary : ShapeS22;
+        var categorySpecificSummary : _ShapeS23;
+        var resourcesSummary : _ShapeS22;
     }>;
 };

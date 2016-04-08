@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateInstanceExportTaskOutput = {
-    @:optional var ExportTask : ShapeS3n;
+    @:optional var ExportTask : _ShapeS3n;
 };

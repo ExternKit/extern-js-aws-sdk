@@ -1,5 +1,5 @@
 package js.aws.ecs;
 
 typedef DeleteServiceOutput = {
-    @:optional var service : ShapeSc;
+    @:optional var service : _ShapeSc;
 };

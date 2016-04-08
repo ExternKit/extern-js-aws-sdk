@@ -5,10 +5,10 @@ typedef DescribeAssessmentTemplatesOutput = {
         var durationInSeconds : Int;
         var name : String;
         var createdAt : Float;
-        var rulesPackageArns : ShapeSj;
-        var userAttributesForFindings : ShapeS4;
+        var rulesPackageArns : _ShapeSj;
+        var userAttributesForFindings : _ShapeS4;
         var arn : String;
         var assessmentTargetArn : String;
     }>;
-    var failedItems : ShapeS9;
+    var failedItems : _ShapeS9;
 };

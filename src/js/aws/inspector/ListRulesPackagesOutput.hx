@@ -1,6 +1,6 @@
 package js.aws.inspector;
 
 typedef ListRulesPackagesOutput = {
-    var rulesPackageArns : ShapeS36;
+    var rulesPackageArns : _ShapeS36;
     @:optional var nextToken : String;
 };

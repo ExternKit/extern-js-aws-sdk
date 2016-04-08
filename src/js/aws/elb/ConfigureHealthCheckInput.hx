@@ -1,6 +1,6 @@
 package js.aws.elb;
 
 typedef ConfigureHealthCheckInput = {
-    var HealthCheck : ShapeSi;
+    var HealthCheck : _ShapeSi;
     var LoadBalancerName : String;
 };

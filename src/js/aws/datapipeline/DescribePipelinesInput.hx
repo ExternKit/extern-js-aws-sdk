@@ -1,5 +1,5 @@
 package js.aws.datapipeline;
 
 typedef DescribePipelinesInput = {
-    var pipelineIds : ShapeSn;
+    var pipelineIds : _ShapeSn;
 };

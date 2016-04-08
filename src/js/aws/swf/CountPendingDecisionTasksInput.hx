@@ -1,6 +1,6 @@
 package js.aws.swf;
 
 typedef CountPendingDecisionTasksInput = {
-    var taskList : ShapeSj;
+    var taskList : _ShapeSj;
     var domain : String;
 };

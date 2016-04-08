@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef PutMethodOutput = ShapeSu;
+typedef PutMethodOutput = _ShapeSu;

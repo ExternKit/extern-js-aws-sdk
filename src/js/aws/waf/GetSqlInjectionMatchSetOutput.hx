@@ -1,5 +1,5 @@
 package js.aws.waf;
 
 typedef GetSqlInjectionMatchSetOutput = {
-    @:optional var SqlInjectionMatchSet : ShapeS13;
+    @:optional var SqlInjectionMatchSet : _ShapeS13;
 };

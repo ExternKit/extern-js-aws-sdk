@@ -1,5 +1,5 @@
 package js.aws.route53;
 
 typedef GetHealthCheckOutput = {
-    var HealthCheck : ShapeS1x;
+    var HealthCheck : _ShapeS1x;
 };

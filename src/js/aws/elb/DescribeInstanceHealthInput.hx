@@ -1,6 +1,6 @@
 package js.aws.elb;
 
 typedef DescribeInstanceHealthInput = {
-    @:optional var Instances : ShapeS1p;
+    @:optional var Instances : _ShapeS1p;
     var LoadBalancerName : String;
 };

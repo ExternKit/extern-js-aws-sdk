@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef GetPolicyOutput = {
-    @:optional var Policy : ShapeS1f;
+    @:optional var Policy : _ShapeS1f;
 };

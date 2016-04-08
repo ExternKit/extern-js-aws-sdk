@@ -1,5 +1,5 @@
 package js.aws.elasticbeanstalk;
 
 typedef DescribeApplicationVersionsOutput = {
-    @:optional var ApplicationVersions : Array<ShapeS1c>;
+    @:optional var ApplicationVersions : Array<_ShapeS1c>;
 };

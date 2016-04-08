@@ -3,10 +3,12 @@ package js.aws.elasticbeanstalk;
 typedef DescribeInstancesHealthOutput = {
     @:optional var NextToken : String;
     @:optional var InstanceHealthList : Array<{
+        @:optional var AvailabilityZone : String;
         @:optional var Color : String;
         @:optional var InstanceId : String;
-        @:optional var Causes : ShapeS2w;
-        @:optional var ApplicationMetrics : ShapeS2y;
+        @:optional var Causes : _ShapeS2w;
+        @:optional var ApplicationMetrics : _ShapeS2y;
+        @:optional var InstanceType : String;
         @:optional var System : {
             @:optional var LoadAverage : Array<Float>;
             @:optional var CPUUtilization : {
@@ -18,6 +20,12 @@ typedef DescribeInstancesHealthOutput = {
                 @:optional var Nice : Float;
                 @:optional var User : Float;
             };
+        };
+        @:optional var Deployment : {
+            @:optional var VersionLabel : String;
+            @:optional var DeploymentId : Int;
+            @:optional var DeploymentTime : Float;
+            @:optional var Status : String;
         };
         @:optional var HealthStatus : String;
         @:optional var LaunchedAt : Float;

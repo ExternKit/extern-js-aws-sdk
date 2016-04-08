@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef CreateFleetOutput = {
-    @:optional var FleetAttributes : ShapeSu;
+    @:optional var FleetAttributes : _ShapeSu;
 };

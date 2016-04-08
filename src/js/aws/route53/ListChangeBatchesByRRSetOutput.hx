@@ -5,5 +5,5 @@ typedef ListChangeBatchesByRRSetOutput = {
     @:optional var NextMarker : String;
     var Marker : String;
     @:optional var IsTruncated : Bool;
-    var ChangeBatchRecords : ShapeS4s;
+    var ChangeBatchRecords : _ShapeS4s;
 };

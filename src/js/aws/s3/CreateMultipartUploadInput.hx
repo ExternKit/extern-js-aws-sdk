@@ -3,9 +3,9 @@ package js.aws.s3;
 typedef CreateMultipartUploadInput = {
     @:optional var ContentEncoding : String;
     @:optional var GrantFullControl : String;
-    @:optional var SSECustomerKey : ShapeS18;
+    @:optional var SSECustomerKey : _ShapeS18;
     @:optional var GrantReadACP : String;
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var ContentDisposition : String;
     @:optional var Expires : Float;
     @:optional var ACL : String;
@@ -14,7 +14,7 @@ typedef CreateMultipartUploadInput = {
     @:optional var ContentLanguage : String;
     @:optional var ContentType : String;
     @:optional var CacheControl : String;
-    @:optional var Metadata : ShapeS11;
+    @:optional var Metadata : _ShapeS11;
     @:optional var RequestPayer : String;
     @:optional var WebsiteRedirectLocation : String;
     @:optional var GrantWriteACP : String;

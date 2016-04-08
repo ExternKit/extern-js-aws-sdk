@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef UpdateProjectOutput = {
-    @:optional var project : ShapeSf;
+    @:optional var project : _ShapeSf;
 };

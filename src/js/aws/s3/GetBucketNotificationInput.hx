@@ -1,3 +1,3 @@
 package js.aws.s3;
 
-typedef GetBucketNotificationInput = ShapeS40;
+typedef GetBucketNotificationInput = _ShapeS40;

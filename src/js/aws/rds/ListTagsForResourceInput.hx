@@ -1,6 +1,6 @@
 package js.aws.rds;
 
 typedef ListTagsForResourceInput = {
-    @:optional var Filters : ShapeS38;
+    @:optional var Filters : _ShapeS38;
     var ResourceName : String;
 };

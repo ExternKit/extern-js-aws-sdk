@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef RebootCacheClusterOutput = {
-    @:optional var CacheCluster : ShapeSr;
+    @:optional var CacheCluster : _ShapeSr;
 };

@@ -1,18 +1,18 @@
 package js.aws.ec2;
 
 typedef DescribeInstanceAttributeOutput = {
-    @:optional var SriovNetSupport : ShapeS33;
-    @:optional var Groups : ShapeS4m;
-    @:optional var KernelId : ShapeS33;
-    @:optional var UserData : ShapeS33;
+    @:optional var SriovNetSupport : _ShapeS33;
+    @:optional var Groups : _ShapeS4m;
+    @:optional var KernelId : _ShapeS33;
+    @:optional var UserData : _ShapeS33;
     @:optional var InstanceId : String;
-    @:optional var DisableApiTermination : ShapeSar;
-    @:optional var EbsOptimized : ShapeSar;
-    @:optional var InstanceInitiatedShutdownBehavior : ShapeS33;
-    @:optional var SourceDestCheck : ShapeSar;
-    @:optional var InstanceType : ShapeS33;
-    @:optional var BlockDeviceMappings : ShapeSas;
-    @:optional var RootDeviceName : ShapeS33;
-    @:optional var ProductCodes : ShapeS9t;
-    @:optional var RamdiskId : ShapeS33;
+    @:optional var DisableApiTermination : _ShapeSar;
+    @:optional var EbsOptimized : _ShapeSar;
+    @:optional var InstanceInitiatedShutdownBehavior : _ShapeS33;
+    @:optional var SourceDestCheck : _ShapeSar;
+    @:optional var InstanceType : _ShapeS33;
+    @:optional var BlockDeviceMappings : _ShapeSas;
+    @:optional var RootDeviceName : _ShapeS33;
+    @:optional var ProductCodes : _ShapeS9t;
+    @:optional var RamdiskId : _ShapeS33;
 };

@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef PublishVersionOutput = ShapeS14;
+typedef PublishVersionOutput = _ShapeS15;

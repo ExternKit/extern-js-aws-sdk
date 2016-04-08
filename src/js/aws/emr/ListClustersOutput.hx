@@ -5,7 +5,7 @@ typedef ListClustersOutput = {
         @:optional var NormalizedInstanceHours : Int;
         @:optional var Id : String;
         @:optional var Name : String;
-        @:optional var Status : ShapeS14;
+        @:optional var Status : _ShapeS14;
     }>;
     @:optional var Marker : String;
 };

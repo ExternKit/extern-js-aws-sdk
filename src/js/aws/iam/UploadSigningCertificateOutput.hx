@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef UploadSigningCertificateOutput = {
-    var Certificate : ShapeS6x;
+    var Certificate : _ShapeS6x;
 };

@@ -1,5 +1,5 @@
 package js.aws.inspector;
 
 typedef CreateResourceGroupInput = {
-    var resourceGroupTags : ShapeSm;
+    var resourceGroupTags : _ShapeSm;
 };

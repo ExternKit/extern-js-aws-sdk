@@ -1,5 +1,5 @@
 package js.aws.dynamodb;
 
 typedef UpdateTableOutput = {
-    @:optional var TableDescription : ShapeS20;
+    @:optional var TableDescription : _ShapeS20;
 };

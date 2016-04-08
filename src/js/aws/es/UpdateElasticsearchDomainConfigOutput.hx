@@ -1,5 +1,5 @@
 package js.aws.es;
 
 typedef UpdateElasticsearchDomainConfigOutput = {
-    var DomainConfig : ShapeSt;
+    var DomainConfig : _ShapeSt;
 };

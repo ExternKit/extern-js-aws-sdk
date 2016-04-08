@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef PurchaseReservedCacheNodesOfferingOutput = {
-    @:optional var ReservedCacheNode : ShapeS35;
+    @:optional var ReservedCacheNode : _ShapeS35;
 };

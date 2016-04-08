@@ -1,5 +1,5 @@
 package js.aws.ecs;
 
 typedef StopTaskOutput = {
-    @:optional var task : ShapeS28;
+    @:optional var task : _ShapeS28;
 };

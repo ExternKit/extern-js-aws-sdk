@@ -1,5 +1,5 @@
 package js.aws.elb;
 
 typedef ApplySecurityGroupsToLoadBalancerOutput = {
-    @:optional var SecurityGroups : ShapeSa;
+    @:optional var SecurityGroups : _ShapeSa;
 };

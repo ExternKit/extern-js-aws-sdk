@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef CreateFunctionOutput = ShapeS14;
+typedef CreateFunctionOutput = _ShapeS15;

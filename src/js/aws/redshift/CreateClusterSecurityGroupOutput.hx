@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CreateClusterSecurityGroupOutput = {
-    @:optional var ClusterSecurityGroup : ShapeS4;
+    @:optional var ClusterSecurityGroup : _ShapeS4;
 };

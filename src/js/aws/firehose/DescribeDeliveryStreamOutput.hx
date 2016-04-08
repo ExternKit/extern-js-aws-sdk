@@ -6,13 +6,13 @@ typedef DescribeDeliveryStreamOutput = {
         var HasMoreDestinations : Bool;
         @:optional var LastUpdateTimestamp : Float;
         var Destinations : Array<{
-            @:optional var S3DestinationDescription : ShapeS11;
+            @:optional var S3DestinationDescription : _ShapeS11;
             @:optional var RedshiftDestinationDescription : {
-                var S3DestinationDescription : ShapeS11;
-                var Username : ShapeSl;
+                var S3DestinationDescription : _ShapeS11;
+                var Username : _ShapeSl;
                 var ClusterJDBCURL : String;
                 var RoleARN : String;
-                var CopyCommand : ShapeSh;
+                var CopyCommand : _ShapeSh;
             };
             var DestinationId : String;
         }>;

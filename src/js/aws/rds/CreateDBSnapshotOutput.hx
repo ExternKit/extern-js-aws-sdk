@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBSnapshotOutput = {
-    @:optional var DBSnapshot : ShapeSz;
+    @:optional var DBSnapshot : _ShapeSz;
 };

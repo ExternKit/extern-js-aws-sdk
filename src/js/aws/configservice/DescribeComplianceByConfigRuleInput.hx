@@ -1,7 +1,7 @@
 package js.aws.configservice;
 
 typedef DescribeComplianceByConfigRuleInput = {
-    @:optional var ComplianceTypes : ShapeSa;
+    @:optional var ComplianceTypes : _ShapeSa;
     @:optional var NextToken : String;
-    @:optional var ConfigRuleNames : ShapeS9;
+    @:optional var ConfigRuleNames : _ShapeS9;
 };

@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef DeleteIndexFieldOutput = {
-    var IndexField : ShapeS1n;
+    var IndexField : _ShapeS1n;
 };

@@ -1,7 +1,7 @@
 package js.aws.s3;
 
 typedef CopyObjectOutput = {
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var RequestCharged : String;
     @:optional var CopySourceVersionId : String;
     @:optional var Expiration : String;

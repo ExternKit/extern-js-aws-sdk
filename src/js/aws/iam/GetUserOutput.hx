@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef GetUserOutput = {
-    var User : ShapeS1t;
+    var User : _ShapeS1t;
 };

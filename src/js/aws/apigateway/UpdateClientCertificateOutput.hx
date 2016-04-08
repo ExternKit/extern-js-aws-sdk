@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateClientCertificateOutput = ShapeS1u;
+typedef UpdateClientCertificateOutput = _ShapeS1u;

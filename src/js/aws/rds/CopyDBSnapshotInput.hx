@@ -5,5 +5,5 @@ typedef CopyDBSnapshotInput = {
     @:optional var KmsKeyId : String;
     var TargetDBSnapshotIdentifier : String;
     @:optional var CopyTags : Bool;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
 };

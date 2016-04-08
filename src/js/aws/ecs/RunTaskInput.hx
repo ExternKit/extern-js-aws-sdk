@@ -5,5 +5,5 @@ typedef RunTaskInput = {
     var taskDefinition : String;
     @:optional var cluster : String;
     @:optional var startedBy : String;
-    @:optional var overrides : ShapeS29;
+    @:optional var overrides : _ShapeS29;
 };

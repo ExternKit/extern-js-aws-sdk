@@ -1,7 +1,7 @@
 package js.aws.inspector;
 
 typedef DescribeFindingsOutput = {
-    var failedItems : ShapeS9;
+    var failedItems : _ShapeS9;
     var findings : Array<{
         @:optional var schemaVersion : Int;
         @:optional var recommendation : String;
@@ -19,7 +19,7 @@ typedef DescribeFindingsOutput = {
         var updatedAt : Float;
         @:optional var numericSeverity : Float;
         @:optional var title : String;
-        var attributes : ShapeS24;
+        var attributes : _ShapeS24;
         @:optional var assetAttributes : {
             var schemaVersion : Int;
             @:optional var hostname : String;
@@ -28,7 +28,7 @@ typedef DescribeFindingsOutput = {
             @:optional var amiId : String;
             @:optional var autoScalingGroup : String;
         };
-        var userAttributes : ShapeS4;
+        var userAttributes : _ShapeS4;
         @:optional var assetType : String;
         @:optional var indicatorOfCompromise : Bool;
         @:optional var severity : String;

@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef ComposeEnvironmentsOutput = ShapeSe;
+typedef ComposeEnvironmentsOutput = _ShapeSe;

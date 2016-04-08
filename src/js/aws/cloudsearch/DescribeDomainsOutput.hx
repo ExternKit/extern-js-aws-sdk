@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef DescribeDomainsOutput = {
-    var DomainStatusList : Array<ShapeS8>;
+    var DomainStatusList : Array<_ShapeS8>;
 };

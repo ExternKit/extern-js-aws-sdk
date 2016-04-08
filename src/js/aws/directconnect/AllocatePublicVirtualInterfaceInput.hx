@@ -8,7 +8,7 @@ typedef AllocatePublicVirtualInterfaceInput = {
         var asn : Int;
         var customerAddress : String;
         @:optional var authKey : String;
-        var routeFilterPrefixes : ShapeSq;
+        var routeFilterPrefixes : _ShapeSq;
         var virtualInterfaceName : String;
     };
     var ownerAccount : String;

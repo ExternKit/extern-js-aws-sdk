@@ -22,6 +22,6 @@ typedef RestoreDBInstanceToPointInTimeInput = {
     @:optional var Engine : String;
     @:optional var OptionGroupName : String;
     @:optional var Port : Int;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
     @:optional var LicenseModel : String;
 };

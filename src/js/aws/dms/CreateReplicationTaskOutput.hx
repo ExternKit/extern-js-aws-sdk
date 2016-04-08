@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef CreateReplicationTaskOutput = {
-    @:optional var ReplicationTask : ShapeSu;
+    @:optional var ReplicationTask : _ShapeSu;
 };

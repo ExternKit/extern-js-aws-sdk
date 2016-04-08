@@ -8,11 +8,11 @@ typedef RespondDecisionTaskCompletedInput = {
             @:optional var taskPriority : String;
             @:optional var lambdaRole : String;
             @:optional var taskStartToCloseTimeout : String;
-            @:optional var taskList : ShapeSj;
+            @:optional var taskList : _ShapeSj;
             @:optional var workflowTypeVersion : String;
             @:optional var childPolicy : String;
             @:optional var executionStartToCloseTimeout : String;
-            @:optional var tagList : ShapeS1b;
+            @:optional var tagList : _ShapeS1b;
             @:optional var input : String;
         };
         @:optional var requestCancelExternalWorkflowExecutionDecisionAttributes : {
@@ -24,11 +24,11 @@ typedef RespondDecisionTaskCompletedInput = {
             @:optional var taskPriority : String;
             var activityId : String;
             @:optional var scheduleToCloseTimeout : String;
-            @:optional var taskList : ShapeSj;
+            @:optional var taskList : _ShapeSj;
             @:optional var startToCloseTimeout : String;
             @:optional var heartbeatTimeout : String;
             @:optional var scheduleToStartTimeout : String;
-            var activityType : ShapeSn;
+            var activityType : _ShapeSn;
             @:optional var control : String;
             @:optional var input : String;
         };
@@ -63,12 +63,12 @@ typedef RespondDecisionTaskCompletedInput = {
             @:optional var lambdaRole : String;
             @:optional var taskStartToCloseTimeout : String;
             var workflowId : String;
-            @:optional var taskList : ShapeSj;
+            @:optional var taskList : _ShapeSj;
             @:optional var childPolicy : String;
             @:optional var control : String;
             @:optional var executionStartToCloseTimeout : String;
-            @:optional var tagList : ShapeS1b;
-            var workflowType : ShapeSr;
+            @:optional var tagList : _ShapeS1b;
+            var workflowType : _ShapeSr;
             @:optional var input : String;
         };
         var decisionType : String;

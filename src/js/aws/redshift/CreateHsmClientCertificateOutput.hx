@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CreateHsmClientCertificateOutput = {
-    @:optional var HsmClientCertificate : ShapeS1z;
+    @:optional var HsmClientCertificate : _ShapeS1z;
 };

@@ -1,6 +1,6 @@
 package js.aws.swf;
 
 typedef DescribeActivityTypeInput = {
-    var activityType : ShapeSn;
+    var activityType : _ShapeSn;
     var domain : String;
 };

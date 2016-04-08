@@ -1,6 +1,6 @@
 package js.aws.devicefarm;
 
 typedef ListDevicePoolsOutput = {
-    @:optional var devicePools : Array<ShapeSb>;
+    @:optional var devicePools : Array<_ShapeSb>;
     @:optional var nextToken : String;
 };

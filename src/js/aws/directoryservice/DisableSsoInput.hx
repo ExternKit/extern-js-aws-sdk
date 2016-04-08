@@ -3,5 +3,5 @@ package js.aws.directoryservice;
 typedef DisableSsoInput = {
     var DirectoryId : String;
     @:optional var UserName : String;
-    @:optional var Password : ShapeS4;
+    @:optional var Password : _ShapeS4;
 };

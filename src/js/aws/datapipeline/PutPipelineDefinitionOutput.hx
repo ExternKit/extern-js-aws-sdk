@@ -1,7 +1,7 @@
 package js.aws.datapipeline;
 
 typedef PutPipelineDefinitionOutput = {
-    @:optional var validationWarnings : ShapeS1p;
-    @:optional var validationErrors : ShapeS1l;
+    @:optional var validationWarnings : _ShapeS1p;
+    @:optional var validationErrors : _ShapeS1l;
     var errored : Bool;
 };

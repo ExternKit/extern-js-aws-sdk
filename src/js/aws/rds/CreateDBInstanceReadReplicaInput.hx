@@ -15,5 +15,5 @@ typedef CreateDBInstanceReadReplicaInput = {
     @:optional var Iops : Int;
     @:optional var OptionGroupName : String;
     @:optional var Port : Int;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
 };

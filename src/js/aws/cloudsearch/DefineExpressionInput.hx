@@ -1,6 +1,6 @@
 package js.aws.cloudsearch;
 
 typedef DefineExpressionInput = {
-    var Expression : ShapeSy;
+    var Expression : _ShapeSy;
     var DomainName : String;
 };

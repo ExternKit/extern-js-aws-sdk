@@ -1,3 +1,3 @@
 package js.aws.autoscaling;
 
-typedef ResumeProcessesInput = ShapeS4x;
+typedef ResumeProcessesInput = _ShapeS4x;

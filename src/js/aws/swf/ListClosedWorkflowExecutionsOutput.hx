@@ -1,3 +1,3 @@
 package js.aws.swf;
 
-typedef ListClosedWorkflowExecutionsOutput = ShapeS4g;
+typedef ListClosedWorkflowExecutionsOutput = _ShapeS4g;

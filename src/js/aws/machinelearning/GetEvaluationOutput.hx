@@ -7,7 +7,7 @@ typedef GetEvaluationOutput = {
     @:optional var InputDataLocationS3 : String;
     @:optional var EvaluationId : String;
     @:optional var CreatedByIamUser : String;
-    @:optional var PerformanceMetrics : ShapeS2g;
+    @:optional var PerformanceMetrics : _ShapeS2g;
     @:optional var LogUri : String;
     @:optional var EvaluationDataSourceId : String;
     @:optional var MLModelId : String;

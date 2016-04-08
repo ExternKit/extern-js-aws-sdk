@@ -1,10 +1,10 @@
 package js.aws.es;
 
 typedef CreateElasticsearchDomainInput = {
-    @:optional var AdvancedOptions : ShapeSh;
-    @:optional var EBSOptions : ShapeSd;
+    @:optional var AdvancedOptions : _ShapeSh;
+    @:optional var EBSOptions : _ShapeSd;
     @:optional var AccessPolicies : String;
     var DomainName : String;
-    @:optional var ElasticsearchClusterConfig : ShapeS9;
-    @:optional var SnapshotOptions : ShapeSg;
+    @:optional var ElasticsearchClusterConfig : _ShapeS9;
+    @:optional var SnapshotOptions : _ShapeSg;
 };

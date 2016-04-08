@@ -7,5 +7,5 @@ typedef CreateHsmConfigurationInput = {
     var HsmIpAddress : String;
     var HsmConfigurationIdentifier : String;
     var HsmPartitionName : String;
-    @:optional var Tags : ShapeS7;
+    @:optional var Tags : _ShapeS7;
 };

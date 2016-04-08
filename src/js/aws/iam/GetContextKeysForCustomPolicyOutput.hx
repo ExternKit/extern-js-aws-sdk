@@ -1,3 +1,3 @@
 package js.aws.iam;
 
-typedef GetContextKeysForCustomPolicyOutput = ShapeS3v;
+typedef GetContextKeysForCustomPolicyOutput = _ShapeS3v;

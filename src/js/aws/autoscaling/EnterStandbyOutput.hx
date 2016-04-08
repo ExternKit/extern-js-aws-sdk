@@ -1,5 +1,5 @@
 package js.aws.autoscaling;
 
 typedef EnterStandbyOutput = {
-    @:optional var Activities : ShapeS3s;
+    @:optional var Activities : _ShapeS3s;
 };

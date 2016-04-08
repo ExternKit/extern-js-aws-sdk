@@ -1,7 +1,7 @@
 package js.aws.route53;
 
 typedef GetHostedZoneOutput = {
-    @:optional var DelegationSet : ShapeS2i;
-    var HostedZone : ShapeS2g;
-    @:optional var VPCs : Array<ShapeS3>;
+    @:optional var DelegationSet : _ShapeS2i;
+    var HostedZone : _ShapeS2g;
+    @:optional var VPCs : Array<_ShapeS3>;
 };

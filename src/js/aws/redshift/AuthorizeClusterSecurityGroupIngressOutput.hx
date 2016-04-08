@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef AuthorizeClusterSecurityGroupIngressOutput = {
-    @:optional var ClusterSecurityGroup : ShapeS4;
+    @:optional var ClusterSecurityGroup : _ShapeS4;
 };

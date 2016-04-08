@@ -1,3 +1,3 @@
 package js.aws.s3;
 
-typedef GetBucketNotificationConfigurationOutput = ShapeS4c;
+typedef GetBucketNotificationConfigurationOutput = _ShapeS4c;

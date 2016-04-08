@@ -8,6 +8,6 @@ typedef ListRecordsOutput = {
     @:optional var NextToken : String;
     @:optional var Count : Int;
     @:optional var MergedDatasetNames : Array<String>;
-    @:optional var Records : ShapeS1c;
+    @:optional var Records : _ShapeS1c;
     @:optional var SyncSessionToken : String;
 };

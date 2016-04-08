@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef DeleteSnapshotOutput = {
-    @:optional var Snapshot : ShapeSd;
+    @:optional var Snapshot : _ShapeSd;
 };

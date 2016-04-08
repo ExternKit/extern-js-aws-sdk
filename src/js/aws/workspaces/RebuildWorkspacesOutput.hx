@@ -1,5 +1,5 @@
 package js.aws.workspaces;
 
 typedef RebuildWorkspacesOutput = {
-    @:optional var FailedRequests : Array<ShapeS1m>;
+    @:optional var FailedRequests : Array<_ShapeS1m>;
 };

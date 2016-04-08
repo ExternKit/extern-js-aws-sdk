@@ -1,5 +1,5 @@
 package js.aws.autoscaling;
 
 typedef CreateOrUpdateTagsInput = {
-    var Tags : ShapeSp;
+    var Tags : _ShapeSp;
 };

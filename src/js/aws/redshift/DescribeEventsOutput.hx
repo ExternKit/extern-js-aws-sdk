@@ -6,7 +6,7 @@ typedef DescribeEventsOutput = {
         @:optional var EventId : String;
         @:optional var Message : String;
         @:optional var SourceType : String;
-        @:optional var EventCategories : ShapeS1u;
+        @:optional var EventCategories : _ShapeS1u;
         @:optional var Severity : String;
         @:optional var Date : Float;
     }>;

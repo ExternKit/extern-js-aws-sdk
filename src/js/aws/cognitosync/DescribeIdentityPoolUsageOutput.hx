@@ -1,5 +1,5 @@
 package js.aws.cognitosync;
 
 typedef DescribeIdentityPoolUsageOutput = {
-    @:optional var IdentityPoolUsage : ShapeSg;
+    @:optional var IdentityPoolUsage : _ShapeSg;
 };

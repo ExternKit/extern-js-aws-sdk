@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef GetComplianceSummaryByConfigRuleOutput = {
-    @:optional var ComplianceSummary : ShapeS2d;
+    @:optional var ComplianceSummary : _ShapeS2d;
 };

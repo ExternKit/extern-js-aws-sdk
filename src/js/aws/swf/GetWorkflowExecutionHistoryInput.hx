@@ -5,5 +5,5 @@ typedef GetWorkflowExecutionHistoryInput = {
     @:optional var nextPageToken : String;
     @:optional var maximumPageSize : Int;
     var domain : String;
-    var execution : ShapeS16;
+    var execution : _ShapeS16;
 };

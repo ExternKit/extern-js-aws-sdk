@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DeleteFlowLogsInput = {
-    var FlowLogIds : ShapeS26;
+    var FlowLogIds : _ShapeS26;
 };

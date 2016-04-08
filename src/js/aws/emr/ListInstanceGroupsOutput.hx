@@ -4,14 +4,14 @@ typedef ListInstanceGroupsOutput = {
     @:optional var InstanceGroups : Array<{
         @:optional var RunningInstanceCount : Int;
         @:optional var EbsBlockDevices : Array<{
-            @:optional var VolumeSpecification : ShapeSg;
+            @:optional var VolumeSpecification : _ShapeSg;
             @:optional var Device : String;
         }>;
         @:optional var EbsOptimized : Bool;
         @:optional var Market : String;
         @:optional var InstanceGroupType : String;
         @:optional var Id : String;
-        @:optional var Configurations : ShapeS9;
+        @:optional var Configurations : _ShapeS9;
         @:optional var InstanceType : String;
         @:optional var RequestedInstanceCount : Int;
         @:optional var BidPrice : String;

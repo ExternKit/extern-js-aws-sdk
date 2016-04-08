@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef CreateEventSourceMappingOutput = ShapeSl;
+typedef CreateEventSourceMappingOutput = _ShapeSm;

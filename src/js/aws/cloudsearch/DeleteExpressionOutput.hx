@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef DeleteExpressionOutput = {
-    var Expression : ShapeS11;
+    var Expression : _ShapeS11;
 };

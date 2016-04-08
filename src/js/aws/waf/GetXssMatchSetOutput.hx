@@ -1,5 +1,5 @@
 package js.aws.waf;
 
 typedef GetXssMatchSetOutput = {
-    @:optional var XssMatchSet : ShapeS1g;
+    @:optional var XssMatchSet : _ShapeS1g;
 };

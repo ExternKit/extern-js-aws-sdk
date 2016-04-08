@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef CreateConnectionOutput = ShapeS7;
+typedef CreateConnectionOutput = _ShapeS7;

@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef CreateEndpointOutput = {
-    @:optional var Endpoint : ShapeSb;
+    @:optional var Endpoint : _ShapeSb;
 };

@@ -1,5 +1,5 @@
 package js.aws.codedeploy;
 
 typedef BatchGetOnPremisesInstancesInput = {
-    @:optional var instanceNames : ShapeS6;
+    @:optional var instanceNames : _ShapeS6;
 };

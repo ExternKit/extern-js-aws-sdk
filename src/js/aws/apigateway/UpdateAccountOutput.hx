@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateAccountOutput = ShapeS1w;
+typedef UpdateAccountOutput = _ShapeS1w;

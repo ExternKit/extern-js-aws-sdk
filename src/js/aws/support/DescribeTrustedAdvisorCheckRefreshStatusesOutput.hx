@@ -1,5 +1,5 @@
 package js.aws.support;
 
 typedef DescribeTrustedAdvisorCheckRefreshStatusesOutput = {
-    var statuses : Array<ShapeS1x>;
+    var statuses : Array<_ShapeS1x>;
 };

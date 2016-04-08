@@ -1,5 +1,5 @@
 package js.aws.codedeploy;
 
 typedef GetOnPremisesInstanceOutput = {
-    @:optional var instanceInfo : ShapeS2k;
+    @:optional var instanceInfo : _ShapeS2k;
 };

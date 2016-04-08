@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef PutEvaluationsOutput = {
-    @:optional var FailedEvaluations : ShapeS3l;
+    @:optional var FailedEvaluations : _ShapeS3l;
 };

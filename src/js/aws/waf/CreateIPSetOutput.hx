@@ -2,5 +2,5 @@ package js.aws.waf;
 
 typedef CreateIPSetOutput = {
     @:optional var ChangeToken : String;
-    @:optional var IPSet : ShapeSh;
+    @:optional var IPSet : _ShapeSh;
 };

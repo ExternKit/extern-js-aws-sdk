@@ -5,7 +5,7 @@ typedef SendMessageBatchInput = {
         var MessageBody : String;
         var Id : String;
         @:optional var DelaySeconds : Int;
-        @:optional var MessageAttributes : ShapeS19;
+        @:optional var MessageAttributes : _ShapeS19;
     }>;
     var QueueUrl : String;
 };

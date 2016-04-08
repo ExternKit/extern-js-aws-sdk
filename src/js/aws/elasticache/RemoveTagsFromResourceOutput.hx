@@ -1,3 +1,3 @@
 package js.aws.elasticache;
 
-typedef RemoveTagsFromResourceOutput = ShapeS5;
+typedef RemoveTagsFromResourceOutput = _ShapeS5;

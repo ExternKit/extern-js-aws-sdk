@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef DeleteDBSnapshotOutput = {
-    @:optional var DBSnapshot : ShapeSz;
+    @:optional var DBSnapshot : _ShapeSz;
 };

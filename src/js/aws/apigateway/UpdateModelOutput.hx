@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateModelOutput = ShapeSq;
+typedef UpdateModelOutput = _ShapeSq;

@@ -4,6 +4,6 @@ typedef PutRestApiInput = {
     var body : Dynamic;
     var restApiId : String;
     @:optional var mode : String;
-    @:optional var parameters : ShapeSi;
+    @:optional var parameters : _ShapeSi;
     @:optional var failOnWarnings : Bool;
 };

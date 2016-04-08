@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef DeleteReplicationGroupOutput = {
-    @:optional var ReplicationGroup : ShapeS1j;
+    @:optional var ReplicationGroup : _ShapeS1j;
 };

@@ -1,7 +1,7 @@
 package js.aws.s3;
 
 typedef CompleteMultipartUploadOutput = {
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var RequestCharged : String;
     @:optional var Key : String;
     @:optional var Bucket : String;

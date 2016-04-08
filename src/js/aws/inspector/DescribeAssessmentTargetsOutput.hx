@@ -8,5 +8,5 @@ typedef DescribeAssessmentTargetsOutput = {
         var updatedAt : Float;
         var resourceGroupArn : String;
     }>;
-    var failedItems : ShapeS9;
+    var failedItems : _ShapeS9;
 };

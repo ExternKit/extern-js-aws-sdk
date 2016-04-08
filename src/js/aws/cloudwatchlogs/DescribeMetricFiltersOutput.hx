@@ -5,7 +5,7 @@ typedef DescribeMetricFiltersOutput = {
         @:optional var filterPattern : String;
         @:optional var filterName : String;
         @:optional var creationTime : Int;
-        @:optional var metricTransformations : ShapeS1m;
+        @:optional var metricTransformations : _ShapeS1m;
     }>;
     @:optional var nextToken : String;
 };

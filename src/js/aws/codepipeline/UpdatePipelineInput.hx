@@ -1,5 +1,5 @@
 package js.aws.codepipeline;
 
 typedef UpdatePipelineInput = {
-    var pipeline : ShapeSv;
+    var pipeline : _ShapeSv;
 };

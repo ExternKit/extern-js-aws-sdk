@@ -9,7 +9,7 @@ typedef DescribeDeliveryChannelStatusOutput = {
             @:optional var lastStatusChangeTime : Float;
         };
         @:optional var name : String;
-        @:optional var configSnapshotDeliveryInfo : ShapeS1w;
-        @:optional var configHistoryDeliveryInfo : ShapeS1w;
+        @:optional var configSnapshotDeliveryInfo : _ShapeS1w;
+        @:optional var configHistoryDeliveryInfo : _ShapeS1w;
     }>;
 };

@@ -1,3 +1,3 @@
 package js.aws.swf;
 
-typedef CountPendingActivityTasksOutput = ShapeSk;
+typedef CountPendingActivityTasksOutput = _ShapeSk;

@@ -1,5 +1,5 @@
 package js.aws.cloudhsm;
 
 typedef ListTagsForResourceOutput = {
-    var TagList : ShapeS3;
+    var TagList : _ShapeS3;
 };

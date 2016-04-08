@@ -6,9 +6,9 @@ typedef ModifyDBInstanceInput = {
     @:optional var MultiAZ : Bool;
     var DBInstanceIdentifier : String;
     @:optional var MonitoringRoleArn : String;
-    @:optional var VpcSecurityGroupIds : ShapeS1d;
+    @:optional var VpcSecurityGroupIds : _ShapeS1d;
     @:optional var ApplyImmediately : Bool;
-    @:optional var DBSecurityGroups : ShapeS1q;
+    @:optional var DBSecurityGroups : _ShapeS1q;
     @:optional var AllocatedStorage : Int;
     @:optional var CopyTagsToSnapshot : Bool;
     @:optional var NewDBInstanceIdentifier : String;

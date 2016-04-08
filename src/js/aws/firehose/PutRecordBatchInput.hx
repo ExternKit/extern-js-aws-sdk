@@ -1,6 +1,6 @@
 package js.aws.firehose;
 
 typedef PutRecordBatchInput = {
-    var Records : Array<ShapeS19>;
+    var Records : Array<_ShapeS19>;
     var DeliveryStreamName : String;
 };

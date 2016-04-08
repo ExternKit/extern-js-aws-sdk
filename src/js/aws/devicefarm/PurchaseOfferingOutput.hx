@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef PurchaseOfferingOutput = {
-    @:optional var offeringTransaction : ShapeS33;
+    @:optional var offeringTransaction : _ShapeS33;
 };

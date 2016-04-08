@@ -7,7 +7,7 @@ typedef UpdateInstanceInput = {
     @:optional var EbsOptimized : Bool;
     @:optional var InstallUpdatesOnBoot : Bool;
     @:optional var Os : String;
-    @:optional var LayerIds : ShapeS3;
+    @:optional var LayerIds : _ShapeS3;
     @:optional var InstanceType : String;
     @:optional var Architecture : String;
     @:optional var Hostname : String;

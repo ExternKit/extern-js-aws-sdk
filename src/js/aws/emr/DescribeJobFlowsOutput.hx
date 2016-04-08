@@ -23,7 +23,7 @@ typedef DescribeJobFlowsOutput = {
             }>;
             var SlaveInstanceType : String;
             @:optional var TerminationProtected : Bool;
-            @:optional var Placement : ShapeS1q;
+            @:optional var Placement : _ShapeS1q;
             @:optional var NormalizedInstanceHours : Int;
             @:optional var MasterPublicDnsName : String;
             @:optional var KeepJobFlowAliveWhenNoSteps : Bool;
@@ -37,7 +37,7 @@ typedef DescribeJobFlowsOutput = {
         @:optional var ServiceRole : String;
         @:optional var LogUri : String;
         @:optional var Steps : Array<{
-            var StepConfig : ShapeSm;
+            var StepConfig : _ShapeSm;
             var ExecutionStatusDetail : {
                 @:optional var EndDateTime : Float;
                 var CreationDateTime : Float;
@@ -48,9 +48,9 @@ typedef DescribeJobFlowsOutput = {
         }>;
         var JobFlowId : String;
         @:optional var JobFlowRole : String;
-        @:optional var SupportedProducts : ShapeS1z;
+        @:optional var SupportedProducts : _ShapeS1z;
         @:optional var BootstrapActions : Array<{
-            @:optional var BootstrapActionConfig : ShapeS1x;
+            @:optional var BootstrapActionConfig : _ShapeS1x;
         }>;
         var Name : String;
         var ExecutionStatusDetail : {

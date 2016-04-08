@@ -1,3 +1,3 @@
 package js.aws.iam;
 
-typedef SimulatePrincipalPolicyOutput = ShapeS7p;
+typedef SimulatePrincipalPolicyOutput = _ShapeS7p;

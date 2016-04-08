@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef DefineIndexFieldOutput = {
-    var IndexField : ShapeS1n;
+    var IndexField : _ShapeS1n;
 };

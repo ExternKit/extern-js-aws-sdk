@@ -1,5 +1,5 @@
 package js.aws.waf;
 
 typedef GetIPSetOutput = {
-    @:optional var IPSet : ShapeSh;
+    @:optional var IPSet : _ShapeSh;
 };

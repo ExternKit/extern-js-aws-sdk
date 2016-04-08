@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef UpdateServiceAccessPoliciesOutput = {
-    var AccessPolicies : ShapeS2u;
+    var AccessPolicies : _ShapeS2u;
 };

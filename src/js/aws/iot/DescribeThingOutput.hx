@@ -2,6 +2,6 @@ package js.aws.iot;
 
 typedef DescribeThingOutput = {
     @:optional var thingName : String;
-    @:optional var attributes : ShapeSw;
+    @:optional var attributes : _ShapeSw;
     @:optional var defaultClientId : String;
 };

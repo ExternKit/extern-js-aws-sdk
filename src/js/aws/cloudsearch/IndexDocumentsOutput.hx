@@ -1,5 +1,5 @@
 package js.aws.cloudsearch;
 
 typedef IndexDocumentsOutput = {
-    @:optional var FieldNames : ShapeS4;
+    @:optional var FieldNames : _ShapeS4;
 };

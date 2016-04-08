@@ -1,6 +1,6 @@
 package js.aws.datapipeline;
 
 typedef AddTagsInput = {
-    var tags : ShapeSa;
+    var tags : _ShapeSa;
     var pipelineId : String;
 };

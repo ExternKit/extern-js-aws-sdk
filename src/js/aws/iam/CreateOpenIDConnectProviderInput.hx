@@ -2,6 +2,6 @@ package js.aws.iam;
 
 typedef CreateOpenIDConnectProviderInput = {
     var Url : String;
-    var ThumbprintList : ShapeS17;
-    @:optional var ClientIDList : ShapeS16;
+    var ThumbprintList : _ShapeS17;
+    @:optional var ClientIDList : _ShapeS16;
 };

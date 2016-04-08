@@ -1,7 +1,7 @@
 package js.aws.cognitosync;
 
 typedef SetIdentityPoolConfigurationInput = {
-    @:optional var PushSync : ShapeSv;
+    @:optional var PushSync : _ShapeSv;
     var IdentityPoolId : String;
-    @:optional var CognitoStreams : ShapeSz;
+    @:optional var CognitoStreams : _ShapeSz;
 };

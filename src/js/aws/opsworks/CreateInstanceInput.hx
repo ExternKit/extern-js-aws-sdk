@@ -9,10 +9,10 @@ typedef CreateInstanceInput = {
     var StackId : String;
     @:optional var InstallUpdatesOnBoot : Bool;
     @:optional var Os : String;
-    var LayerIds : ShapeS3;
+    var LayerIds : _ShapeS3;
     @:optional var VirtualizationType : String;
     var InstanceType : String;
-    @:optional var BlockDeviceMappings : ShapeSz;
+    @:optional var BlockDeviceMappings : _ShapeSz;
     @:optional var Architecture : String;
     @:optional var Hostname : String;
     @:optional var AutoScalingType : String;

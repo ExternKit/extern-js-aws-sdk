@@ -1,3 +1,3 @@
 package js.aws.swf;
 
-typedef CountClosedWorkflowExecutionsOutput = ShapeSe;
+typedef CountClosedWorkflowExecutionsOutput = _ShapeSe;

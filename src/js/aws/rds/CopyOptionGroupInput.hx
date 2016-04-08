@@ -4,5 +4,5 @@ typedef CopyOptionGroupInput = {
     var TargetOptionGroupIdentifier : String;
     var TargetOptionGroupDescription : String;
     var SourceOptionGroupIdentifier : String;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
 };

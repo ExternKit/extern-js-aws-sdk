@@ -2,7 +2,7 @@ package js.aws.route53;
 
 typedef ListHostedZonesByNameOutput = {
     var MaxItems : String;
-    var HostedZones : ShapeS53;
+    var HostedZones : _ShapeS53;
     @:optional var HostedZoneId : String;
     var IsTruncated : Bool;
     @:optional var NextDNSName : String;

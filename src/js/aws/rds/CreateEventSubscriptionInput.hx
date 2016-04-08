@@ -5,7 +5,7 @@ typedef CreateEventSubscriptionInput = {
     var SubscriptionName : String;
     @:optional var SourceType : String;
     var SnsTopicArn : String;
-    @:optional var EventCategories : ShapeS6;
-    @:optional var SourceIds : ShapeS5;
-    @:optional var Tags : ShapeS9;
+    @:optional var EventCategories : _ShapeS6;
+    @:optional var SourceIds : _ShapeS5;
+    @:optional var Tags : _ShapeS9;
 };

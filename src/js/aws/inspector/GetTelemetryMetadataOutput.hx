@@ -1,5 +1,5 @@
 package js.aws.inspector;
 
 typedef GetTelemetryMetadataOutput = {
-    var telemetryMetadata : ShapeS2i;
+    var telemetryMetadata : _ShapeS2i;
 };

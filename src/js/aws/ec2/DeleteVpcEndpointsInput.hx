@@ -1,6 +1,6 @@
 package js.aws.ec2;
 
 typedef DeleteVpcEndpointsInput = {
-    var VpcEndpointIds : ShapeS26;
+    var VpcEndpointIds : _ShapeS26;
     @:optional var DryRun : Bool;
 };

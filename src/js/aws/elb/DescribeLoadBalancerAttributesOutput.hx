@@ -1,5 +1,5 @@
 package js.aws.elb;
 
 typedef DescribeLoadBalancerAttributesOutput = {
-    @:optional var LoadBalancerAttributes : ShapeS22;
+    @:optional var LoadBalancerAttributes : _ShapeS22;
 };

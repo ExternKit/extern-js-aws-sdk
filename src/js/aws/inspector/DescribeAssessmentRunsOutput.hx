@@ -6,7 +6,7 @@ typedef DescribeAssessmentRunsOutput = {
         var name : String;
         var createdAt : Float;
         var rulesPackageArns : Array<String>;
-        var userAttributesForFindings : ShapeS4;
+        var userAttributesForFindings : _ShapeS4;
         var stateChangedAt : Float;
         var arn : String;
         var state : String;
@@ -27,5 +27,5 @@ typedef DescribeAssessmentRunsOutput = {
             @:optional var snsPublishStatusCode : String;
         }>;
     }>;
-    var failedItems : ShapeS9;
+    var failedItems : _ShapeS9;
 };

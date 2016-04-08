@@ -1,3 +1,3 @@
 package js.aws.swf;
 
-typedef CountOpenWorkflowExecutionsOutput = ShapeSe;
+typedef CountOpenWorkflowExecutionsOutput = _ShapeSe;

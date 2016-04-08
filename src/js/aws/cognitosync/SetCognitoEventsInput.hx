@@ -1,6 +1,6 @@
 package js.aws.cognitosync;
 
 typedef SetCognitoEventsInput = {
-    var Events : ShapeSq;
+    var Events : _ShapeSq;
     var IdentityPoolId : String;
 };

@@ -7,8 +7,8 @@ typedef CreateDBInstanceInput = {
     var DBInstanceIdentifier : String;
     @:optional var AvailabilityZone : String;
     @:optional var MonitoringRoleArn : String;
-    @:optional var VpcSecurityGroupIds : ShapeS1d;
-    @:optional var DBSecurityGroups : ShapeS1q;
+    @:optional var VpcSecurityGroupIds : _ShapeS1d;
+    @:optional var DBSecurityGroups : _ShapeS1q;
     @:optional var DBSubnetGroupName : String;
     @:optional var AllocatedStorage : Int;
     @:optional var CopyTagsToSnapshot : Bool;
@@ -35,7 +35,7 @@ typedef CreateDBInstanceInput = {
     @:optional var OptionGroupName : String;
     @:optional var PromotionTier : Int;
     @:optional var Port : Int;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
     @:optional var LicenseModel : String;
     @:optional var StorageEncrypted : Bool;
 };

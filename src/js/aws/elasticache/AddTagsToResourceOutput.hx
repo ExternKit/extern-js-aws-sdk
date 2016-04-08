@@ -1,3 +1,3 @@
 package js.aws.elasticache;
 
-typedef AddTagsToResourceOutput = ShapeS5;
+typedef AddTagsToResourceOutput = _ShapeS5;

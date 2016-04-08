@@ -2,5 +2,5 @@ package js.aws.rds;
 
 typedef DescribeDBInstancesOutput = {
     @:optional var Marker : String;
-    @:optional var DBInstances : Array<ShapeS1s>;
+    @:optional var DBInstances : Array<_ShapeS1s>;
 };

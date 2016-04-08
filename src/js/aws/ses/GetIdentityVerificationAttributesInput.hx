@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef GetIdentityVerificationAttributesInput = {
-    var Identities : ShapeS1t;
+    var Identities : _ShapeS1t;
 };

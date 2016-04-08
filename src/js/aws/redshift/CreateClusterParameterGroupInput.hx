@@ -4,5 +4,5 @@ typedef CreateClusterParameterGroupInput = {
     var Description : String;
     var ParameterGroupFamily : String;
     var ParameterGroupName : String;
-    @:optional var Tags : ShapeS7;
+    @:optional var Tags : _ShapeS7;
 };

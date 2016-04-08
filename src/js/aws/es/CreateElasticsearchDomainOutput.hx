@@ -1,5 +1,5 @@
 package js.aws.es;
 
 typedef CreateElasticsearchDomainOutput = {
-    @:optional var DomainStatus : ShapeSk;
+    @:optional var DomainStatus : _ShapeSk;
 };

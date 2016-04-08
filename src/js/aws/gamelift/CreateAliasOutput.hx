@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef CreateAliasOutput = {
-    @:optional var Alias : ShapeS8;
+    @:optional var Alias : _ShapeS8;
 };

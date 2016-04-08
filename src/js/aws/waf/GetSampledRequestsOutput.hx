@@ -1,7 +1,7 @@
 package js.aws.waf;
 
 typedef GetSampledRequestsOutput = {
-    @:optional var TimeWindow : ShapeS29;
+    @:optional var TimeWindow : _ShapeS29;
     @:optional var SampledRequests : Array<{
         @:optional var Timestamp : Float;
         @:optional var Action : String;

@@ -2,13 +2,13 @@ package js.aws.firehose;
 
 typedef CreateDeliveryStreamInput = {
     @:optional var RedshiftDestinationConfiguration : {
-        var Username : ShapeSl;
+        var Username : _ShapeSl;
         var ClusterJDBCURL : String;
-        var S3Configuration : ShapeS3;
-        var Password : ShapeSm;
+        var S3Configuration : _ShapeS3;
+        var Password : _ShapeSm;
         var RoleARN : String;
-        var CopyCommand : ShapeSh;
+        var CopyCommand : _ShapeSh;
     };
-    @:optional var S3DestinationConfiguration : ShapeS3;
+    @:optional var S3DestinationConfiguration : _ShapeS3;
     var DeliveryStreamName : String;
 };

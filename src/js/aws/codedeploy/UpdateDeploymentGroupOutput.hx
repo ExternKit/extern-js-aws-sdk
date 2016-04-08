@@ -1,5 +1,5 @@
 package js.aws.codedeploy;
 
 typedef UpdateDeploymentGroupOutput = {
-    @:optional var hooksNotCleanedUp : ShapeS1e;
+    @:optional var hooksNotCleanedUp : _ShapeS1e;
 };

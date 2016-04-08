@@ -1,7 +1,7 @@
 package js.aws.rds;
 
 typedef DescribeOptionGroupsInput = {
-    @:optional var Filters : ShapeS38;
+    @:optional var Filters : _ShapeS38;
     @:optional var EngineName : String;
     @:optional var Marker : String;
     @:optional var MaxRecords : Int;

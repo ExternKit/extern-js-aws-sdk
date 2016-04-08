@@ -2,6 +2,6 @@ package js.aws.iam;
 
 typedef CreateLoginProfileInput = {
     var UserName : String;
-    var Password : ShapeSf;
+    var Password : _ShapeSf;
     @:optional var PasswordResetRequired : Bool;
 };

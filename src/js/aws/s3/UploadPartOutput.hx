@@ -1,7 +1,7 @@
 package js.aws.s3;
 
 typedef UploadPartOutput = {
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var RequestCharged : String;
     @:optional var SSECustomerAlgorithm : String;
     @:optional var ETag : String;

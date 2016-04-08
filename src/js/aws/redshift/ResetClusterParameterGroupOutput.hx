@@ -1,3 +1,3 @@
 package js.aws.redshift;
 
-typedef ResetClusterParameterGroupOutput = ShapeS57;
+typedef ResetClusterParameterGroupOutput = _ShapeS57;

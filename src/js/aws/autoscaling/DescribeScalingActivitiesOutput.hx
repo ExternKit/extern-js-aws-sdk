@@ -1,6 +1,6 @@
 package js.aws.autoscaling;
 
 typedef DescribeScalingActivitiesOutput = {
-    var Activities : ShapeS3s;
+    var Activities : _ShapeS3s;
     @:optional var NextToken : String;
 };

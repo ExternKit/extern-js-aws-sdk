@@ -3,6 +3,6 @@ package js.aws.cognitoidentity;
 typedef GetOpenIdTokenForDeveloperIdentityInput = {
     @:optional var IdentityId : String;
     var IdentityPoolId : String;
-    var Logins : ShapeSq;
+    var Logins : _ShapeSq;
     @:optional var TokenDuration : Int;
 };

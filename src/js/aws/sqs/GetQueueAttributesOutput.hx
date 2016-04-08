@@ -1,5 +1,5 @@
 package js.aws.sqs;
 
 typedef GetQueueAttributesOutput = {
-    @:optional var Attributes : ShapeSh;
+    @:optional var Attributes : _ShapeSh;
 };

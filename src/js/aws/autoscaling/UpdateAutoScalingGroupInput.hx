@@ -11,7 +11,7 @@ typedef UpdateAutoScalingGroupInput = {
     @:optional var HealthCheckType : String;
     @:optional var NewInstancesProtectedFromScaleIn : Bool;
     @:optional var PlacementGroup : String;
-    @:optional var AvailabilityZones : ShapeSj;
-    @:optional var TerminationPolicies : ShapeSm;
+    @:optional var AvailabilityZones : _ShapeSj;
+    @:optional var TerminationPolicies : _ShapeSm;
     @:optional var LaunchConfigurationName : String;
 };

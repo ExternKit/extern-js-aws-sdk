@@ -5,5 +5,5 @@ typedef ModifyEventSubscriptionInput = {
     var SubscriptionName : String;
     @:optional var SourceType : String;
     @:optional var SnsTopicArn : String;
-    @:optional var EventCategories : ShapeS6;
+    @:optional var EventCategories : _ShapeS6;
 };

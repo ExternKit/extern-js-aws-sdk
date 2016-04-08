@@ -3,10 +3,10 @@ package js.aws.rds;
 typedef ModifyOptionGroupInput = {
     @:optional var ApplyImmediately : Bool;
     @:optional var OptionsToInclude : Array<{
-        @:optional var DBSecurityGroupMemberships : ShapeS1q;
+        @:optional var DBSecurityGroupMemberships : _ShapeS1q;
         var OptionName : String;
-        @:optional var VpcSecurityGroupMemberships : ShapeS1d;
-        @:optional var OptionSettings : Array<ShapeS17>;
+        @:optional var VpcSecurityGroupMemberships : _ShapeS1d;
+        @:optional var OptionSettings : Array<_ShapeS17>;
         @:optional var Port : Int;
     }>;
     @:optional var OptionsToRemove : Array<String>;

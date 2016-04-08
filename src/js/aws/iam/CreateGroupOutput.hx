@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef CreateGroupOutput = {
-    var Group : ShapeSs;
+    var Group : _ShapeSs;
 };

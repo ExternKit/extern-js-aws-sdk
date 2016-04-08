@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef GetAliasOutput = ShapeSf;
+typedef GetAliasOutput = _ShapeSg;

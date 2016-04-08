@@ -1,7 +1,7 @@
 package js.aws.autoscaling;
 
 typedef CreateAutoScalingGroupInput = {
-    @:optional var LoadBalancerNames : ShapeS6;
+    @:optional var LoadBalancerNames : _ShapeS6;
     @:optional var VPCZoneIdentifier : String;
     @:optional var InstanceId : String;
     @:optional var HealthCheckGracePeriod : Int;
@@ -13,8 +13,8 @@ typedef CreateAutoScalingGroupInput = {
     @:optional var HealthCheckType : String;
     @:optional var NewInstancesProtectedFromScaleIn : Bool;
     @:optional var PlacementGroup : String;
-    @:optional var AvailabilityZones : ShapeSj;
-    @:optional var TerminationPolicies : ShapeSm;
+    @:optional var AvailabilityZones : _ShapeSj;
+    @:optional var TerminationPolicies : _ShapeSm;
     @:optional var LaunchConfigurationName : String;
-    @:optional var Tags : ShapeSp;
+    @:optional var Tags : _ShapeSp;
 };

@@ -4,7 +4,7 @@ typedef HeadObjectOutput = {
     @:optional var LastModified : Float;
     @:optional var ReplicationStatus : String;
     @:optional var ContentEncoding : String;
-    @:optional var SSEKMSKeyId : ShapeSj;
+    @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var AcceptRanges : String;
     @:optional var DeleteMarker : Bool;
     @:optional var ContentDisposition : String;
@@ -14,7 +14,7 @@ typedef HeadObjectOutput = {
     @:optional var ContentLanguage : String;
     @:optional var ContentType : String;
     @:optional var CacheControl : String;
-    @:optional var Metadata : ShapeS11;
+    @:optional var Metadata : _ShapeS11;
     @:optional var MissingMeta : Int;
     @:optional var WebsiteRedirectLocation : String;
     @:optional var SSECustomerAlgorithm : String;

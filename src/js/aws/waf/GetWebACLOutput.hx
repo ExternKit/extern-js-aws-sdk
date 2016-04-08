@@ -1,5 +1,5 @@
 package js.aws.waf;
 
 typedef GetWebACLOutput = {
-    @:optional var WebACL : ShapeS1a;
+    @:optional var WebACL : _ShapeS1a;
 };

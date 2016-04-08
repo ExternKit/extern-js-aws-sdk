@@ -1,5 +1,5 @@
 package js.aws.glacier;
 
 typedef GetVaultNotificationsOutput = {
-    @:optional var vaultNotificationConfig : ShapeS19;
+    @:optional var vaultNotificationConfig : _ShapeS19;
 };

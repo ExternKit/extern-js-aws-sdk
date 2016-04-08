@@ -5,7 +5,7 @@ typedef RequestCertificateInput = {
         var ValidationDomain : String;
         var DomainName : String;
     }>;
-    @:optional var SubjectAlternativeNames : ShapeS7;
+    @:optional var SubjectAlternativeNames : _ShapeS7;
     var DomainName : String;
     @:optional var IdempotencyToken : String;
 };

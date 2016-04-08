@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef GetInstanceProfileOutput = {
-    var InstanceProfile : ShapeSw;
+    var InstanceProfile : _ShapeSw;
 };

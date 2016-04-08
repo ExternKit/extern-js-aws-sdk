@@ -1,3 +1,3 @@
 package js.aws.redshift;
 
-typedef DisableLoggingOutput = ShapeS3x;
+typedef DisableLoggingOutput = _ShapeS3x;

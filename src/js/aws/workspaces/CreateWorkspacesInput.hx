@@ -1,5 +1,5 @@
 package js.aws.workspaces;
 
 typedef CreateWorkspacesInput = {
-    var Workspaces : Array<ShapeS3>;
+    var Workspaces : Array<_ShapeS3>;
 };

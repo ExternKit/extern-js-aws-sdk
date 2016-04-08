@@ -5,7 +5,7 @@ typedef GetTopicRuleOutput = {
         @:optional var createdAt : Float;
         @:optional var ruleDisabled : Bool;
         @:optional var description : String;
-        @:optional var actions : ShapeS16;
+        @:optional var actions : _ShapeS16;
         @:optional var sql : String;
         @:optional var ruleName : String;
     };

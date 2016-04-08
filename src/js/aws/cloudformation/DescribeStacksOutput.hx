@@ -6,13 +6,13 @@ typedef DescribeStacksOutput = {
         @:optional var Description : String;
         @:optional var TimeoutInMinutes : Int;
         @:optional var StackStatusReason : String;
-        @:optional var Parameters : ShapeSa;
+        @:optional var Parameters : _ShapeSa;
         var CreationTime : Float;
-        @:optional var NotificationARNs : ShapeSj;
+        @:optional var NotificationARNs : _ShapeSj;
         @:optional var DisableRollback : Bool;
         var StackName : String;
         @:optional var StackId : String;
-        @:optional var Capabilities : ShapeSf;
+        @:optional var Capabilities : _ShapeSf;
         var StackStatus : String;
         @:optional var LastUpdatedTime : Float;
         @:optional var Outputs : Array<{
@@ -20,6 +20,6 @@ typedef DescribeStacksOutput = {
             @:optional var OutputValue : String;
             @:optional var OutputKey : String;
         }>;
-        @:optional var Tags : ShapeSl;
+        @:optional var Tags : _ShapeSl;
     }>;
 };

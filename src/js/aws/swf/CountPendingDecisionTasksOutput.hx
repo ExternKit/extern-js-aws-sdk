@@ -1,3 +1,3 @@
 package js.aws.swf;
 
-typedef CountPendingDecisionTasksOutput = ShapeSk;
+typedef CountPendingDecisionTasksOutput = _ShapeSk;

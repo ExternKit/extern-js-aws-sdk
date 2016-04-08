@@ -11,9 +11,9 @@ typedef GetRecordsOutput = {
             @:optional var SizeBytes : Int;
             @:optional var StreamViewType : String;
             @:optional var SequenceNumber : String;
-            @:optional var OldImage : ShapeSr;
-            @:optional var Keys : ShapeSr;
-            @:optional var NewImage : ShapeSr;
+            @:optional var OldImage : _ShapeSr;
+            @:optional var Keys : _ShapeSr;
+            @:optional var NewImage : _ShapeSr;
         };
     }>;
     @:optional var NextShardIterator : String;

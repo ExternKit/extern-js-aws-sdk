@@ -1,5 +1,5 @@
 package js.aws.codecommit;
 
 typedef GetRepositoryOutput = {
-    @:optional var repositoryMetadata : ShapeS6;
+    @:optional var repositoryMetadata : _ShapeS6;
 };

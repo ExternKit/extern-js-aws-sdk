@@ -1,5 +1,5 @@
 package js.aws.ecr;
 
 typedef DeleteRepositoryOutput = {
-    @:optional var repository : ShapeS11;
+    @:optional var repository : _ShapeS11;
 };

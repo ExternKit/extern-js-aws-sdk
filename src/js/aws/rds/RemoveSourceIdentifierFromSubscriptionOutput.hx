@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef RemoveSourceIdentifierFromSubscriptionOutput = {
-    @:optional var EventSubscription : ShapeS4;
+    @:optional var EventSubscription : _ShapeS4;
 };

@@ -1,5 +1,5 @@
 package js.aws.route53;
 
 typedef AssociateVPCWithHostedZoneOutput = {
-    var ChangeInfo : ShapeS8;
+    var ChangeInfo : _ShapeS8;
 };

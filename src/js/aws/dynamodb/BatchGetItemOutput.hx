@@ -2,6 +2,6 @@ package js.aws.dynamodb;
 
 typedef BatchGetItemOutput = {
     @:optional var Responses : {};
-    @:optional var UnprocessedKeys : ShapeS2;
-    @:optional var ConsumedCapacity : ShapeSt;
+    @:optional var UnprocessedKeys : _ShapeS2;
+    @:optional var ConsumedCapacity : _ShapeSt;
 };

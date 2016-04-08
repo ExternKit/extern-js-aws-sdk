@@ -1,5 +1,5 @@
 package js.aws.cloudwatch;
 
 typedef EnableAlarmActionsInput = {
-    var AlarmNames : ShapeS2;
+    var AlarmNames : _ShapeS2;
 };

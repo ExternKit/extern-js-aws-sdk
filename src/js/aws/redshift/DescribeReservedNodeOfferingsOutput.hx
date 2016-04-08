@@ -9,7 +9,7 @@ typedef DescribeReservedNodeOfferingsOutput = {
         @:optional var Duration : Int;
         @:optional var OfferingType : String;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : ShapeS47;
+        @:optional var RecurringCharges : _ShapeS47;
         @:optional var FixedPrice : Float;
     }>;
 };

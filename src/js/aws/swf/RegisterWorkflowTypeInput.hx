@@ -6,7 +6,7 @@ typedef RegisterWorkflowTypeInput = {
     @:optional var description : String;
     var version : String;
     @:optional var defaultTaskStartToCloseTimeout : String;
-    @:optional var defaultTaskList : ShapeSj;
+    @:optional var defaultTaskList : _ShapeSj;
     var domain : String;
     @:optional var defaultExecutionStartToCloseTimeout : String;
     @:optional var defaultLambdaRole : String;

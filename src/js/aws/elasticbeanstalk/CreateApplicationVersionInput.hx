@@ -5,6 +5,6 @@ typedef CreateApplicationVersionInput = {
     @:optional var AutoCreateApplication : Bool;
     var ApplicationName : String;
     var VersionLabel : String;
-    @:optional var SourceBundle : ShapeS16;
+    @:optional var SourceBundle : _ShapeS16;
     @:optional var Process : Bool;
 };

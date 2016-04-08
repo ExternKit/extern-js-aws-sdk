@@ -1,5 +1,5 @@
 package js.aws.autoscaling;
 
 typedef DescribeTerminationPolicyTypesOutput = {
-    @:optional var TerminationPolicyTypes : ShapeSm;
+    @:optional var TerminationPolicyTypes : _ShapeSm;
 };

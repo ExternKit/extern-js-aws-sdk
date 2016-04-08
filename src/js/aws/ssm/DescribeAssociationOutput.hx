@@ -1,5 +1,5 @@
 package js.aws.ssm;
 
 typedef DescribeAssociationOutput = {
-    @:optional var AssociationDescription : ShapeSd;
+    @:optional var AssociationDescription : _ShapeSd;
 };

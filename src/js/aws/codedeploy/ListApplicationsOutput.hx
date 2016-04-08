@@ -1,6 +1,6 @@
 package js.aws.codedeploy;
 
 typedef ListApplicationsOutput = {
-    @:optional var applications : ShapeSw;
+    @:optional var applications : _ShapeSw;
     @:optional var nextToken : String;
 };

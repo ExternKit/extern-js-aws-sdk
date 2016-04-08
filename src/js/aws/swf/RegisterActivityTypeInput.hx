@@ -7,7 +7,7 @@ typedef RegisterActivityTypeInput = {
     var version : String;
     @:optional var defaultTaskScheduleToCloseTimeout : String;
     @:optional var defaultTaskStartToCloseTimeout : String;
-    @:optional var defaultTaskList : ShapeSj;
+    @:optional var defaultTaskList : _ShapeSj;
     @:optional var defaultTaskScheduleToStartTimeout : String;
     var domain : String;
     @:optional var defaultTaskPriority : String;

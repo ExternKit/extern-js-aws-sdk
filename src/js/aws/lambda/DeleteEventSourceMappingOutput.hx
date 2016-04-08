@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef DeleteEventSourceMappingOutput = ShapeSl;
+typedef DeleteEventSourceMappingOutput = _ShapeSm;

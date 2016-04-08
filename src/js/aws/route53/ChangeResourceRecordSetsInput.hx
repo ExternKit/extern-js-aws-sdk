@@ -4,6 +4,6 @@ typedef ChangeResourceRecordSetsInput = {
     var HostedZoneId : String;
     var ChangeBatch : {
         @:optional var Comment : String;
-        var Changes : ShapeSe;
+        var Changes : _ShapeSe;
     };
 };

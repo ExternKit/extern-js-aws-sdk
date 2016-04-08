@@ -4,5 +4,5 @@ typedef ChangeMessageVisibilityBatchOutput = {
     var Successful : Array<{
         var Id : String;
     }>;
-    var Failed : ShapeSd;
+    var Failed : _ShapeSd;
 };

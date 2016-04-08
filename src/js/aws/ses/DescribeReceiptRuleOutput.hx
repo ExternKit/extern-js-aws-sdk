@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef DescribeReceiptRuleOutput = {
-    @:optional var Rule : ShapeSd;
+    @:optional var Rule : _ShapeSd;
 };

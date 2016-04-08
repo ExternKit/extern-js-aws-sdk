@@ -4,5 +4,5 @@ typedef DescribeTapesInput = {
     var GatewayARN : String;
     @:optional var Marker : String;
     @:optional var Limit : Int;
-    @:optional var TapeARNs : ShapeS1l;
+    @:optional var TapeARNs : _ShapeS1l;
 };

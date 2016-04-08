@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef ModifyCacheSubnetGroupOutput = {
-    @:optional var CacheSubnetGroup : ShapeS1c;
+    @:optional var CacheSubnetGroup : _ShapeS1c;
 };

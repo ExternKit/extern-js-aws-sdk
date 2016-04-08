@@ -9,5 +9,5 @@ typedef CreateReplicationTaskInput = {
     var TableMappings : String;
     var ReplicationTaskIdentifier : String;
     @:optional var CdcStartTime : Float;
-    @:optional var Tags : ShapeS3;
+    @:optional var Tags : _ShapeS3;
 };

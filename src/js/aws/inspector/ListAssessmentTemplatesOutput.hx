@@ -1,6 +1,6 @@
 package js.aws.inspector;
 
 typedef ListAssessmentTemplatesOutput = {
-    var assessmentTemplateArns : ShapeS36;
+    var assessmentTemplateArns : _ShapeS36;
     @:optional var nextToken : String;
 };

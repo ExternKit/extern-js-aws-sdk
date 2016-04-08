@@ -1,6 +1,6 @@
 package js.aws.codedeploy;
 
 typedef RemoveTagsFromOnPremisesInstancesInput = {
-    var tags : ShapeS2;
-    var instanceNames : ShapeS6;
+    var tags : _ShapeS2;
+    var instanceNames : _ShapeS6;
 };

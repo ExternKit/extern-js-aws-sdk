@@ -1,5 +1,5 @@
 package js.aws.support;
 
 typedef DescribeAttachmentOutput = {
-    @:optional var attachment : ShapeS4;
+    @:optional var attachment : _ShapeS4;
 };

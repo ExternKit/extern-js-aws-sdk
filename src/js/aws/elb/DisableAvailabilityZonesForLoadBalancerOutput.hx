@@ -1,5 +1,5 @@
 package js.aws.elb;
 
 typedef DisableAvailabilityZonesForLoadBalancerOutput = {
-    @:optional var AvailabilityZones : ShapeS13;
+    @:optional var AvailabilityZones : _ShapeS13;
 };

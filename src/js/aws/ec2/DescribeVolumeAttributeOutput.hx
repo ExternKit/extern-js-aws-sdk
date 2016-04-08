@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef DescribeVolumeAttributeOutput = {
-    @:optional var AutoEnableIO : ShapeSar;
+    @:optional var AutoEnableIO : _ShapeSar;
     @:optional var VolumeId : String;
-    @:optional var ProductCodes : ShapeS9t;
+    @:optional var ProductCodes : _ShapeS9t;
 };

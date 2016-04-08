@@ -7,5 +7,5 @@ typedef SendMessageBatchOutput = {
         @:optional var MD5OfMessageAttributes : String;
         var Id : String;
     }>;
-    var Failed : ShapeSd;
+    var Failed : _ShapeSd;
 };

@@ -14,7 +14,7 @@ typedef CreateDataSourceFromRDSInput = {
         };
         var S3StagingLocation : String;
         @:optional var DataSchema : String;
-        var DatabaseInformation : ShapeS8;
+        var DatabaseInformation : _ShapeS8;
         var SelectSqlQuery : String;
     };
     var DataSourceId : String;

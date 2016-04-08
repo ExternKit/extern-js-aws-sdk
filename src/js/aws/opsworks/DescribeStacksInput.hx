@@ -1,5 +1,5 @@
 package js.aws.opsworks;
 
 typedef DescribeStacksInput = {
-    @:optional var StackIds : ShapeS3;
+    @:optional var StackIds : _ShapeS3;
 };

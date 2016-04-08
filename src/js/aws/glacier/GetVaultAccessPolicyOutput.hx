@@ -1,5 +1,5 @@
 package js.aws.glacier;
 
 typedef GetVaultAccessPolicyOutput = {
-    @:optional var policy : ShapeS14;
+    @:optional var policy : _ShapeS14;
 };

@@ -1,6 +1,6 @@
 package js.aws.ses;
 
 typedef ListIdentitiesOutput = {
-    var Identities : ShapeS1t;
+    var Identities : _ShapeS1t;
     @:optional var NextToken : String;
 };

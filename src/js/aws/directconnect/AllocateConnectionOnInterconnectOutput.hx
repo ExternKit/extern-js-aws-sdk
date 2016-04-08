@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef AllocateConnectionOnInterconnectOutput = ShapeS7;
+typedef AllocateConnectionOnInterconnectOutput = _ShapeS7;

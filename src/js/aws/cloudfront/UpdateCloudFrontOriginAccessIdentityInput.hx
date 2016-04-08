@@ -1,7 +1,7 @@
 package js.aws.cloudfront;
 
 typedef UpdateCloudFrontOriginAccessIdentityInput = {
-    var CloudFrontOriginAccessIdentityConfig : ShapeS2;
+    var CloudFrontOriginAccessIdentityConfig : _ShapeS2;
     var Id : String;
     @:optional var IfMatch : String;
 };

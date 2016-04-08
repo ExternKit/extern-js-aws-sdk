@@ -11,5 +11,5 @@ typedef CreateReplicationInstanceInput = {
     var ReplicationInstanceIdentifier : String;
     @:optional var PubliclyAccessible : Bool;
     @:optional var PreferredMaintenanceWindow : String;
-    @:optional var Tags : ShapeS3;
+    @:optional var Tags : _ShapeS3;
 };

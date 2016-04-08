@@ -2,7 +2,7 @@ package js.aws.rds;
 
 typedef CreateDBClusterInput = {
     @:optional var EngineVersion : String;
-    @:optional var VpcSecurityGroupIds : ShapeS1d;
+    @:optional var VpcSecurityGroupIds : _ShapeS1d;
     @:optional var DBSubnetGroupName : String;
     @:optional var DatabaseName : String;
     @:optional var PreferredBackupWindow : String;
@@ -13,11 +13,11 @@ typedef CreateDBClusterInput = {
     @:optional var PreferredMaintenanceWindow : String;
     @:optional var DBClusterParameterGroupName : String;
     var MasterUserPassword : String;
-    @:optional var AvailabilityZones : ShapeSr;
+    @:optional var AvailabilityZones : _ShapeSr;
     var Engine : String;
     var MasterUsername : String;
     @:optional var OptionGroupName : String;
     @:optional var Port : Int;
-    @:optional var Tags : ShapeS9;
+    @:optional var Tags : _ShapeS9;
     @:optional var StorageEncrypted : Bool;
 };

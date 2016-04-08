@@ -1,6 +1,6 @@
 package js.aws.cloudsearch;
 
 typedef DefineSuggesterInput = {
-    var Suggester : ShapeS1p;
+    var Suggester : _ShapeS1p;
     var DomainName : String;
 };

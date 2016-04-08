@@ -1,6 +1,6 @@
 package js.aws.elb;
 
 typedef AddTagsInput = {
-    var LoadBalancerNames : ShapeS2;
-    var Tags : ShapeS4;
+    var LoadBalancerNames : _ShapeS2;
+    var Tags : _ShapeS4;
 };

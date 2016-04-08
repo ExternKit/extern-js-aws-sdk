@@ -8,7 +8,7 @@ typedef ModifyEndpointInput = {
     var EndpointArn : String;
     @:optional var Username : String;
     @:optional var ExtraConnectionAttributes : String;
-    @:optional var Password : ShapeS8;
+    @:optional var Password : _ShapeS8;
     @:optional var EndpointIdentifier : String;
     @:optional var Port : Int;
 };

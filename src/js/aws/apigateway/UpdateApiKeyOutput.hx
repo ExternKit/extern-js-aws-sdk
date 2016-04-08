@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateApiKeyOutput = ShapeS6;
+typedef UpdateApiKeyOutput = _ShapeS6;

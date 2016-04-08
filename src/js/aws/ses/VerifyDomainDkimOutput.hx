@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef VerifyDomainDkimOutput = {
-    var DkimTokens : ShapeS1y;
+    var DkimTokens : _ShapeS1y;
 };

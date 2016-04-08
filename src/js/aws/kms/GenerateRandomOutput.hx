@@ -1,5 +1,5 @@
 package js.aws.kms;
 
 typedef GenerateRandomOutput = {
-    @:optional var Plaintext : ShapeSx;
+    @:optional var Plaintext : _ShapeSx;
 };

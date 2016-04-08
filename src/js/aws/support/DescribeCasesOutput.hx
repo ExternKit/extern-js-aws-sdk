@@ -4,9 +4,9 @@ typedef DescribeCasesOutput = {
     @:optional var cases : Array<{
         @:optional var displayId : String;
         @:optional var submittedBy : String;
-        @:optional var ccEmailAddresses : ShapeSc;
+        @:optional var ccEmailAddresses : _ShapeSc;
         @:optional var recentCommunications : {
-            @:optional var communications : ShapeS17;
+            @:optional var communications : _ShapeS17;
             @:optional var nextToken : String;
         };
         @:optional var language : String;

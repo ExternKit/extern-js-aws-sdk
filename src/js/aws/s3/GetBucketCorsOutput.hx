@@ -1,5 +1,5 @@
 package js.aws.s3;
 
 typedef GetBucketCorsOutput = {
-    @:optional var CORSRules : ShapeS2t;
+    @:optional var CORSRules : _ShapeS2t;
 };

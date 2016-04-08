@@ -2,5 +2,5 @@ package js.aws.kms;
 
 typedef DescribeKeyInput = {
     var KeyId : String;
-    @:optional var GrantTokens : ShapeSe;
+    @:optional var GrantTokens : _ShapeSe;
 };

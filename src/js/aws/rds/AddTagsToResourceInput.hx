@@ -2,5 +2,5 @@ package js.aws.rds;
 
 typedef AddTagsToResourceInput = {
     var ResourceName : String;
-    var Tags : ShapeS9;
+    var Tags : _ShapeS9;
 };

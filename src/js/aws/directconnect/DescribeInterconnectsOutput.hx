@@ -1,5 +1,5 @@
 package js.aws.directconnect;
 
 typedef DescribeInterconnectsOutput = {
-    @:optional var interconnects : Array<ShapeS14>;
+    @:optional var interconnects : Array<_ShapeS14>;
 };

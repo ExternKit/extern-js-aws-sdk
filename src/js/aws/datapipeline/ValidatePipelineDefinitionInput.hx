@@ -1,8 +1,8 @@
 package js.aws.datapipeline;
 
 typedef ValidatePipelineDefinitionInput = {
-    @:optional var parameterValues : ShapeS3;
+    @:optional var parameterValues : _ShapeS3;
     var pipelineId : String;
-    @:optional var parameterObjects : ShapeS13;
-    var pipelineObjects : ShapeSq;
+    @:optional var parameterObjects : _ShapeS13;
+    var pipelineObjects : _ShapeSq;
 };

@@ -1,5 +1,5 @@
 package js.aws.dynamodb;
 
 typedef DescribeTableOutput = {
-    @:optional var Table : ShapeS20;
+    @:optional var Table : _ShapeS20;
 };

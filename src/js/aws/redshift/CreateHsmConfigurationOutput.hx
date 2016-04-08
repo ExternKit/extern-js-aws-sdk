@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CreateHsmConfigurationOutput = {
-    @:optional var HsmConfiguration : ShapeS22;
+    @:optional var HsmConfiguration : _ShapeS22;
 };

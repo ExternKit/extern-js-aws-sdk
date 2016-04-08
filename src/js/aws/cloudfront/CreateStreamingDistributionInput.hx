@@ -1,5 +1,5 @@
 package js.aws.cloudfront;
 
 typedef CreateStreamingDistributionInput = {
-    var StreamingDistributionConfig : ShapeS1z;
+    var StreamingDistributionConfig : _ShapeS1z;
 };

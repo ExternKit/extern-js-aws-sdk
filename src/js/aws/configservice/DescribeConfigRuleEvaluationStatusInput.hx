@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef DescribeConfigRuleEvaluationStatusInput = {
-    @:optional var ConfigRuleNames : ShapeS9;
+    @:optional var ConfigRuleNames : _ShapeS9;
 };

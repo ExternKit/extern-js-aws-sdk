@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetResourceOutput = ShapeSs;
+typedef GetResourceOutput = _ShapeSs;

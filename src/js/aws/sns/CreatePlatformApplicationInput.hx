@@ -2,6 +2,6 @@ package js.aws.sns;
 
 typedef CreatePlatformApplicationInput = {
     var Platform : String;
-    var Attributes : ShapeSf;
+    var Attributes : _ShapeSf;
     var Name : String;
 };

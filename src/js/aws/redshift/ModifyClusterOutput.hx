@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef ModifyClusterOutput = {
-    @:optional var Cluster : ShapeSv;
+    @:optional var Cluster : _ShapeSv;
 };

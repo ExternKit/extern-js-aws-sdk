@@ -1,5 +1,5 @@
 package js.aws.support;
 
 typedef RefreshTrustedAdvisorCheckOutput = {
-    var status : ShapeS1x;
+    var status : _ShapeS1x;
 };

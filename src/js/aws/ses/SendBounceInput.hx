@@ -4,7 +4,7 @@ typedef SendBounceInput = {
     @:optional var MessageDsn : {
         var ReportingMta : String;
         @:optional var ArrivalDate : Float;
-        @:optional var ExtensionFields : ShapeS3j;
+        @:optional var ExtensionFields : _ShapeS3j;
     };
     @:optional var BounceSenderArn : String;
     var BouncedRecipientInfoList : Array<{
@@ -17,7 +17,7 @@ typedef SendBounceInput = {
             @:optional var DiagnosticCode : String;
             @:optional var FinalRecipient : String;
             @:optional var LastAttemptDate : Float;
-            @:optional var ExtensionFields : ShapeS3j;
+            @:optional var ExtensionFields : _ShapeS3j;
             var Status : String;
         };
     }>;

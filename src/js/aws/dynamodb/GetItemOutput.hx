@@ -1,6 +1,6 @@
 package js.aws.dynamodb;
 
 typedef GetItemOutput = {
-    @:optional var ConsumedCapacity : ShapeSu;
-    @:optional var Item : ShapeSs;
+    @:optional var ConsumedCapacity : _ShapeSu;
+    @:optional var Item : _ShapeSs;
 };

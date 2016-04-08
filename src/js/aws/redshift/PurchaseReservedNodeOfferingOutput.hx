@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef PurchaseReservedNodeOfferingOutput = {
-    @:optional var ReservedNode : ShapeS4c;
+    @:optional var ReservedNode : _ShapeS4c;
 };

@@ -4,5 +4,5 @@ typedef SendMessageInput = {
     var MessageBody : String;
     @:optional var DelaySeconds : Int;
     var QueueUrl : String;
-    @:optional var MessageAttributes : ShapeS19;
+    @:optional var MessageAttributes : _ShapeS19;
 };

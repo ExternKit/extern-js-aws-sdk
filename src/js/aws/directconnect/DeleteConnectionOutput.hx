@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef DeleteConnectionOutput = ShapeS7;
+typedef DeleteConnectionOutput = _ShapeS7;

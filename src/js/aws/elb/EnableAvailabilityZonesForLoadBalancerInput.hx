@@ -2,5 +2,5 @@ package js.aws.elb;
 
 typedef EnableAvailabilityZonesForLoadBalancerInput = {
     var LoadBalancerName : String;
-    var AvailabilityZones : ShapeS13;
+    var AvailabilityZones : _ShapeS13;
 };

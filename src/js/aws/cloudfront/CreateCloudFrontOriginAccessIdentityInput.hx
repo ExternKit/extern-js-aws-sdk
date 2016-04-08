@@ -1,5 +1,5 @@
 package js.aws.cloudfront;
 
 typedef CreateCloudFrontOriginAccessIdentityInput = {
-    var CloudFrontOriginAccessIdentityConfig : ShapeS2;
+    var CloudFrontOriginAccessIdentityConfig : _ShapeS2;
 };

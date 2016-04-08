@@ -1,7 +1,7 @@
 package js.aws.datapipeline;
 
 typedef SetStatusInput = {
-    var objectIds : ShapeSn;
+    var objectIds : _ShapeSn;
     var pipelineId : String;
     var status : String;
 };

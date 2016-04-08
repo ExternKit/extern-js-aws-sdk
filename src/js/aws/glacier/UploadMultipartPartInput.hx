@@ -1,7 +1,7 @@
 package js.aws.glacier;
 
 typedef UploadMultipartPartInput = {
-    @:optional var body : ShapeS10;
+    @:optional var body : _ShapeS10;
     @:optional var range : String;
     var vaultName : String;
     var accountId : String;

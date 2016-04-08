@@ -4,5 +4,5 @@ typedef CreateDevicePoolInput = {
     var projectArn : String;
     var name : String;
     @:optional var description : String;
-    var rules : ShapeS5;
+    var rules : _ShapeS5;
 };

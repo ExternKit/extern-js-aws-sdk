@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef AttachVpnGatewayOutput = {
-    @:optional var VpcAttachment : ShapeS12;
+    @:optional var VpcAttachment : _ShapeS12;
 };

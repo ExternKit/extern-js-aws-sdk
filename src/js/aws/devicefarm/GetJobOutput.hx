@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef GetJobOutput = {
-    @:optional var job : ShapeS1o;
+    @:optional var job : _ShapeS1o;
 };

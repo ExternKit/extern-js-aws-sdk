@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef AuthorizeCacheSecurityGroupIngressOutput = {
-    @:optional var CacheSecurityGroup : ShapeS8;
+    @:optional var CacheSecurityGroup : _ShapeS8;
 };

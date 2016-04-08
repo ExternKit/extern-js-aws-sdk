@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef CreateLoginProfileOutput = {
-    var LoginProfile : ShapeS13;
+    var LoginProfile : _ShapeS13;
 };

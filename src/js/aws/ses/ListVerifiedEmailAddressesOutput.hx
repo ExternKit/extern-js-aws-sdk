@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef ListVerifiedEmailAddressesOutput = {
-    @:optional var VerifiedEmailAddresses : ShapeS37;
+    @:optional var VerifiedEmailAddresses : _ShapeS37;
 };

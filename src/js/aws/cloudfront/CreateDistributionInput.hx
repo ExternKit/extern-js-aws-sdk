@@ -1,5 +1,5 @@
 package js.aws.cloudfront;
 
 typedef CreateDistributionInput = {
-    var DistributionConfig : ShapeS7;
+    var DistributionConfig : _ShapeS7;
 };

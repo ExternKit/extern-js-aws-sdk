@@ -14,7 +14,7 @@ typedef DescribeInstancesOutput = {
         @:optional var PublicDns : String;
         @:optional var InstanceId : String;
         @:optional var EbsOptimized : Bool;
-        @:optional var SecurityGroupIds : ShapeS3;
+        @:optional var SecurityGroupIds : _ShapeS3;
         @:optional var CreatedAt : String;
         @:optional var StackId : String;
         @:optional var InstallUpdatesOnBoot : Bool;
@@ -27,7 +27,7 @@ typedef DescribeInstancesOutput = {
         };
         @:optional var PublicIp : String;
         @:optional var SshHostDsaKeyFingerprint : String;
-        @:optional var LayerIds : ShapeS3;
+        @:optional var LayerIds : _ShapeS3;
         @:optional var VirtualizationType : String;
         @:optional var InstanceType : String;
         @:optional var EcsClusterArn : String;
@@ -35,7 +35,7 @@ typedef DescribeInstancesOutput = {
         @:optional var RootDeviceVolumeId : String;
         @:optional var LastServiceErrorId : String;
         @:optional var RegisteredBy : String;
-        @:optional var BlockDeviceMappings : ShapeSz;
+        @:optional var BlockDeviceMappings : _ShapeSz;
         @:optional var Architecture : String;
         @:optional var ReportedAgentVersion : String;
         @:optional var Hostname : String;

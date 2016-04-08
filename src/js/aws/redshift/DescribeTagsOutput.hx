@@ -5,6 +5,6 @@ typedef DescribeTagsOutput = {
     @:optional var TaggedResources : Array<{
         @:optional var ResourceName : String;
         @:optional var ResourceType : String;
-        @:optional var Tag : ShapeS8;
+        @:optional var Tag : _ShapeS8;
     }>;
 };

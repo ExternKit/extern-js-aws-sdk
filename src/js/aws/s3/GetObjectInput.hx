@@ -4,7 +4,7 @@ typedef GetObjectInput = {
     @:optional var ResponseCacheControl : String;
     @:optional var ResponseContentDisposition : String;
     @:optional var IfNoneMatch : String;
-    @:optional var SSECustomerKey : ShapeS18;
+    @:optional var SSECustomerKey : _ShapeS18;
     @:optional var ResponseContentEncoding : String;
     @:optional var ResponseExpires : Float;
     @:optional var ResponseContentType : String;

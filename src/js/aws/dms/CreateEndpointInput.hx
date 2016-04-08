@@ -8,8 +8,8 @@ typedef CreateEndpointInput = {
     var ServerName : String;
     var Username : String;
     @:optional var ExtraConnectionAttributes : String;
-    var Password : ShapeS8;
+    var Password : _ShapeS8;
     var EndpointIdentifier : String;
     var Port : Int;
-    @:optional var Tags : ShapeS3;
+    @:optional var Tags : _ShapeS3;
 };

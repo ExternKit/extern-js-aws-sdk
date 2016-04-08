@@ -1,5 +1,5 @@
 package js.aws.ecs;
 
 typedef CreateClusterOutput = {
-    @:optional var cluster : ShapeS4;
+    @:optional var cluster : _ShapeS4;
 };

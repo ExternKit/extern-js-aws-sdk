@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef UpdateFunctionConfigurationOutput = ShapeS14;
+typedef UpdateFunctionConfigurationOutput = _ShapeS15;

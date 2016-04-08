@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBSecurityGroupOutput = {
-    @:optional var DBSecurityGroup : ShapeSj;
+    @:optional var DBSecurityGroup : _ShapeSj;
 };

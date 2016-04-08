@@ -1,5 +1,5 @@
 package js.aws.opsworks;
 
 typedef DescribeUserProfilesInput = {
-    @:optional var IamUserArns : ShapeS3;
+    @:optional var IamUserArns : _ShapeS3;
 };

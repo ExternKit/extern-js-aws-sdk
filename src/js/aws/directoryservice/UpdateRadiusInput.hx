@@ -2,5 +2,5 @@ package js.aws.directoryservice;
 
 typedef UpdateRadiusInput = {
     var DirectoryId : String;
-    var RadiusSettings : ShapeS22;
+    var RadiusSettings : _ShapeS2d;
 };

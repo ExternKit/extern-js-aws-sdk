@@ -1,7 +1,7 @@
 package js.aws.cloudwatch;
 
 typedef GetMetricStatisticsInput = {
-    @:optional var Dimensions : ShapeSv;
+    @:optional var Dimensions : _ShapeSv;
     var Period : Int;
     var Statistics : Array<String>;
     var EndTime : Float;

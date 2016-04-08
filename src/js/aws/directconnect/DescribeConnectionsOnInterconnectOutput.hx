@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef DescribeConnectionsOnInterconnectOutput = ShapeS1g;
+typedef DescribeConnectionsOnInterconnectOutput = _ShapeS1g;

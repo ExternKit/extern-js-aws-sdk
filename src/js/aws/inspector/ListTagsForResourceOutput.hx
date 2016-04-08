@@ -1,5 +1,5 @@
 package js.aws.inspector;
 
 typedef ListTagsForResourceOutput = {
-    var tags : ShapeS3w;
+    var tags : _ShapeS3w;
 };

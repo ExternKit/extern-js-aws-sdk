@@ -1,3 +1,3 @@
 package js.aws.glacier;
 
-typedef UploadArchiveOutput = ShapeS9;
+typedef UploadArchiveOutput = _ShapeS9;

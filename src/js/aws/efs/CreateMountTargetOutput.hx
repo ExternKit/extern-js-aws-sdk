@@ -1,3 +1,3 @@
 package js.aws.efs;
 
-typedef CreateMountTargetOutput = ShapeSh;
+typedef CreateMountTargetOutput = _ShapeSh;

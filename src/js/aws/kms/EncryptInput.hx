@@ -1,8 +1,8 @@
 package js.aws.kms;
 
 typedef EncryptInput = {
-    var Plaintext : ShapeSx;
+    var Plaintext : _ShapeSx;
     var KeyId : String;
-    @:optional var GrantTokens : ShapeSe;
-    @:optional var EncryptionContext : ShapeSb;
+    @:optional var GrantTokens : _ShapeSe;
+    @:optional var EncryptionContext : _ShapeSb;
 };

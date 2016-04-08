@@ -1,5 +1,5 @@
 package js.aws.cognitosync;
 
 typedef DescribeDatasetOutput = {
-    @:optional var Dataset : ShapeS8;
+    @:optional var Dataset : _ShapeS8;
 };

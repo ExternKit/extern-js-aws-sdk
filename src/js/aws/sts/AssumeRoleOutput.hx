@@ -1,7 +1,7 @@
 package js.aws.sts;
 
 typedef AssumeRoleOutput = {
-    @:optional var Credentials : ShapeSa;
+    @:optional var Credentials : _ShapeSa;
     @:optional var PackedPolicySize : Int;
-    @:optional var AssumedRoleUser : ShapeSf;
+    @:optional var AssumedRoleUser : _ShapeSf;
 };

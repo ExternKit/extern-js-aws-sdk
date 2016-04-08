@@ -1,3 +1,3 @@
 package js.aws.glacier;
 
-typedef DescribeJobOutput = ShapeSi;
+typedef DescribeJobOutput = _ShapeSi;

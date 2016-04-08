@@ -5,6 +5,6 @@ typedef GetFederationTokenOutput = {
         var FederatedUserId : String;
         var Arn : String;
     };
-    @:optional var Credentials : ShapeSa;
+    @:optional var Credentials : _ShapeSa;
     @:optional var PackedPolicySize : Int;
 };
