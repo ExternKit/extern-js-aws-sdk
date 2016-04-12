@@ -42,6 +42,9 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function createTopicRule(params : CreateTopicRuleInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteCACertificateOutput>) : Request {})
+    public function deleteCACertificate(params : DeleteCACertificateInput, ?cb : Callback<DeleteCACertificateOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteCertificate(params : DeleteCertificateInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -51,11 +54,17 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deletePolicyVersion(params : DeletePolicyVersionInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteRegistrationCodeOutput>) : Request {})
+    public function deleteRegistrationCode(params : DeleteRegistrationCodeInput, ?cb : Callback<DeleteRegistrationCodeOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteThingOutput>) : Request {})
     public function deleteThing(params : DeleteThingInput, ?cb : Callback<DeleteThingOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteTopicRule(params : DeleteTopicRuleInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeCACertificateOutput>) : Request {})
+    public function describeCACertificate(params : DescribeCACertificateInput, ?cb : Callback<DescribeCACertificateOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeCertificateOutput>) : Request {})
     public function describeCertificate(params : DescribeCertificateInput, ?cb : Callback<DescribeCertificateOutput>) : Request;
@@ -87,11 +96,20 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetPolicyVersionOutput>) : Request {})
     public function getPolicyVersion(params : GetPolicyVersionInput, ?cb : Callback<GetPolicyVersionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetRegistrationCodeOutput>) : Request {})
+    public function getRegistrationCode(params : GetRegistrationCodeInput, ?cb : Callback<GetRegistrationCodeOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetTopicRuleOutput>) : Request {})
     public function getTopicRule(params : GetTopicRuleInput, ?cb : Callback<GetTopicRuleOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListCACertificatesOutput>) : Request {})
+    public function listCACertificates(params : ListCACertificatesInput, ?cb : Callback<ListCACertificatesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListCertificatesOutput>) : Request {})
     public function listCertificates(params : ListCertificatesInput, ?cb : Callback<ListCertificatesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListCertificatesByCAOutput>) : Request {})
+    public function listCertificatesByCA(params : ListCertificatesByCAInput, ?cb : Callback<ListCertificatesByCAOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListPoliciesOutput>) : Request {})
     public function listPolicies(params : ListPoliciesInput, ?cb : Callback<ListPoliciesOutput>) : Request;
@@ -114,6 +132,12 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListTopicRulesOutput>) : Request {})
     public function listTopicRules(params : ListTopicRulesInput, ?cb : Callback<ListTopicRulesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RegisterCACertificateOutput>) : Request {})
+    public function registerCACertificate(params : RegisterCACertificateInput, ?cb : Callback<RegisterCACertificateOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RegisterCertificateOutput>) : Request {})
+    public function registerCertificate(params : RegisterCertificateInput, ?cb : Callback<RegisterCertificateOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function rejectCertificateTransfer(params : RejectCertificateTransferInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -128,6 +152,9 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<TransferCertificateOutput>) : Request {})
     public function transferCertificate(params : TransferCertificateInput, ?cb : Callback<TransferCertificateOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function updateCACertificate(params : UpdateCACertificateInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateCertificate(params : UpdateCertificateInput, ?cb : Callback<Dynamic>) : Request;
