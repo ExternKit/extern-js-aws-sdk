@@ -105,6 +105,9 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetObjectTorrentOutput>) : Request {})
     public function getObjectTorrent(params : GetObjectTorrentInput, ?cb : Callback<GetObjectTorrentOutput>) : Request;
     
+    @:overload(function (operation : String, params : Dynamic, cb : Callback<String>) : Void {})
+    public function getSignedUrl(operation : String, params : Dynamic) : String;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function headBucket(params : HeadBucketInput, ?cb : Callback<Dynamic>) : Request;
     

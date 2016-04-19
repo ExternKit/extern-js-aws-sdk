@@ -36,5 +36,43 @@
                 "returns": "ManagedUpload"
             }
         ]
+    },
+    {
+        "name": "getSignedUrl",
+        "arguments": [
+            {
+                "name": "operation",
+                "type": "String",
+                "optional": false
+            },
+            {
+                "name": "params",
+                "type": "Dynamic",
+                "optional": false
+            }
+        ],
+        "returns": "String",
+        "overloads": [
+            {
+                "arguments": [
+                    {
+                        "name": "operation",
+                        "type": "String",
+                        "optional": false
+                    },
+                    {
+                        "name": "params",
+                        "type": "Dynamic",
+                        "optional": false
+                    },
+                    {
+                        "name": "cb",
+                        "type": "Callback<String>",
+                        "optional": false
+                    }
+                ],
+                "returns": "Void"
+            }
+        ]
     }
 ]
