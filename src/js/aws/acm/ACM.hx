@@ -13,6 +13,9 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
     public function new(?params : Dynamic) : Void;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function addTagsToCertificate(params : AddTagsToCertificateInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteCertificate(params : DeleteCertificateInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<DescribeCertificateOutput>) : Request {})
@@ -23,6 +26,12 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListCertificatesOutput>) : Request {})
     public function listCertificates(params : ListCertificatesInput, ?cb : Callback<ListCertificatesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListTagsForCertificateOutput>) : Request {})
+    public function listTagsForCertificate(params : ListTagsForCertificateInput, ?cb : Callback<ListTagsForCertificateOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function removeTagsFromCertificate(params : RemoveTagsFromCertificateInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<RequestCertificateOutput>) : Request {})
     public function requestCertificate(params : RequestCertificateInput, ?cb : Callback<RequestCertificateOutput>) : Request;

@@ -8,7 +8,7 @@ typedef CreateConfigurationTemplateInput = {
         @:optional var ApplicationName : String;
         @:optional var TemplateName : String;
     };
-    @:optional var OptionSettings : _ShapeS1g;
+    @:optional var OptionSettings : _ShapeS1j;
     @:optional var SolutionStackName : String;
     var TemplateName : String;
 };

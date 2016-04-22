@@ -3,5 +3,5 @@ package js.aws.cognitoidentity;
 typedef GetIdInput = {
     @:optional var AccountId : String;
     var IdentityPoolId : String;
-    @:optional var Logins : _ShapeSq;
+    @:optional var Logins : _ShapeSu;
 };

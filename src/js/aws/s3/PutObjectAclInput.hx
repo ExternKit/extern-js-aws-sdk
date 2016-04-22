@@ -9,7 +9,8 @@ typedef PutObjectAclInput = {
     @:optional var GrantWrite : String;
     @:optional var RequestPayer : String;
     @:optional var GrantWriteACP : String;
+    @:optional var VersionId : String;
     @:optional var GrantRead : String;
-    @:optional var AccessControlPolicy : _ShapeS7w;
+    @:optional var AccessControlPolicy : _ShapeS81;
     @:optional var ContentMD5 : String;
 };

@@ -1,3 +1,3 @@
 package js.aws.cognitoidentity;
 
-typedef DescribeIdentityOutput = _ShapeSl;
+typedef DescribeIdentityOutput = _ShapeSp;

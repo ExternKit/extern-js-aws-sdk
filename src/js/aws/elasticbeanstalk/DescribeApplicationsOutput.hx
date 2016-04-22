@@ -1,5 +1,5 @@
 package js.aws.elasticbeanstalk;
 
 typedef DescribeApplicationsOutput = {
-    @:optional var Applications : Array<_ShapeS12>;
+    @:optional var Applications : Array<_ShapeS15>;
 };

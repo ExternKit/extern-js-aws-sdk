@@ -1,3 +1,3 @@
 package js.aws.cognitoidentity;
 
-typedef UpdateIdentityPoolOutput = _ShapeSa;
+typedef UpdateIdentityPoolOutput = _ShapeSe;

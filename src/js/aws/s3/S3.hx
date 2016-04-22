@@ -54,6 +54,9 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteObjectsOutput>) : Request {})
     public function deleteObjects(params : DeleteObjectsInput, ?cb : Callback<DeleteObjectsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetBucketAccelerateConfigurationOutput>) : Request {})
+    public function getBucketAccelerateConfiguration(params : GetBucketAccelerateConfigurationInput, ?cb : Callback<GetBucketAccelerateConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetBucketAclOutput>) : Request {})
     public function getBucketAcl(params : GetBucketAclInput, ?cb : Callback<GetBucketAclOutput>) : Request;
     
@@ -128,6 +131,9 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListPartsOutput>) : Request {})
     public function listParts(params : ListPartsInput, ?cb : Callback<ListPartsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function putBucketAccelerateConfiguration(params : PutBucketAccelerateConfigurationInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putBucketAcl(params : PutBucketAclInput, ?cb : Callback<Dynamic>) : Request;

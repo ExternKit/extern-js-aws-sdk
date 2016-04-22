@@ -84,6 +84,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     
     public var cognitoidentity : Config;
     
+    public var cognitoidentityserviceprovider : Config;
+    
     public var cognitosync : Config;
     
     public var configservice : Config;

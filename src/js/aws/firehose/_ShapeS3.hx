@@ -5,6 +5,7 @@ typedef _ShapeS3 = {
     @:optional var Prefix : String;
     @:optional var CompressionFormat : String;
     @:optional var EncryptionConfiguration : _ShapeSb;
+    @:optional var CloudWatchLoggingOptions : _ShapeSf;
     var RoleARN : String;
     @:optional var BufferingHints : _ShapeS7;
 };

@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef CreateConfigurationTemplateOutput = _ShapeS1m;
+typedef CreateConfigurationTemplateOutput = _ShapeS1p;

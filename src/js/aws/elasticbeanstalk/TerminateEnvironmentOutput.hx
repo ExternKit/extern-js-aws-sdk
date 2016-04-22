@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef TerminateEnvironmentOutput = _ShapeSg;
+typedef TerminateEnvironmentOutput = _ShapeSk;

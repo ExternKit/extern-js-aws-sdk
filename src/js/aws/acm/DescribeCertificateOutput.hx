@@ -13,7 +13,7 @@ typedef DescribeCertificateOutput = {
         @:optional var Subject : String;
         @:optional var NotAfter : Float;
         @:optional var RevokedAt : Float;
-        @:optional var SubjectAlternativeNames : _ShapeS7;
+        @:optional var SubjectAlternativeNames : _ShapeSc;
         @:optional var InUseBy : Array<String>;
         @:optional var IssuedAt : Float;
         @:optional var Serial : String;

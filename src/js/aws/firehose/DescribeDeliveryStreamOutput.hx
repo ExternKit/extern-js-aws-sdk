@@ -6,15 +6,28 @@ typedef DescribeDeliveryStreamOutput = {
         var HasMoreDestinations : Bool;
         @:optional var LastUpdateTimestamp : Float;
         var Destinations : Array<{
-            @:optional var S3DestinationDescription : _ShapeS11;
+            @:optional var S3DestinationDescription : _ShapeS1g;
             @:optional var RedshiftDestinationDescription : {
-                var S3DestinationDescription : _ShapeS11;
-                var Username : _ShapeSl;
+                var S3DestinationDescription : _ShapeS1g;
+                var Username : _ShapeSp;
                 var ClusterJDBCURL : String;
+                @:optional var CloudWatchLoggingOptions : _ShapeSf;
                 var RoleARN : String;
-                var CopyCommand : _ShapeSh;
+                var CopyCommand : _ShapeSl;
             };
             var DestinationId : String;
+            @:optional var ElasticsearchDestinationDescription : {
+                @:optional var S3DestinationDescription : _ShapeS1g;
+                @:optional var IndexRotationPeriod : String;
+                @:optional var S3BackupMode : String;
+                @:optional var TypeName : String;
+                @:optional var DomainARN : String;
+                @:optional var CloudWatchLoggingOptions : _ShapeSf;
+                @:optional var RoleARN : String;
+                @:optional var BufferingHints : _ShapeSw;
+                @:optional var IndexName : String;
+                @:optional var RetryOptions : _ShapeSz;
+            };
         }>;
         var DeliveryStreamStatus : String;
         @:optional var CreateTimestamp : Float;

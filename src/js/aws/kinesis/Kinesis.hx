@@ -27,6 +27,12 @@ extern class Kinesis extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeStreamOutput>) : Request {})
     public function describeStream(params : DescribeStreamInput, ?cb : Callback<DescribeStreamOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DisableEnhancedMonitoringOutput>) : Request {})
+    public function disableEnhancedMonitoring(params : DisableEnhancedMonitoringInput, ?cb : Callback<DisableEnhancedMonitoringOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<EnableEnhancedMonitoringOutput>) : Request {})
+    public function enableEnhancedMonitoring(params : EnableEnhancedMonitoringInput, ?cb : Callback<EnableEnhancedMonitoringOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetRecordsOutput>) : Request {})
     public function getRecords(params : GetRecordsInput, ?cb : Callback<GetRecordsOutput>) : Request;
     

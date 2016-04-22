@@ -15,6 +15,9 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function abortEnvironmentUpdate(params : AbortEnvironmentUpdateInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<ApplyEnvironmentManagedActionOutput>) : Request {})
+    public function applyEnvironmentManagedAction(params : ApplyEnvironmentManagedActionInput, ?cb : Callback<ApplyEnvironmentManagedActionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CheckDNSAvailabilityOutput>) : Request {})
     public function checkDNSAvailability(params : CheckDNSAvailabilityInput, ?cb : Callback<CheckDNSAvailabilityOutput>) : Request;
     
@@ -62,6 +65,12 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<DescribeEnvironmentHealthOutput>) : Request {})
     public function describeEnvironmentHealth(params : DescribeEnvironmentHealthInput, ?cb : Callback<DescribeEnvironmentHealthOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeEnvironmentManagedActionHistoryOutput>) : Request {})
+    public function describeEnvironmentManagedActionHistory(params : DescribeEnvironmentManagedActionHistoryInput, ?cb : Callback<DescribeEnvironmentManagedActionHistoryOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeEnvironmentManagedActionsOutput>) : Request {})
+    public function describeEnvironmentManagedActions(params : DescribeEnvironmentManagedActionsInput, ?cb : Callback<DescribeEnvironmentManagedActionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeEnvironmentResourcesOutput>) : Request {})
     public function describeEnvironmentResources(params : DescribeEnvironmentResourcesInput, ?cb : Callback<DescribeEnvironmentResourcesOutput>) : Request;

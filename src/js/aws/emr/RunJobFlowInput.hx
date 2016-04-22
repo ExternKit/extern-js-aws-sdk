@@ -13,12 +13,12 @@ typedef RunJobFlowInput = {
         @:optional var ServiceAccessSecurityGroup : String;
         @:optional var TerminationProtected : Bool;
         @:optional var Placement : _ShapeS1q;
-        @:optional var AdditionalMasterSecurityGroups : _ShapeS3m;
+        @:optional var AdditionalMasterSecurityGroups : _ShapeS3p;
         @:optional var KeepJobFlowAliveWhenNoSteps : Bool;
         @:optional var InstanceCount : Int;
         @:optional var EmrManagedSlaveSecurityGroup : String;
         @:optional var Ec2KeyName : String;
-        @:optional var AdditionalSlaveSecurityGroups : _ShapeS3m;
+        @:optional var AdditionalSlaveSecurityGroups : _ShapeS3p;
         @:optional var EmrManagedMasterSecurityGroup : String;
         @:optional var HadoopVersion : String;
         @:optional var MasterInstanceType : String;

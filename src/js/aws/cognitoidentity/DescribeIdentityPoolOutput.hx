@@ -1,3 +1,3 @@
 package js.aws.cognitoidentity;
 
-typedef DescribeIdentityPoolOutput = _ShapeSa;
+typedef DescribeIdentityPoolOutput = _ShapeSe;

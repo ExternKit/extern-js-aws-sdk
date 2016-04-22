@@ -18,6 +18,9 @@ typedef DescribeStreamOutput = {
         var StreamARN : String;
         var HasMoreShards : Bool;
         var RetentionPeriodHours : Int;
+        var EnhancedMonitoring : Array<{
+            @:optional var ShardLevelMetrics : _ShapeSr;
+        }>;
         var StreamName : String;
         var StreamStatus : String;
     };

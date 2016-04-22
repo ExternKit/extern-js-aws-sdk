@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef UpdateApplicationVersionOutput = _ShapeS1b;
+typedef UpdateApplicationVersionOutput = _ShapeS1e;

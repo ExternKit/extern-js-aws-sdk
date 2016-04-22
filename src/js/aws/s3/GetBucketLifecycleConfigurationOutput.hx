@@ -1,5 +1,5 @@
 package js.aws.s3;
 
 typedef GetBucketLifecycleConfigurationOutput = {
-    @:optional var Rules : _ShapeS3m;
+    @:optional var Rules : _ShapeS3p;
 };

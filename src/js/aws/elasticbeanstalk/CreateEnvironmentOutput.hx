@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef CreateEnvironmentOutput = _ShapeSg;
+typedef CreateEnvironmentOutput = _ShapeSk;

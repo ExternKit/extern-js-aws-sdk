@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef DescribeEnvironmentsOutput = _ShapeSe;
+typedef DescribeEnvironmentsOutput = _ShapeSi;

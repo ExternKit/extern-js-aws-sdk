@@ -6,8 +6,8 @@ typedef DescribeInstancesHealthOutput = {
         @:optional var AvailabilityZone : String;
         @:optional var Color : String;
         @:optional var InstanceId : String;
-        @:optional var Causes : _ShapeS2w;
-        @:optional var ApplicationMetrics : _ShapeS2y;
+        @:optional var Causes : _ShapeS2z;
+        @:optional var ApplicationMetrics : _ShapeS31;
         @:optional var InstanceType : String;
         @:optional var System : {
             @:optional var LoadAverage : Array<Float>;

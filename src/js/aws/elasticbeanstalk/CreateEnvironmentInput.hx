@@ -5,9 +5,9 @@ typedef CreateEnvironmentInput = {
     var ApplicationName : String;
     @:optional var VersionLabel : String;
     @:optional var GroupName : String;
-    @:optional var OptionsToRemove : _ShapeS1t;
+    @:optional var OptionsToRemove : _ShapeS1w;
     @:optional var EnvironmentName : String;
-    @:optional var OptionSettings : _ShapeS1g;
+    @:optional var OptionSettings : _ShapeS1j;
     @:optional var CNAMEPrefix : String;
     @:optional var SolutionStackName : String;
     @:optional var TemplateName : String;
@@ -15,5 +15,5 @@ typedef CreateEnvironmentInput = {
         @:optional var Value : String;
         @:optional var Key : String;
     }>;
-    @:optional var Tier : _ShapeSx;
+    @:optional var Tier : _ShapeS10;
 };

@@ -2,5 +2,5 @@ package js.aws.firehose;
 
 typedef PutRecordInput = {
     var DeliveryStreamName : String;
-    var Record : _ShapeS19;
+    var Record : _ShapeS1o;
 };

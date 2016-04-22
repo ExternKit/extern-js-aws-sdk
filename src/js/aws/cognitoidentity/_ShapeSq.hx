@@ -1,3 +1,3 @@
 package js.aws.cognitoidentity;
 
-typedef _ShapeSq = {};
+typedef _ShapeSq = Array<String>;

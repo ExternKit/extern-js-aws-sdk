@@ -5,5 +5,5 @@ typedef ListBucketsOutput = {
         @:optional var CreationDate : Float;
         @:optional var Name : String;
     }>;
-    @:optional var Owner : _ShapeS2h;
+    @:optional var Owner : _ShapeS2k;
 };
