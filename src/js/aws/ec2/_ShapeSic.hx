@@ -1,8 +1,6 @@
 package js.aws.ec2;
 
 typedef _ShapeSic = {
-    @:optional var Comment : String;
-    @:optional var UploadSize : Float;
-    @:optional var UploadStart : Float;
-    @:optional var UploadEnd : Float;
+    @:optional var S3Bucket : String;
+    @:optional var S3Key : String;
 };

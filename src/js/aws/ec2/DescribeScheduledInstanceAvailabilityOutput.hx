@@ -10,7 +10,7 @@ typedef DescribeScheduledInstanceAvailabilityOutput = {
         @:optional var SlotDurationInHours : Int;
         @:optional var AvailableInstanceCount : Int;
         @:optional var TotalScheduledInstanceHours : Int;
-        @:optional var Recurrence : _ShapeSe2;
+        @:optional var Recurrence : _ShapeSe3;
         @:optional var InstanceType : String;
         @:optional var FirstSlotStartTime : Float;
         @:optional var MaxTermDurationInDays : Int;

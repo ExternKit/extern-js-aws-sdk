@@ -10,13 +10,13 @@ typedef DescribeReservedInstancesOutput = {
         @:optional var End : Float;
         @:optional var OfferingType : String;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : _ShapeSd6;
+        @:optional var RecurringCharges : _ShapeSd7;
         @:optional var InstanceType : String;
         @:optional var Start : Float;
         @:optional var State : String;
         @:optional var ReservedInstancesId : String;
         @:optional var ProductDescription : String;
         @:optional var FixedPrice : Float;
-        @:optional var Tags : _ShapeSa;
+        @:optional var Tags : _ShapeSb;
     }>;
 };

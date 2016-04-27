@@ -522,6 +522,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ModifyVpcEndpointOutput>) : Request {})
     public function modifyVpcEndpoint(params : ModifyVpcEndpointInput, ?cb : Callback<ModifyVpcEndpointOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyVpcPeeringConnectionOptionsOutput>) : Request {})
+    public function modifyVpcPeeringConnectionOptions(params : ModifyVpcPeeringConnectionOptionsInput, ?cb : Callback<ModifyVpcPeeringConnectionOptionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<MonitorInstancesOutput>) : Request {})
     public function monitorInstances(params : MonitorInstancesInput, ?cb : Callback<MonitorInstancesOutput>) : Request;
     

@@ -78,12 +78,6 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<ForgotPasswordOutput>) : Request {})
     public function forgotPassword(params : ForgotPasswordInput, ?cb : Callback<ForgotPasswordOutput>) : Request;
     
-    @:overload(function (?cb : Callback<GetJWKSOutput>) : Request {})
-    public function getJWKS(params : GetJWKSInput, ?cb : Callback<GetJWKSOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<GetOpenIdConfigurationOutput>) : Request {})
-    public function getOpenIdConfiguration(params : GetOpenIdConfigurationInput, ?cb : Callback<GetOpenIdConfigurationOutput>) : Request;
-    
     @:overload(function (?cb : Callback<GetUserOutput>) : Request {})
     public function getUser(params : GetUserInput, ?cb : Callback<GetUserOutput>) : Request;
     

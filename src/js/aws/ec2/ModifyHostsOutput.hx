@@ -1,6 +1,6 @@
 package js.aws.ec2;
 
 typedef ModifyHostsOutput = {
-    @:optional var Successful : _ShapeSj;
-    @:optional var Unsuccessful : _ShapeSix;
+    @:optional var Successful : _ShapeSk;
+    @:optional var Unsuccessful : _ShapeSiy;
 };

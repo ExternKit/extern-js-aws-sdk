@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef AllocateHostsOutput = {
-    @:optional var HostIds : _ShapeSj;
+    @:optional var HostIds : _ShapeSk;
 };

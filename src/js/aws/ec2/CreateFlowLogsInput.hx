@@ -4,7 +4,7 @@ typedef CreateFlowLogsInput = {
     @:optional var ClientToken : String;
     var ResourceType : String;
     var TrafficType : String;
-    var ResourceIds : _ShapeS26;
+    var ResourceIds : _ShapeS27;
     var DeliverLogsPermissionArn : String;
     var LogGroupName : String;
 };

@@ -8,7 +8,7 @@ typedef AuthorizeSecurityGroupIngressInput = {
     @:optional var FromPort : Int;
     @:optional var SourceSecurityGroupOwnerId : String;
     @:optional var SourceSecurityGroupName : String;
-    @:optional var IpPermissions : _ShapeS15;
+    @:optional var IpPermissions : _ShapeS16;
     @:optional var DryRun : Bool;
     @:optional var ToPort : Int;
 };
