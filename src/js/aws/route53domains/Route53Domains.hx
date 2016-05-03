@@ -30,6 +30,9 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<EnableDomainTransferLockOutput>) : Request {})
     public function enableDomainTransferLock(params : EnableDomainTransferLockInput, ?cb : Callback<EnableDomainTransferLockOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetContactReachabilityStatusOutput>) : Request {})
+    public function getContactReachabilityStatus(params : GetContactReachabilityStatusInput, ?cb : Callback<GetContactReachabilityStatusOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetDomainDetailOutput>) : Request {})
     public function getDomainDetail(params : GetDomainDetailInput, ?cb : Callback<GetDomainDetailOutput>) : Request;
     
@@ -47,6 +50,9 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<RegisterDomainOutput>) : Request {})
     public function registerDomain(params : RegisterDomainInput, ?cb : Callback<RegisterDomainOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ResendContactReachabilityEmailOutput>) : Request {})
+    public function resendContactReachabilityEmail(params : ResendContactReachabilityEmailInput, ?cb : Callback<ResendContactReachabilityEmailOutput>) : Request;
     
     @:overload(function (?cb : Callback<RetrieveDomainAuthCodeOutput>) : Request {})
     public function retrieveDomainAuthCode(params : RetrieveDomainAuthCodeInput, ?cb : Callback<RetrieveDomainAuthCodeOutput>) : Request;

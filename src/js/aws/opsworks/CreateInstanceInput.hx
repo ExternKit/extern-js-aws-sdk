@@ -12,6 +12,7 @@ typedef CreateInstanceInput = {
     var LayerIds : _ShapeS3;
     @:optional var VirtualizationType : String;
     var InstanceType : String;
+    @:optional var Tenancy : String;
     @:optional var BlockDeviceMappings : _ShapeSz;
     @:optional var Architecture : String;
     @:optional var Hostname : String;

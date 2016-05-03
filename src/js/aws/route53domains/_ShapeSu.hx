@@ -1,6 +1,6 @@
 package js.aws.route53domains;
 
-typedef _ShapeSr = {
+typedef _ShapeSu = {
     @:optional var ZipCode : String;
     @:optional var ExtraParams : Array<{
         var Value : String;

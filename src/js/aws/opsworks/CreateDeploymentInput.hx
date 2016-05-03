@@ -5,6 +5,7 @@ typedef CreateDeploymentInput = {
     @:optional var Comment : String;
     var StackId : String;
     @:optional var InstanceIds : _ShapeS3;
+    @:optional var LayerIds : _ShapeS3;
     @:optional var CustomJson : String;
     @:optional var AppId : String;
 };

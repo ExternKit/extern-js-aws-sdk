@@ -35,6 +35,7 @@ typedef DescribeInstancesOutput = {
         @:optional var RootDeviceVolumeId : String;
         @:optional var LastServiceErrorId : String;
         @:optional var RegisteredBy : String;
+        @:optional var Tenancy : String;
         @:optional var BlockDeviceMappings : _ShapeSz;
         @:optional var Architecture : String;
         @:optional var ReportedAgentVersion : String;
