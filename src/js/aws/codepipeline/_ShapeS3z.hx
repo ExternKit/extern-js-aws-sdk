@@ -1,6 +1,7 @@
 package js.aws.codepipeline;
 
 typedef _ShapeS3z = {
-    var revision : String;
-    var changeIdentifier : String;
+    @:optional var percentComplete : Int;
+    @:optional var summary : String;
+    @:optional var externalExecutionId : String;
 };
