@@ -7,6 +7,7 @@ typedef _ShapeSz = {
     @:optional var cacheNamespace : String;
     @:optional var requestTemplates : _ShapeSi;
     @:optional var credentials : String;
+    @:optional var passthroughBehavior : String;
     @:optional var uri : String;
     @:optional var httpMethod : String;
     @:optional var cacheKeyParameters : _ShapeS7;

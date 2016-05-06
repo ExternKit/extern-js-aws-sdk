@@ -1,5 +1,5 @@
 package js.aws.kms;
 
 typedef CreateKeyOutput = {
-    @:optional var KeyMetadata : _ShapeSo;
+    @:optional var KeyMetadata : _ShapeSp;
 };

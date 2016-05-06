@@ -8,6 +8,6 @@ typedef PutBucketAclInput = {
     @:optional var GrantWrite : String;
     @:optional var GrantWriteACP : String;
     @:optional var GrantRead : String;
-    @:optional var AccessControlPolicy : _ShapeS81;
+    @:optional var AccessControlPolicy : _ShapeS88;
     @:optional var ContentMD5 : String;
 };

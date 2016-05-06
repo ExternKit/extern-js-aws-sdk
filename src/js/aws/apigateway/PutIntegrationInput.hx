@@ -9,6 +9,7 @@ typedef PutIntegrationInput = {
     @:optional var requestTemplates : _ShapeSi;
     @:optional var integrationHttpMethod : String;
     @:optional var credentials : String;
+    @:optional var passthroughBehavior : String;
     @:optional var uri : String;
     var httpMethod : String;
     @:optional var cacheKeyParameters : _ShapeS7;

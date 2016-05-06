@@ -129,6 +129,9 @@ extern class S3 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListObjectsOutput>) : Request {})
     public function listObjects(params : ListObjectsInput, ?cb : Callback<ListObjectsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListObjectsV2Output>) : Request {})
+    public function listObjectsV2(params : ListObjectsV2Input, ?cb : Callback<ListObjectsV2Output>) : Request;
+    
     @:overload(function (?cb : Callback<ListPartsOutput>) : Request {})
     public function listParts(params : ListPartsInput, ?cb : Callback<ListPartsOutput>) : Request;
     

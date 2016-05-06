@@ -1,6 +1,6 @@
 package js.aws.kms;
 
-typedef _ShapeSo = {
+typedef _ShapeSp = {
     @:optional var CreationDate : Float;
     @:optional var Description : String;
     @:optional var KeyUsage : String;

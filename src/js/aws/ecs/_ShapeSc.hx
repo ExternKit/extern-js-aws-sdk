@@ -1,6 +1,7 @@
 package js.aws.ecs;
 
 typedef _ShapeSc = {
+    @:optional var createdAt : Float;
     @:optional var runningCount : Int;
     @:optional var roleArn : String;
     @:optional var loadBalancers : _ShapeS7;
