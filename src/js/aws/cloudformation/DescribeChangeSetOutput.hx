@@ -4,6 +4,7 @@ typedef DescribeChangeSetOutput = {
     @:optional var Description : String;
     @:optional var Parameters : _ShapeSa;
     @:optional var CreationTime : Float;
+    @:optional var ExecutionStatus : String;
     @:optional var NotificationARNs : _ShapeSj;
     @:optional var NextToken : String;
     @:optional var StackName : String;

@@ -351,6 +351,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeScheduledInstancesOutput>) : Request {})
     public function describeScheduledInstances(params : DescribeScheduledInstancesInput, ?cb : Callback<DescribeScheduledInstancesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeSecurityGroupReferencesOutput>) : Request {})
+    public function describeSecurityGroupReferences(params : DescribeSecurityGroupReferencesInput, ?cb : Callback<DescribeSecurityGroupReferencesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeSecurityGroupsOutput>) : Request {})
     public function describeSecurityGroups(params : DescribeSecurityGroupsInput, ?cb : Callback<DescribeSecurityGroupsOutput>) : Request;
     
@@ -377,6 +380,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeSpotPriceHistoryOutput>) : Request {})
     public function describeSpotPriceHistory(params : DescribeSpotPriceHistoryInput, ?cb : Callback<DescribeSpotPriceHistoryOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeStaleSecurityGroupsOutput>) : Request {})
+    public function describeStaleSecurityGroups(params : DescribeStaleSecurityGroupsInput, ?cb : Callback<DescribeStaleSecurityGroupsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeSubnetsOutput>) : Request {})
     public function describeSubnets(params : DescribeSubnetsInput, ?cb : Callback<DescribeSubnetsOutput>) : Request;

@@ -13,5 +13,5 @@ typedef ModifyImageAttributeInput = {
     @:optional var Attribute : String;
     @:optional var DryRun : Bool;
     @:optional var ProductCodes : Array<String>;
-    @:optional var UserIds : _ShapeSj2;
+    @:optional var UserIds : _ShapeSjg;
 };

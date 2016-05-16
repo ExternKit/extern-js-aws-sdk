@@ -98,6 +98,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     
     public var directoryservice : Config;
     
+    public var discovery : Config;
+    
     public var dms : Config;
     
     public var dynamodb : Config;

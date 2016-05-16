@@ -126,6 +126,9 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
     public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListTapesOutput>) : Request {})
+    public function listTapes(params : ListTapesInput, ?cb : Callback<ListTapesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListVolumeInitiatorsOutput>) : Request {})
     public function listVolumeInitiators(params : ListVolumeInitiatorsInput, ?cb : Callback<ListVolumeInitiatorsOutput>) : Request;
     

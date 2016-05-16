@@ -6,6 +6,7 @@ typedef ListGatewaysOutput = {
         @:optional var GatewayType : String;
         @:optional var GatewayOperationalState : String;
         @:optional var GatewayARN : String;
+        @:optional var GatewayId : String;
         @:optional var GatewayName : String;
     }>;
 };

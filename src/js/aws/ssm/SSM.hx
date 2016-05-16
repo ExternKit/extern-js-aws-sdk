@@ -36,6 +36,9 @@ extern class SSM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeDocumentOutput>) : Request {})
     public function describeDocument(params : DescribeDocumentInput, ?cb : Callback<DescribeDocumentOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeDocumentPermissionOutput>) : Request {})
+    public function describeDocumentPermission(params : DescribeDocumentPermissionInput, ?cb : Callback<DescribeDocumentPermissionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeInstanceInformationOutput>) : Request {})
     public function describeInstanceInformation(params : DescribeInstanceInformationInput, ?cb : Callback<DescribeInstanceInformationOutput>) : Request;
     
@@ -53,6 +56,9 @@ extern class SSM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListDocumentsOutput>) : Request {})
     public function listDocuments(params : ListDocumentsInput, ?cb : Callback<ListDocumentsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyDocumentPermissionOutput>) : Request {})
+    public function modifyDocumentPermission(params : ModifyDocumentPermissionInput, ?cb : Callback<ModifyDocumentPermissionOutput>) : Request;
     
     @:overload(function (?cb : Callback<SendCommandOutput>) : Request {})
     public function sendCommand(params : SendCommandInput, ?cb : Callback<SendCommandOutput>) : Request;

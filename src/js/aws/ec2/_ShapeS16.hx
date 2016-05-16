@@ -6,14 +6,7 @@ typedef _ShapeS16 = Array<{
     }>;
     @:optional var IpProtocol : String;
     @:optional var FromPort : Int;
-    @:optional var UserIdGroupPairs : Array<{
-        @:optional var PeeringStatus : String;
-        @:optional var VpcId : String;
-        @:optional var GroupId : String;
-        @:optional var VpcPeeringConnectionId : String;
-        @:optional var UserId : String;
-        @:optional var GroupName : String;
-    }>;
+    @:optional var UserIdGroupPairs : Array<_ShapeS19>;
     @:optional var ToPort : Int;
     @:optional var PrefixListIds : Array<{
         @:optional var PrefixListId : String;

@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef UnmonitorInstancesOutput = {
-    @:optional var InstanceMonitorings : _ShapeSjz;
+    @:optional var InstanceMonitorings : _ShapeSkd;
 };

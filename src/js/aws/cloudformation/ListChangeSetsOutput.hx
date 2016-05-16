@@ -5,6 +5,7 @@ typedef ListChangeSetsOutput = {
     @:optional var Summaries : Array<{
         @:optional var Description : String;
         @:optional var CreationTime : Float;
+        @:optional var ExecutionStatus : String;
         @:optional var StackName : String;
         @:optional var StackId : String;
         @:optional var ChangeSetId : String;

@@ -8,7 +8,10 @@ typedef _ShapeSv = {
         @:optional var Name : String;
         @:optional var Type : String;
     }>;
-    @:optional var PlatformTypes : _ShapeS15;
+    @:optional var Owner : String;
+    @:optional var HashType : String;
+    @:optional var PlatformTypes : _ShapeS19;
+    @:optional var Hash : String;
     @:optional var Name : String;
     @:optional var Sha1 : String;
     @:optional var Status : String;
