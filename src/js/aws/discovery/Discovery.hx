@@ -21,23 +21,20 @@ extern class Discovery extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeAgentsOutput>) : Request {})
     public function describeAgents(params : DescribeAgentsInput, ?cb : Callback<DescribeAgentsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeConfigurationsOutput>) : Request {})
+    public function describeConfigurations(params : DescribeConfigurationsInput, ?cb : Callback<DescribeConfigurationsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeExportConfigurationsOutput>) : Request {})
+    public function describeExportConfigurations(params : DescribeExportConfigurationsInput, ?cb : Callback<DescribeExportConfigurationsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeTagsOutput>) : Request {})
     public function describeTags(params : DescribeTagsInput, ?cb : Callback<DescribeTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ExportConfigurationsOutput>) : Request {})
     public function exportConfigurations(params : ExportConfigurationsInput, ?cb : Callback<ExportConfigurationsOutput>) : Request;
     
-    @:overload(function (?cb : Callback<GetConfigurationAttributesOutput>) : Request {})
-    public function getConfigurationAttributes(params : GetConfigurationAttributesInput, ?cb : Callback<GetConfigurationAttributesOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<GetExportStatusOutput>) : Request {})
-    public function getExportStatus(params : GetExportStatusInput, ?cb : Callback<GetExportStatusOutput>) : Request;
-    
     @:overload(function (?cb : Callback<ListConfigurationsOutput>) : Request {})
     public function listConfigurations(params : ListConfigurationsInput, ?cb : Callback<ListConfigurationsOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<RemoveConfigurationOutput>) : Request {})
-    public function removeConfiguration(params : RemoveConfigurationInput, ?cb : Callback<RemoveConfigurationOutput>) : Request;
     
     @:overload(function (?cb : Callback<StartDataCollectionByAgentIdsOutput>) : Request {})
     public function startDataCollectionByAgentIds(params : StartDataCollectionByAgentIdsInput, ?cb : Callback<StartDataCollectionByAgentIdsOutput>) : Request;

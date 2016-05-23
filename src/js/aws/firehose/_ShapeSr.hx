@@ -1,5 +1,5 @@
 package js.aws.firehose;
 
-typedef _ShapeSz = {
+typedef _ShapeSr = {
     @:optional var DurationInSeconds : Int;
 };

@@ -1,6 +1,6 @@
 package js.aws.workspaces;
 
-typedef _ShapeSe = Array<{
+typedef _ShapeSl = Array<{
     @:optional var DirectoryId : String;
     @:optional var SubnetId : String;
     @:optional var UserName : String;

@@ -8,6 +8,7 @@ typedef CreateDeliveryStreamInput = {
         var S3Configuration : _ShapeS3;
         var Password : _ShapeSq;
         var RoleARN : String;
+        @:optional var RetryOptions : _ShapeSr;
         var CopyCommand : _ShapeSl;
     };
     @:optional var S3DestinationConfiguration : _ShapeS3;
@@ -20,8 +21,8 @@ typedef CreateDeliveryStreamInput = {
         @:optional var CloudWatchLoggingOptions : _ShapeSf;
         var S3Configuration : _ShapeS3;
         var RoleARN : String;
-        @:optional var BufferingHints : _ShapeSw;
+        @:optional var BufferingHints : _ShapeSy;
         var IndexName : String;
-        @:optional var RetryOptions : _ShapeSz;
+        @:optional var RetryOptions : _ShapeS11;
     };
 };

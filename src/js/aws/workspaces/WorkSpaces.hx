@@ -12,8 +12,17 @@ extern class WorkSpaces extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<CreateTagsOutput>) : Request {})
+    public function createTags(params : CreateTagsInput, ?cb : Callback<CreateTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateWorkspacesOutput>) : Request {})
     public function createWorkspaces(params : CreateWorkspacesInput, ?cb : Callback<CreateWorkspacesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteTagsOutput>) : Request {})
+    public function deleteTags(params : DeleteTagsInput, ?cb : Callback<DeleteTagsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeTagsOutput>) : Request {})
+    public function describeTags(params : DescribeTagsInput, ?cb : Callback<DescribeTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeWorkspaceBundlesOutput>) : Request {})
     public function describeWorkspaceBundles(params : DescribeWorkspaceBundlesInput, ?cb : Callback<DescribeWorkspaceBundlesOutput>) : Request;

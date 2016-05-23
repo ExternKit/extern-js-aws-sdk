@@ -1,6 +1,6 @@
 package js.aws.firehose;
 
-typedef _ShapeS1g = {
+typedef _ShapeS1i = {
     var BucketARN : String;
     @:optional var Prefix : String;
     var CompressionFormat : String;

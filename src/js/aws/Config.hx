@@ -56,6 +56,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     
     public var apigateway : Config;
     
+    public var applicationautoscaling : Config;
+    
     public var autoscaling : Config;
     
     public var cloudformation : Config;

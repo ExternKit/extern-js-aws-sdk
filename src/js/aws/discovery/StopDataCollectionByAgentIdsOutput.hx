@@ -1,5 +1,5 @@
 package js.aws.discovery;
 
 typedef StopDataCollectionByAgentIdsOutput = {
-    @:optional var agentsConfigStatus : _ShapeS1k;
+    @:optional var agentsConfigurationStatus : _ShapeS1m;
 };

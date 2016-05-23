@@ -5,7 +5,7 @@ typedef ListConfigurationsInput = {
     var configurationType : String;
     @:optional var filters : Array<{
         var name : String;
-        var values : _ShapeSr;
+        var values : _ShapeS15;
         var condition : String;
     }>;
     @:optional var nextToken : String;
