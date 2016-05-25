@@ -1,9 +1,11 @@
 package js.aws.ec2;
 
 typedef _ShapeS4q = {
-    @:optional var PublicDnsName : String;
-    @:optional var AssociationId : String;
-    @:optional var PublicIp : String;
-    @:optional var AllocationId : String;
-    @:optional var IpOwnerId : String;
+    @:optional var AttachTime : Float;
+    @:optional var InstanceOwnerId : String;
+    @:optional var InstanceId : String;
+    @:optional var DeviceIndex : Int;
+    @:optional var DeleteOnTermination : Bool;
+    @:optional var AttachmentId : String;
+    @:optional var Status : String;
 };

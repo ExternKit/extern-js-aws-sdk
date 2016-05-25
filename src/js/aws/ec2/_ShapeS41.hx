@@ -9,6 +9,13 @@ typedef _ShapeS41 = {
     @:optional var State : String;
     @:optional var FailureCode : String;
     @:optional var NatGatewayId : String;
+    @:optional var ProvisionedBandwidth : {
+        @:optional var RequestTime : Float;
+        @:optional var ProvisionTime : Float;
+        @:optional var Provisioned : String;
+        @:optional var Requested : String;
+        @:optional var Status : String;
+    };
     @:optional var NatGatewayAddresses : Array<{
         @:optional var PrivateIp : String;
         @:optional var PublicIp : String;

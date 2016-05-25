@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateSpotDatafeedSubscriptionOutput = {
-    @:optional var SpotDatafeedSubscription : _ShapeS5k;
+    @:optional var SpotDatafeedSubscription : _ShapeS5l;
 };

@@ -3,5 +3,5 @@ package js.aws.ec2;
 typedef ImportSnapshotOutput = {
     @:optional var ImportTaskId : String;
     @:optional var Description : String;
-    @:optional var SnapshotTaskDetail : _ShapeSao;
+    @:optional var SnapshotTaskDetail : _ShapeSap;
 };

@@ -9,6 +9,7 @@ typedef CreateDBClusterInput = {
     @:optional var KmsKeyId : String;
     @:optional var CharacterSetName : String;
     @:optional var BackupRetentionPeriod : Int;
+    @:optional var ReplicationSourceIdentifier : String;
     var DBClusterIdentifier : String;
     @:optional var PreferredMaintenanceWindow : String;
     @:optional var DBClusterParameterGroupName : String;

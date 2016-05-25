@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef DescribeDBSnapshotAttributesInput = {
-    @:optional var DBSnapshotIdentifier : String;
+    var DBSnapshotIdentifier : String;
 };

@@ -4,12 +4,12 @@ typedef ImportSnapshotInput = {
     @:optional var Description : String;
     @:optional var ClientToken : String;
     @:optional var RoleName : String;
-    @:optional var ClientData : _ShapeSir;
+    @:optional var ClientData : _ShapeSiu;
     @:optional var DiskContainer : {
         @:optional var Description : String;
         @:optional var Url : String;
         @:optional var Format : String;
-        @:optional var UserBucket : _ShapeSiq;
+        @:optional var UserBucket : _ShapeSit;
     };
     @:optional var DryRun : Bool;
 };

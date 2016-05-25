@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef DescribeVpcEndpointsOutput = {
     @:optional var NextToken : String;
-    @:optional var VpcEndpoints : Array<_ShapeS64>;
+    @:optional var VpcEndpoints : Array<_ShapeS65>;
 };

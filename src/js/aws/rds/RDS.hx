@@ -111,6 +111,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeDBClusterParametersOutput>) : Request {})
     public function describeDBClusterParameters(params : DescribeDBClusterParametersInput, ?cb : Callback<DescribeDBClusterParametersOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeDBClusterSnapshotAttributesOutput>) : Request {})
+    public function describeDBClusterSnapshotAttributes(params : DescribeDBClusterSnapshotAttributesInput, ?cb : Callback<DescribeDBClusterSnapshotAttributesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeDBClusterSnapshotsOutput>) : Request {})
     public function describeDBClusterSnapshots(params : DescribeDBClusterSnapshotsInput, ?cb : Callback<DescribeDBClusterSnapshotsOutput>) : Request;
     
@@ -191,6 +194,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ModifyDBClusterParameterGroupOutput>) : Request {})
     public function modifyDBClusterParameterGroup(params : ModifyDBClusterParameterGroupInput, ?cb : Callback<ModifyDBClusterParameterGroupOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyDBClusterSnapshotAttributeOutput>) : Request {})
+    public function modifyDBClusterSnapshotAttribute(params : ModifyDBClusterSnapshotAttributeInput, ?cb : Callback<ModifyDBClusterSnapshotAttributeOutput>) : Request;
     
     @:overload(function (?cb : Callback<ModifyDBInstanceOutput>) : Request {})
     public function modifyDBInstance(params : ModifyDBInstanceInput, ?cb : Callback<ModifyDBInstanceOutput>) : Request;

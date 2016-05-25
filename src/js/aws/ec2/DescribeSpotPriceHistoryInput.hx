@@ -4,7 +4,7 @@ typedef DescribeSpotPriceHistoryInput = {
     @:optional var AvailabilityZone : String;
     @:optional var MaxResults : Int;
     @:optional var InstanceTypes : Array<String>;
-    @:optional var Filters : _ShapeS7s;
+    @:optional var Filters : _ShapeS7t;
     @:optional var NextToken : String;
     @:optional var ProductDescriptions : Array<String>;
     @:optional var EndTime : Float;

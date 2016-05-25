@@ -5,8 +5,8 @@ typedef DescribeImageAttributeOutput = {
     @:optional var SriovNetSupport : _ShapeS34;
     @:optional var KernelId : _ShapeS34;
     @:optional var ImageId : String;
-    @:optional var BlockDeviceMappings : _ShapeS9x;
-    @:optional var ProductCodes : _ShapeS9u;
+    @:optional var BlockDeviceMappings : _ShapeS9y;
+    @:optional var ProductCodes : _ShapeS9v;
     @:optional var RamdiskId : _ShapeS34;
-    @:optional var LaunchPermissions : _ShapeS9r;
+    @:optional var LaunchPermissions : _ShapeS9s;
 };

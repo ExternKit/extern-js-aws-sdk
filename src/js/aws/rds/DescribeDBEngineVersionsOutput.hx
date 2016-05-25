@@ -4,7 +4,7 @@ typedef DescribeDBEngineVersionsOutput = {
     @:optional var Marker : String;
     @:optional var DBEngineVersions : Array<{
         @:optional var EngineVersion : String;
-        @:optional var SupportedCharacterSets : Array<_ShapeS3w>;
+        @:optional var SupportedCharacterSets : Array<_ShapeS42>;
         @:optional var ValidUpgradeTarget : Array<{
             @:optional var Description : String;
             @:optional var EngineVersion : String;
@@ -13,7 +13,7 @@ typedef DescribeDBEngineVersionsOutput = {
             @:optional var Engine : String;
         }>;
         @:optional var DBEngineDescription : String;
-        @:optional var DefaultCharacterSet : _ShapeS3w;
+        @:optional var DefaultCharacterSet : _ShapeS42;
         @:optional var DBEngineVersionDescription : String;
         @:optional var DBParameterGroupFamily : String;
         @:optional var Engine : String;

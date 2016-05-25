@@ -2,7 +2,7 @@ package js.aws.ec2;
 
 typedef ReportInstanceStatusInput = {
     @:optional var Description : String;
-    var Instances : _ShapeS8b;
+    var Instances : _ShapeS8c;
     @:optional var EndTime : Float;
     @:optional var DryRun : Bool;
     var ReasonCodes : Array<String>;

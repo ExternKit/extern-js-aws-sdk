@@ -471,6 +471,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetConsoleOutputOutput>) : Request {})
     public function getConsoleOutput(params : GetConsoleOutputInput, ?cb : Callback<GetConsoleOutputOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetConsoleScreenshotOutput>) : Request {})
+    public function getConsoleScreenshot(params : GetConsoleScreenshotInput, ?cb : Callback<GetConsoleScreenshotOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetPasswordDataOutput>) : Request {})
     public function getPasswordData(params : GetPasswordDataInput, ?cb : Callback<GetPasswordDataOutput>) : Request;
     

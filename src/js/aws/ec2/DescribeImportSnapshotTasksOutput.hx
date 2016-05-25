@@ -4,7 +4,7 @@ typedef DescribeImportSnapshotTasksOutput = {
     @:optional var ImportSnapshotTasks : Array<{
         @:optional var ImportTaskId : String;
         @:optional var Description : String;
-        @:optional var SnapshotTaskDetail : _ShapeSao;
+        @:optional var SnapshotTaskDetail : _ShapeSap;
     }>;
     @:optional var NextToken : String;
 };

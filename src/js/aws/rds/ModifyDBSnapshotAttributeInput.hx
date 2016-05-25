@@ -1,8 +1,8 @@
 package js.aws.rds;
 
 typedef ModifyDBSnapshotAttributeInput = {
-    @:optional var ValuesToAdd : _ShapeS4k;
+    @:optional var ValuesToAdd : _ShapeS3r;
     var DBSnapshotIdentifier : String;
-    @:optional var ValuesToRemove : _ShapeS4k;
-    @:optional var AttributeName : String;
+    @:optional var ValuesToRemove : _ShapeS3r;
+    var AttributeName : String;
 };

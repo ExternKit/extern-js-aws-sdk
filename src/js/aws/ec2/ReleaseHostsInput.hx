@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef ReleaseHostsInput = {
-    var HostIds : _ShapeS99;
+    var HostIds : _ShapeS9a;
 };

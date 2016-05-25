@@ -1,3 +1,3 @@
 package js.aws.rds;
 
-typedef ModifyDBClusterParameterGroupOutput = _ShapeS6a;
+typedef ModifyDBClusterParameterGroupOutput = _ShapeS6f;
