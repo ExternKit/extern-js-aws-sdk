@@ -1,11 +1,11 @@
 package js.aws.elasticache;
 
-typedef _ShapeS35 = {
+typedef _ShapeS36 = {
     @:optional var UsagePrice : Float;
     @:optional var ReservedCacheNodesOfferingId : String;
     @:optional var Duration : Int;
     @:optional var OfferingType : String;
-    @:optional var RecurringCharges : _ShapeS37;
+    @:optional var RecurringCharges : _ShapeS38;
     @:optional var CacheNodeCount : Int;
     @:optional var State : String;
     @:optional var ProductDescription : String;

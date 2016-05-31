@@ -8,5 +8,6 @@ typedef _ShapeS2f = Array<{
     @:optional var ParameterName : String;
     @:optional var MinimumEngineVersion : String;
     @:optional var AllowedValues : String;
+    @:optional var ChangeType : String;
     @:optional var ParameterValue : String;
 }>;

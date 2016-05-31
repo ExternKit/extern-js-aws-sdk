@@ -1,7 +1,7 @@
 package js.aws.elasticache;
 
 typedef ResetCacheParameterGroupInput = {
-    var ParameterNameValues : _ShapeS3n;
+    @:optional var ParameterNameValues : _ShapeS3o;
     var CacheParameterGroupName : String;
     @:optional var ResetAllParameters : Bool;
 };
