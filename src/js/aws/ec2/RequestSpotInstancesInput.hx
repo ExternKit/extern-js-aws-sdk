@@ -11,7 +11,7 @@ typedef RequestSpotInstancesInput = {
         @:optional var SecurityGroupIds : _ShapeS27;
         @:optional var KeyName : String;
         @:optional var SecurityGroups : _ShapeS27;
-        @:optional var Monitoring : _ShapeSfu;
+        @:optional var Monitoring : _ShapeSfv;
         @:optional var ImageId : String;
         @:optional var InstanceType : String;
         @:optional var BlockDeviceMappings : _ShapeS9y;

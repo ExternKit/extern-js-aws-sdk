@@ -11,11 +11,11 @@ typedef ImportImageInput = {
         @:optional var Url : String;
         @:optional var DeviceName : String;
         @:optional var Format : String;
-        @:optional var UserBucket : _ShapeSit;
+        @:optional var UserBucket : _ShapeSiu;
     }>;
     @:optional var LicenseType : String;
     @:optional var Hypervisor : String;
     @:optional var Architecture : String;
-    @:optional var ClientData : _ShapeSiu;
+    @:optional var ClientData : _ShapeSiv;
     @:optional var DryRun : Bool;
 };

@@ -14,8 +14,8 @@ typedef RunInstancesInput = {
     @:optional var SecurityGroupIds : _ShapeS4i;
     @:optional var KeyName : String;
     @:optional var InstanceInitiatedShutdownBehavior : String;
-    @:optional var SecurityGroups : _ShapeSiy;
-    @:optional var Monitoring : _ShapeSfu;
+    @:optional var SecurityGroups : _ShapeSiz;
+    @:optional var Monitoring : _ShapeSfv;
     var ImageId : String;
     @:optional var InstanceType : String;
     var MinCount : Int;

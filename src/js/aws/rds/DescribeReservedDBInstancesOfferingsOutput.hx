@@ -9,7 +9,7 @@ typedef DescribeReservedDBInstancesOfferingsOutput = {
         @:optional var Duration : Int;
         @:optional var OfferingType : String;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : _ShapeS60;
+        @:optional var RecurringCharges : _ShapeS61;
         @:optional var ProductDescription : String;
         @:optional var FixedPrice : Float;
         @:optional var ReservedDBInstancesOfferingId : String;

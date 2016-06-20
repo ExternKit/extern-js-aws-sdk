@@ -24,11 +24,13 @@ typedef _ShapeSfc = {
     }>;
     @:optional var ValidFrom : Float;
     @:optional var ClientToken : String;
+    @:optional var FulfilledCapacity : Float;
     @:optional var ValidUntil : Float;
     var TargetCapacity : Int;
     @:optional var AllocationStrategy : String;
     var IamFleetRole : String;
     var SpotPrice : String;
+    @:optional var Type : String;
     @:optional var TerminateInstancesWithExpiration : Bool;
     @:optional var ExcessCapacityTerminationPolicy : String;
 };

@@ -8,7 +8,7 @@ typedef CreateDBInstanceInput = {
     @:optional var AvailabilityZone : String;
     @:optional var MonitoringRoleArn : String;
     @:optional var VpcSecurityGroupIds : _ShapeS1d;
-    @:optional var DBSecurityGroups : _ShapeS1q;
+    @:optional var DBSecurityGroups : _ShapeS1r;
     @:optional var DBSubnetGroupName : String;
     @:optional var AllocatedStorage : Int;
     @:optional var CopyTagsToSnapshot : Bool;

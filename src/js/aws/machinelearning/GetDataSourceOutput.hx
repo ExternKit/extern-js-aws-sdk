@@ -4,8 +4,8 @@ typedef GetDataSourceOutput = {
     @:optional var DataSizeInBytes : Int;
     @:optional var LastUpdatedAt : Float;
     @:optional var DataLocationS3 : String;
-    @:optional var RedshiftMetadata : _ShapeS28;
-    @:optional var RDSMetadata : _ShapeS29;
+    @:optional var RedshiftMetadata : _ShapeS2i;
+    @:optional var RDSMetadata : _ShapeS2j;
     @:optional var DataRearrangement : String;
     @:optional var Message : String;
     @:optional var CreatedAt : Float;

@@ -12,6 +12,7 @@ typedef GetRecordsOutput = {
             @:optional var StreamViewType : String;
             @:optional var SequenceNumber : String;
             @:optional var OldImage : _ShapeSr;
+            @:optional var ApproximateCreationDateTime : Float;
             @:optional var Keys : _ShapeSr;
             @:optional var NewImage : _ShapeSr;
         };

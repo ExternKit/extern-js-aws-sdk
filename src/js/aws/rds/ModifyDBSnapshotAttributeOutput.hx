@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef ModifyDBSnapshotAttributeOutput = {
-    @:optional var DBSnapshotAttributesResult : _ShapeS4n;
+    @:optional var DBSnapshotAttributesResult : _ShapeS4o;
 };

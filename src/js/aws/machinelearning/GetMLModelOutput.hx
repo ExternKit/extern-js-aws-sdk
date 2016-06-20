@@ -2,7 +2,7 @@ package js.aws.machinelearning;
 
 typedef GetMLModelOutput = {
     @:optional var LastUpdatedAt : Float;
-    @:optional var EndpointInfo : _ShapeS1c;
+    @:optional var EndpointInfo : _ShapeS1j;
     @:optional var SizeInBytes : Int;
     @:optional var Message : String;
     @:optional var CreatedAt : Float;
@@ -12,7 +12,7 @@ typedef GetMLModelOutput = {
     @:optional var ScoreThresholdLastUpdatedAt : Float;
     @:optional var TrainingDataSourceId : String;
     @:optional var LogUri : String;
-    @:optional var TrainingParameters : _ShapeS16;
+    @:optional var TrainingParameters : _ShapeS1d;
     @:optional var MLModelType : String;
     @:optional var MLModelId : String;
     @:optional var ScoreThreshold : Float;

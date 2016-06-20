@@ -111,6 +111,9 @@ extern class SES extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<SetIdentityFeedbackForwardingEnabledOutput>) : Request {})
     public function setIdentityFeedbackForwardingEnabled(params : SetIdentityFeedbackForwardingEnabledInput, ?cb : Callback<SetIdentityFeedbackForwardingEnabledOutput>) : Request;
     
+    @:overload(function (?cb : Callback<SetIdentityHeadersInNotificationsEnabledOutput>) : Request {})
+    public function setIdentityHeadersInNotificationsEnabled(params : SetIdentityHeadersInNotificationsEnabledInput, ?cb : Callback<SetIdentityHeadersInNotificationsEnabledOutput>) : Request;
+    
     @:overload(function (?cb : Callback<SetIdentityMailFromDomainOutput>) : Request {})
     public function setIdentityMailFromDomain(params : SetIdentityMailFromDomainInput, ?cb : Callback<SetIdentityMailFromDomainOutput>) : Request;
     

@@ -12,7 +12,7 @@ typedef ImportInstanceInput = {
         };
         @:optional var GroupIds : _ShapeS4i;
         @:optional var InstanceInitiatedShutdownBehavior : String;
-        @:optional var GroupNames : _ShapeSiy;
+        @:optional var GroupNames : _ShapeSiz;
         @:optional var Monitoring : Bool;
         @:optional var InstanceType : String;
         @:optional var Architecture : String;
@@ -20,8 +20,8 @@ typedef ImportInstanceInput = {
     };
     @:optional var DiskImages : Array<{
         @:optional var Description : String;
-        @:optional var Image : _ShapeSj3;
-        @:optional var Volume : _ShapeSj4;
+        @:optional var Image : _ShapeSj4;
+        @:optional var Volume : _ShapeSj5;
     }>;
     @:optional var DryRun : Bool;
 };

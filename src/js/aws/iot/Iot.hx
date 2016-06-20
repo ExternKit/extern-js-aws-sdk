@@ -114,6 +114,9 @@ extern class Iot extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListPoliciesOutput>) : Request {})
     public function listPolicies(params : ListPoliciesInput, ?cb : Callback<ListPoliciesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListPolicyPrincipalsOutput>) : Request {})
+    public function listPolicyPrincipals(params : ListPolicyPrincipalsInput, ?cb : Callback<ListPolicyPrincipalsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListPolicyVersionsOutput>) : Request {})
     public function listPolicyVersions(params : ListPolicyVersionsInput, ?cb : Callback<ListPolicyVersionsOutput>) : Request;
     

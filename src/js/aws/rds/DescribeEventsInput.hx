@@ -2,7 +2,7 @@ package js.aws.rds;
 
 typedef DescribeEventsInput = {
     @:optional var SourceIdentifier : String;
-    @:optional var Filters : _ShapeS38;
+    @:optional var Filters : _ShapeS39;
     @:optional var SourceType : String;
     @:optional var Duration : Int;
     @:optional var Marker : String;

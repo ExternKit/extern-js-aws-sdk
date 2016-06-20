@@ -52,11 +52,13 @@ typedef _ShapeS16 = Array<{
     @:optional var dynamoDB : {
         var roleArn : String;
         var hashKeyValue : String;
-        var rangeKeyField : String;
+        @:optional var rangeKeyField : String;
         @:optional var payloadField : String;
+        @:optional var rangeKeyType : String;
+        @:optional var hashKeyType : String;
         var tableName : String;
         var hashKeyField : String;
-        var rangeKeyValue : String;
+        @:optional var rangeKeyValue : String;
     };
     @:optional var republish : {
         var roleArn : String;

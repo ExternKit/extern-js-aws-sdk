@@ -10,7 +10,7 @@ typedef CreateDataSourceFromRedshiftInput = {
         };
         var S3StagingLocation : String;
         @:optional var DataSchema : String;
-        var DatabaseInformation : _ShapeSr;
+        var DatabaseInformation : _ShapeSy;
         var SelectSqlQuery : String;
     };
     var DataSourceId : String;

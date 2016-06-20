@@ -10,5 +10,5 @@ typedef ModifySnapshotAttributeInput = {
         @:optional var Add : _ShapeSep;
         @:optional var Remove : _ShapeSep;
     };
-    @:optional var UserIds : _ShapeSjj;
+    @:optional var UserIds : _ShapeSjk;
 };

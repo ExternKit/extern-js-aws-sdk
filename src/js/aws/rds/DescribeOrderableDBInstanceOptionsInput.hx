@@ -3,7 +3,7 @@ package js.aws.rds;
 typedef DescribeOrderableDBInstanceOptionsInput = {
     @:optional var DBInstanceClass : String;
     @:optional var EngineVersion : String;
-    @:optional var Filters : _ShapeS38;
+    @:optional var Filters : _ShapeS39;
     @:optional var Marker : String;
     @:optional var Vpc : Bool;
     @:optional var MaxRecords : Int;

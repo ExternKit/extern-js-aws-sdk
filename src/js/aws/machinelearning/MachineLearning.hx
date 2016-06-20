@@ -12,6 +12,9 @@ extern class MachineLearning extends Service implements js.extern.Extern<'aws-sd
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddTagsOutput>) : Request {})
+    public function addTags(params : AddTagsInput, ?cb : Callback<AddTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateBatchPredictionOutput>) : Request {})
     public function createBatchPrediction(params : CreateBatchPredictionInput, ?cb : Callback<CreateBatchPredictionOutput>) : Request;
     
@@ -48,6 +51,9 @@ extern class MachineLearning extends Service implements js.extern.Extern<'aws-sd
     @:overload(function (?cb : Callback<DeleteRealtimeEndpointOutput>) : Request {})
     public function deleteRealtimeEndpoint(params : DeleteRealtimeEndpointInput, ?cb : Callback<DeleteRealtimeEndpointOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteTagsOutput>) : Request {})
+    public function deleteTags(params : DeleteTagsInput, ?cb : Callback<DeleteTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeBatchPredictionsOutput>) : Request {})
     public function describeBatchPredictions(params : DescribeBatchPredictionsInput, ?cb : Callback<DescribeBatchPredictionsOutput>) : Request;
     
@@ -59,6 +65,9 @@ extern class MachineLearning extends Service implements js.extern.Extern<'aws-sd
     
     @:overload(function (?cb : Callback<DescribeMLModelsOutput>) : Request {})
     public function describeMLModels(params : DescribeMLModelsInput, ?cb : Callback<DescribeMLModelsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeTagsOutput>) : Request {})
+    public function describeTags(params : DescribeTagsInput, ?cb : Callback<DescribeTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetBatchPredictionOutput>) : Request {})
     public function getBatchPrediction(params : GetBatchPredictionInput, ?cb : Callback<GetBatchPredictionOutput>) : Request;
