@@ -1,6 +1,6 @@
 package js.aws.codepipeline;
 
-typedef _ShapeS3y = {
+typedef _ShapeS40 = {
     var revision : String;
     var changeIdentifier : String;
 };

@@ -75,6 +75,9 @@ extern class CodePipeline extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putThirdPartyJobSuccessResult(params : PutThirdPartyJobSuccessResultInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<RetryStageExecutionOutput>) : Request {})
+    public function retryStageExecution(params : RetryStageExecutionInput, ?cb : Callback<RetryStageExecutionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<StartPipelineExecutionOutput>) : Request {})
     public function startPipelineExecution(params : StartPipelineExecutionInput, ?cb : Callback<StartPipelineExecutionOutput>) : Request;
     

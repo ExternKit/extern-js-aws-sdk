@@ -29,6 +29,10 @@ typedef GetPipelineStateOutput = {
             @:optional var disabledReason : String;
         };
         @:optional var stageName : String;
+        @:optional var latestExecution : {
+            var status : String;
+            var pipelineExecutionId : String;
+        };
     }>;
     @:optional var updated : Float;
     @:optional var pipelineVersion : Int;
