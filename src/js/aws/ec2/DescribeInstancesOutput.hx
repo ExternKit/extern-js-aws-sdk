@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef DescribeInstancesOutput = {
     @:optional var NextToken : String;
-    @:optional var Reservations : Array<_ShapeSbf>;
+    @:optional var Reservations : Array<_ShapeSbh>;
 };

@@ -2,5 +2,5 @@ package js.aws.iot;
 
 typedef ListCertificatesByCAOutput = {
     @:optional var nextMarker : String;
-    @:optional var certificates : _ShapeS40;
+    @:optional var certificates : _ShapeS41;
 };

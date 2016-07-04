@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef MonitorInstancesOutput = {
-    @:optional var InstanceMonitorings : _ShapeSkh;
+    @:optional var InstanceMonitorings : _ShapeSkk;
 };

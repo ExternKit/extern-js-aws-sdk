@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeSpotInstanceRequestsOutput = {
-    @:optional var SpotInstanceRequests : _ShapeSfp;
+    @:optional var SpotInstanceRequests : _ShapeSfr;
 };

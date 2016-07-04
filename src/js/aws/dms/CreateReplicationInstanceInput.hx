@@ -4,6 +4,7 @@ typedef CreateReplicationInstanceInput = {
     @:optional var EngineVersion : String;
     var ReplicationInstanceClass : String;
     @:optional var AvailabilityZone : String;
+    @:optional var VpcSecurityGroupIds : _ShapeSd;
     @:optional var AllocatedStorage : Int;
     @:optional var KmsKeyId : String;
     @:optional var ReplicationSubnetGroupIdentifier : String;

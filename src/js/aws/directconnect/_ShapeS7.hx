@@ -8,6 +8,7 @@ typedef _ShapeS7 = {
     @:optional var region : String;
     @:optional var bandwidth : String;
     @:optional var connectionState : String;
+    @:optional var loaIssueTime : Float;
     @:optional var ownerAccount : String;
     @:optional var partnerName : String;
 };

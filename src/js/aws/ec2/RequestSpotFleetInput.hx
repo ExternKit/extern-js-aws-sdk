@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef RequestSpotFleetInput = {
     @:optional var DryRun : Bool;
-    var SpotFleetRequestConfig : _ShapeSfc;
+    var SpotFleetRequestConfig : _ShapeSfe;
 };

@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef RunInstancesOutput = _ShapeSbf;
+typedef RunInstancesOutput = _ShapeSbh;

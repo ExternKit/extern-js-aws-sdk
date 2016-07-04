@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef CreateInterconnectOutput = _ShapeS14;
+typedef CreateInterconnectOutput = _ShapeS15;

@@ -15,6 +15,9 @@ extern class SNS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function addPermission(params : AddPermissionInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<CheckIfPhoneNumberIsOptedOutOutput>) : Request {})
+    public function checkIfPhoneNumberIsOptedOut(params : CheckIfPhoneNumberIsOptedOutInput, ?cb : Callback<CheckIfPhoneNumberIsOptedOutOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ConfirmSubscriptionOutput>) : Request {})
     public function confirmSubscription(params : ConfirmSubscriptionInput, ?cb : Callback<ConfirmSubscriptionOutput>) : Request;
     
@@ -42,6 +45,9 @@ extern class SNS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetPlatformApplicationAttributesOutput>) : Request {})
     public function getPlatformApplicationAttributes(params : GetPlatformApplicationAttributesInput, ?cb : Callback<GetPlatformApplicationAttributesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetSMSAttributesOutput>) : Request {})
+    public function getSMSAttributes(params : GetSMSAttributesInput, ?cb : Callback<GetSMSAttributesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetSubscriptionAttributesOutput>) : Request {})
     public function getSubscriptionAttributes(params : GetSubscriptionAttributesInput, ?cb : Callback<GetSubscriptionAttributesOutput>) : Request;
     
@@ -50,6 +56,9 @@ extern class SNS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListEndpointsByPlatformApplicationOutput>) : Request {})
     public function listEndpointsByPlatformApplication(params : ListEndpointsByPlatformApplicationInput, ?cb : Callback<ListEndpointsByPlatformApplicationOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListPhoneNumbersOptedOutOutput>) : Request {})
+    public function listPhoneNumbersOptedOut(params : ListPhoneNumbersOptedOutInput, ?cb : Callback<ListPhoneNumbersOptedOutOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListPlatformApplicationsOutput>) : Request {})
     public function listPlatformApplications(params : ListPlatformApplicationsInput, ?cb : Callback<ListPlatformApplicationsOutput>) : Request;
@@ -63,6 +72,9 @@ extern class SNS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListTopicsOutput>) : Request {})
     public function listTopics(params : ListTopicsInput, ?cb : Callback<ListTopicsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<OptInPhoneNumberOutput>) : Request {})
+    public function optInPhoneNumber(params : OptInPhoneNumberInput, ?cb : Callback<OptInPhoneNumberOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PublishOutput>) : Request {})
     public function publish(params : PublishInput, ?cb : Callback<PublishOutput>) : Request;
     
@@ -74,6 +86,9 @@ extern class SNS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function setPlatformApplicationAttributes(params : SetPlatformApplicationAttributesInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<SetSMSAttributesOutput>) : Request {})
+    public function setSMSAttributes(params : SetSMSAttributesInput, ?cb : Callback<SetSMSAttributesOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function setSubscriptionAttributes(params : SetSubscriptionAttributesInput, ?cb : Callback<Dynamic>) : Request;

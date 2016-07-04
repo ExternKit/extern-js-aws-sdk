@@ -7,4 +7,5 @@ typedef PublishInput = {
     @:optional var MessageStructure : String;
     @:optional var TargetArn : String;
     @:optional var MessageAttributes : {};
+    @:optional var PhoneNumber : String;
 };

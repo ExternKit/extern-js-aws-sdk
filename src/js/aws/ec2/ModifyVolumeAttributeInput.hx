@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef ModifyVolumeAttributeInput = {
-    @:optional var AutoEnableIO : _ShapeSat;
+    @:optional var AutoEnableIO : _ShapeSav;
     var VolumeId : String;
     @:optional var DryRun : Bool;
 };

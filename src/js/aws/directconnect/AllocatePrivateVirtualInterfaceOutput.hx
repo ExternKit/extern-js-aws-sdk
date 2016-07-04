@@ -1,3 +1,3 @@
 package js.aws.directconnect;
 
-typedef AllocatePrivateVirtualInterfaceOutput = _ShapeSk;
+typedef AllocatePrivateVirtualInterfaceOutput = _ShapeSl;

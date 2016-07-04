@@ -5,7 +5,7 @@ typedef DescribeSnapshotsInput = {
     @:optional var SnapshotIds : Array<String>;
     @:optional var Filters : _ShapeS7t;
     @:optional var NextToken : String;
-    @:optional var OwnerIds : _ShapeSa1;
+    @:optional var OwnerIds : _ShapeSa3;
     @:optional var DryRun : Bool;
     @:optional var RestorableByUserIds : Array<String>;
 };

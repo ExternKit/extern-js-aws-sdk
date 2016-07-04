@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef StartInstancesOutput = {
-    @:optional var StartingInstances : _ShapeSm8;
+    @:optional var StartingInstances : _ShapeSmb;
 };

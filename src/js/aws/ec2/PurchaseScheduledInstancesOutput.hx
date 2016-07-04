@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef PurchaseScheduledInstancesOutput = {
-    @:optional var ScheduledInstanceSet : Array<_ShapeSeb>;
+    @:optional var ScheduledInstanceSet : Array<_ShapeSed>;
 };

@@ -1,3 +1,3 @@
 package js.aws.efs;
 
-typedef CreateFileSystemOutput = _ShapeS3;
+typedef CreateFileSystemOutput = _ShapeS4;

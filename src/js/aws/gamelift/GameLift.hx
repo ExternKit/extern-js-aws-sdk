@@ -75,6 +75,9 @@ extern class GameLift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribePlayerSessionsOutput>) : Request {})
     public function describePlayerSessions(params : DescribePlayerSessionsInput, ?cb : Callback<DescribePlayerSessionsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeRuntimeConfigurationOutput>) : Request {})
+    public function describeRuntimeConfiguration(params : DescribeRuntimeConfigurationInput, ?cb : Callback<DescribeRuntimeConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeScalingPoliciesOutput>) : Request {})
     public function describeScalingPolicies(params : DescribeScalingPoliciesInput, ?cb : Callback<DescribeScalingPoliciesOutput>) : Request;
     
@@ -116,5 +119,8 @@ extern class GameLift extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<UpdateGameSessionOutput>) : Request {})
     public function updateGameSession(params : UpdateGameSessionInput, ?cb : Callback<UpdateGameSessionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateRuntimeConfigurationOutput>) : Request {})
+    public function updateRuntimeConfiguration(params : UpdateRuntimeConfigurationInput, ?cb : Callback<UpdateRuntimeConfigurationOutput>) : Request;
     
 }

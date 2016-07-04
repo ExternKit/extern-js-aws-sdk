@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef StopReplicationTaskOutput = {
-    @:optional var ReplicationTask : _ShapeSu;
+    @:optional var ReplicationTask : _ShapeSx;
 };

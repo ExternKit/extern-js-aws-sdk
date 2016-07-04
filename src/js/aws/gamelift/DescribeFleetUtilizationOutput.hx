@@ -7,5 +7,6 @@ typedef DescribeFleetUtilizationOutput = {
         @:optional var ActiveGameSessionCount : Int;
         @:optional var FleetId : String;
         @:optional var MaximumPlayerSessionCount : Int;
+        @:optional var ActiveServerProcessCount : Int;
     }>;
 };

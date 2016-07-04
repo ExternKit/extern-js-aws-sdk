@@ -1,5 +1,5 @@
 package js.aws.efs;
 
 typedef DescribeMountTargetSecurityGroupsOutput = {
-    var SecurityGroups : _ShapeSf;
+    var SecurityGroups : _ShapeSg;
 };

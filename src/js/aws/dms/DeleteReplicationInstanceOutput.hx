@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef DeleteReplicationInstanceOutput = {
-    @:optional var ReplicationInstance : _ShapeSf;
+    @:optional var ReplicationInstance : _ShapeSg;
 };

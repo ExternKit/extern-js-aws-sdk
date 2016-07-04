@@ -10,6 +10,7 @@ typedef RegisterImageInput = {
     @:optional var Architecture : String;
     @:optional var DryRun : Bool;
     @:optional var RootDeviceName : String;
+    @:optional var EnaSupport : Bool;
     @:optional var RamdiskId : String;
     var Name : String;
 };

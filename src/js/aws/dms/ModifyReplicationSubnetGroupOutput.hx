@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef ModifyReplicationSubnetGroupOutput = {
-    @:optional var ReplicationSubnetGroup : _ShapeSi;
+    @:optional var ReplicationSubnetGroup : _ShapeSl;
 };

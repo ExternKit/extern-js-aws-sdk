@@ -279,6 +279,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeIdFormatOutput>) : Request {})
     public function describeIdFormat(params : DescribeIdFormatInput, ?cb : Callback<DescribeIdFormatOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeIdentityIdFormatOutput>) : Request {})
+    public function describeIdentityIdFormat(params : DescribeIdentityIdFormatInput, ?cb : Callback<DescribeIdentityIdFormatOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeImageAttributeOutput>) : Request {})
     public function describeImageAttribute(params : DescribeImageAttributeInput, ?cb : Callback<DescribeImageAttributeOutput>) : Request;
     
@@ -497,6 +500,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function modifyIdFormat(params : ModifyIdFormatInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function modifyIdentityIdFormat(params : ModifyIdentityIdFormatInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function modifyImageAttribute(params : ModifyImageAttributeInput, ?cb : Callback<Dynamic>) : Request;

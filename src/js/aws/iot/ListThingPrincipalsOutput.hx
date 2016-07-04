@@ -1,5 +1,5 @@
 package js.aws.iot;
 
 typedef ListThingPrincipalsOutput = {
-    @:optional var principals : _ShapeS4a;
+    @:optional var principals : _ShapeS4b;
 };

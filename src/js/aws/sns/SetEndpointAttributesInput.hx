@@ -2,5 +2,5 @@ package js.aws.sns;
 
 typedef SetEndpointAttributesInput = {
     var EndpointArn : String;
-    var Attributes : _ShapeSf;
+    var Attributes : _ShapeSj;
 };

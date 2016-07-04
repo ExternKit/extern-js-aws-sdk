@@ -13,7 +13,7 @@ typedef DescribeReservedInstancesModificationsOutput = {
         @:optional var UpdateDate : Float;
         @:optional var ReservedInstancesModificationId : String;
         @:optional var ModificationResults : Array<{
-            @:optional var TargetConfiguration : _ShapeSdm;
+            @:optional var TargetConfiguration : _ShapeSdo;
             @:optional var ReservedInstancesId : String;
         }>;
         @:optional var Status : String;

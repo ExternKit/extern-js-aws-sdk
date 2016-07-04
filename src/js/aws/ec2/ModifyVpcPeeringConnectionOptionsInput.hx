@@ -1,8 +1,8 @@
 package js.aws.ec2;
 
 typedef ModifyVpcPeeringConnectionOptionsInput = {
-    @:optional var AccepterPeeringConnectionOptions : _ShapeSkc;
+    @:optional var AccepterPeeringConnectionOptions : _ShapeSkf;
     var VpcPeeringConnectionId : String;
     @:optional var DryRun : Bool;
-    @:optional var RequesterPeeringConnectionOptions : _ShapeSkc;
+    @:optional var RequesterPeeringConnectionOptions : _ShapeSkf;
 };

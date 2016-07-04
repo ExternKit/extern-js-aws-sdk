@@ -2,6 +2,6 @@ package js.aws.dms;
 
 typedef ModifyReplicationSubnetGroupInput = {
     @:optional var ReplicationSubnetGroupDescription : String;
-    var SubnetIds : _ShapeSp;
+    var SubnetIds : _ShapeSs;
     var ReplicationSubnetGroupIdentifier : String;
 };

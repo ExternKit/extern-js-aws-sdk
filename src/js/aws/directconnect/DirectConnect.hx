@@ -51,11 +51,17 @@ extern class DirectConnect extends Service implements js.extern.Extern<'aws-sdk'
     @:overload(function (?cb : Callback<DeleteVirtualInterfaceOutput>) : Request {})
     public function deleteVirtualInterface(params : DeleteVirtualInterfaceInput, ?cb : Callback<DeleteVirtualInterfaceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeConnectionLoaOutput>) : Request {})
+    public function describeConnectionLoa(params : DescribeConnectionLoaInput, ?cb : Callback<DescribeConnectionLoaOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeConnectionsOutput>) : Request {})
     public function describeConnections(params : DescribeConnectionsInput, ?cb : Callback<DescribeConnectionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeConnectionsOnInterconnectOutput>) : Request {})
     public function describeConnectionsOnInterconnect(params : DescribeConnectionsOnInterconnectInput, ?cb : Callback<DescribeConnectionsOnInterconnectOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeInterconnectLoaOutput>) : Request {})
+    public function describeInterconnectLoa(params : DescribeInterconnectLoaInput, ?cb : Callback<DescribeInterconnectLoaOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeInterconnectsOutput>) : Request {})
     public function describeInterconnects(params : DescribeInterconnectsInput, ?cb : Callback<DescribeInterconnectsOutput>) : Request;

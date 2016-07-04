@@ -1,5 +1,5 @@
 package js.aws.directconnect;
 
 typedef DescribeVirtualInterfacesOutput = {
-    @:optional var virtualInterfaces : Array<_ShapeSk>;
+    @:optional var virtualInterfaces : Array<_ShapeSl>;
 };

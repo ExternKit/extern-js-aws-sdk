@@ -55,6 +55,7 @@ typedef _ShapeS16 = Array<{
         @:optional var rangeKeyField : String;
         @:optional var payloadField : String;
         @:optional var rangeKeyType : String;
+        @:optional var operation : String;
         @:optional var hashKeyType : String;
         var tableName : String;
         var hashKeyField : String;
