@@ -1,3 +1,3 @@
 package js.aws.directoryservice;
 
-typedef _ShapeSb = Array<String>;
+typedef _ShapeSb = String;

@@ -16,6 +16,9 @@ extern class ConfigService extends Service implements js.extern.Extern<'aws-sdk'
     public function deleteConfigRule(params : DeleteConfigRuleInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteConfigurationRecorder(params : DeleteConfigurationRecorderInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteDeliveryChannel(params : DeleteDeliveryChannelInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<DeliverConfigSnapshotOutput>) : Request {})

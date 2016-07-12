@@ -170,6 +170,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     
     public var s3 : Config;
     
+    public var servicecatalog : Config;
+    
     public var ses : Config;
     
     public var simpledb : Config;

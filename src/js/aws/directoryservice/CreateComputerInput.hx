@@ -4,6 +4,6 @@ typedef CreateComputerInput = {
     var DirectoryId : String;
     var ComputerName : String;
     @:optional var OrganizationalUnitDistinguishedName : String;
-    @:optional var ComputerAttributes : _ShapeSn;
+    @:optional var ComputerAttributes : _ShapeSu;
     var Password : String;
 };

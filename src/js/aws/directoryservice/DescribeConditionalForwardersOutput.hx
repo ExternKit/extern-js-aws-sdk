@@ -4,6 +4,6 @@ typedef DescribeConditionalForwardersOutput = {
     @:optional var ConditionalForwarders : Array<{
         @:optional var ReplicationScope : String;
         @:optional var RemoteDomainName : String;
-        @:optional var DnsIpAddrs : _ShapeSb;
+        @:optional var DnsIpAddrs : _ShapeSi;
     }>;
 };

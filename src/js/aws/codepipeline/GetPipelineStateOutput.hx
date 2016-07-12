@@ -16,8 +16,10 @@ typedef GetPipelineStateOutput = {
                 @:optional var externalExecutionUrl : String;
                 @:optional var lastStatusChange : Float;
                 @:optional var summary : String;
+                @:optional var lastUpdatedBy : String;
                 @:optional var status : String;
                 @:optional var externalExecutionId : String;
+                @:optional var token : String;
             };
             @:optional var currentRevision : _ShapeS2s;
             @:optional var entityUrl : String;

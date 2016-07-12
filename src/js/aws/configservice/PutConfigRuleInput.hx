@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef PutConfigRuleInput = {
-    var ConfigRule : _ShapeSy;
+    var ConfigRule : _ShapeS10;
 };

@@ -3,5 +3,5 @@ package js.aws.directoryservice;
 typedef CreateConditionalForwarderInput = {
     var DirectoryId : String;
     var RemoteDomainName : String;
-    var DnsIpAddrs : _ShapeSb;
+    var DnsIpAddrs : _ShapeSi;
 };
