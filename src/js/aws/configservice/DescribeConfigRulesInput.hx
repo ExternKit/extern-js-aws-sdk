@@ -2,5 +2,5 @@ package js.aws.configservice;
 
 typedef DescribeConfigRulesInput = {
     @:optional var NextToken : String;
-    @:optional var ConfigRuleNames : _ShapeSb;
+    @:optional var ConfigRuleNames : _ShapeSd;
 };

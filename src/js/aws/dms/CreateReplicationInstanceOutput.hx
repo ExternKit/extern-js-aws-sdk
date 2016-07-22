@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef CreateReplicationInstanceOutput = {
-    @:optional var ReplicationInstance : _ShapeSg;
+    @:optional var ReplicationInstance : _ShapeSh;
 };

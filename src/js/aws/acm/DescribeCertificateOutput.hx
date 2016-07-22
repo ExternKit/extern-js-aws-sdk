@@ -10,6 +10,7 @@ typedef DescribeCertificateOutput = {
         }>;
         @:optional var CreatedAt : Float;
         @:optional var CertificateArn : String;
+        @:optional var FailureReason : String;
         @:optional var Subject : String;
         @:optional var NotAfter : Float;
         @:optional var RevokedAt : Float;

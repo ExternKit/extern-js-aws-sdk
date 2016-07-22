@@ -2,7 +2,7 @@ package js.aws.rds;
 
 typedef DescribeDBEngineVersionsInput = {
     @:optional var EngineVersion : String;
-    @:optional var Filters : _ShapeS39;
+    @:optional var Filters : _ShapeS3b;
     @:optional var Marker : String;
     @:optional var DefaultOnly : Bool;
     @:optional var DBParameterGroupFamily : String;

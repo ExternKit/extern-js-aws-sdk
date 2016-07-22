@@ -7,6 +7,8 @@ typedef SendCommandInput = {
     @:optional var DocumentHash : String;
     var DocumentName : String;
     @:optional var OutputS3BucketName : String;
+    @:optional var ServiceRoleArn : String;
+    @:optional var NotificationConfig : _ShapeS3y;
     var InstanceIds : _ShapeSb;
     @:optional var DocumentHashType : String;
     @:optional var TimeoutSeconds : Int;

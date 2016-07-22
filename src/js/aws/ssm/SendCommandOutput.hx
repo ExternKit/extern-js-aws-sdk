@@ -1,5 +1,5 @@
 package js.aws.ssm;
 
 typedef SendCommandOutput = {
-    @:optional var Command : _ShapeS40;
+    @:optional var Command : _ShapeS46;
 };

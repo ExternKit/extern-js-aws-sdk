@@ -27,6 +27,9 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateReplicationTaskOutput>) : Request {})
     public function createReplicationTask(params : CreateReplicationTaskInput, ?cb : Callback<CreateReplicationTaskOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteCertificateOutput>) : Request {})
+    public function deleteCertificate(params : DeleteCertificateInput, ?cb : Callback<DeleteCertificateOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteEndpointOutput>) : Request {})
     public function deleteEndpoint(params : DeleteEndpointInput, ?cb : Callback<DeleteEndpointOutput>) : Request;
     
@@ -41,6 +44,9 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeAccountAttributesOutput>) : Request {})
     public function describeAccountAttributes(params : DescribeAccountAttributesInput, ?cb : Callback<DescribeAccountAttributesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeCertificatesOutput>) : Request {})
+    public function describeCertificates(params : DescribeCertificatesInput, ?cb : Callback<DescribeCertificatesOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeConnectionsOutput>) : Request {})
     public function describeConnections(params : DescribeConnectionsInput, ?cb : Callback<DescribeConnectionsOutput>) : Request;
@@ -71,6 +77,9 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeTableStatisticsOutput>) : Request {})
     public function describeTableStatistics(params : DescribeTableStatisticsInput, ?cb : Callback<DescribeTableStatisticsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ImportCertificateOutput>) : Request {})
+    public function importCertificate(params : ImportCertificateInput, ?cb : Callback<ImportCertificateOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
     public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;

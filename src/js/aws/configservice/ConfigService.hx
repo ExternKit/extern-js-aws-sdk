@@ -21,6 +21,9 @@ extern class ConfigService extends Service implements js.extern.Extern<'aws-sdk'
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteDeliveryChannel(params : DeleteDeliveryChannelInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteEvaluationResultsOutput>) : Request {})
+    public function deleteEvaluationResults(params : DeleteEvaluationResultsInput, ?cb : Callback<DeleteEvaluationResultsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeliverConfigSnapshotOutput>) : Request {})
     public function deliverConfigSnapshot(params : DeliverConfigSnapshotInput, ?cb : Callback<DeliverConfigSnapshotOutput>) : Request;
     
@@ -77,6 +80,9 @@ extern class ConfigService extends Service implements js.extern.Extern<'aws-sdk'
     
     @:overload(function (?cb : Callback<PutEvaluationsOutput>) : Request {})
     public function putEvaluations(params : PutEvaluationsInput, ?cb : Callback<PutEvaluationsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartConfigRulesEvaluationOutput>) : Request {})
+    public function startConfigRulesEvaluation(params : StartConfigRulesEvaluationInput, ?cb : Callback<StartConfigRulesEvaluationOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function startConfigurationRecorder(params : StartConfigurationRecorderInput, ?cb : Callback<Dynamic>) : Request;

@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CopyDBParameterGroupOutput = {
-    @:optional var DBParameterGroup : _ShapeSv;
+    @:optional var DBParameterGroup : _ShapeSy;
 };

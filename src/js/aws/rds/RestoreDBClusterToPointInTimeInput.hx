@@ -1,7 +1,7 @@
 package js.aws.rds;
 
 typedef RestoreDBClusterToPointInTimeInput = {
-    @:optional var VpcSecurityGroupIds : _ShapeS1d;
+    @:optional var VpcSecurityGroupIds : _ShapeS1g;
     @:optional var DBSubnetGroupName : String;
     var SourceDBClusterIdentifier : String;
     @:optional var RestoreToTime : Float;

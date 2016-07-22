@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef ModifyEndpointOutput = {
-    @:optional var Endpoint : _ShapeSb;
+    @:optional var Endpoint : _ShapeSc;
 };

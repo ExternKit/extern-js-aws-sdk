@@ -2,5 +2,5 @@ package js.aws.dms;
 
 typedef DescribeReplicationSubnetGroupsOutput = {
     @:optional var Marker : String;
-    @:optional var ReplicationSubnetGroups : Array<_ShapeSl>;
+    @:optional var ReplicationSubnetGroups : Array<_ShapeSm>;
 };

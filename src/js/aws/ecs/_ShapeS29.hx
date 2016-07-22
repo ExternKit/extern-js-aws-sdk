@@ -6,4 +6,5 @@ typedef _ShapeS29 = {
         @:optional var command : _ShapeSv;
         @:optional var environment : _ShapeS18;
     }>;
+    @:optional var taskRoleArn : String;
 };

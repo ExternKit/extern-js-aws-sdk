@@ -1,7 +1,7 @@
 package js.aws.rds;
 
 typedef ModifyDBClusterInput = {
-    @:optional var VpcSecurityGroupIds : _ShapeS1d;
+    @:optional var VpcSecurityGroupIds : _ShapeS1g;
     @:optional var ApplyImmediately : Bool;
     @:optional var PreferredBackupWindow : String;
     @:optional var BackupRetentionPeriod : Int;

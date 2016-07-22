@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef PromoteReadReplicaOutput = {
-    @:optional var DBInstance : _ShapeS1t;
+    @:optional var DBInstance : _ShapeS1v;
 };

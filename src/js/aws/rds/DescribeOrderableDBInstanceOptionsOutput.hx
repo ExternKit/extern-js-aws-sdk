@@ -10,7 +10,7 @@ typedef DescribeOrderableDBInstanceOptionsOutput = {
         @:optional var Vpc : Bool;
         @:optional var MultiAZCapable : Bool;
         @:optional var StorageType : String;
-        @:optional var AvailabilityZones : Array<_ShapeS20>;
+        @:optional var AvailabilityZones : Array<_ShapeS22>;
         @:optional var Engine : String;
         @:optional var LicenseModel : String;
         @:optional var SupportsIops : Bool;

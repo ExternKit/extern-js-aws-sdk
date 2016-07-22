@@ -24,6 +24,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<AuthorizeDBSecurityGroupIngressOutput>) : Request {})
     public function authorizeDBSecurityGroupIngress(params : AuthorizeDBSecurityGroupIngressInput, ?cb : Callback<AuthorizeDBSecurityGroupIngressOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CopyDBClusterParameterGroupOutput>) : Request {})
+    public function copyDBClusterParameterGroup(params : CopyDBClusterParameterGroupInput, ?cb : Callback<CopyDBClusterParameterGroupOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CopyDBClusterSnapshotOutput>) : Request {})
     public function copyDBClusterSnapshot(params : CopyDBClusterSnapshotInput, ?cb : Callback<CopyDBClusterSnapshotOutput>) : Request;
     

@@ -18,6 +18,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateProjectOutput>) : Request {})
     public function createProject(params : CreateProjectInput, ?cb : Callback<CreateProjectOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateRemoteAccessSessionOutput>) : Request {})
+    public function createRemoteAccessSession(params : CreateRemoteAccessSessionInput, ?cb : Callback<CreateRemoteAccessSessionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateUploadOutput>) : Request {})
     public function createUpload(params : CreateUploadInput, ?cb : Callback<CreateUploadOutput>) : Request;
     
@@ -26,6 +29,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DeleteProjectOutput>) : Request {})
     public function deleteProject(params : DeleteProjectInput, ?cb : Callback<DeleteProjectOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteRemoteAccessSessionOutput>) : Request {})
+    public function deleteRemoteAccessSession(params : DeleteRemoteAccessSessionInput, ?cb : Callback<DeleteRemoteAccessSessionOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteRunOutput>) : Request {})
     public function deleteRun(params : DeleteRunInput, ?cb : Callback<DeleteRunOutput>) : Request;
@@ -54,6 +60,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetProjectOutput>) : Request {})
     public function getProject(params : GetProjectInput, ?cb : Callback<GetProjectOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetRemoteAccessSessionOutput>) : Request {})
+    public function getRemoteAccessSession(params : GetRemoteAccessSessionInput, ?cb : Callback<GetRemoteAccessSessionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetRunOutput>) : Request {})
     public function getRun(params : GetRunInput, ?cb : Callback<GetRunOutput>) : Request;
     
@@ -65,6 +74,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetUploadOutput>) : Request {})
     public function getUpload(params : GetUploadInput, ?cb : Callback<GetUploadOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<InstallToRemoteAccessSessionOutput>) : Request {})
+    public function installToRemoteAccessSession(params : InstallToRemoteAccessSessionInput, ?cb : Callback<InstallToRemoteAccessSessionOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListArtifactsOutput>) : Request {})
     public function listArtifacts(params : ListArtifactsInput, ?cb : Callback<ListArtifactsOutput>) : Request;
@@ -86,6 +98,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListProjectsOutput>) : Request {})
     public function listProjects(params : ListProjectsInput, ?cb : Callback<ListProjectsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListRemoteAccessSessionsOutput>) : Request {})
+    public function listRemoteAccessSessions(params : ListRemoteAccessSessionsInput, ?cb : Callback<ListRemoteAccessSessionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListRunsOutput>) : Request {})
     public function listRuns(params : ListRunsInput, ?cb : Callback<ListRunsOutput>) : Request;
@@ -113,6 +128,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ScheduleRunOutput>) : Request {})
     public function scheduleRun(params : ScheduleRunInput, ?cb : Callback<ScheduleRunOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopRemoteAccessSessionOutput>) : Request {})
+    public function stopRemoteAccessSession(params : StopRemoteAccessSessionInput, ?cb : Callback<StopRemoteAccessSessionOutput>) : Request;
     
     @:overload(function (?cb : Callback<StopRunOutput>) : Request {})
     public function stopRun(params : StopRunInput, ?cb : Callback<StopRunOutput>) : Request;

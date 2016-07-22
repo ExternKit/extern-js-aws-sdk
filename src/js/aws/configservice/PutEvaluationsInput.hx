@@ -1,6 +1,6 @@
 package js.aws.configservice;
 
 typedef PutEvaluationsInput = {
-    @:optional var Evaluations : _ShapeS3m;
+    @:optional var Evaluations : _ShapeS3r;
     var ResultToken : String;
 };

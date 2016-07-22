@@ -2,9 +2,10 @@ package js.aws.dms;
 
 typedef CreateReplicationInstanceInput = {
     @:optional var EngineVersion : String;
+    @:optional var MultiAZ : Bool;
     var ReplicationInstanceClass : String;
     @:optional var AvailabilityZone : String;
-    @:optional var VpcSecurityGroupIds : _ShapeSd;
+    @:optional var VpcSecurityGroupIds : _ShapeSe;
     @:optional var AllocatedStorage : Int;
     @:optional var KmsKeyId : String;
     @:optional var ReplicationSubnetGroupIdentifier : String;

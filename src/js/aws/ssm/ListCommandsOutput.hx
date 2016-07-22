@@ -2,5 +2,5 @@ package js.aws.ssm;
 
 typedef ListCommandsOutput = {
     @:optional var NextToken : String;
-    @:optional var Commands : Array<_ShapeS40>;
+    @:optional var Commands : Array<_ShapeS46>;
 };

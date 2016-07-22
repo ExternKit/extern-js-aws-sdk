@@ -7,6 +7,8 @@ typedef ListCommandInvocationsOutput = {
         @:optional var DocumentName : String;
         @:optional var InstanceId : String;
         @:optional var CommandId : String;
+        @:optional var ServiceRole : String;
+        @:optional var NotificationConfig : _ShapeS3y;
         @:optional var TraceOutput : String;
         @:optional var RequestedDateTime : Float;
         @:optional var CommandPlugins : Array<{

@@ -2,5 +2,5 @@ package js.aws.configservice;
 
 typedef GetComplianceDetailsByResourceOutput = {
     @:optional var NextToken : String;
-    @:optional var EvaluationResults : _ShapeS27;
+    @:optional var EvaluationResults : _ShapeS29;
 };

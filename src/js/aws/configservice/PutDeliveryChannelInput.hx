@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef PutDeliveryChannelInput = {
-    var DeliveryChannel : _ShapeS23;
+    var DeliveryChannel : _ShapeS25;
 };

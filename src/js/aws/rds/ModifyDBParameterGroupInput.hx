@@ -1,6 +1,6 @@
 package js.aws.rds;
 
 typedef ModifyDBParameterGroupInput = {
-    var Parameters : _ShapeS3k;
+    var Parameters : _ShapeS3m;
     var DBParameterGroupName : String;
 };

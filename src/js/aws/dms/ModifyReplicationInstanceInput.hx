@@ -2,8 +2,9 @@ package js.aws.dms;
 
 typedef ModifyReplicationInstanceInput = {
     @:optional var EngineVersion : String;
+    @:optional var MultiAZ : Bool;
     @:optional var ReplicationInstanceClass : String;
-    @:optional var VpcSecurityGroupIds : _ShapeSd;
+    @:optional var VpcSecurityGroupIds : _ShapeSe;
     @:optional var ApplyImmediately : Bool;
     @:optional var AllocatedStorage : Int;
     @:optional var AllowMajorVersionUpgrade : Bool;

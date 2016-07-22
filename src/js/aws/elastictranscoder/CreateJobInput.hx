@@ -5,11 +5,11 @@ typedef CreateJobInput = {
     @:optional var OutputKeyPrefix : String;
     var Input : _ShapeS5;
     var PipelineId : String;
-    @:optional var UserMetadata : _ShapeS1s;
+    @:optional var UserMetadata : _ShapeS1t;
     @:optional var Playlists : Array<{
-        @:optional var PlayReadyDrm : _ShapeS1n;
-        @:optional var HlsContentProtection : _ShapeS1j;
-        @:optional var OutputKeys : _ShapeS1i;
+        @:optional var PlayReadyDrm : _ShapeS1o;
+        @:optional var HlsContentProtection : _ShapeS1k;
+        @:optional var OutputKeys : _ShapeS1j;
         @:optional var Format : String;
         @:optional var Name : String;
     }>;

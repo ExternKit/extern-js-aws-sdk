@@ -18,6 +18,7 @@ typedef GetResourceConfigHistoryOutput = {
         @:optional var version : String;
         @:optional var arn : String;
         @:optional var resourceName : String;
+        @:optional var supplementaryConfiguration : {};
         @:optional var resourceType : String;
         @:optional var resourceCreationTime : Float;
         @:optional var accountId : String;

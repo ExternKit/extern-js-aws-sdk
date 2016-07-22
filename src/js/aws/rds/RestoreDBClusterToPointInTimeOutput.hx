@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef RestoreDBClusterToPointInTimeOutput = {
-    @:optional var DBCluster : _ShapeS1f;
+    @:optional var DBCluster : _ShapeS1i;
 };
