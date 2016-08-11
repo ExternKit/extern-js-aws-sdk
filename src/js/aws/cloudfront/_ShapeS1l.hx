@@ -5,6 +5,7 @@ typedef _ShapeS1l = {
     var InProgressInvalidationBatches : Int;
     var LastModifiedTime : Float;
     var Id : String;
+    var ARN : String;
     var DomainName : String;
     var ActiveTrustedSigners : _ShapeS1n;
     var Status : String;

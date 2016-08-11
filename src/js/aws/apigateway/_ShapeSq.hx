@@ -1,9 +1,8 @@
 package js.aws.apigateway;
 
 typedef _ShapeSq = {
-    @:optional var schema : String;
-    @:optional var name : String;
-    @:optional var description : String;
-    @:optional var id : String;
-    @:optional var contentType : String;
+    @:optional var certificateName : String;
+    @:optional var distributionDomainName : String;
+    @:optional var certificateUploadDate : Float;
+    @:optional var domainName : String;
 };

@@ -9,6 +9,7 @@ typedef ModifyDBInstanceInput = {
     @:optional var VpcSecurityGroupIds : _ShapeS1g;
     @:optional var ApplyImmediately : Bool;
     @:optional var DBSecurityGroups : _ShapeS1t;
+    @:optional var DBSubnetGroupName : String;
     @:optional var AllocatedStorage : Int;
     @:optional var CopyTagsToSnapshot : Bool;
     @:optional var NewDBInstanceIdentifier : String;
@@ -31,4 +32,5 @@ typedef ModifyDBInstanceInput = {
     @:optional var Iops : Int;
     @:optional var OptionGroupName : String;
     @:optional var PromotionTier : Int;
+    @:optional var LicenseModel : String;
 };

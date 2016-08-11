@@ -1,6 +1,6 @@
 package js.aws.iot;
 
 typedef ReplaceTopicRuleInput = {
-    var topicRulePayload : _ShapeS13;
+    var topicRulePayload : _ShapeS1b;
     var ruleName : String;
 };

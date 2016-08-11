@@ -1,6 +1,9 @@
 package js.aws.iot;
 
 typedef UpdateThingInput = {
-    var attributePayload : _ShapeSv;
+    @:optional var expectedVersion : Int;
+    @:optional var attributePayload : _ShapeSw;
     var thingName : String;
+    @:optional var removeThingType : Bool;
+    @:optional var thingTypeName : String;
 };

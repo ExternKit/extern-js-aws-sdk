@@ -36,6 +36,9 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<GetDomainDetailOutput>) : Request {})
     public function getDomainDetail(params : GetDomainDetailInput, ?cb : Callback<GetDomainDetailOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetDomainSuggestionsOutput>) : Request {})
+    public function getDomainSuggestions(params : GetDomainSuggestionsInput, ?cb : Callback<GetDomainSuggestionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetOperationDetailOutput>) : Request {})
     public function getOperationDetail(params : GetOperationDetailInput, ?cb : Callback<GetOperationDetailOutput>) : Request;
     
@@ -50,6 +53,9 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<RegisterDomainOutput>) : Request {})
     public function registerDomain(params : RegisterDomainInput, ?cb : Callback<RegisterDomainOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RenewDomainOutput>) : Request {})
+    public function renewDomain(params : RenewDomainInput, ?cb : Callback<RenewDomainOutput>) : Request;
     
     @:overload(function (?cb : Callback<ResendContactReachabilityEmailOutput>) : Request {})
     public function resendContactReachabilityEmail(params : ResendContactReachabilityEmailInput, ?cb : Callback<ResendContactReachabilityEmailOutput>) : Request;
@@ -71,5 +77,8 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<UpdateTagsForDomainOutput>) : Request {})
     public function updateTagsForDomain(params : UpdateTagsForDomainInput, ?cb : Callback<UpdateTagsForDomainOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ViewBillingOutput>) : Request {})
+    public function viewBilling(params : ViewBillingInput, ?cb : Callback<ViewBillingOutput>) : Request;
     
 }

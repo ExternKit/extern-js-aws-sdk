@@ -30,20 +30,44 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<AdminEnableUserOutput>) : Request {})
     public function adminEnableUser(params : AdminEnableUserInput, ?cb : Callback<AdminEnableUserOutput>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function adminForgetDevice(params : AdminForgetDeviceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<AdminGetDeviceOutput>) : Request {})
+    public function adminGetDevice(params : AdminGetDeviceInput, ?cb : Callback<AdminGetDeviceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AdminGetUserOutput>) : Request {})
     public function adminGetUser(params : AdminGetUserInput, ?cb : Callback<AdminGetUserOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<AdminInitiateAuthOutput>) : Request {})
+    public function adminInitiateAuth(params : AdminInitiateAuthInput, ?cb : Callback<AdminInitiateAuthOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<AdminListDevicesOutput>) : Request {})
+    public function adminListDevices(params : AdminListDevicesInput, ?cb : Callback<AdminListDevicesOutput>) : Request;
     
     @:overload(function (?cb : Callback<AdminResetUserPasswordOutput>) : Request {})
     public function adminResetUserPassword(params : AdminResetUserPasswordInput, ?cb : Callback<AdminResetUserPasswordOutput>) : Request;
     
+    @:overload(function (?cb : Callback<AdminRespondToAuthChallengeOutput>) : Request {})
+    public function adminRespondToAuthChallenge(params : AdminRespondToAuthChallengeInput, ?cb : Callback<AdminRespondToAuthChallengeOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AdminSetUserSettingsOutput>) : Request {})
     public function adminSetUserSettings(params : AdminSetUserSettingsInput, ?cb : Callback<AdminSetUserSettingsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<AdminUpdateDeviceStatusOutput>) : Request {})
+    public function adminUpdateDeviceStatus(params : AdminUpdateDeviceStatusInput, ?cb : Callback<AdminUpdateDeviceStatusOutput>) : Request;
     
     @:overload(function (?cb : Callback<AdminUpdateUserAttributesOutput>) : Request {})
     public function adminUpdateUserAttributes(params : AdminUpdateUserAttributesInput, ?cb : Callback<AdminUpdateUserAttributesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<AdminUserGlobalSignOutOutput>) : Request {})
+    public function adminUserGlobalSignOut(params : AdminUserGlobalSignOutInput, ?cb : Callback<AdminUserGlobalSignOutOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ChangePasswordOutput>) : Request {})
     public function changePassword(params : ChangePasswordInput, ?cb : Callback<ChangePasswordOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ConfirmDeviceOutput>) : Request {})
+    public function confirmDevice(params : ConfirmDeviceInput, ?cb : Callback<ConfirmDeviceOutput>) : Request;
     
     @:overload(function (?cb : Callback<ConfirmForgotPasswordOutput>) : Request {})
     public function confirmForgotPassword(params : ConfirmForgotPasswordInput, ?cb : Callback<ConfirmForgotPasswordOutput>) : Request;
@@ -75,14 +99,29 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<DescribeUserPoolClientOutput>) : Request {})
     public function describeUserPoolClient(params : DescribeUserPoolClientInput, ?cb : Callback<DescribeUserPoolClientOutput>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function forgetDevice(params : ForgetDeviceInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<ForgotPasswordOutput>) : Request {})
     public function forgotPassword(params : ForgotPasswordInput, ?cb : Callback<ForgotPasswordOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetDeviceOutput>) : Request {})
+    public function getDevice(params : GetDeviceInput, ?cb : Callback<GetDeviceOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetUserOutput>) : Request {})
     public function getUser(params : GetUserInput, ?cb : Callback<GetUserOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetUserAttributeVerificationCodeOutput>) : Request {})
     public function getUserAttributeVerificationCode(params : GetUserAttributeVerificationCodeInput, ?cb : Callback<GetUserAttributeVerificationCodeOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GlobalSignOutOutput>) : Request {})
+    public function globalSignOut(params : GlobalSignOutInput, ?cb : Callback<GlobalSignOutOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<InitiateAuthOutput>) : Request {})
+    public function initiateAuth(params : InitiateAuthInput, ?cb : Callback<InitiateAuthOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListDevicesOutput>) : Request {})
+    public function listDevices(params : ListDevicesInput, ?cb : Callback<ListDevicesOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListUserPoolClientsOutput>) : Request {})
     public function listUserPoolClients(params : ListUserPoolClientsInput, ?cb : Callback<ListUserPoolClientsOutput>) : Request;
@@ -96,11 +135,17 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<ResendConfirmationCodeOutput>) : Request {})
     public function resendConfirmationCode(params : ResendConfirmationCodeInput, ?cb : Callback<ResendConfirmationCodeOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RespondToAuthChallengeOutput>) : Request {})
+    public function respondToAuthChallenge(params : RespondToAuthChallengeInput, ?cb : Callback<RespondToAuthChallengeOutput>) : Request;
+    
     @:overload(function (?cb : Callback<SetUserSettingsOutput>) : Request {})
     public function setUserSettings(params : SetUserSettingsInput, ?cb : Callback<SetUserSettingsOutput>) : Request;
     
     @:overload(function (?cb : Callback<SignUpOutput>) : Request {})
     public function signUp(params : SignUpInput, ?cb : Callback<SignUpOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateDeviceStatusOutput>) : Request {})
+    public function updateDeviceStatus(params : UpdateDeviceStatusInput, ?cb : Callback<UpdateDeviceStatusOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateUserAttributesOutput>) : Request {})
     public function updateUserAttributes(params : UpdateUserAttributesInput, ?cb : Callback<UpdateUserAttributesOutput>) : Request;

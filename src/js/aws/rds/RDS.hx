@@ -243,6 +243,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ResetDBParameterGroupOutput>) : Request {})
     public function resetDBParameterGroup(params : ResetDBParameterGroupInput, ?cb : Callback<ResetDBParameterGroupOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RestoreDBClusterFromS3Output>) : Request {})
+    public function restoreDBClusterFromS3(params : RestoreDBClusterFromS3Input, ?cb : Callback<RestoreDBClusterFromS3Output>) : Request;
+    
     @:overload(function (?cb : Callback<RestoreDBClusterFromSnapshotOutput>) : Request {})
     public function restoreDBClusterFromSnapshot(params : RestoreDBClusterFromSnapshotInput, ?cb : Callback<RestoreDBClusterFromSnapshotOutput>) : Request;
     

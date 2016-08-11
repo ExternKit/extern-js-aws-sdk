@@ -1,6 +1,6 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef SetUserSettingsInput = {
-    var AccessToken : _ShapeS16;
-    var MFAOptions : _ShapeSv;
+    var AccessToken : _ShapeS1d;
+    var MFAOptions : _ShapeS10;
 };

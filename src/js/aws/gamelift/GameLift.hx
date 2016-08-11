@@ -102,6 +102,9 @@ extern class GameLift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ResolveAliasOutput>) : Request {})
     public function resolveAlias(params : ResolveAliasInput, ?cb : Callback<ResolveAliasOutput>) : Request;
     
+    @:overload(function (?cb : Callback<SearchGameSessionsOutput>) : Request {})
+    public function searchGameSessions(params : SearchGameSessionsInput, ?cb : Callback<SearchGameSessionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateAliasOutput>) : Request {})
     public function updateAlias(params : UpdateAliasInput, ?cb : Callback<UpdateAliasOutput>) : Request;
     

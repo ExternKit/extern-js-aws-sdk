@@ -6,6 +6,7 @@ typedef _ShapeS16 = {
     @:optional var EngineName : String;
     @:optional var OptionGroupDescription : String;
     @:optional var Options : Array<{
+        @:optional var OptionVersion : String;
         @:optional var Persistent : Bool;
         @:optional var DBSecurityGroupMemberships : _ShapeS1b;
         @:optional var OptionName : String;

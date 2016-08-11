@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetRestApiOutput = _ShapeS14;
+typedef GetRestApiOutput = _ShapeS16;

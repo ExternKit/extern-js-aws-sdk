@@ -3,6 +3,10 @@ package js.aws.rds;
 typedef DescribeOptionGroupOptionsOutput = {
     @:optional var OptionGroupOptions : Array<{
         @:optional var Description : String;
+        @:optional var OptionGroupOptionVersions : Array<{
+            @:optional var IsDefault : Bool;
+            @:optional var Version : String;
+        }>;
         @:optional var OptionsDependedOn : Array<String>;
         @:optional var EngineName : String;
         @:optional var Persistent : Bool;

@@ -1,9 +1,9 @@
 package js.aws.apigateway;
 
 typedef _ShapeS1w = {
-    @:optional var cloudwatchRoleArn : String;
-    @:optional var throttleSettings : {
-        @:optional var rateLimit : Float;
-        @:optional var burstLimit : Int;
-    };
+    @:optional var createdDate : Float;
+    @:optional var description : String;
+    @:optional var pemEncodedCertificate : String;
+    @:optional var expirationDate : Float;
+    @:optional var clientCertificateId : String;
 };

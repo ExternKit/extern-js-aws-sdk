@@ -2,5 +2,5 @@ package js.aws.apigateway;
 
 typedef UpdateRestApiInput = {
     var restApiId : String;
-    @:optional var patchOperations : _ShapeS3s;
+    @:optional var patchOperations : _ShapeS3u;
 };

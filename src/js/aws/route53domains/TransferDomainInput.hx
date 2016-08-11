@@ -7,7 +7,7 @@ typedef TransferDomainInput = {
     var TechContact : _ShapeSu;
     @:optional var AutoRenew : Bool;
     var AdminContact : _ShapeSu;
-    @:optional var AuthCode : _ShapeS28;
+    @:optional var AuthCode : _ShapeS2h;
     @:optional var Nameservers : _ShapeSo;
     var RegistrantContact : _ShapeSu;
     var DurationInYears : Int;

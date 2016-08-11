@@ -1,6 +1,6 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef UpdateUserAttributesInput = {
-    var UserAttributes : _ShapeSq;
-    @:optional var AccessToken : _ShapeS16;
+    var UserAttributes : _ShapeSt;
+    @:optional var AccessToken : _ShapeS1d;
 };

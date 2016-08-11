@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetBasePathMappingOutput = _ShapeSe;
+typedef GetBasePathMappingOutput = _ShapeSg;

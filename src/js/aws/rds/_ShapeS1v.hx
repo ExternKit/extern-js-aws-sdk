@@ -14,6 +14,7 @@ typedef _ShapeS1v = {
         @:optional var EngineVersion : String;
         @:optional var MultiAZ : Bool;
         @:optional var DBInstanceIdentifier : String;
+        @:optional var DBSubnetGroupName : String;
         @:optional var AllocatedStorage : Int;
         @:optional var BackupRetentionPeriod : Int;
         @:optional var StorageType : String;
@@ -21,6 +22,7 @@ typedef _ShapeS1v = {
         @:optional var CACertificateIdentifier : String;
         @:optional var Iops : Int;
         @:optional var Port : Int;
+        @:optional var LicenseModel : String;
     };
     @:optional var DBSecurityGroups : _ShapeS1b;
     @:optional var AllocatedStorage : Int;

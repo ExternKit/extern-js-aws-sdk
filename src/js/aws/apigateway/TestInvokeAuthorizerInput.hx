@@ -3,9 +3,9 @@ package js.aws.apigateway;
 typedef TestInvokeAuthorizerInput = {
     @:optional var body : String;
     var restApiId : String;
-    @:optional var stageVariables : _ShapeSi;
-    @:optional var headers : _ShapeS3l;
+    @:optional var stageVariables : _ShapeSk;
+    @:optional var headers : _ShapeS3n;
     var authorizerId : String;
-    @:optional var additionalContext : _ShapeSi;
+    @:optional var additionalContext : _ShapeSk;
     @:optional var pathWithQueryString : String;
 };

@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef CreateStageOutput = _ShapeS16;
+typedef CreateStageOutput = _ShapeS18;

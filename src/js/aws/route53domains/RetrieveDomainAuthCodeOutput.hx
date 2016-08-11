@@ -1,5 +1,5 @@
 package js.aws.route53domains;
 
 typedef RetrieveDomainAuthCodeOutput = {
-    var AuthCode : _ShapeS28;
+    var AuthCode : _ShapeS2h;
 };

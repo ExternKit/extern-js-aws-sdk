@@ -1,9 +1,9 @@
 package js.aws.apigateway;
 
 typedef _ShapeSs = {
-    @:optional var path : String;
-    @:optional var parentId : String;
+    @:optional var schema : String;
+    @:optional var name : String;
+    @:optional var description : String;
     @:optional var id : String;
-    @:optional var resourceMethods : {};
-    @:optional var pathPart : String;
+    @:optional var contentType : String;
 };

@@ -5,6 +5,7 @@ typedef DescribeMLModelsOutput = {
     @:optional var Results : Array<{
         @:optional var LastUpdatedAt : Float;
         @:optional var EndpointInfo : _ShapeS1j;
+        @:optional var FinishedAt : Float;
         @:optional var SizeInBytes : Int;
         @:optional var Message : String;
         @:optional var CreatedAt : Float;
@@ -16,6 +17,8 @@ typedef DescribeMLModelsOutput = {
         @:optional var MLModelType : String;
         @:optional var MLModelId : String;
         @:optional var ScoreThreshold : Float;
+        @:optional var StartedAt : Float;
+        @:optional var ComputeTime : Int;
         @:optional var Name : String;
         @:optional var Algorithm : String;
         @:optional var Status : String;

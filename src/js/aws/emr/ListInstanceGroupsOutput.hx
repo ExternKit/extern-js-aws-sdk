@@ -10,7 +10,7 @@ typedef ListInstanceGroupsOutput = {
         @:optional var EbsOptimized : Bool;
         @:optional var Market : String;
         @:optional var InstanceGroupType : String;
-        @:optional var ShrinkPolicy : _ShapeS2w;
+        @:optional var ShrinkPolicy : _ShapeS2x;
         @:optional var Id : String;
         @:optional var Configurations : _ShapeS9;
         @:optional var InstanceType : String;

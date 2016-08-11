@@ -12,6 +12,9 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddIpRoutesOutput>) : Request {})
+    public function addIpRoutes(params : AddIpRoutesInput, ?cb : Callback<AddIpRoutesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AddTagsToResourceOutput>) : Request {})
     public function addTagsToResource(params : AddTagsToResourceInput, ?cb : Callback<AddTagsToResourceOutput>) : Request;
     
@@ -87,11 +90,17 @@ extern class DirectoryService extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<GetSnapshotLimitsOutput>) : Request {})
     public function getSnapshotLimits(params : GetSnapshotLimitsInput, ?cb : Callback<GetSnapshotLimitsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListIpRoutesOutput>) : Request {})
+    public function listIpRoutes(params : ListIpRoutesInput, ?cb : Callback<ListIpRoutesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
     public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
     
     @:overload(function (?cb : Callback<RegisterEventTopicOutput>) : Request {})
     public function registerEventTopic(params : RegisterEventTopicInput, ?cb : Callback<RegisterEventTopicOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RemoveIpRoutesOutput>) : Request {})
+    public function removeIpRoutes(params : RemoveIpRoutesInput, ?cb : Callback<RemoveIpRoutesOutput>) : Request;
     
     @:overload(function (?cb : Callback<RemoveTagsFromResourceOutput>) : Request {})
     public function removeTagsFromResource(params : RemoveTagsFromResourceInput, ?cb : Callback<RemoveTagsFromResourceOutput>) : Request;

@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateIntegrationOutput = _ShapeSz;
+typedef UpdateIntegrationOutput = _ShapeS11;

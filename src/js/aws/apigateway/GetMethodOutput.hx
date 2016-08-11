@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetMethodOutput = _ShapeSu;
+typedef GetMethodOutput = _ShapeSw;

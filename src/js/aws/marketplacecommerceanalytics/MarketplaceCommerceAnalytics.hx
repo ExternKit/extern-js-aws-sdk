@@ -15,4 +15,7 @@ extern class MarketplaceCommerceAnalytics extends Service implements js.extern.E
     @:overload(function (?cb : Callback<GenerateDataSetOutput>) : Request {})
     public function generateDataSet(params : GenerateDataSetInput, ?cb : Callback<GenerateDataSetOutput>) : Request;
     
+    @:overload(function (?cb : Callback<StartSupportDataExportOutput>) : Request {})
+    public function startSupportDataExport(params : StartSupportDataExportInput, ?cb : Callback<StartSupportDataExportOutput>) : Request;
+    
 }

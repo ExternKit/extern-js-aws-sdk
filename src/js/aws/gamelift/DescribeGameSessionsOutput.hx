@@ -2,5 +2,5 @@ package js.aws.gamelift;
 
 typedef DescribeGameSessionsOutput = {
     @:optional var NextToken : String;
-    @:optional var GameSessions : Array<_ShapeS17>;
+    @:optional var GameSessions : _ShapeS2n;
 };

@@ -6,5 +6,6 @@ typedef TestInvokeAuthorizerOutput = {
     @:optional var authorization : {};
     @:optional var policy : String;
     @:optional var log : String;
+    @:optional var claims : _ShapeSk;
     @:optional var clientStatus : Int;
 };

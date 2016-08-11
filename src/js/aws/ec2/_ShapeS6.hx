@@ -4,6 +4,7 @@ typedef _ShapeS6 = {
     @:optional var CidrBlock : String;
     @:optional var VpcId : String;
     @:optional var PeeringOptions : {
+        @:optional var AllowDnsResolutionFromRemoteVpc : Bool;
         @:optional var AllowEgressFromLocalVpcToRemoteClassicLink : Bool;
         @:optional var AllowEgressFromLocalClassicLinkToRemoteVpc : Bool;
     };

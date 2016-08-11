@@ -1,3 +1,3 @@
 package js.aws.rds;
 
-typedef ResetDBClusterParameterGroupOutput = _ShapeS6i;
+typedef ResetDBClusterParameterGroupOutput = _ShapeS6k;

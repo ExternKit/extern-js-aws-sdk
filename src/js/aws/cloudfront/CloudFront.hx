@@ -18,11 +18,17 @@ extern class CloudFront extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateDistributionOutput>) : Request {})
     public function createDistribution(params : CreateDistributionInput, ?cb : Callback<CreateDistributionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateDistributionWithTagsOutput>) : Request {})
+    public function createDistributionWithTags(params : CreateDistributionWithTagsInput, ?cb : Callback<CreateDistributionWithTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateInvalidationOutput>) : Request {})
     public function createInvalidation(params : CreateInvalidationInput, ?cb : Callback<CreateInvalidationOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateStreamingDistributionOutput>) : Request {})
     public function createStreamingDistribution(params : CreateStreamingDistributionInput, ?cb : Callback<CreateStreamingDistributionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateStreamingDistributionWithTagsOutput>) : Request {})
+    public function createStreamingDistributionWithTags(params : CreateStreamingDistributionWithTagsInput, ?cb : Callback<CreateStreamingDistributionWithTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteCloudFrontOriginAccessIdentity(params : DeleteCloudFrontOriginAccessIdentityInput, ?cb : Callback<Dynamic>) : Request;
@@ -68,6 +74,15 @@ extern class CloudFront extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListStreamingDistributionsOutput>) : Request {})
     public function listStreamingDistributions(params : ListStreamingDistributionsInput, ?cb : Callback<ListStreamingDistributionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
+    public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<UpdateCloudFrontOriginAccessIdentityOutput>) : Request {})
     public function updateCloudFrontOriginAccessIdentity(params : UpdateCloudFrontOriginAccessIdentityInput, ?cb : Callback<UpdateCloudFrontOriginAccessIdentityOutput>) : Request;

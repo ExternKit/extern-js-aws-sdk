@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef CreateDomainNameOutput = _ShapeSo;
+typedef CreateDomainNameOutput = _ShapeSq;

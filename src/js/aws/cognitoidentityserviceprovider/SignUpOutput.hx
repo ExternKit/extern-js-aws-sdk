@@ -1,6 +1,6 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef SignUpOutput = {
-    @:optional var CodeDeliveryDetails : _ShapeS2h;
+    @:optional var CodeDeliveryDetails : _ShapeS3n;
     @:optional var UserConfirmed : Bool;
 };

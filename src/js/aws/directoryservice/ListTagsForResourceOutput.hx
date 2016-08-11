@@ -2,5 +2,5 @@ package js.aws.directoryservice;
 
 typedef ListTagsForResourceOutput = {
     @:optional var NextToken : String;
-    @:optional var Tags : _ShapeS3;
+    @:optional var Tags : _ShapeSb;
 };

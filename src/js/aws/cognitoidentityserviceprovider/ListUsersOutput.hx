@@ -6,7 +6,7 @@ typedef ListUsersOutput = {
         @:optional var Enabled : Bool;
         @:optional var UserStatus : String;
         @:optional var Username : _ShapeSd;
-        @:optional var Attributes : _ShapeSq;
+        @:optional var Attributes : _ShapeSt;
         @:optional var UserCreateDate : Float;
         @:optional var UserLastModifiedDate : Float;
     }>;

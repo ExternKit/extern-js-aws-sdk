@@ -4,7 +4,7 @@ typedef PutMethodResponseInput = {
     var resourceId : String;
     var restApiId : String;
     var httpMethod : String;
-    @:optional var responseParameters : _ShapeSv;
+    @:optional var responseParameters : _ShapeSx;
     var statusCode : String;
-    @:optional var responseModels : _ShapeSi;
+    @:optional var responseModels : _ShapeSk;
 };

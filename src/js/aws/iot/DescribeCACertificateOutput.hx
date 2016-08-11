@@ -7,6 +7,7 @@ typedef DescribeCACertificateOutput = {
         @:optional var creationDate : Float;
         @:optional var status : String;
         @:optional var certificateId : String;
+        @:optional var autoRegistrationStatus : String;
         @:optional var ownedBy : String;
     };
 };

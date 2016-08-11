@@ -6,6 +6,7 @@ typedef GetDataSourceOutput = {
     @:optional var DataLocationS3 : String;
     @:optional var RedshiftMetadata : _ShapeS2i;
     @:optional var RDSMetadata : _ShapeS2j;
+    @:optional var FinishedAt : Float;
     @:optional var DataRearrangement : String;
     @:optional var Message : String;
     @:optional var CreatedAt : Float;
@@ -15,7 +16,9 @@ typedef GetDataSourceOutput = {
     @:optional var DataSourceId : String;
     @:optional var RoleARN : String;
     @:optional var NumberOfFiles : Int;
+    @:optional var StartedAt : Float;
     @:optional var ComputeStatistics : Bool;
+    @:optional var ComputeTime : Int;
     @:optional var Name : String;
     @:optional var Status : String;
 };

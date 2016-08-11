@@ -1,5 +1,5 @@
 package js.aws.es;
 
 typedef DeleteElasticsearchDomainOutput = {
-    @:optional var DomainStatus : _ShapeSk;
+    @:optional var DomainStatus : _ShapeSl;
 };

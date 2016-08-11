@@ -6,6 +6,11 @@ typedef _ShapeS25 = {
         @:optional var CreationDateTime : Float;
         @:optional var StartDateTime : Float;
     };
+    @:optional var FailureDetails : {
+        @:optional var Message : String;
+        @:optional var Reason : String;
+        @:optional var LogFile : String;
+    };
     @:optional var StateChangeReason : {
         @:optional var Message : String;
         @:optional var Code : String;
