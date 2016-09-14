@@ -2,8 +2,8 @@ package js.aws.ec2;
 
 typedef RequestSpotInstancesInput = {
     @:optional var LaunchSpecification : {
-        @:optional var IamInstanceProfile : _ShapeSfl;
-        @:optional var Placement : _ShapeSfh;
+        @:optional var IamInstanceProfile : _ShapeSfx;
+        @:optional var Placement : _ShapeSft;
         @:optional var SubnetId : String;
         @:optional var KernelId : String;
         @:optional var UserData : String;
@@ -11,13 +11,13 @@ typedef RequestSpotInstancesInput = {
         @:optional var SecurityGroupIds : _ShapeS27;
         @:optional var KeyName : String;
         @:optional var SecurityGroups : _ShapeS27;
-        @:optional var Monitoring : _ShapeSfx;
+        @:optional var Monitoring : _ShapeSga;
         @:optional var ImageId : String;
         @:optional var InstanceType : String;
-        @:optional var BlockDeviceMappings : _ShapeSa0;
+        @:optional var BlockDeviceMappings : _ShapeSac;
         @:optional var AddressingType : String;
         @:optional var RamdiskId : String;
-        @:optional var NetworkInterfaces : _ShapeSfj;
+        @:optional var NetworkInterfaces : _ShapeSfv;
     };
     @:optional var ValidFrom : Float;
     @:optional var ClientToken : String;

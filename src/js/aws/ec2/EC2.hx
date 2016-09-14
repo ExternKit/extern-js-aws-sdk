@@ -273,6 +273,12 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeFlowLogsOutput>) : Request {})
     public function describeFlowLogs(params : DescribeFlowLogsInput, ?cb : Callback<DescribeFlowLogsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeHostReservationOfferingsOutput>) : Request {})
+    public function describeHostReservationOfferings(params : DescribeHostReservationOfferingsInput, ?cb : Callback<DescribeHostReservationOfferingsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeHostReservationsOutput>) : Request {})
+    public function describeHostReservations(params : DescribeHostReservationsInput, ?cb : Callback<DescribeHostReservationsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeHostsOutput>) : Request {})
     public function describeHosts(params : DescribeHostsInput, ?cb : Callback<DescribeHostsOutput>) : Request;
     
@@ -477,6 +483,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetConsoleScreenshotOutput>) : Request {})
     public function getConsoleScreenshot(params : GetConsoleScreenshotInput, ?cb : Callback<GetConsoleScreenshotOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetHostReservationPurchasePreviewOutput>) : Request {})
+    public function getHostReservationPurchasePreview(params : GetHostReservationPurchasePreviewInput, ?cb : Callback<GetHostReservationPurchasePreviewOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetPasswordDataOutput>) : Request {})
     public function getPasswordData(params : GetPasswordDataInput, ?cb : Callback<GetPasswordDataOutput>) : Request;
     
@@ -545,6 +554,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<MoveAddressToVpcOutput>) : Request {})
     public function moveAddressToVpc(params : MoveAddressToVpcInput, ?cb : Callback<MoveAddressToVpcOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PurchaseHostReservationOutput>) : Request {})
+    public function purchaseHostReservation(params : PurchaseHostReservationInput, ?cb : Callback<PurchaseHostReservationOutput>) : Request;
     
     @:overload(function (?cb : Callback<PurchaseReservedInstancesOfferingOutput>) : Request {})
     public function purchaseReservedInstancesOffering(params : PurchaseReservedInstancesOfferingInput, ?cb : Callback<PurchaseReservedInstancesOfferingOutput>) : Request;

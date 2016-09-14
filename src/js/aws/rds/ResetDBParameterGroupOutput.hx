@@ -1,3 +1,3 @@
 package js.aws.rds;
 
-typedef ResetDBParameterGroupOutput = _ShapeS6q;
+typedef ResetDBParameterGroupOutput = _ShapeS6v;

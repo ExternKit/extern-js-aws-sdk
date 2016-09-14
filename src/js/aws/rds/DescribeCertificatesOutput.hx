@@ -7,6 +7,7 @@ typedef DescribeCertificatesOutput = {
         @:optional var CertificateIdentifier : String;
         @:optional var ValidFrom : Float;
         @:optional var ValidTill : Float;
+        @:optional var CertificateArn : String;
         @:optional var Thumbprint : String;
     }>;
 };

@@ -2,7 +2,7 @@
 
 - **Target :** Javascript (NodeJS + Browser)
 - **Library :** aws-sdk
-- **Last tested version :** 2.4.14
+- **Last tested version :** 2.6.2
 - **Available on :** [Github](https://github.com/aws/aws-sdk-js) - [NPM](https://www.npmjs.com/package/aws-sdk)
 
 ## Usage

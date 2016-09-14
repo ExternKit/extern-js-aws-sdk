@@ -15,6 +15,9 @@ extern class AutoScaling extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function attachInstances(params : AttachInstancesInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<AttachLoadBalancerTargetGroupsOutput>) : Request {})
+    public function attachLoadBalancerTargetGroups(params : AttachLoadBalancerTargetGroupsInput, ?cb : Callback<AttachLoadBalancerTargetGroupsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AttachLoadBalancersOutput>) : Request {})
     public function attachLoadBalancers(params : AttachLoadBalancersInput, ?cb : Callback<AttachLoadBalancersOutput>) : Request;
     
@@ -75,6 +78,9 @@ extern class AutoScaling extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeLifecycleHooksOutput>) : Request {})
     public function describeLifecycleHooks(params : DescribeLifecycleHooksInput, ?cb : Callback<DescribeLifecycleHooksOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeLoadBalancerTargetGroupsOutput>) : Request {})
+    public function describeLoadBalancerTargetGroups(params : DescribeLoadBalancerTargetGroupsInput, ?cb : Callback<DescribeLoadBalancerTargetGroupsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeLoadBalancersOutput>) : Request {})
     public function describeLoadBalancers(params : DescribeLoadBalancersInput, ?cb : Callback<DescribeLoadBalancersOutput>) : Request;
     
@@ -104,6 +110,9 @@ extern class AutoScaling extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DetachInstancesOutput>) : Request {})
     public function detachInstances(params : DetachInstancesInput, ?cb : Callback<DetachInstancesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DetachLoadBalancerTargetGroupsOutput>) : Request {})
+    public function detachLoadBalancerTargetGroups(params : DetachLoadBalancerTargetGroupsInput, ?cb : Callback<DetachLoadBalancerTargetGroupsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DetachLoadBalancersOutput>) : Request {})
     public function detachLoadBalancers(params : DetachLoadBalancersInput, ?cb : Callback<DetachLoadBalancersOutput>) : Request;

@@ -144,6 +144,9 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListTrafficPolicyVersionsOutput>) : Request {})
     public function listTrafficPolicyVersions(params : ListTrafficPolicyVersionsInput, ?cb : Callback<ListTrafficPolicyVersionsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<TestDNSAnswerOutput>) : Request {})
+    public function testDNSAnswer(params : TestDNSAnswerInput, ?cb : Callback<TestDNSAnswerOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateHealthCheckOutput>) : Request {})
     public function updateHealthCheck(params : UpdateHealthCheckInput, ?cb : Callback<UpdateHealthCheckOutput>) : Request;
     

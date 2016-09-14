@@ -1,10 +1,11 @@
 package js.aws.ec2;
 
-typedef _ShapeSb8 = {
-    @:optional var Details : Array<{
-        @:optional var ImpairedSince : Float;
-        @:optional var Name : String;
+typedef _ShapeSb8 = Array<{
+    @:optional var Ebs : {
+        @:optional var AttachTime : Float;
+        @:optional var VolumeId : String;
+        @:optional var DeleteOnTermination : Bool;
         @:optional var Status : String;
-    }>;
-    @:optional var Status : String;
-};
+    };
+    @:optional var DeviceName : String;
+}>;

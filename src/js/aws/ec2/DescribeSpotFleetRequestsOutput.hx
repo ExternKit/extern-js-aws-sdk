@@ -6,6 +6,7 @@ typedef DescribeSpotFleetRequestsOutput = {
         var CreateTime : Float;
         var SpotFleetRequestState : String;
         var SpotFleetRequestId : String;
-        var SpotFleetRequestConfig : _ShapeSfe;
+        @:optional var ActivityStatus : String;
+        var SpotFleetRequestConfig : _ShapeSfq;
     }>;
 };

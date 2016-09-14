@@ -6,5 +6,5 @@ typedef CreateWorkspacesOutput = {
         @:optional var ErrorMessage : String;
         @:optional var WorkspaceRequest : _ShapeSa;
     }>;
-    @:optional var PendingRequests : _ShapeSl;
+    @:optional var PendingRequests : _ShapeSo;
 };

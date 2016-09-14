@@ -47,6 +47,7 @@ typedef _ShapeS1v = {
         @:optional var FQDN : String;
         @:optional var Status : String;
     }>;
+    @:optional var DBInstanceArn : String;
     @:optional var Endpoint : {
         @:optional var HostedZoneId : String;
         @:optional var Address : String;

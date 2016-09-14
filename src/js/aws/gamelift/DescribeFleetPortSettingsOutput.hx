@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef DescribeFleetPortSettingsOutput = {
-    @:optional var InboundPermissions : _ShapeSn;
+    @:optional var InboundPermissions : _ShapeSo;
 };

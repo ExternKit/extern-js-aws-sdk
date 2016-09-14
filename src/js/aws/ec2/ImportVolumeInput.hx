@@ -3,7 +3,7 @@ package js.aws.ec2;
 typedef ImportVolumeInput = {
     @:optional var Description : String;
     var AvailabilityZone : String;
-    var Image : _ShapeSj6;
-    var Volume : _ShapeSj7;
+    var Image : _ShapeSjo;
+    var Volume : _ShapeSjp;
     @:optional var DryRun : Bool;
 };

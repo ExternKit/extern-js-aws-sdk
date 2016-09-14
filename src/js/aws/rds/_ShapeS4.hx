@@ -1,6 +1,7 @@
 package js.aws.rds;
 
 typedef _ShapeS4 = {
+    @:optional var EventSubscriptionArn : String;
     @:optional var EventCategoriesList : _ShapeS6;
     @:optional var CustSubscriptionId : String;
     @:optional var Enabled : Bool;

@@ -124,6 +124,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     
     public var elb : Config;
     
+    public var elbv2 : Config;
+    
     public var emr : Config;
     
     public var es : Config;
@@ -145,6 +147,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     public var iotdata : Config;
     
     public var kinesis : Config;
+    
+    public var kinesisanalytics : Config;
     
     public var kms : Config;
     
@@ -175,6 +179,8 @@ extern class Config implements js.extern.Extern<'aws-sdk'>
     public var ses : Config;
     
     public var simpledb : Config;
+    
+    public var snowball : Config;
     
     public var sns : Config;
     

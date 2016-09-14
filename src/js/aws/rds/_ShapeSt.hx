@@ -7,6 +7,7 @@ typedef _ShapeSt = {
     @:optional var SnapshotType : String;
     @:optional var AllocatedStorage : Int;
     @:optional var DBClusterSnapshotIdentifier : String;
+    @:optional var DBClusterSnapshotArn : String;
     @:optional var KmsKeyId : String;
     @:optional var SnapshotCreateTime : Float;
     @:optional var ClusterCreateTime : Float;

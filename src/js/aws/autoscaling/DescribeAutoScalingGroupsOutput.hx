@@ -2,7 +2,7 @@ package js.aws.autoscaling;
 
 typedef DescribeAutoScalingGroupsOutput = {
     var AutoScalingGroups : Array<{
-        @:optional var LoadBalancerNames : _ShapeS6;
+        @:optional var LoadBalancerNames : _ShapeSa;
         var CreatedTime : Float;
         @:optional var VPCZoneIdentifier : String;
         @:optional var SuspendedProcesses : Array<{
@@ -27,14 +27,15 @@ typedef DescribeAutoScalingGroupsOutput = {
         var AutoScalingGroupName : String;
         var DefaultCooldown : Int;
         var MinSize : Int;
+        @:optional var TargetGroupARNs : _ShapeS6;
         var MaxSize : Int;
         var HealthCheckType : String;
         @:optional var NewInstancesProtectedFromScaleIn : Bool;
         @:optional var PlacementGroup : String;
-        var AvailabilityZones : _ShapeSj;
-        @:optional var TerminationPolicies : _ShapeSm;
+        var AvailabilityZones : _ShapeSn;
+        @:optional var TerminationPolicies : _ShapeSr;
         @:optional var LaunchConfigurationName : String;
-        @:optional var Tags : _ShapeS2a;
+        @:optional var Tags : _ShapeS2f;
         @:optional var Status : String;
     }>;
     @:optional var NextToken : String;

@@ -11,8 +11,8 @@ typedef DescribeInstanceStatusOutput = {
             @:optional var NotBefore : Float;
         }>;
         @:optional var InstanceId : String;
-        @:optional var InstanceStatus : _ShapeSb8;
-        @:optional var SystemStatus : _ShapeSb8;
-        @:optional var InstanceState : _ShapeSb6;
+        @:optional var InstanceStatus : _ShapeSbk;
+        @:optional var SystemStatus : _ShapeSbk;
+        @:optional var InstanceState : _ShapeSbi;
     }>;
 };

@@ -30,6 +30,9 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteAlias(params : DeleteAliasInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteImportedKeyMaterial(params : DeleteImportedKeyMaterialInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeKeyOutput>) : Request {})
     public function describeKey(params : DescribeKeyInput, ?cb : Callback<DescribeKeyOutput>) : Request;
     
@@ -62,6 +65,12 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetKeyRotationStatusOutput>) : Request {})
     public function getKeyRotationStatus(params : GetKeyRotationStatusInput, ?cb : Callback<GetKeyRotationStatusOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetParametersForImportOutput>) : Request {})
+    public function getParametersForImport(params : GetParametersForImportInput, ?cb : Callback<GetParametersForImportOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ImportKeyMaterialOutput>) : Request {})
+    public function importKeyMaterial(params : ImportKeyMaterialInput, ?cb : Callback<ImportKeyMaterialOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListAliasesOutput>) : Request {})
     public function listAliases(params : ListAliasesInput, ?cb : Callback<ListAliasesOutput>) : Request;

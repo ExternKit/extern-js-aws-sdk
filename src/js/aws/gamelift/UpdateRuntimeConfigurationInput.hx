@@ -1,6 +1,6 @@
 package js.aws.gamelift;
 
 typedef UpdateRuntimeConfigurationInput = {
-    var RuntimeConfiguration : _ShapeSt;
+    var RuntimeConfiguration : _ShapeSu;
     var FleetId : String;
 };

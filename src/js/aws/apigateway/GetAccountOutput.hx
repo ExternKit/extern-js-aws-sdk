@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetAccountOutput = _ShapeS1y;
+typedef GetAccountOutput = _ShapeS29;

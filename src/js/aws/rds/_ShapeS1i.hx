@@ -25,6 +25,7 @@ typedef _ShapeS1i = {
     @:optional var LatestRestorableTime : Float;
     @:optional var DBClusterIdentifier : String;
     @:optional var PreferredMaintenanceWindow : String;
+    @:optional var DBClusterArn : String;
     @:optional var AvailabilityZones : _ShapeSu;
     @:optional var Engine : String;
     @:optional var MasterUsername : String;

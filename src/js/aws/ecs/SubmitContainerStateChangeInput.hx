@@ -1,7 +1,7 @@
 package js.aws.ecs;
 
 typedef SubmitContainerStateChangeInput = {
-    @:optional var networkBindings : _ShapeS2e;
+    @:optional var networkBindings : _ShapeS2f;
     @:optional var task : String;
     @:optional var cluster : String;
     @:optional var containerName : String;

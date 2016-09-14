@@ -75,6 +75,9 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<ConfirmSignUpOutput>) : Request {})
     public function confirmSignUp(params : ConfirmSignUpInput, ?cb : Callback<ConfirmSignUpOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateUserImportJobOutput>) : Request {})
+    public function createUserImportJob(params : CreateUserImportJobInput, ?cb : Callback<CreateUserImportJobOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateUserPoolOutput>) : Request {})
     public function createUserPool(params : CreateUserPoolInput, ?cb : Callback<CreateUserPoolOutput>) : Request;
     
@@ -93,6 +96,9 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteUserPoolClient(params : DeleteUserPoolClientInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeUserImportJobOutput>) : Request {})
+    public function describeUserImportJob(params : DescribeUserImportJobInput, ?cb : Callback<DescribeUserImportJobOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeUserPoolOutput>) : Request {})
     public function describeUserPool(params : DescribeUserPoolInput, ?cb : Callback<DescribeUserPoolOutput>) : Request;
     
@@ -104,6 +110,9 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     
     @:overload(function (?cb : Callback<ForgotPasswordOutput>) : Request {})
     public function forgotPassword(params : ForgotPasswordInput, ?cb : Callback<ForgotPasswordOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetCSVHeaderOutput>) : Request {})
+    public function getCSVHeader(params : GetCSVHeaderInput, ?cb : Callback<GetCSVHeaderOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetDeviceOutput>) : Request {})
     public function getDevice(params : GetDeviceInput, ?cb : Callback<GetDeviceOutput>) : Request;
@@ -122,6 +131,9 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     
     @:overload(function (?cb : Callback<ListDevicesOutput>) : Request {})
     public function listDevices(params : ListDevicesInput, ?cb : Callback<ListDevicesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListUserImportJobsOutput>) : Request {})
+    public function listUserImportJobs(params : ListUserImportJobsInput, ?cb : Callback<ListUserImportJobsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListUserPoolClientsOutput>) : Request {})
     public function listUserPoolClients(params : ListUserPoolClientsInput, ?cb : Callback<ListUserPoolClientsOutput>) : Request;
@@ -143,6 +155,12 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     
     @:overload(function (?cb : Callback<SignUpOutput>) : Request {})
     public function signUp(params : SignUpInput, ?cb : Callback<SignUpOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartUserImportJobOutput>) : Request {})
+    public function startUserImportJob(params : StartUserImportJobInput, ?cb : Callback<StartUserImportJobOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopUserImportJobOutput>) : Request {})
+    public function stopUserImportJob(params : StopUserImportJobInput, ?cb : Callback<StopUserImportJobOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateDeviceStatusOutput>) : Request {})
     public function updateDeviceStatus(params : UpdateDeviceStatusInput, ?cb : Callback<UpdateDeviceStatusOutput>) : Request;

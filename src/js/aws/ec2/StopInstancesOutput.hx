@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef StopInstancesOutput = {
-    @:optional var StoppingInstances : _ShapeSmb;
+    @:optional var StoppingInstances : _ShapeSmv;
 };

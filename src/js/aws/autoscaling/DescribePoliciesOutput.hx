@@ -14,9 +14,9 @@ typedef DescribePoliciesOutput = {
         @:optional var AdjustmentType : String;
         @:optional var PolicyARN : String;
         @:optional var MetricAggregationType : String;
-        @:optional var MinAdjustmentStep : _ShapeS3g;
+        @:optional var MinAdjustmentStep : _ShapeS3p;
         @:optional var PolicyName : String;
-        @:optional var StepAdjustments : _ShapeS3j;
+        @:optional var StepAdjustments : _ShapeS3s;
         @:optional var PolicyType : String;
         @:optional var ScalingAdjustment : Int;
     }>;

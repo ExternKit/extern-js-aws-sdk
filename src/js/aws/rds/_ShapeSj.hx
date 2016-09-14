@@ -11,6 +11,7 @@ typedef _ShapeSj = {
         @:optional var EC2SecurityGroupOwnerId : String;
         @:optional var Status : String;
     }>;
+    @:optional var DBSecurityGroupArn : String;
     @:optional var IPRanges : Array<{
         @:optional var CIDRIP : String;
         @:optional var Status : String;

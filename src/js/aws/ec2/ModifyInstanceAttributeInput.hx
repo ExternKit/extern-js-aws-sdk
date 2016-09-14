@@ -8,11 +8,11 @@ typedef ModifyInstanceAttributeInput = {
         @:optional var Value : Dynamic;
     };
     var InstanceId : String;
-    @:optional var DisableApiTermination : _ShapeSav;
-    @:optional var EbsOptimized : _ShapeSav;
+    @:optional var DisableApiTermination : _ShapeSb7;
+    @:optional var EbsOptimized : _ShapeSb7;
     @:optional var Kernel : _ShapeS34;
     @:optional var InstanceInitiatedShutdownBehavior : _ShapeS34;
-    @:optional var SourceDestCheck : _ShapeSav;
+    @:optional var SourceDestCheck : _ShapeSb7;
     @:optional var InstanceType : _ShapeS34;
     @:optional var Attribute : String;
     @:optional var BlockDeviceMappings : Array<{
@@ -26,5 +26,5 @@ typedef ModifyInstanceAttributeInput = {
     }>;
     @:optional var Ramdisk : _ShapeS34;
     @:optional var DryRun : Bool;
-    @:optional var EnaSupport : _ShapeSav;
+    @:optional var EnaSupport : _ShapeSb7;
 };

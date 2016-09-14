@@ -33,11 +33,23 @@ extern class WorkSpaces extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeWorkspacesOutput>) : Request {})
     public function describeWorkspaces(params : DescribeWorkspacesInput, ?cb : Callback<DescribeWorkspacesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeWorkspacesConnectionStatusOutput>) : Request {})
+    public function describeWorkspacesConnectionStatus(params : DescribeWorkspacesConnectionStatusInput, ?cb : Callback<DescribeWorkspacesConnectionStatusOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyWorkspacePropertiesOutput>) : Request {})
+    public function modifyWorkspaceProperties(params : ModifyWorkspacePropertiesInput, ?cb : Callback<ModifyWorkspacePropertiesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<RebootWorkspacesOutput>) : Request {})
     public function rebootWorkspaces(params : RebootWorkspacesInput, ?cb : Callback<RebootWorkspacesOutput>) : Request;
     
     @:overload(function (?cb : Callback<RebuildWorkspacesOutput>) : Request {})
     public function rebuildWorkspaces(params : RebuildWorkspacesInput, ?cb : Callback<RebuildWorkspacesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartWorkspacesOutput>) : Request {})
+    public function startWorkspaces(params : StartWorkspacesInput, ?cb : Callback<StartWorkspacesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopWorkspacesOutput>) : Request {})
+    public function stopWorkspaces(params : StopWorkspacesInput, ?cb : Callback<StopWorkspacesOutput>) : Request;
     
     @:overload(function (?cb : Callback<TerminateWorkspacesOutput>) : Request {})
     public function terminateWorkspaces(params : TerminateWorkspacesInput, ?cb : Callback<TerminateWorkspacesOutput>) : Request;

@@ -21,7 +21,7 @@ typedef GetPipelineStateOutput = {
                 @:optional var externalExecutionId : String;
                 @:optional var token : String;
             };
-            @:optional var currentRevision : _ShapeS2s;
+            @:optional var currentRevision : _ShapeS32;
             @:optional var entityUrl : String;
         }>;
         @:optional var inboundTransitionState : {

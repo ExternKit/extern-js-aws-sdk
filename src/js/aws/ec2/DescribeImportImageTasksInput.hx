@@ -4,6 +4,6 @@ typedef DescribeImportImageTasksInput = {
     @:optional var MaxResults : Int;
     @:optional var Filters : _ShapeS7t;
     @:optional var NextToken : String;
-    @:optional var ImportTaskIds : _ShapeSag;
+    @:optional var ImportTaskIds : _ShapeSas;
     @:optional var DryRun : Bool;
 };

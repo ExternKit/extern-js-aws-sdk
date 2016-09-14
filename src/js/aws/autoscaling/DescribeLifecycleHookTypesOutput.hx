@@ -1,5 +1,5 @@
 package js.aws.autoscaling;
 
 typedef DescribeLifecycleHookTypesOutput = {
-    @:optional var LifecycleHookTypes : _ShapeS2h;
+    @:optional var LifecycleHookTypes : _ShapeS2m;
 };

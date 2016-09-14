@@ -6,6 +6,7 @@ typedef _ShapeS12 = {
     @:optional var PercentProgress : Int;
     @:optional var AvailabilityZone : String;
     @:optional var VpcId : String;
+    @:optional var DBSnapshotArn : String;
     @:optional var SnapshotType : String;
     @:optional var AllocatedStorage : Int;
     @:optional var SourceDBSnapshotIdentifier : String;

@@ -39,6 +39,12 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateStageOutput>) : Request {})
     public function createStage(params : CreateStageInput, ?cb : Callback<CreateStageOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateUsagePlanOutput>) : Request {})
+    public function createUsagePlan(params : CreateUsagePlanInput, ?cb : Callback<CreateUsagePlanOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateUsagePlanKeyOutput>) : Request {})
+    public function createUsagePlanKey(params : CreateUsagePlanKeyInput, ?cb : Callback<CreateUsagePlanKeyOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteApiKey(params : DeleteApiKeyInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -80,6 +86,12 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteStage(params : DeleteStageInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteUsagePlan(params : DeleteUsagePlanInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteUsagePlanKey(params : DeleteUsagePlanKeyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function flushStageAuthorizersCache(params : FlushStageAuthorizersCacheInput, ?cb : Callback<Dynamic>) : Request;
@@ -174,6 +186,24 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetStagesOutput>) : Request {})
     public function getStages(params : GetStagesInput, ?cb : Callback<GetStagesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetUsageOutput>) : Request {})
+    public function getUsage(params : GetUsageInput, ?cb : Callback<GetUsageOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetUsagePlanOutput>) : Request {})
+    public function getUsagePlan(params : GetUsagePlanInput, ?cb : Callback<GetUsagePlanOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetUsagePlanKeyOutput>) : Request {})
+    public function getUsagePlanKey(params : GetUsagePlanKeyInput, ?cb : Callback<GetUsagePlanKeyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetUsagePlanKeysOutput>) : Request {})
+    public function getUsagePlanKeys(params : GetUsagePlanKeysInput, ?cb : Callback<GetUsagePlanKeysOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetUsagePlansOutput>) : Request {})
+    public function getUsagePlans(params : GetUsagePlansInput, ?cb : Callback<GetUsagePlansOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ImportApiKeysOutput>) : Request {})
+    public function importApiKeys(params : ImportApiKeysInput, ?cb : Callback<ImportApiKeysOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ImportRestApiOutput>) : Request {})
     public function importRestApi(params : ImportRestApiInput, ?cb : Callback<ImportRestApiOutput>) : Request;
     
@@ -242,5 +272,11 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<UpdateStageOutput>) : Request {})
     public function updateStage(params : UpdateStageInput, ?cb : Callback<UpdateStageOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateUsageOutput>) : Request {})
+    public function updateUsage(params : UpdateUsageInput, ?cb : Callback<UpdateUsageOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateUsagePlanOutput>) : Request {})
+    public function updateUsagePlan(params : UpdateUsagePlanInput, ?cb : Callback<UpdateUsagePlanOutput>) : Request;
     
 }

@@ -11,7 +11,7 @@ typedef DescribeReservedInstancesOfferingsOutput = {
         @:optional var OfferingType : String;
         @:optional var Marketplace : Bool;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : _ShapeSda;
+        @:optional var RecurringCharges : _ShapeSdm;
         @:optional var InstanceType : String;
         @:optional var ProductDescription : String;
         @:optional var FixedPrice : Float;

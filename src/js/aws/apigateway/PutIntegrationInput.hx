@@ -12,5 +12,5 @@ typedef PutIntegrationInput = {
     @:optional var passthroughBehavior : String;
     @:optional var uri : String;
     var httpMethod : String;
-    @:optional var cacheKeyParameters : _ShapeS7;
+    @:optional var cacheKeyParameters : _ShapeS8;
 };

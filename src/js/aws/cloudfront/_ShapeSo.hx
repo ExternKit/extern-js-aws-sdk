@@ -9,6 +9,10 @@ typedef _ShapeSo = {
         };
         var Forward : String;
     };
+    @:optional var QueryStringCacheKeys : {
+        @:optional var Items : Array<String>;
+        var Quantity : Int;
+    };
     @:optional var Headers : {
         @:optional var Items : Array<String>;
         var Quantity : Int;

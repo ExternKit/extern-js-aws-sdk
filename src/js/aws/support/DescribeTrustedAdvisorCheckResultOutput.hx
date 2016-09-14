@@ -6,7 +6,7 @@ typedef DescribeTrustedAdvisorCheckResultOutput = {
             var metadata : _ShapeS1t;
             var resourceId : String;
             @:optional var isSuppressed : Bool;
-            var region : String;
+            @:optional var region : String;
             var status : String;
         }>;
         var status : String;

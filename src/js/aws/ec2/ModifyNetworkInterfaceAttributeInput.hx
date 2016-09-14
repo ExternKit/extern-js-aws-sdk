@@ -7,7 +7,7 @@ typedef ModifyNetworkInterfaceAttributeInput = {
         @:optional var DeleteOnTermination : Bool;
         @:optional var AttachmentId : String;
     };
-    @:optional var SourceDestCheck : _ShapeSav;
+    @:optional var SourceDestCheck : _ShapeSb7;
     @:optional var DryRun : Bool;
     var NetworkInterfaceId : String;
 };

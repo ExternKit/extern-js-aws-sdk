@@ -1,5 +1,5 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef GetUserAttributeVerificationCodeOutput = {
-    @:optional var CodeDeliveryDetails : _ShapeS3n;
+    @:optional var CodeDeliveryDetails : _ShapeS3y;
 };

@@ -2,5 +2,5 @@ package js.aws.autoscaling;
 
 typedef DescribeTagsOutput = {
     @:optional var NextToken : String;
-    @:optional var Tags : _ShapeS2a;
+    @:optional var Tags : _ShapeS2f;
 };

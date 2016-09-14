@@ -5,10 +5,10 @@ typedef DescribeLoadBalancersOutput = {
         @:optional var CreatedTime : Float;
         @:optional var BackendServerDescriptions : Array<{
             @:optional var InstancePort : Int;
-            @:optional var PolicyNames : _ShapeS2j;
+            @:optional var PolicyNames : _ShapeS2k;
         }>;
         @:optional var Policies : {
-            @:optional var OtherPolicies : _ShapeS2j;
+            @:optional var OtherPolicies : _ShapeS2k;
             @:optional var AppCookieStickinessPolicies : Array<{
                 @:optional var CookieName : String;
                 @:optional var PolicyName : String;
@@ -32,7 +32,7 @@ typedef DescribeLoadBalancersOutput = {
         @:optional var CanonicalHostedZoneNameID : String;
         @:optional var ListenerDescriptions : Array<{
             @:optional var Listener : _ShapeSy;
-            @:optional var PolicyNames : _ShapeS2j;
+            @:optional var PolicyNames : _ShapeS2k;
         }>;
         @:optional var AvailabilityZones : _ShapeS13;
         @:optional var VPCId : String;

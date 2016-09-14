@@ -5,5 +5,5 @@ typedef StartTaskInput = {
     @:optional var cluster : String;
     var containerInstances : _ShapeSv;
     @:optional var startedBy : String;
-    @:optional var overrides : _ShapeS29;
+    @:optional var overrides : _ShapeS2a;
 };

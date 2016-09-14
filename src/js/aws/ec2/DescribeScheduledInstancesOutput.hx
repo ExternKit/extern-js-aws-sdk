@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef DescribeScheduledInstancesOutput = {
     @:optional var NextToken : String;
-    @:optional var ScheduledInstanceSet : Array<_ShapeSed>;
+    @:optional var ScheduledInstanceSet : Array<_ShapeSep>;
 };

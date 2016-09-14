@@ -10,4 +10,5 @@ typedef _ShapeS1z = {
         @:optional var SubnetStatus : String;
     }>;
     @:optional var DBSubnetGroupDescription : String;
+    @:optional var DBSubnetGroupArn : String;
 };

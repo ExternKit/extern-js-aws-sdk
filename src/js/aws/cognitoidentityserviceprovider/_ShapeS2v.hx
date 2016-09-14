@@ -1,6 +1,3 @@
 package js.aws.cognitoidentityserviceprovider;
 
-typedef _ShapeS2v = {
-    @:optional var SnsCallerArn : String;
-    @:optional var ExternalId : String;
-};
+typedef _ShapeS2v = Array<String>;

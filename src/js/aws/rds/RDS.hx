@@ -183,6 +183,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeReservedDBInstancesOfferingsOutput>) : Request {})
     public function describeReservedDBInstancesOfferings(params : DescribeReservedDBInstancesOfferingsInput, ?cb : Callback<DescribeReservedDBInstancesOfferingsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeSourceRegionsOutput>) : Request {})
+    public function describeSourceRegions(params : DescribeSourceRegionsInput, ?cb : Callback<DescribeSourceRegionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DownloadDBLogFilePortionOutput>) : Request {})
     public function downloadDBLogFilePortion(params : DownloadDBLogFilePortionInput, ?cb : Callback<DownloadDBLogFilePortionOutput>) : Request;
     

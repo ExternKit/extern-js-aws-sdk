@@ -7,12 +7,12 @@ typedef ListStreamingDistributionsOutput = {
             var Enabled : Bool;
             var Comment : String;
             var PriceClass : String;
-            var S3Origin : _ShapeS28;
+            var S3Origin : _ShapeS2b;
             var Aliases : _ShapeS8;
             var LastModifiedTime : Float;
             var Id : String;
             var ARN : String;
-            var TrustedSigners : _ShapeSw;
+            var TrustedSigners : _ShapeSy;
             var DomainName : String;
             var Status : String;
         }>;

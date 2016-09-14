@@ -4,7 +4,7 @@ typedef ImportInstanceInput = {
     var Platform : String;
     @:optional var Description : String;
     @:optional var LaunchSpecification : {
-        @:optional var Placement : _ShapeSbl;
+        @:optional var Placement : _ShapeSbx;
         @:optional var SubnetId : String;
         @:optional var PrivateIpAddress : String;
         @:optional var UserData : {
@@ -12,7 +12,7 @@ typedef ImportInstanceInput = {
         };
         @:optional var GroupIds : _ShapeS4i;
         @:optional var InstanceInitiatedShutdownBehavior : String;
-        @:optional var GroupNames : _ShapeSj1;
+        @:optional var GroupNames : _ShapeSjj;
         @:optional var Monitoring : Bool;
         @:optional var InstanceType : String;
         @:optional var Architecture : String;
@@ -20,8 +20,8 @@ typedef ImportInstanceInput = {
     };
     @:optional var DiskImages : Array<{
         @:optional var Description : String;
-        @:optional var Image : _ShapeSj6;
-        @:optional var Volume : _ShapeSj7;
+        @:optional var Image : _ShapeSjo;
+        @:optional var Volume : _ShapeSjp;
     }>;
     @:optional var DryRun : Bool;
 };

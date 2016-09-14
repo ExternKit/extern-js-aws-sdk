@@ -33,6 +33,7 @@ typedef _ShapeS13 = Array<{
     @:optional var readonlyRootFilesystem : Bool;
     @:optional var essential : Bool;
     @:optional var privileged : Bool;
+    @:optional var memoryReservation : Int;
     @:optional var dockerLabels : {};
     @:optional var entryPoint : _ShapeSv;
     @:optional var environment : _ShapeS18;

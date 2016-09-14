@@ -8,5 +8,5 @@ typedef PutApprovalResultInput = {
         var summary : String;
         var status : String;
     };
-    @:optional var token : String;
+    var token : String;
 };

@@ -2,6 +2,6 @@ package js.aws.gamelift;
 
 typedef UpdateFleetPortSettingsInput = {
     var FleetId : String;
-    @:optional var InboundPermissionAuthorizations : _ShapeSn;
-    @:optional var InboundPermissionRevocations : _ShapeSn;
+    @:optional var InboundPermissionAuthorizations : _ShapeSo;
+    @:optional var InboundPermissionRevocations : _ShapeSo;
 };

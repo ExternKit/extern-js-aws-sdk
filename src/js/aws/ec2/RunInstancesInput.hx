@@ -1,9 +1,9 @@
 package js.aws.ec2;
 
 typedef RunInstancesInput = {
-    @:optional var IamInstanceProfile : _ShapeSfl;
+    @:optional var IamInstanceProfile : _ShapeSfx;
     var MaxCount : Int;
-    @:optional var Placement : _ShapeSbl;
+    @:optional var Placement : _ShapeSbx;
     @:optional var SubnetId : String;
     @:optional var ClientToken : String;
     @:optional var KernelId : String;
@@ -14,8 +14,8 @@ typedef RunInstancesInput = {
     @:optional var SecurityGroupIds : _ShapeS4i;
     @:optional var KeyName : String;
     @:optional var InstanceInitiatedShutdownBehavior : String;
-    @:optional var SecurityGroups : _ShapeSj1;
-    @:optional var Monitoring : _ShapeSfx;
+    @:optional var SecurityGroups : _ShapeSjj;
+    @:optional var Monitoring : _ShapeSga;
     var ImageId : String;
     @:optional var InstanceType : String;
     var MinCount : Int;
@@ -23,5 +23,5 @@ typedef RunInstancesInput = {
     @:optional var DryRun : Bool;
     @:optional var RamdiskId : String;
     @:optional var AdditionalInfo : String;
-    @:optional var NetworkInterfaces : _ShapeSfj;
+    @:optional var NetworkInterfaces : _ShapeSfv;
 };
