@@ -22,6 +22,7 @@ typedef GetObjectOutput = {
     @:optional var StorageClass : String;
     @:optional var Body : Dynamic;
     @:optional var VersionId : String;
+    @:optional var PartsCount : Int;
     @:optional var ETag : String;
     @:optional var SSECustomerKeyMD5 : String;
     @:optional var ServerSideEncryption : String;

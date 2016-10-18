@@ -7,7 +7,7 @@ typedef DescribeHostReservationsOutput = {
         @:optional var Count : Int;
         @:optional var OfferingId : String;
         @:optional var Duration : Int;
-        @:optional var HostIdSet : _ShapeS9j;
+        @:optional var HostIdSet : _ShapeS9o;
         @:optional var End : Float;
         @:optional var PaymentOption : String;
         @:optional var CurrencyCode : String;

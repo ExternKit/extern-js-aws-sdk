@@ -1,16 +1,13 @@
 package js.aws.ec2;
 
 typedef _ShapeS5v = {
+    @:optional var CidrBlock : String;
     @:optional var AvailabilityZone : String;
-    @:optional var Attachments : Array<_ShapeSz>;
-    @:optional var CreateTime : Float;
-    @:optional var KmsKeyId : String;
-    @:optional var SnapshotId : String;
-    @:optional var Encrypted : Bool;
-    @:optional var VolumeId : String;
+    @:optional var VpcId : String;
+    @:optional var SubnetId : String;
+    @:optional var DefaultForAz : Bool;
+    @:optional var MapPublicIpOnLaunch : Bool;
     @:optional var State : String;
-    @:optional var VolumeType : String;
-    @:optional var Iops : Int;
-    @:optional var Size : Int;
-    @:optional var Tags : _ShapeSb;
+    @:optional var AvailableIpAddressCount : Int;
+    @:optional var Tags : _ShapeSh;
 };

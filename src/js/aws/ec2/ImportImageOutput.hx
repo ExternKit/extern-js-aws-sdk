@@ -7,7 +7,7 @@ typedef ImportImageOutput = {
     @:optional var StatusMessage : String;
     @:optional var Progress : String;
     @:optional var LicenseType : String;
-    @:optional var SnapshotDetails : _ShapeSaw;
+    @:optional var SnapshotDetails : _ShapeSb1;
     @:optional var Hypervisor : String;
     @:optional var ImageId : String;
     @:optional var Architecture : String;

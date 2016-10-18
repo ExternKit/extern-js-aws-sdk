@@ -33,6 +33,9 @@ extern class ECR extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteRepositoryPolicyOutput>) : Request {})
     public function deleteRepositoryPolicy(params : DeleteRepositoryPolicyInput, ?cb : Callback<DeleteRepositoryPolicyOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeImagesOutput>) : Request {})
+    public function describeImages(params : DescribeImagesInput, ?cb : Callback<DescribeImagesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeRepositoriesOutput>) : Request {})
     public function describeRepositories(params : DescribeRepositoriesInput, ?cb : Callback<DescribeRepositoriesOutput>) : Request;
     

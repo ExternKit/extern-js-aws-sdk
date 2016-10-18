@@ -72,6 +72,9 @@ extern class GameLift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeGameSessionsOutput>) : Request {})
     public function describeGameSessions(params : DescribeGameSessionsInput, ?cb : Callback<DescribeGameSessionsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeInstancesOutput>) : Request {})
+    public function describeInstances(params : DescribeInstancesInput, ?cb : Callback<DescribeInstancesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribePlayerSessionsOutput>) : Request {})
     public function describePlayerSessions(params : DescribePlayerSessionsInput, ?cb : Callback<DescribePlayerSessionsOutput>) : Request;
     

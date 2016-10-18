@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef CreateGameSessionOutput = {
-    @:optional var GameSession : _ShapeS18;
+    @:optional var GameSession : _ShapeS1b;
 };

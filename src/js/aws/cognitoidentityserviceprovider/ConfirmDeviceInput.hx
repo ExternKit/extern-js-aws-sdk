@@ -6,6 +6,6 @@ typedef ConfirmDeviceInput = {
         @:optional var Salt : String;
     };
     var DeviceKey : String;
-    var AccessToken : _ShapeS1d;
+    var AccessToken : _ShapeS1k;
     @:optional var DeviceName : String;
 };

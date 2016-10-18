@@ -6,5 +6,5 @@ typedef DescribeHostReservationOfferingsInput = {
     @:optional var OfferingId : String;
     @:optional var MaxDuration : Int;
     @:optional var MinDuration : Int;
-    @:optional var Filter : _ShapeS7t;
+    @:optional var Filter : _ShapeS7y;
 };

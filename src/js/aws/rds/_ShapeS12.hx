@@ -12,6 +12,7 @@ typedef _ShapeS12 = {
     @:optional var SourceDBSnapshotIdentifier : String;
     @:optional var InstanceCreateTime : Float;
     @:optional var DBSnapshotIdentifier : String;
+    @:optional var Timezone : String;
     @:optional var KmsKeyId : String;
     @:optional var SnapshotCreateTime : Float;
     @:optional var Encrypted : Bool;

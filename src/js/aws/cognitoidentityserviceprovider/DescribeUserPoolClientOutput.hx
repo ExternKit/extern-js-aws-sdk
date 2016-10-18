@@ -1,5 +1,5 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef DescribeUserPoolClientOutput = {
-    @:optional var UserPoolClient : _ShapeS3i;
+    @:optional var UserPoolClient : _ShapeS3q;
 };

@@ -3,7 +3,7 @@ package js.aws.s3;
 typedef ListObjectVersionsOutput = {
     @:optional var VersionIdMarker : String;
     @:optional var EncodingType : String;
-    @:optional var CommonPrefixes : _ShapeS76;
+    @:optional var CommonPrefixes : _ShapeS77;
     @:optional var Prefix : String;
     @:optional var KeyMarker : String;
     @:optional var IsTruncated : Bool;

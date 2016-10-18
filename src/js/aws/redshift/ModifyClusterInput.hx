@@ -7,6 +7,7 @@ typedef ModifyClusterInput = {
     @:optional var VpcSecurityGroupIds : _ShapeSq;
     @:optional var NodeType : String;
     @:optional var HsmClientCertificateIdentifier : String;
+    @:optional var EnhancedVpcRouting : Bool;
     @:optional var HsmConfigurationIdentifier : String;
     @:optional var ClusterVersion : String;
     @:optional var ClusterSecurityGroups : _ShapeSp;

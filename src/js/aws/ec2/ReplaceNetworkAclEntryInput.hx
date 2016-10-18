@@ -2,12 +2,12 @@ package js.aws.ec2;
 
 typedef ReplaceNetworkAclEntryInput = {
     var CidrBlock : String;
-    @:optional var IcmpTypeCode : _ShapeS4c;
+    @:optional var IcmpTypeCode : _ShapeS4h;
     var RuleAction : String;
     var NetworkAclId : String;
     var Protocol : String;
     var RuleNumber : Int;
-    @:optional var PortRange : _ShapeS4d;
+    @:optional var PortRange : _ShapeS4i;
     @:optional var DryRun : Bool;
     var Egress : Bool;
 };

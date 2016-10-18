@@ -12,6 +12,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AcceptReservedInstancesExchangeQuoteOutput>) : Request {})
+    public function acceptReservedInstancesExchangeQuote(params : AcceptReservedInstancesExchangeQuoteInput, ?cb : Callback<AcceptReservedInstancesExchangeQuoteOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AcceptVpcPeeringConnectionOutput>) : Request {})
     public function acceptVpcPeeringConnection(params : AcceptVpcPeeringConnectionInput, ?cb : Callback<AcceptVpcPeeringConnectionOutput>) : Request;
     
@@ -488,6 +491,9 @@ extern class EC2 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetPasswordDataOutput>) : Request {})
     public function getPasswordData(params : GetPasswordDataInput, ?cb : Callback<GetPasswordDataOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetReservedInstancesExchangeQuoteOutput>) : Request {})
+    public function getReservedInstancesExchangeQuote(params : GetReservedInstancesExchangeQuoteInput, ?cb : Callback<GetReservedInstancesExchangeQuoteOutput>) : Request;
     
     @:overload(function (?cb : Callback<ImportImageOutput>) : Request {})
     public function importImage(params : ImportImageInput, ?cb : Callback<ImportImageOutput>) : Request;

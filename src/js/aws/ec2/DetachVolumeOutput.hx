@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef DetachVolumeOutput = _ShapeSz;
+typedef DetachVolumeOutput = _ShapeS14;

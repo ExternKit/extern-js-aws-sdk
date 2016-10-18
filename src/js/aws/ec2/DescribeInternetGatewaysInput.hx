@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef DescribeInternetGatewaysInput = {
-    @:optional var Filters : _ShapeS7t;
-    @:optional var InternetGatewayIds : _ShapeS27;
+    @:optional var Filters : _ShapeS7y;
+    @:optional var InternetGatewayIds : _ShapeS2c;
     @:optional var DryRun : Bool;
 };

@@ -3,6 +3,7 @@ package js.aws.acm;
 typedef DescribeCertificateOutput = {
     @:optional var Certificate : {
         @:optional var RevocationReason : String;
+        @:optional var ImportedAt : Float;
         @:optional var DomainValidationOptions : Array<{
             @:optional var ValidationDomain : String;
             @:optional var ValidationEmails : Array<String>;
@@ -22,6 +23,7 @@ typedef DescribeCertificateOutput = {
         @:optional var Issuer : String;
         @:optional var KeyAlgorithm : String;
         @:optional var SignatureAlgorithm : String;
+        @:optional var Type : String;
         @:optional var NotBefore : Float;
         @:optional var Status : String;
     };

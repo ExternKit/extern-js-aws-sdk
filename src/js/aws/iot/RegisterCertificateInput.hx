@@ -4,4 +4,5 @@ typedef RegisterCertificateInput = {
     var certificatePem : String;
     @:optional var setAsActive : Bool;
     @:optional var caCertificatePem : String;
+    @:optional var status : String;
 };

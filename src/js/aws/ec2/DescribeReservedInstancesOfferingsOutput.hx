@@ -11,7 +11,8 @@ typedef DescribeReservedInstancesOfferingsOutput = {
         @:optional var OfferingType : String;
         @:optional var Marketplace : Bool;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : _ShapeSdm;
+        @:optional var RecurringCharges : _ShapeSds;
+        @:optional var Scope : String;
         @:optional var InstanceType : String;
         @:optional var ProductDescription : String;
         @:optional var FixedPrice : Float;
@@ -19,5 +20,6 @@ typedef DescribeReservedInstancesOfferingsOutput = {
             @:optional var Price : Float;
             @:optional var Count : Int;
         }>;
+        @:optional var OfferingClass : String;
     }>;
 };

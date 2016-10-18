@@ -6,8 +6,8 @@ typedef DescribeStaleSecurityGroupsOutput = {
         @:optional var VpcId : String;
         var GroupId : String;
         @:optional var GroupName : String;
-        @:optional var StaleIpPermissions : _ShapeSgn;
-        @:optional var StaleIpPermissionsEgress : _ShapeSgn;
+        @:optional var StaleIpPermissions : _ShapeSgu;
+        @:optional var StaleIpPermissionsEgress : _ShapeSgu;
     }>;
     @:optional var NextToken : String;
 };

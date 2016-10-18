@@ -24,6 +24,9 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetCertificateOutput>) : Request {})
     public function getCertificate(params : GetCertificateInput, ?cb : Callback<GetCertificateOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ImportCertificateOutput>) : Request {})
+    public function importCertificate(params : ImportCertificateInput, ?cb : Callback<ImportCertificateOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListCertificatesOutput>) : Request {})
     public function listCertificates(params : ListCertificatesInput, ?cb : Callback<ListCertificatesOutput>) : Request;
     

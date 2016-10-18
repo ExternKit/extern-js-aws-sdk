@@ -2,5 +2,5 @@ package js.aws.gamelift;
 
 typedef ListAliasesOutput = {
     @:optional var NextToken : String;
-    @:optional var Aliases : Array<_ShapeS8>;
+    @:optional var Aliases : Array<_ShapeS9>;
 };

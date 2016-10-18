@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateVpnGatewayOutput = {
-    @:optional var VpnGateway : _ShapeS6o;
+    @:optional var VpnGateway : _ShapeS6t;
 };

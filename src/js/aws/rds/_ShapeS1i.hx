@@ -19,6 +19,7 @@ typedef _ShapeS1i = {
     @:optional var EarliestRestorableTime : Float;
     @:optional var DBSubnetGroup : String;
     @:optional var BackupRetentionPeriod : Int;
+    @:optional var ReaderEndpoint : String;
     @:optional var ReplicationSourceIdentifier : String;
     @:optional var ReadReplicaIdentifiers : Array<String>;
     @:optional var Endpoint : String;

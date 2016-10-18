@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef DescribeEngineDefaultParametersOutput = {
-    @:optional var EngineDefaults : _ShapeS51;
+    @:optional var EngineDefaults : _ShapeS53;
 };

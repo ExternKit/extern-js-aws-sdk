@@ -23,7 +23,7 @@ typedef DescribeJobFlowsOutput = {
             }>;
             var SlaveInstanceType : String;
             @:optional var TerminationProtected : Bool;
-            @:optional var Placement : _ShapeS1q;
+            @:optional var Placement : _ShapeS1u;
             @:optional var NormalizedInstanceHours : Int;
             @:optional var MasterPublicDnsName : String;
             @:optional var KeepJobFlowAliveWhenNoSteps : Bool;
@@ -48,9 +48,9 @@ typedef DescribeJobFlowsOutput = {
         }>;
         var JobFlowId : String;
         @:optional var JobFlowRole : String;
-        @:optional var SupportedProducts : _ShapeS1z;
+        @:optional var SupportedProducts : _ShapeS23;
         @:optional var BootstrapActions : Array<{
-            @:optional var BootstrapActionConfig : _ShapeS1x;
+            @:optional var BootstrapActionConfig : _ShapeS21;
         }>;
         var Name : String;
         var ExecutionStatusDetail : {

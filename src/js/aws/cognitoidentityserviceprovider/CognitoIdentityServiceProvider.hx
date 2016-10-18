@@ -18,6 +18,9 @@ extern class CognitoIdentityServiceProvider extends Service implements js.extern
     @:overload(function (?cb : Callback<AdminConfirmSignUpOutput>) : Request {})
     public function adminConfirmSignUp(params : AdminConfirmSignUpInput, ?cb : Callback<AdminConfirmSignUpOutput>) : Request;
     
+    @:overload(function (?cb : Callback<AdminCreateUserOutput>) : Request {})
+    public function adminCreateUser(params : AdminCreateUserInput, ?cb : Callback<AdminCreateUserOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function adminDeleteUser(params : AdminDeleteUserInput, ?cb : Callback<Dynamic>) : Request;
     

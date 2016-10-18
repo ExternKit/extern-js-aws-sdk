@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef UpdateBuildOutput = {
-    @:optional var Build : _ShapeSg;
+    @:optional var Build : _ShapeSh;
 };

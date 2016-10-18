@@ -2,5 +2,6 @@ package js.aws.elasticache;
 
 typedef CreateSnapshotInput = {
     var SnapshotName : String;
-    var CacheClusterId : String;
+    @:optional var CacheClusterId : String;
+    @:optional var ReplicationGroupId : String;
 };

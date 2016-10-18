@@ -7,6 +7,7 @@ typedef DescribeDBEngineVersionsInput = {
     @:optional var DefaultOnly : Bool;
     @:optional var DBParameterGroupFamily : String;
     @:optional var MaxRecords : Int;
+    @:optional var ListSupportedTimezones : Bool;
     @:optional var ListSupportedCharacterSets : Bool;
     @:optional var Engine : String;
 };

@@ -1,5 +1,5 @@
 package js.aws.elasticbeanstalk;
 
 typedef DescribeConfigurationSettingsOutput = {
-    @:optional var ConfigurationSettings : Array<_ShapeS1p>;
+    @:optional var ConfigurationSettings : Array<_ShapeS1t>;
 };

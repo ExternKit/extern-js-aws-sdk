@@ -4,6 +4,6 @@ typedef PurchaseHostReservationInput = {
     @:optional var LimitPrice : String;
     @:optional var ClientToken : String;
     var OfferingId : String;
-    var HostIdSet : _ShapeSj5;
+    var HostIdSet : _ShapeSjc;
     @:optional var CurrencyCode : String;
 };

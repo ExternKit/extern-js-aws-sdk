@@ -9,7 +9,7 @@ typedef ListPartsOutput = {
         @:optional var ETag : String;
         @:optional var Size : Int;
     }>;
-    @:optional var Initiator : _ShapeS75;
+    @:optional var Initiator : _ShapeS76;
     @:optional var RequestCharged : String;
     @:optional var Key : String;
     @:optional var Bucket : String;

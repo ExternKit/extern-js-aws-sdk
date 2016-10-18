@@ -8,6 +8,7 @@ typedef HeadObjectInput = {
     var Bucket : String;
     @:optional var RequestPayer : String;
     @:optional var SSECustomerAlgorithm : String;
+    @:optional var PartNumber : Int;
     @:optional var VersionId : String;
     @:optional var SSECustomerKeyMD5 : String;
     @:optional var IfUnmodifiedSince : Float;

@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef TerminateInstancesOutput = {
-    @:optional var TerminatingInstances : _ShapeSmv;
+    @:optional var TerminatingInstances : _ShapeSna;
 };

@@ -1,6 +1,6 @@
 package js.aws.gamelift;
 
 typedef RequestUploadCredentialsOutput = {
-    @:optional var UploadCredentials : _ShapeSk;
-    @:optional var StorageLocation : _ShapeSc;
+    @:optional var UploadCredentials : _ShapeSl;
+    @:optional var StorageLocation : _ShapeSd;
 };

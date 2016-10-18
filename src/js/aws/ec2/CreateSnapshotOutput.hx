@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef CreateSnapshotOutput = _ShapeS5h;
+typedef CreateSnapshotOutput = _ShapeS5m;

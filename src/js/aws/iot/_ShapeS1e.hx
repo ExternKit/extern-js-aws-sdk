@@ -39,6 +39,7 @@ typedef _ShapeS1e = Array<{
         var roleArn : String;
         var bucketName : String;
         var key : String;
+        @:optional var cannedAcl : String;
     };
     @:optional var sns : {
         var roleArn : String;

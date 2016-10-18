@@ -5,6 +5,7 @@ typedef ListObjectsV2Input = {
     @:optional var Prefix : String;
     var Bucket : String;
     @:optional var MaxKeys : Int;
+    @:optional var RequestPayer : String;
     @:optional var Delimiter : String;
     @:optional var FetchOwner : Bool;
     @:optional var StartAfter : String;

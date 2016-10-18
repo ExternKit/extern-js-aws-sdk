@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeConversionTasksOutput = {
-    @:optional var ConversionTasks : Array<_ShapeS8k>;
+    @:optional var ConversionTasks : Array<_ShapeS8p>;
 };

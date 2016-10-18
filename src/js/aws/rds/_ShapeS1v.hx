@@ -29,6 +29,7 @@ typedef _ShapeS1v = {
     @:optional var InstanceCreateTime : Float;
     @:optional var CopyTagsToSnapshot : Bool;
     @:optional var PreferredBackupWindow : String;
+    @:optional var Timezone : String;
     @:optional var KmsKeyId : String;
     @:optional var DBName : String;
     @:optional var AutoMinorVersionUpgrade : Bool;

@@ -4,5 +4,5 @@ typedef DescribeHostReservationsInput = {
     @:optional var MaxResults : Int;
     @:optional var NextToken : String;
     @:optional var HostReservationIdSet : Array<String>;
-    @:optional var Filter : _ShapeS7t;
+    @:optional var Filter : _ShapeS7y;
 };

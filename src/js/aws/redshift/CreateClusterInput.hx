@@ -8,6 +8,7 @@ typedef CreateClusterInput = {
     @:optional var VpcSecurityGroupIds : _ShapeSq;
     var NodeType : String;
     @:optional var HsmClientCertificateIdentifier : String;
+    @:optional var EnhancedVpcRouting : Bool;
     @:optional var HsmConfigurationIdentifier : String;
     @:optional var KmsKeyId : String;
     @:optional var DBName : String;

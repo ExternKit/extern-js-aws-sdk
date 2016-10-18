@@ -9,6 +9,7 @@ typedef _ShapeSd = {
     @:optional var NodeType : String;
     @:optional var SnapshotType : String;
     @:optional var SnapshotIdentifier : String;
+    @:optional var EnhancedVpcRouting : Bool;
     @:optional var EncryptedWithHSM : Bool;
     @:optional var KmsKeyId : String;
     @:optional var DBName : String;

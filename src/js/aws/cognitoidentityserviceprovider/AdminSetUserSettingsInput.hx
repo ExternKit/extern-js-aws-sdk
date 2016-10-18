@@ -3,5 +3,5 @@ package js.aws.cognitoidentityserviceprovider;
 typedef AdminSetUserSettingsInput = {
     var UserPoolId : String;
     var Username : _ShapeSd;
-    var MFAOptions : _ShapeS10;
+    var MFAOptions : _ShapeSt;
 };

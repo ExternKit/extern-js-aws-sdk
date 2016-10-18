@@ -1,11 +1,13 @@
 package js.aws.ec2;
 
-typedef _ShapeSb8 = Array<{
-    @:optional var Ebs : {
-        @:optional var AttachTime : Float;
-        @:optional var VolumeId : String;
-        @:optional var DeleteOnTermination : Bool;
-        @:optional var Status : String;
-    };
-    @:optional var DeviceName : String;
-}>;
+typedef _ShapeSb8 = {
+    @:optional var Description : String;
+    @:optional var StatusMessage : String;
+    @:optional var Progress : String;
+    @:optional var SnapshotId : String;
+    @:optional var Url : String;
+    @:optional var DiskImageSize : Float;
+    @:optional var Format : String;
+    @:optional var UserBucket : _ShapeSb3;
+    @:optional var Status : String;
+};

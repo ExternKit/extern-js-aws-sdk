@@ -13,6 +13,7 @@ typedef GetObjectInput = {
     var Bucket : String;
     @:optional var RequestPayer : String;
     @:optional var SSECustomerAlgorithm : String;
+    @:optional var PartNumber : Int;
     @:optional var ResponseContentLanguage : String;
     @:optional var VersionId : String;
     @:optional var SSECustomerKeyMD5 : String;

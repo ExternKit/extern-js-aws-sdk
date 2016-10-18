@@ -2,8 +2,8 @@ package js.aws.elasticbeanstalk;
 
 typedef DescribeEnvironmentHealthOutput = {
     @:optional var Color : String;
-    @:optional var Causes : _ShapeS2z;
-    @:optional var ApplicationMetrics : _ShapeS31;
+    @:optional var Causes : _ShapeS35;
+    @:optional var ApplicationMetrics : _ShapeS37;
     @:optional var EnvironmentName : String;
     @:optional var RefreshedAt : Float;
     @:optional var HealthStatus : String;

@@ -6,5 +6,6 @@ typedef ListObjectsInput = {
     @:optional var Marker : String;
     var Bucket : String;
     @:optional var MaxKeys : Int;
+    @:optional var RequestPayer : String;
     @:optional var Delimiter : String;
 };

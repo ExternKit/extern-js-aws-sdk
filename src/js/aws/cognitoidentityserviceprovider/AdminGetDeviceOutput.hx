@@ -1,5 +1,5 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef AdminGetDeviceOutput = {
-    var Device : _ShapeSs;
+    var Device : _ShapeS17;
 };

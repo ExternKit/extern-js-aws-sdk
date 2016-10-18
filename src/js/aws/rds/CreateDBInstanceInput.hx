@@ -13,6 +13,7 @@ typedef CreateDBInstanceInput = {
     @:optional var AllocatedStorage : Int;
     @:optional var CopyTagsToSnapshot : Bool;
     @:optional var PreferredBackupWindow : String;
+    @:optional var Timezone : String;
     @:optional var Domain : String;
     @:optional var KmsKeyId : String;
     @:optional var DBName : String;

@@ -6,7 +6,7 @@ typedef RegisterImageInput = {
     @:optional var KernelId : String;
     @:optional var ImageLocation : String;
     @:optional var VirtualizationType : String;
-    @:optional var BlockDeviceMappings : _ShapeS3d;
+    @:optional var BlockDeviceMappings : _ShapeS3i;
     @:optional var Architecture : String;
     @:optional var DryRun : Bool;
     @:optional var RootDeviceName : String;

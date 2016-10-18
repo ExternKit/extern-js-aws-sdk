@@ -1,5 +1,6 @@
 package js.aws.elasticache;
 
-typedef _ShapeS3q = {
-    @:optional var CacheParameterGroupName : String;
-};
+typedef _ShapeS3q = Array<{
+    @:optional var ParameterName : String;
+    @:optional var ParameterValue : String;
+}>;

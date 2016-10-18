@@ -6,7 +6,7 @@ typedef ListUserPoolsOutput = {
         @:optional var CreationDate : Float;
         @:optional var LastModifiedDate : Float;
         @:optional var Id : String;
-        @:optional var LambdaConfig : _ShapeS2s;
+        @:optional var LambdaConfig : _ShapeS2x;
         @:optional var Name : String;
         @:optional var Status : String;
     }>;

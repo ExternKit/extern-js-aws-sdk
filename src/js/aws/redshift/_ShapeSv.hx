@@ -9,6 +9,7 @@ typedef _ShapeSv = {
     @:optional var PendingModifiedValues : {
         @:optional var NumberOfNodes : Int;
         @:optional var NodeType : String;
+        @:optional var EnhancedVpcRouting : Bool;
         @:optional var ClusterVersion : String;
         @:optional var ClusterType : String;
         @:optional var ClusterIdentifier : String;
@@ -25,6 +26,7 @@ typedef _ShapeSv = {
         @:optional var ElasticIp : String;
         @:optional var Status : String;
     };
+    @:optional var EnhancedVpcRouting : Bool;
     @:optional var RestoreStatus : {
         @:optional var ElapsedTimeInSeconds : Int;
         @:optional var SnapshotSizeInMegaBytes : Int;

@@ -1,6 +1,6 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef _ShapeSt = Array<{
-    @:optional var Value : String;
-    var Name : String;
+    @:optional var DeliveryMedium : String;
+    @:optional var AttributeName : String;
 }>;

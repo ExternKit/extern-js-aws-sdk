@@ -2,8 +2,8 @@ package js.aws.cognitoidentityserviceprovider;
 
 typedef AdminInitiateAuthInput = {
     var UserPoolId : String;
-    var ClientId : _ShapeS14;
+    var ClientId : _ShapeS1b;
     var AuthFlow : String;
-    @:optional var ClientMetadata : _ShapeS17;
-    @:optional var AuthParameters : _ShapeS16;
+    @:optional var ClientMetadata : _ShapeS1e;
+    @:optional var AuthParameters : _ShapeS1d;
 };

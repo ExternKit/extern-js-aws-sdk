@@ -1,3 +1,3 @@
 package js.aws.ec2;
 
-typedef CreateVolumeOutput = _ShapeS5v;
+typedef CreateVolumeOutput = _ShapeS60;

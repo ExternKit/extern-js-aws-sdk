@@ -16,6 +16,9 @@ typedef DescribeDBEngineVersionsOutput = {
         @:optional var DefaultCharacterSet : _ShapeS45;
         @:optional var DBEngineVersionDescription : String;
         @:optional var DBParameterGroupFamily : String;
+        @:optional var SupportedTimezones : Array<{
+            @:optional var TimezoneName : String;
+        }>;
         @:optional var Engine : String;
     }>;
 };

@@ -2,10 +2,10 @@ package js.aws.cognitoidentityserviceprovider;
 
 typedef UpdateUserPoolClientInput = {
     var UserPoolId : String;
-    var ClientId : _ShapeS14;
-    @:optional var WriteAttributes : _ShapeS3d;
+    var ClientId : _ShapeS1b;
+    @:optional var WriteAttributes : _ShapeS3l;
     @:optional var ClientName : String;
     @:optional var RefreshTokenValidity : Int;
-    @:optional var ReadAttributes : _ShapeS3d;
-    @:optional var ExplicitAuthFlows : _ShapeS3f;
+    @:optional var ReadAttributes : _ShapeS3l;
+    @:optional var ExplicitAuthFlows : _ShapeS3n;
 };

@@ -1,3 +1,6 @@
 package js.aws.elasticache;
 
-typedef _ShapeSv = Array<String>;
+typedef _ShapeSv = {
+    @:optional var Address : String;
+    @:optional var Port : Int;
+};

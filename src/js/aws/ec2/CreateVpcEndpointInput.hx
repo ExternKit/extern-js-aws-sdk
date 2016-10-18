@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef CreateVpcEndpointInput = {
-    @:optional var RouteTableIds : _ShapeS27;
+    @:optional var RouteTableIds : _ShapeS2c;
     var VpcId : String;
     @:optional var ClientToken : String;
     var ServiceName : String;

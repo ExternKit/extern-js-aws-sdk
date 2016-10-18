@@ -3,7 +3,7 @@ package js.aws.ec2;
 typedef DescribeScheduledInstanceAvailabilityInput = {
     @:optional var MinSlotDurationInHours : Int;
     @:optional var MaxResults : Int;
-    @:optional var Filters : _ShapeS7t;
+    @:optional var Filters : _ShapeS7y;
     @:optional var NextToken : String;
     var Recurrence : {
         @:optional var OccurrenceDays : Array<Int>;

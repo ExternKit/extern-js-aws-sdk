@@ -4,8 +4,8 @@ typedef DescribeClassicLinkInstancesOutput = {
     @:optional var NextToken : String;
     @:optional var Instances : Array<{
         @:optional var VpcId : String;
-        @:optional var Groups : _ShapeS4o;
+        @:optional var Groups : _ShapeS4t;
         @:optional var InstanceId : String;
-        @:optional var Tags : _ShapeSb;
+        @:optional var Tags : _ShapeSh;
     }>;
 };

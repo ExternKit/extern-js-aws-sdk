@@ -5,5 +5,5 @@ typedef PurchaseHostReservationOutput = {
     @:optional var CurrencyCode : String;
     @:optional var TotalHourlyPrice : String;
     @:optional var TotalUpfrontPrice : String;
-    @:optional var Purchase : _ShapeSj7;
+    @:optional var Purchase : _ShapeSje;
 };

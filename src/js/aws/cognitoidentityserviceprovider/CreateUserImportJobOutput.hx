@@ -1,5 +1,5 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef CreateUserImportJobOutput = {
-    @:optional var UserImportJob : _ShapeS2h;
+    @:optional var UserImportJob : _ShapeS2m;
 };

@@ -20,6 +20,7 @@ typedef HeadObjectOutput = {
     @:optional var SSECustomerAlgorithm : String;
     @:optional var StorageClass : String;
     @:optional var VersionId : String;
+    @:optional var PartsCount : Int;
     @:optional var ETag : String;
     @:optional var SSECustomerKeyMD5 : String;
     @:optional var ServerSideEncryption : String;

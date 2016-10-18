@@ -1,7 +1,7 @@
 package js.aws.cognitoidentityserviceprovider;
 
 typedef ChangePasswordInput = {
-    var ProposedPassword : _ShapeS20;
-    @:optional var AccessToken : _ShapeS1d;
-    var PreviousPassword : _ShapeS20;
+    var ProposedPassword : _ShapeSk;
+    @:optional var AccessToken : _ShapeS1k;
+    var PreviousPassword : _ShapeSk;
 };

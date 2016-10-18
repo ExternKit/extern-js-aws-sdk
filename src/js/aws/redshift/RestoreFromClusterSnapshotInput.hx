@@ -8,6 +8,7 @@ typedef RestoreFromClusterSnapshotInput = {
     @:optional var NodeType : String;
     var SnapshotIdentifier : String;
     @:optional var HsmClientCertificateIdentifier : String;
+    @:optional var EnhancedVpcRouting : Bool;
     @:optional var SnapshotClusterIdentifier : String;
     @:optional var HsmConfigurationIdentifier : String;
     @:optional var KmsKeyId : String;

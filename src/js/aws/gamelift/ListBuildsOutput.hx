@@ -2,5 +2,5 @@ package js.aws.gamelift;
 
 typedef ListBuildsOutput = {
     @:optional var NextToken : String;
-    @:optional var Builds : Array<_ShapeSg>;
+    @:optional var Builds : Array<_ShapeSh>;
 };

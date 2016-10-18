@@ -1,11 +1,11 @@
 package js.aws.ec2;
 
 typedef ModifyImageAttributeInput = {
-    @:optional var Description : _ShapeS34;
+    @:optional var Description : _ShapeS39;
     @:optional var Value : String;
     @:optional var LaunchPermission : {
-        @:optional var Add : _ShapeSa6;
-        @:optional var Remove : _ShapeSa6;
+        @:optional var Add : _ShapeSab;
+        @:optional var Remove : _ShapeSab;
     };
     @:optional var UserGroups : Array<String>;
     var ImageId : String;
@@ -13,5 +13,5 @@ typedef ModifyImageAttributeInput = {
     @:optional var Attribute : String;
     @:optional var DryRun : Bool;
     @:optional var ProductCodes : Array<String>;
-    @:optional var UserIds : _ShapeSk5;
+    @:optional var UserIds : _ShapeSkk;
 };

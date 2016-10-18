@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeDhcpOptionsOutput = {
-    @:optional var DhcpOptions : Array<_ShapeS30>;
+    @:optional var DhcpOptions : Array<_ShapeS35>;
 };
