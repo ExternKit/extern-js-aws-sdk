@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef DescribeNetworkAclsInput = {
-    @:optional var Filters : _ShapeS7y;
-    @:optional var NetworkAclIds : _ShapeS2c;
+    @:optional var Filters : _ShapeSf8;
+    @:optional var NetworkAclIds : _ShapeSd;
     @:optional var DryRun : Bool;
 };

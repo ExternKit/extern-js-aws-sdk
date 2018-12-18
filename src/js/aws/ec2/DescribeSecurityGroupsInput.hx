@@ -1,8 +1,10 @@
 package js.aws.ec2;
 
 typedef DescribeSecurityGroupsInput = {
-    @:optional var Filters : _ShapeS7y;
-    @:optional var GroupIds : _ShapeSy;
-    @:optional var GroupNames : _ShapeSf3;
+    @:optional var MaxResults : Int;
+    @:optional var Filters : _ShapeSf8;
+    @:optional var NextToken : String;
+    @:optional var GroupIds : _ShapeS2b;
+    @:optional var GroupNames : _ShapeSp6;
     @:optional var DryRun : Bool;
 };

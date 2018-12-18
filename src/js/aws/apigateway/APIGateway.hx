@@ -24,11 +24,20 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateDeploymentOutput>) : Request {})
     public function createDeployment(params : CreateDeploymentInput, ?cb : Callback<CreateDeploymentOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateDocumentationPartOutput>) : Request {})
+    public function createDocumentationPart(params : CreateDocumentationPartInput, ?cb : Callback<CreateDocumentationPartOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateDocumentationVersionOutput>) : Request {})
+    public function createDocumentationVersion(params : CreateDocumentationVersionInput, ?cb : Callback<CreateDocumentationVersionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateDomainNameOutput>) : Request {})
     public function createDomainName(params : CreateDomainNameInput, ?cb : Callback<CreateDomainNameOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateModelOutput>) : Request {})
     public function createModel(params : CreateModelInput, ?cb : Callback<CreateModelOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateRequestValidatorOutput>) : Request {})
+    public function createRequestValidator(params : CreateRequestValidatorInput, ?cb : Callback<CreateRequestValidatorOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateResourceOutput>) : Request {})
     public function createResource(params : CreateResourceInput, ?cb : Callback<CreateResourceOutput>) : Request;
@@ -44,6 +53,9 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<CreateUsagePlanKeyOutput>) : Request {})
     public function createUsagePlanKey(params : CreateUsagePlanKeyInput, ?cb : Callback<CreateUsagePlanKeyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateVpcLinkOutput>) : Request {})
+    public function createVpcLink(params : CreateVpcLinkInput, ?cb : Callback<CreateVpcLinkOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteApiKey(params : DeleteApiKeyInput, ?cb : Callback<Dynamic>) : Request;
@@ -61,7 +73,16 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     public function deleteDeployment(params : DeleteDeploymentInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteDocumentationPart(params : DeleteDocumentationPartInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteDocumentationVersion(params : DeleteDocumentationVersionInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteDomainName(params : DeleteDomainNameInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteGatewayResponse(params : DeleteGatewayResponseInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteIntegration(params : DeleteIntegrationInput, ?cb : Callback<Dynamic>) : Request;
@@ -79,6 +100,9 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     public function deleteModel(params : DeleteModelInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteRequestValidator(params : DeleteRequestValidatorInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteResource(params : DeleteResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
@@ -92,6 +116,9 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteUsagePlanKey(params : DeleteUsagePlanKeyInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteVpcLink(params : DeleteVpcLinkInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function flushStageAuthorizersCache(params : FlushStageAuthorizersCacheInput, ?cb : Callback<Dynamic>) : Request;
@@ -135,6 +162,18 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetDeploymentsOutput>) : Request {})
     public function getDeployments(params : GetDeploymentsInput, ?cb : Callback<GetDeploymentsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetDocumentationPartOutput>) : Request {})
+    public function getDocumentationPart(params : GetDocumentationPartInput, ?cb : Callback<GetDocumentationPartOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetDocumentationPartsOutput>) : Request {})
+    public function getDocumentationParts(params : GetDocumentationPartsInput, ?cb : Callback<GetDocumentationPartsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetDocumentationVersionOutput>) : Request {})
+    public function getDocumentationVersion(params : GetDocumentationVersionInput, ?cb : Callback<GetDocumentationVersionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetDocumentationVersionsOutput>) : Request {})
+    public function getDocumentationVersions(params : GetDocumentationVersionsInput, ?cb : Callback<GetDocumentationVersionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetDomainNameOutput>) : Request {})
     public function getDomainName(params : GetDomainNameInput, ?cb : Callback<GetDomainNameOutput>) : Request;
     
@@ -143,6 +182,12 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetExportOutput>) : Request {})
     public function getExport(params : GetExportInput, ?cb : Callback<GetExportOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetGatewayResponseOutput>) : Request {})
+    public function getGatewayResponse(params : GetGatewayResponseInput, ?cb : Callback<GetGatewayResponseOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetGatewayResponsesOutput>) : Request {})
+    public function getGatewayResponses(params : GetGatewayResponsesInput, ?cb : Callback<GetGatewayResponsesOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetIntegrationOutput>) : Request {})
     public function getIntegration(params : GetIntegrationInput, ?cb : Callback<GetIntegrationOutput>) : Request;
@@ -165,6 +210,12 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetModelsOutput>) : Request {})
     public function getModels(params : GetModelsInput, ?cb : Callback<GetModelsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetRequestValidatorOutput>) : Request {})
+    public function getRequestValidator(params : GetRequestValidatorInput, ?cb : Callback<GetRequestValidatorOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetRequestValidatorsOutput>) : Request {})
+    public function getRequestValidators(params : GetRequestValidatorsInput, ?cb : Callback<GetRequestValidatorsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetResourceOutput>) : Request {})
     public function getResource(params : GetResourceInput, ?cb : Callback<GetResourceOutput>) : Request;
     
@@ -180,11 +231,20 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetSdkOutput>) : Request {})
     public function getSdk(params : GetSdkInput, ?cb : Callback<GetSdkOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetSdkTypeOutput>) : Request {})
+    public function getSdkType(params : GetSdkTypeInput, ?cb : Callback<GetSdkTypeOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetSdkTypesOutput>) : Request {})
+    public function getSdkTypes(params : GetSdkTypesInput, ?cb : Callback<GetSdkTypesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetStageOutput>) : Request {})
     public function getStage(params : GetStageInput, ?cb : Callback<GetStageOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetStagesOutput>) : Request {})
     public function getStages(params : GetStagesInput, ?cb : Callback<GetStagesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetTagsOutput>) : Request {})
+    public function getTags(params : GetTagsInput, ?cb : Callback<GetTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetUsageOutput>) : Request {})
     public function getUsage(params : GetUsageInput, ?cb : Callback<GetUsageOutput>) : Request;
@@ -201,11 +261,23 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetUsagePlansOutput>) : Request {})
     public function getUsagePlans(params : GetUsagePlansInput, ?cb : Callback<GetUsagePlansOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetVpcLinkOutput>) : Request {})
+    public function getVpcLink(params : GetVpcLinkInput, ?cb : Callback<GetVpcLinkOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetVpcLinksOutput>) : Request {})
+    public function getVpcLinks(params : GetVpcLinksInput, ?cb : Callback<GetVpcLinksOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ImportApiKeysOutput>) : Request {})
     public function importApiKeys(params : ImportApiKeysInput, ?cb : Callback<ImportApiKeysOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ImportDocumentationPartsOutput>) : Request {})
+    public function importDocumentationParts(params : ImportDocumentationPartsInput, ?cb : Callback<ImportDocumentationPartsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ImportRestApiOutput>) : Request {})
     public function importRestApi(params : ImportRestApiInput, ?cb : Callback<ImportRestApiOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutGatewayResponseOutput>) : Request {})
+    public function putGatewayResponse(params : PutGatewayResponseInput, ?cb : Callback<PutGatewayResponseOutput>) : Request;
     
     @:overload(function (?cb : Callback<PutIntegrationOutput>) : Request {})
     public function putIntegration(params : PutIntegrationInput, ?cb : Callback<PutIntegrationOutput>) : Request;
@@ -222,11 +294,17 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<PutRestApiOutput>) : Request {})
     public function putRestApi(params : PutRestApiInput, ?cb : Callback<PutRestApiOutput>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<TestInvokeAuthorizerOutput>) : Request {})
     public function testInvokeAuthorizer(params : TestInvokeAuthorizerInput, ?cb : Callback<TestInvokeAuthorizerOutput>) : Request;
     
     @:overload(function (?cb : Callback<TestInvokeMethodOutput>) : Request {})
     public function testInvokeMethod(params : TestInvokeMethodInput, ?cb : Callback<TestInvokeMethodOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<UpdateAccountOutput>) : Request {})
     public function updateAccount(params : UpdateAccountInput, ?cb : Callback<UpdateAccountOutput>) : Request;
@@ -246,8 +324,17 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<UpdateDeploymentOutput>) : Request {})
     public function updateDeployment(params : UpdateDeploymentInput, ?cb : Callback<UpdateDeploymentOutput>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateDocumentationPartOutput>) : Request {})
+    public function updateDocumentationPart(params : UpdateDocumentationPartInput, ?cb : Callback<UpdateDocumentationPartOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateDocumentationVersionOutput>) : Request {})
+    public function updateDocumentationVersion(params : UpdateDocumentationVersionInput, ?cb : Callback<UpdateDocumentationVersionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateDomainNameOutput>) : Request {})
     public function updateDomainName(params : UpdateDomainNameInput, ?cb : Callback<UpdateDomainNameOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateGatewayResponseOutput>) : Request {})
+    public function updateGatewayResponse(params : UpdateGatewayResponseInput, ?cb : Callback<UpdateGatewayResponseOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateIntegrationOutput>) : Request {})
     public function updateIntegration(params : UpdateIntegrationInput, ?cb : Callback<UpdateIntegrationOutput>) : Request;
@@ -264,6 +351,9 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<UpdateModelOutput>) : Request {})
     public function updateModel(params : UpdateModelInput, ?cb : Callback<UpdateModelOutput>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateRequestValidatorOutput>) : Request {})
+    public function updateRequestValidator(params : UpdateRequestValidatorInput, ?cb : Callback<UpdateRequestValidatorOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateResourceOutput>) : Request {})
     public function updateResource(params : UpdateResourceInput, ?cb : Callback<UpdateResourceOutput>) : Request;
     
@@ -278,5 +368,8 @@ extern class APIGateway extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<UpdateUsagePlanOutput>) : Request {})
     public function updateUsagePlan(params : UpdateUsagePlanInput, ?cb : Callback<UpdateUsagePlanOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateVpcLinkOutput>) : Request {})
+    public function updateVpcLink(params : UpdateVpcLinkInput, ?cb : Callback<UpdateVpcLinkOutput>) : Request;
     
 }

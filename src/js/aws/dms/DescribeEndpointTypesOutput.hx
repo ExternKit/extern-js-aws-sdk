@@ -5,6 +5,7 @@ typedef DescribeEndpointTypesOutput = {
     @:optional var SupportedEndpointTypes : Array<{
         @:optional var EndpointType : String;
         @:optional var EngineName : String;
+        @:optional var EngineDisplayName : String;
         @:optional var SupportsCDC : Bool;
     }>;
 };

@@ -12,11 +12,23 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AcceptReservedNodeExchangeOutput>) : Request {})
+    public function acceptReservedNodeExchange(params : AcceptReservedNodeExchangeInput, ?cb : Callback<AcceptReservedNodeExchangeOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AuthorizeClusterSecurityGroupIngressOutput>) : Request {})
     public function authorizeClusterSecurityGroupIngress(params : AuthorizeClusterSecurityGroupIngressInput, ?cb : Callback<AuthorizeClusterSecurityGroupIngressOutput>) : Request;
     
     @:overload(function (?cb : Callback<AuthorizeSnapshotAccessOutput>) : Request {})
     public function authorizeSnapshotAccess(params : AuthorizeSnapshotAccessInput, ?cb : Callback<AuthorizeSnapshotAccessOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<BatchDeleteClusterSnapshotsOutput>) : Request {})
+    public function batchDeleteClusterSnapshots(params : BatchDeleteClusterSnapshotsInput, ?cb : Callback<BatchDeleteClusterSnapshotsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<BatchModifyClusterSnapshotsOutput>) : Request {})
+    public function batchModifyClusterSnapshots(params : BatchModifyClusterSnapshotsInput, ?cb : Callback<BatchModifyClusterSnapshotsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CancelResizeOutput>) : Request {})
+    public function cancelResize(params : CancelResizeInput, ?cb : Callback<CancelResizeOutput>) : Request;
     
     @:overload(function (?cb : Callback<CopyClusterSnapshotOutput>) : Request {})
     public function copyClusterSnapshot(params : CopyClusterSnapshotInput, ?cb : Callback<CopyClusterSnapshotOutput>) : Request;
@@ -47,6 +59,9 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<CreateSnapshotCopyGrantOutput>) : Request {})
     public function createSnapshotCopyGrant(params : CreateSnapshotCopyGrantInput, ?cb : Callback<CreateSnapshotCopyGrantOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateSnapshotScheduleOutput>) : Request {})
+    public function createSnapshotSchedule(params : CreateSnapshotScheduleInput, ?cb : Callback<CreateSnapshotScheduleOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function createTags(params : CreateTagsInput, ?cb : Callback<Dynamic>) : Request;
@@ -79,7 +94,16 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     public function deleteSnapshotCopyGrant(params : DeleteSnapshotCopyGrantInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteSnapshotSchedule(params : DeleteSnapshotScheduleInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteTags(params : DeleteTagsInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeAccountAttributesOutput>) : Request {})
+    public function describeAccountAttributes(params : DescribeAccountAttributesInput, ?cb : Callback<DescribeAccountAttributesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeClusterDbRevisionsOutput>) : Request {})
+    public function describeClusterDbRevisions(params : DescribeClusterDbRevisionsInput, ?cb : Callback<DescribeClusterDbRevisionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeClusterParameterGroupsOutput>) : Request {})
     public function describeClusterParameterGroups(params : DescribeClusterParameterGroupsInput, ?cb : Callback<DescribeClusterParameterGroupsOutput>) : Request;
@@ -95,6 +119,9 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeClusterSubnetGroupsOutput>) : Request {})
     public function describeClusterSubnetGroups(params : DescribeClusterSubnetGroupsInput, ?cb : Callback<DescribeClusterSubnetGroupsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeClusterTracksOutput>) : Request {})
+    public function describeClusterTracks(params : DescribeClusterTracksInput, ?cb : Callback<DescribeClusterTracksOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeClusterVersionsOutput>) : Request {})
     public function describeClusterVersions(params : DescribeClusterVersionsInput, ?cb : Callback<DescribeClusterVersionsOutput>) : Request;
@@ -138,6 +165,12 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeSnapshotCopyGrantsOutput>) : Request {})
     public function describeSnapshotCopyGrants(params : DescribeSnapshotCopyGrantsInput, ?cb : Callback<DescribeSnapshotCopyGrantsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeSnapshotSchedulesOutput>) : Request {})
+    public function describeSnapshotSchedules(params : DescribeSnapshotSchedulesInput, ?cb : Callback<DescribeSnapshotSchedulesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeStorageOutput>) : Request {})
+    public function describeStorage(params : DescribeStorageInput, ?cb : Callback<DescribeStorageOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeTableRestoreStatusOutput>) : Request {})
     public function describeTableRestoreStatus(params : DescribeTableRestoreStatusInput, ?cb : Callback<DescribeTableRestoreStatusOutput>) : Request;
     
@@ -156,14 +189,32 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<EnableSnapshotCopyOutput>) : Request {})
     public function enableSnapshotCopy(params : EnableSnapshotCopyInput, ?cb : Callback<EnableSnapshotCopyOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetClusterCredentialsOutput>) : Request {})
+    public function getClusterCredentials(params : GetClusterCredentialsInput, ?cb : Callback<GetClusterCredentialsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetReservedNodeExchangeOfferingsOutput>) : Request {})
+    public function getReservedNodeExchangeOfferings(params : GetReservedNodeExchangeOfferingsInput, ?cb : Callback<GetReservedNodeExchangeOfferingsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ModifyClusterOutput>) : Request {})
     public function modifyCluster(params : ModifyClusterInput, ?cb : Callback<ModifyClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyClusterDbRevisionOutput>) : Request {})
+    public function modifyClusterDbRevision(params : ModifyClusterDbRevisionInput, ?cb : Callback<ModifyClusterDbRevisionOutput>) : Request;
     
     @:overload(function (?cb : Callback<ModifyClusterIamRolesOutput>) : Request {})
     public function modifyClusterIamRoles(params : ModifyClusterIamRolesInput, ?cb : Callback<ModifyClusterIamRolesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyClusterMaintenanceOutput>) : Request {})
+    public function modifyClusterMaintenance(params : ModifyClusterMaintenanceInput, ?cb : Callback<ModifyClusterMaintenanceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ModifyClusterParameterGroupOutput>) : Request {})
     public function modifyClusterParameterGroup(params : ModifyClusterParameterGroupInput, ?cb : Callback<ModifyClusterParameterGroupOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyClusterSnapshotOutput>) : Request {})
+    public function modifyClusterSnapshot(params : ModifyClusterSnapshotInput, ?cb : Callback<ModifyClusterSnapshotOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function modifyClusterSnapshotSchedule(params : ModifyClusterSnapshotScheduleInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<ModifyClusterSubnetGroupOutput>) : Request {})
     public function modifyClusterSubnetGroup(params : ModifyClusterSubnetGroupInput, ?cb : Callback<ModifyClusterSubnetGroupOutput>) : Request;
@@ -174,6 +225,9 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ModifySnapshotCopyRetentionPeriodOutput>) : Request {})
     public function modifySnapshotCopyRetentionPeriod(params : ModifySnapshotCopyRetentionPeriodInput, ?cb : Callback<ModifySnapshotCopyRetentionPeriodOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifySnapshotScheduleOutput>) : Request {})
+    public function modifySnapshotSchedule(params : ModifySnapshotScheduleInput, ?cb : Callback<ModifySnapshotScheduleOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PurchaseReservedNodeOfferingOutput>) : Request {})
     public function purchaseReservedNodeOffering(params : PurchaseReservedNodeOfferingInput, ?cb : Callback<PurchaseReservedNodeOfferingOutput>) : Request;
     
@@ -182,6 +236,9 @@ extern class Redshift extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ResetClusterParameterGroupOutput>) : Request {})
     public function resetClusterParameterGroup(params : ResetClusterParameterGroupInput, ?cb : Callback<ResetClusterParameterGroupOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ResizeClusterOutput>) : Request {})
+    public function resizeCluster(params : ResizeClusterInput, ?cb : Callback<ResizeClusterOutput>) : Request;
     
     @:overload(function (?cb : Callback<RestoreFromClusterSnapshotOutput>) : Request {})
     public function restoreFromClusterSnapshot(params : RestoreFromClusterSnapshotInput, ?cb : Callback<RestoreFromClusterSnapshotOutput>) : Request;

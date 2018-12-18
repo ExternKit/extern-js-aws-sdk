@@ -1,5 +1,5 @@
 package js.aws.ecs;
 
 typedef CreateServiceOutput = {
-    @:optional var service : _ShapeSc;
+    @:optional var service : _ShapeS10;
 };

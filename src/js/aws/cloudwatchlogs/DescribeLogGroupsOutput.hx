@@ -6,6 +6,7 @@ typedef DescribeLogGroupsOutput = {
         @:optional var logGroupName : String;
         @:optional var arn : String;
         @:optional var creationTime : Int;
+        @:optional var kmsKeyId : String;
         @:optional var retentionInDays : Int;
         @:optional var storedBytes : Int;
     }>;

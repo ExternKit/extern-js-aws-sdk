@@ -8,7 +8,9 @@ typedef DescribeAddressesOutput = {
         @:optional var NetworkInterfaceOwnerId : String;
         @:optional var AssociationId : String;
         @:optional var PublicIp : String;
+        @:optional var PublicIpv4Pool : String;
         @:optional var AllocationId : String;
         @:optional var NetworkInterfaceId : String;
+        @:optional var Tags : _ShapeSi;
     }>;
 };

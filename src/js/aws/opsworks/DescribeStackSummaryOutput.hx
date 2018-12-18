@@ -12,6 +12,7 @@ typedef DescribeStackSummaryOutput = {
             @:optional var Pending : Int;
             @:optional var Registering : Int;
             @:optional var Assigning : Int;
+            @:optional var StopFailed : Int;
             @:optional var Stopping : Int;
             @:optional var Deregistering : Int;
             @:optional var Stopped : Int;

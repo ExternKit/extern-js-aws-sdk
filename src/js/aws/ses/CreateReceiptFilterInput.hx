@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef CreateReceiptFilterInput = {
-    var Filter : _ShapeS5;
+    var Filter : _ShapeS10;
 };

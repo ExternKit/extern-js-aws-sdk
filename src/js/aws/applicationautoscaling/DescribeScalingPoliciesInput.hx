@@ -6,5 +6,5 @@ typedef DescribeScalingPoliciesInput = {
     var ServiceNamespace : String;
     @:optional var ScalableDimension : String;
     @:optional var ResourceId : String;
-    @:optional var PolicyNames : _ShapeS9;
+    @:optional var PolicyNames : _ShapeSb;
 };

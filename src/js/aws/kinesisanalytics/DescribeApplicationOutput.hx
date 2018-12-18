@@ -6,10 +6,16 @@ typedef DescribeApplicationOutput = {
         @:optional var ApplicationDescription : String;
         var ApplicationName : String;
         @:optional var InputDescriptions : Array<{
-            @:optional var InputStartingPositionConfiguration : _ShapeS1t;
+            @:optional var InputStartingPositionConfiguration : _ShapeS29;
             @:optional var InAppStreamNames : Array<String>;
-            @:optional var InputParallelism : _ShapeSa;
-            @:optional var InputSchema : _ShapeSc;
+            @:optional var InputProcessingConfigurationDescription : {
+                @:optional var InputLambdaProcessorDescription : {
+                    @:optional var ResourceARN : String;
+                    @:optional var RoleARN : String;
+                };
+            };
+            @:optional var InputParallelism : _ShapeSg;
+            @:optional var InputSchema : _ShapeSi;
             @:optional var InputId : String;
             @:optional var NamePrefix : String;
             @:optional var KinesisStreamsInputDescription : {
@@ -30,8 +36,12 @@ typedef DescribeApplicationOutput = {
                 @:optional var ResourceARN : String;
                 @:optional var RoleARN : String;
             };
+            @:optional var LambdaOutputDescription : {
+                @:optional var ResourceARN : String;
+                @:optional var RoleARN : String;
+            };
             @:optional var OutputId : String;
-            @:optional var DestinationSchema : _ShapeSw;
+            @:optional var DestinationSchema : _ShapeS16;
             @:optional var KinesisStreamsOutputDescription : {
                 @:optional var ResourceARN : String;
                 @:optional var RoleARN : String;
@@ -46,8 +56,13 @@ typedef DescribeApplicationOutput = {
                 var BucketARN : String;
                 var ReferenceRoleARN : String;
             };
-            @:optional var ReferenceSchema : _ShapeSc;
+            @:optional var ReferenceSchema : _ShapeSi;
         }>;
         var ApplicationARN : String;
+        @:optional var CloudWatchLoggingOptionDescriptions : Array<{
+            @:optional var CloudWatchLoggingOptionId : String;
+            var LogStreamARN : String;
+            var RoleARN : String;
+        }>;
     };
 };

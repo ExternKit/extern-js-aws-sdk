@@ -2,6 +2,7 @@ package js.aws.kinesis;
 
 typedef GetRecordsOutput = {
     var Records : Array<{
+        @:optional var EncryptionType : String;
         @:optional var ApproximateArrivalTimestamp : Float;
         var SequenceNumber : String;
         var PartitionKey : String;

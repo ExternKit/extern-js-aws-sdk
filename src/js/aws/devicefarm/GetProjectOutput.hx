@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef GetProjectOutput = {
-    @:optional var project : _ShapeSf;
+    @:optional var project : _ShapeSr;
 };

@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef CreateCacheParameterGroupOutput = {
-    @:optional var CacheParameterGroup : _ShapeS19;
+    @:optional var CacheParameterGroup : _ShapeS1a;
 };

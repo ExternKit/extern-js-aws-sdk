@@ -1,5 +1,5 @@
 package js.aws.route53domains;
 
 typedef ListTagsForDomainOutput = {
-    var TagList : _ShapeS24;
+    var TagList : _ShapeS29;
 };

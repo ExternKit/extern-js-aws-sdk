@@ -2,5 +2,5 @@ package js.aws.inspector;
 
 typedef DescribeRulesPackagesInput = {
     @:optional var locale : String;
-    var rulesPackageArns : _ShapeSv;
+    var rulesPackageArns : _ShapeSy;
 };

@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CreateClusterParameterGroupOutput = {
-    @:optional var ClusterParameterGroup : _ShapeS1g;
+    @:optional var ClusterParameterGroup : _ShapeS29;
 };

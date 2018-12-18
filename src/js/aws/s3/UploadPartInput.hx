@@ -1,7 +1,7 @@
 package js.aws.s3;
 
 typedef UploadPartInput = {
-    @:optional var SSECustomerKey : _ShapeS18;
+    @:optional var SSECustomerKey : _ShapeS19;
     var Key : String;
     var Bucket : String;
     var UploadId : String;

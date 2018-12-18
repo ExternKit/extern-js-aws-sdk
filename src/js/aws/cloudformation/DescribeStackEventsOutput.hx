@@ -3,6 +3,7 @@ package js.aws.cloudformation;
 typedef DescribeStackEventsOutput = {
     @:optional var NextToken : String;
     @:optional var StackEvents : Array<{
+        @:optional var ClientRequestToken : String;
         @:optional var ResourceProperties : String;
         var Timestamp : Float;
         var EventId : String;

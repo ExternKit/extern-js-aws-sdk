@@ -10,6 +10,7 @@ typedef DescribeOptionGroupOptionsOutput = {
         }>;
         @:optional var OptionsDependedOn : Array<String>;
         @:optional var EngineName : String;
+        @:optional var VpcOnly : Bool;
         @:optional var Persistent : Bool;
         @:optional var MinimumRequiredMinorEngineVersion : String;
         @:optional var DefaultPort : Int;
@@ -17,14 +18,21 @@ typedef DescribeOptionGroupOptionsOutput = {
             @:optional var IsModifiable : Bool;
             @:optional var ApplyType : String;
             @:optional var SettingDescription : String;
+            @:optional var MinimumEngineVersionPerAllowedValue : Array<{
+                @:optional var AllowedValue : String;
+                @:optional var MinimumEngineVersion : String;
+            }>;
             @:optional var AllowedValues : String;
+            @:optional var IsRequired : Bool;
             @:optional var DefaultValue : String;
             @:optional var SettingName : String;
         }>;
         @:optional var MajorEngineVersion : String;
         @:optional var PortRequired : Bool;
         @:optional var Name : String;
+        @:optional var RequiresAutoMinorEngineVersionUpgrade : Bool;
         @:optional var Permanent : Bool;
+        @:optional var SupportsOptionVersionDowngrade : Bool;
     }>;
     @:optional var Marker : String;
 };

@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef StopRunOutput = {
-    @:optional var run : _ShapeS2k;
+    @:optional var run : _ShapeS42;
 };

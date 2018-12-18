@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateVpcOutput = {
-    @:optional var Vpc : _ShapeS66;
+    @:optional var Vpc : _ShapeS4y;
 };

@@ -5,6 +5,7 @@ typedef ListLocalDisksOutput = {
     @:optional var Disks : Array<{
         @:optional var DiskStatus : String;
         @:optional var DiskId : String;
+        @:optional var DiskAttributeList : Array<String>;
         @:optional var DiskAllocationResource : String;
         @:optional var DiskAllocationType : String;
         @:optional var DiskNode : String;

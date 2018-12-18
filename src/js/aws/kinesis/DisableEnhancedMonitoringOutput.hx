@@ -1,3 +1,3 @@
 package js.aws.kinesis;
 
-typedef DisableEnhancedMonitoringOutput = _ShapeSu;
+typedef DisableEnhancedMonitoringOutput = _ShapeS1b;

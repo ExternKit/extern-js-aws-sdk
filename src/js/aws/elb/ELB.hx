@@ -51,6 +51,9 @@ extern class ELB extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeregisterInstancesFromLoadBalancerOutput>) : Request {})
     public function deregisterInstancesFromLoadBalancer(params : DeregisterInstancesFromLoadBalancerInput, ?cb : Callback<DeregisterInstancesFromLoadBalancerOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeAccountLimitsOutput>) : Request {})
+    public function describeAccountLimits(params : DescribeAccountLimitsInput, ?cb : Callback<DescribeAccountLimitsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeInstanceHealthOutput>) : Request {})
     public function describeInstanceHealth(params : DescribeInstanceHealthInput, ?cb : Callback<DescribeInstanceHealthOutput>) : Request;
     

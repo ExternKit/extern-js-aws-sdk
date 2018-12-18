@@ -9,6 +9,7 @@ typedef DescribeEventsInput = {
     @:optional var EnvironmentName : String;
     @:optional var MaxRecords : Int;
     @:optional var Severity : String;
+    @:optional var PlatformArn : String;
     @:optional var StartTime : Float;
     @:optional var TemplateName : String;
     @:optional var RequestId : String;

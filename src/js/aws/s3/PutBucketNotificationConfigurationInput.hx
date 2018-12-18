@@ -2,5 +2,5 @@ package js.aws.s3;
 
 typedef PutBucketNotificationConfigurationInput = {
     var Bucket : String;
-    var NotificationConfiguration : _ShapeS4f;
+    var NotificationConfiguration : _ShapeS64;
 };

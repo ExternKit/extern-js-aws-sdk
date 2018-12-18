@@ -4,7 +4,7 @@ typedef CreateWorkspacesOutput = {
     @:optional var FailedRequests : Array<{
         @:optional var ErrorCode : String;
         @:optional var ErrorMessage : String;
-        @:optional var WorkspaceRequest : _ShapeSa;
+        @:optional var WorkspaceRequest : _ShapeSp;
     }>;
-    @:optional var PendingRequests : _ShapeSo;
+    @:optional var PendingRequests : _ShapeS15;
 };

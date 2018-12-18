@@ -9,4 +9,5 @@ typedef ListTasksInput = {
     @:optional var serviceName : String;
     @:optional var startedBy : String;
     @:optional var nextToken : String;
+    @:optional var launchType : String;
 };

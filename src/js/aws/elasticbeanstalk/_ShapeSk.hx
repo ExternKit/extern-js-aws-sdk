@@ -21,14 +21,16 @@ typedef _ShapeSk = {
         @:optional var LinkName : String;
         @:optional var EnvironmentName : String;
     }>;
+    @:optional var EnvironmentArn : String;
     @:optional var EnvironmentName : String;
     @:optional var DateCreated : Float;
+    @:optional var PlatformArn : String;
     @:optional var DateUpdated : Float;
     @:optional var AbortableOperationInProgress : Bool;
     @:optional var SolutionStackName : String;
     @:optional var Health : String;
     @:optional var TemplateName : String;
-    @:optional var Tier : _ShapeS10;
+    @:optional var Tier : _ShapeS11;
     @:optional var HealthStatus : String;
     @:optional var Status : String;
 };

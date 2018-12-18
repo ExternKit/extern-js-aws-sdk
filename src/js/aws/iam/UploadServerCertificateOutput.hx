@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef UploadServerCertificateOutput = {
-    @:optional var ServerCertificateMetadata : _ShapeS4w;
+    @:optional var ServerCertificateMetadata : _ShapeS5n;
 };

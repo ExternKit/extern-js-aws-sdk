@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CopyOptionGroupOutput = {
-    @:optional var OptionGroup : _ShapeS16;
+    @:optional var OptionGroup : _ShapeS1b;
 };

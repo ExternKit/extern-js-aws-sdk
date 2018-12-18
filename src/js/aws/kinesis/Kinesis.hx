@@ -24,8 +24,20 @@ extern class Kinesis extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteStream(params : DeleteStreamInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deregisterStreamConsumer(params : DeregisterStreamConsumerInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeLimitsOutput>) : Request {})
+    public function describeLimits(params : DescribeLimitsInput, ?cb : Callback<DescribeLimitsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeStreamOutput>) : Request {})
     public function describeStream(params : DescribeStreamInput, ?cb : Callback<DescribeStreamOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeStreamConsumerOutput>) : Request {})
+    public function describeStreamConsumer(params : DescribeStreamConsumerInput, ?cb : Callback<DescribeStreamConsumerOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeStreamSummaryOutput>) : Request {})
+    public function describeStreamSummary(params : DescribeStreamSummaryInput, ?cb : Callback<DescribeStreamSummaryOutput>) : Request;
     
     @:overload(function (?cb : Callback<DisableEnhancedMonitoringOutput>) : Request {})
     public function disableEnhancedMonitoring(params : DisableEnhancedMonitoringInput, ?cb : Callback<DisableEnhancedMonitoringOutput>) : Request;
@@ -42,6 +54,12 @@ extern class Kinesis extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function increaseStreamRetentionPeriod(params : IncreaseStreamRetentionPeriodInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<ListShardsOutput>) : Request {})
+    public function listShards(params : ListShardsInput, ?cb : Callback<ListShardsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListStreamConsumersOutput>) : Request {})
+    public function listStreamConsumers(params : ListStreamConsumersInput, ?cb : Callback<ListStreamConsumersOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListStreamsOutput>) : Request {})
     public function listStreams(params : ListStreamsInput, ?cb : Callback<ListStreamsOutput>) : Request;
     
@@ -57,10 +75,22 @@ extern class Kinesis extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<PutRecordsOutput>) : Request {})
     public function putRecords(params : PutRecordsInput, ?cb : Callback<PutRecordsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RegisterStreamConsumerOutput>) : Request {})
+    public function registerStreamConsumer(params : RegisterStreamConsumerInput, ?cb : Callback<RegisterStreamConsumerOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function removeTagsFromStream(params : RemoveTagsFromStreamInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function splitShard(params : SplitShardInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function startStreamEncryption(params : StartStreamEncryptionInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function stopStreamEncryption(params : StopStreamEncryptionInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateShardCountOutput>) : Request {})
+    public function updateShardCount(params : UpdateShardCountInput, ?cb : Callback<UpdateShardCountOutput>) : Request;
     
 }

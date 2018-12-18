@@ -1,6 +1,6 @@
 package js.aws.discovery;
 
 typedef DeleteTagsInput = {
-    @:optional var tags : _ShapeS4;
-    var configurationIds : _ShapeS2;
+    @:optional var tags : _ShapeSa;
+    var configurationIds : _ShapeS3;
 };

@@ -6,5 +6,5 @@ typedef InvokeInput = {
     var FunctionName : String;
     @:optional var Qualifier : String;
     @:optional var ClientContext : String;
-    @:optional var Payload : Dynamic;
+    @:optional var Payload : _ShapeS14;
 };

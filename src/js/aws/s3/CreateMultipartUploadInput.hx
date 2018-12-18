@@ -1,17 +1,20 @@
 package js.aws.s3;
 
 typedef CreateMultipartUploadInput = {
+    @:optional var ObjectLockLegalHoldStatus : String;
     @:optional var ContentEncoding : String;
     @:optional var GrantFullControl : String;
-    @:optional var SSECustomerKey : _ShapeS18;
+    @:optional var SSECustomerKey : _ShapeS19;
     @:optional var GrantReadACP : String;
     @:optional var SSEKMSKeyId : _ShapeSj;
     @:optional var ContentDisposition : String;
     @:optional var Expires : Float;
     @:optional var ACL : String;
     var Key : String;
+    @:optional var Tagging : String;
     var Bucket : String;
     @:optional var ContentLanguage : String;
+    @:optional var ObjectLockRetainUntilDate : _ShapeS1g;
     @:optional var ContentType : String;
     @:optional var CacheControl : String;
     @:optional var Metadata : _ShapeS11;
@@ -21,6 +24,7 @@ typedef CreateMultipartUploadInput = {
     @:optional var SSECustomerAlgorithm : String;
     @:optional var StorageClass : String;
     @:optional var SSECustomerKeyMD5 : String;
+    @:optional var ObjectLockMode : String;
     @:optional var ServerSideEncryption : String;
     @:optional var GrantRead : String;
 };

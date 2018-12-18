@@ -3,6 +3,7 @@ package js.aws.s3;
 typedef CreateBucketInput = {
     @:optional var GrantFullControl : String;
     @:optional var GrantReadACP : String;
+    @:optional var ObjectLockEnabledForBucket : Bool;
     @:optional var ACL : String;
     var Bucket : String;
     @:optional var CreateBucketConfiguration : {

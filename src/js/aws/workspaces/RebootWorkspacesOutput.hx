@@ -1,5 +1,5 @@
 package js.aws.workspaces;
 
 typedef RebootWorkspacesOutput = {
-    @:optional var FailedRequests : Array<_ShapeS28>;
+    @:optional var FailedRequests : Array<_ShapeS4d>;
 };

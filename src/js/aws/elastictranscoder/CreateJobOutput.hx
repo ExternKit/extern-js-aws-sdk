@@ -1,5 +1,5 @@
 package js.aws.elastictranscoder;
 
 typedef CreateJobOutput = {
-    @:optional var Job : _ShapeS1w;
+    @:optional var Job : _ShapeS1y;
 };

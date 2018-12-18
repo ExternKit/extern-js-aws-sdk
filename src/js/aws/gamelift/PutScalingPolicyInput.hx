@@ -1,12 +1,14 @@
 package js.aws.gamelift;
 
 typedef PutScalingPolicyInput = {
-    var Threshold : Float;
-    var ComparisonOperator : String;
+    @:optional var Threshold : Float;
+    @:optional var ComparisonOperator : String;
     var FleetId : String;
-    var EvaluationPeriods : Int;
-    var ScalingAdjustmentType : String;
+    @:optional var EvaluationPeriods : Int;
+    @:optional var TargetConfiguration : _ShapeS5t;
+    @:optional var ScalingAdjustmentType : String;
     var MetricName : String;
     var Name : String;
-    var ScalingAdjustment : Int;
+    @:optional var PolicyType : String;
+    @:optional var ScalingAdjustment : Int;
 };

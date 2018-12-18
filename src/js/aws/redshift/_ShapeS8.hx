@@ -1,6 +1,6 @@
 package js.aws.redshift;
 
-typedef _ShapeS8 = {
-    @:optional var Value : String;
-    @:optional var Key : String;
-};
+typedef _ShapeS8 = Array<{
+    @:optional var RecurringChargeAmount : Float;
+    @:optional var RecurringChargeFrequency : String;
+}>;

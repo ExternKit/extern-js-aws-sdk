@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateVpcPeeringConnectionOutput = {
-    @:optional var VpcPeeringConnection : _ShapeSb;
+    @:optional var VpcPeeringConnection : _ShapeSr;
 };

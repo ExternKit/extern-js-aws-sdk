@@ -2,5 +2,5 @@ package js.aws.cloudfront;
 
 typedef TagResourceInput = {
     var Resource : String;
-    var Tags : _ShapeS1x;
+    var Tags : _ShapeS2b;
 };

@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef CreateFlowLogsOutput = {
-    @:optional var FlowLogIds : _ShapeS2c;
+    @:optional var FlowLogIds : _ShapeSd;
     @:optional var ClientToken : String;
-    @:optional var Unsuccessful : _ShapeS3e;
+    @:optional var Unsuccessful : _ShapeSm;
 };

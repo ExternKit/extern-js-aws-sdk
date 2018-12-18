@@ -2,6 +2,7 @@ package js.aws.lambda;
 
 typedef AddPermissionInput = {
     var Action : String;
+    @:optional var RevisionId : String;
     var FunctionName : String;
     @:optional var SourceArn : String;
     @:optional var Qualifier : String;

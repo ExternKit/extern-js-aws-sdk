@@ -1,10 +1,11 @@
 package js.aws.es;
 
 typedef _ShapeSa = {
-    @:optional var DedicatedMasterType : String;
-    @:optional var ZoneAwarenessEnabled : Bool;
-    @:optional var InstanceCount : Int;
-    @:optional var DedicatedMasterEnabled : Bool;
-    @:optional var InstanceType : String;
-    @:optional var DedicatedMasterCount : Int;
+    @:optional var Description : String;
+    @:optional var UpdateStatus : String;
+    @:optional var Cancellable : Bool;
+    @:optional var AutomatedUpdateDate : Float;
+    @:optional var UpdateAvailable : Bool;
+    @:optional var NewVersion : String;
+    @:optional var CurrentVersion : String;
 };

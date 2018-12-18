@@ -1,3 +1,3 @@
 package js.aws.kms;
 
-typedef ListRetirableGrantsOutput = _ShapeS20;
+typedef ListRetirableGrantsOutput = _ShapeS2o;

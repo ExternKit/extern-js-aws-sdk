@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef GetHostReservationPurchasePreviewInput = {
     var OfferingId : String;
-    var HostIdSet : _ShapeSjc;
+    var HostIdSet : _ShapeSv4;
 };

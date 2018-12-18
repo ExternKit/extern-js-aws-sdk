@@ -4,5 +4,5 @@ typedef CreateDBClusterParameterGroupInput = {
     var Description : String;
     var DBParameterGroupFamily : String;
     var DBClusterParameterGroupName : String;
-    @:optional var Tags : _ShapeS9;
+    @:optional var Tags : _ShapeSa;
 };

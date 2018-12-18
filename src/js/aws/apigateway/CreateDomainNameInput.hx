@@ -1,9 +1,13 @@
 package js.aws.apigateway;
 
 typedef CreateDomainNameInput = {
-    var certificateBody : String;
-    var certificateName : String;
-    var certificateChain : String;
+    @:optional var certificateArn : String;
+    @:optional var regionalCertificateArn : String;
+    @:optional var endpointConfiguration : _ShapeSz;
+    @:optional var certificateBody : String;
+    @:optional var certificateName : String;
+    @:optional var regionalCertificateName : String;
+    @:optional var certificateChain : String;
     var domainName : String;
-    var certificatePrivateKey : String;
+    @:optional var certificatePrivateKey : String;
 };

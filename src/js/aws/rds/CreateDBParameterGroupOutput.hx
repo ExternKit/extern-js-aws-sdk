@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBParameterGroupOutput = {
-    @:optional var DBParameterGroup : _ShapeSy;
+    @:optional var DBParameterGroup : _ShapeS12;
 };

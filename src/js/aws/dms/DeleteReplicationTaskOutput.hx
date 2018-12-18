@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef DeleteReplicationTaskOutput = {
-    @:optional var ReplicationTask : _ShapeS10;
+    @:optional var ReplicationTask : _ShapeS1g;
 };

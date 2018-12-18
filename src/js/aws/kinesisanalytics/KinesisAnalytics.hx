@@ -12,8 +12,14 @@ extern class KinesisAnalytics extends Service implements js.extern.Extern<'aws-s
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddApplicationCloudWatchLoggingOptionOutput>) : Request {})
+    public function addApplicationCloudWatchLoggingOption(params : AddApplicationCloudWatchLoggingOptionInput, ?cb : Callback<AddApplicationCloudWatchLoggingOptionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AddApplicationInputOutput>) : Request {})
     public function addApplicationInput(params : AddApplicationInputInput, ?cb : Callback<AddApplicationInputOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<AddApplicationInputProcessingConfigurationOutput>) : Request {})
+    public function addApplicationInputProcessingConfiguration(params : AddApplicationInputProcessingConfigurationInput, ?cb : Callback<AddApplicationInputProcessingConfigurationOutput>) : Request;
     
     @:overload(function (?cb : Callback<AddApplicationOutputOutput>) : Request {})
     public function addApplicationOutput(params : AddApplicationOutputInput, ?cb : Callback<AddApplicationOutputOutput>) : Request;
@@ -26,6 +32,12 @@ extern class KinesisAnalytics extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<DeleteApplicationOutput>) : Request {})
     public function deleteApplication(params : DeleteApplicationInput, ?cb : Callback<DeleteApplicationOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteApplicationCloudWatchLoggingOptionOutput>) : Request {})
+    public function deleteApplicationCloudWatchLoggingOption(params : DeleteApplicationCloudWatchLoggingOptionInput, ?cb : Callback<DeleteApplicationCloudWatchLoggingOptionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteApplicationInputProcessingConfigurationOutput>) : Request {})
+    public function deleteApplicationInputProcessingConfiguration(params : DeleteApplicationInputProcessingConfigurationInput, ?cb : Callback<DeleteApplicationInputProcessingConfigurationOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteApplicationOutputOutput>) : Request {})
     public function deleteApplicationOutput(params : DeleteApplicationOutputInput, ?cb : Callback<DeleteApplicationOutputOutput>) : Request;

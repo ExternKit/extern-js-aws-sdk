@@ -30,6 +30,12 @@ extern class CodePipeline extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deletePipeline(params : DeletePipelineInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteWebhookOutput>) : Request {})
+    public function deleteWebhook(params : DeleteWebhookInput, ?cb : Callback<DeleteWebhookOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeregisterWebhookWithThirdPartyOutput>) : Request {})
+    public function deregisterWebhookWithThirdParty(params : DeregisterWebhookWithThirdPartyInput, ?cb : Callback<DeregisterWebhookWithThirdPartyOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function disableStageTransition(params : DisableStageTransitionInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -54,8 +60,14 @@ extern class CodePipeline extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListActionTypesOutput>) : Request {})
     public function listActionTypes(params : ListActionTypesInput, ?cb : Callback<ListActionTypesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListPipelineExecutionsOutput>) : Request {})
+    public function listPipelineExecutions(params : ListPipelineExecutionsInput, ?cb : Callback<ListPipelineExecutionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListPipelinesOutput>) : Request {})
     public function listPipelines(params : ListPipelinesInput, ?cb : Callback<ListPipelinesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListWebhooksOutput>) : Request {})
+    public function listWebhooks(params : ListWebhooksInput, ?cb : Callback<ListWebhooksOutput>) : Request;
     
     @:overload(function (?cb : Callback<PollForJobsOutput>) : Request {})
     public function pollForJobs(params : PollForJobsInput, ?cb : Callback<PollForJobsOutput>) : Request;
@@ -80,6 +92,12 @@ extern class CodePipeline extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putThirdPartyJobSuccessResult(params : PutThirdPartyJobSuccessResultInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<PutWebhookOutput>) : Request {})
+    public function putWebhook(params : PutWebhookInput, ?cb : Callback<PutWebhookOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RegisterWebhookWithThirdPartyOutput>) : Request {})
+    public function registerWebhookWithThirdParty(params : RegisterWebhookWithThirdPartyInput, ?cb : Callback<RegisterWebhookWithThirdPartyOutput>) : Request;
     
     @:overload(function (?cb : Callback<RetryStageExecutionOutput>) : Request {})
     public function retryStageExecution(params : RetryStageExecutionInput, ?cb : Callback<RetryStageExecutionOutput>) : Request;

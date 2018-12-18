@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef DescribeConfigurationRecorderStatusInput = {
-    @:optional var ConfigurationRecorderNames : _ShapeS1g;
+    @:optional var ConfigurationRecorderNames : _ShapeS39;
 };

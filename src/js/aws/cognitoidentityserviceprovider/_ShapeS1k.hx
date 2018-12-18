@@ -1,3 +1,3 @@
 package js.aws.cognitoidentityserviceprovider;
 
-typedef _ShapeS1k = String;
+typedef _ShapeS1k = {};

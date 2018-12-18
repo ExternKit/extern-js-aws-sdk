@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef DeleteTagsInput = {
-    var Resources : _ShapeS5y;
+    var Resources : _ShapeSb0;
     @:optional var DryRun : Bool;
-    @:optional var Tags : _ShapeSh;
+    @:optional var Tags : _ShapeSi;
 };

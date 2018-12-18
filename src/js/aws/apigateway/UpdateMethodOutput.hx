@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateMethodOutput = _ShapeSw;
+typedef UpdateMethodOutput = _ShapeS1a;

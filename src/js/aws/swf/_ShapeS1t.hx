@@ -325,6 +325,7 @@ typedef _ShapeS1t = Array<{
         var decisionTaskCompletedEventId : Int;
         @:optional var startToCloseTimeout : String;
         var id : String;
+        @:optional var control : String;
         @:optional var input : String;
     };
 }>;

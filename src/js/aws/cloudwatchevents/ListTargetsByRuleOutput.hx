@@ -1,6 +1,6 @@
 package js.aws.cloudwatchevents;
 
 typedef ListTargetsByRuleOutput = {
-    @:optional var Targets : _ShapeSp;
+    @:optional var Targets : _ShapeSu;
     @:optional var NextToken : String;
 };

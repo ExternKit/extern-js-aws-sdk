@@ -2,6 +2,10 @@ package js.aws.dynamodbstreams;
 
 typedef GetRecordsOutput = {
     @:optional var Records : Array<{
+        @:optional var userIdentity : {
+            @:optional var PrincipalId : String;
+            @:optional var Type : String;
+        };
         @:optional var awsRegion : String;
         @:optional var eventName : String;
         @:optional var eventSource : String;

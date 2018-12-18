@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef CreateApplicationOutput = _ShapeS14;
+typedef CreateApplicationOutput = _ShapeS1d;

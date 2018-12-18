@@ -24,6 +24,9 @@ extern class CloudTrail extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeTrailsOutput>) : Request {})
     public function describeTrails(params : DescribeTrailsInput, ?cb : Callback<DescribeTrailsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetEventSelectorsOutput>) : Request {})
+    public function getEventSelectors(params : GetEventSelectorsInput, ?cb : Callback<GetEventSelectorsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetTrailStatusOutput>) : Request {})
     public function getTrailStatus(params : GetTrailStatusInput, ?cb : Callback<GetTrailStatusOutput>) : Request;
     
@@ -35,6 +38,9 @@ extern class CloudTrail extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<LookupEventsOutput>) : Request {})
     public function lookupEvents(params : LookupEventsInput, ?cb : Callback<LookupEventsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutEventSelectorsOutput>) : Request {})
+    public function putEventSelectors(params : PutEventSelectorsInput, ?cb : Callback<PutEventSelectorsOutput>) : Request;
     
     @:overload(function (?cb : Callback<RemoveTagsOutput>) : Request {})
     public function removeTags(params : RemoveTagsInput, ?cb : Callback<RemoveTagsOutput>) : Request;

@@ -1,5 +1,5 @@
 package js.aws.sns;
 
 typedef GetTopicAttributesOutput = {
-    @:optional var Attributes : {};
+    @:optional var Attributes : _ShapeSp;
 };

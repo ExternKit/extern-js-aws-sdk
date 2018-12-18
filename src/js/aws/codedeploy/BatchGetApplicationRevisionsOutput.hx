@@ -5,6 +5,6 @@ typedef BatchGetApplicationRevisionsOutput = {
     @:optional var applicationName : String;
     @:optional var revisions : Array<{
         @:optional var revisionLocation : _ShapeSb;
-        @:optional var genericRevisionInfo : _ShapeSq;
+        @:optional var genericRevisionInfo : _ShapeSu;
     }>;
 };

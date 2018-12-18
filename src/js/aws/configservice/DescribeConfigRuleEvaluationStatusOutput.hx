@@ -1,6 +1,7 @@
 package js.aws.configservice;
 
 typedef DescribeConfigRuleEvaluationStatusOutput = {
+    @:optional var NextToken : String;
     @:optional var ConfigRulesEvaluationStatus : Array<{
         @:optional var ConfigRuleArn : String;
         @:optional var ConfigRuleId : String;

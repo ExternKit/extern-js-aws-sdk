@@ -4,6 +4,7 @@ typedef ListRulesOutput = {
     @:optional var NextToken : String;
     @:optional var Rules : Array<{
         @:optional var Description : String;
+        @:optional var ManagedBy : String;
         @:optional var EventPattern : String;
         @:optional var ScheduleExpression : String;
         @:optional var Arn : String;

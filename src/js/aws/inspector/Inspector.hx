@@ -21,6 +21,9 @@ extern class Inspector extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateAssessmentTemplateOutput>) : Request {})
     public function createAssessmentTemplate(params : CreateAssessmentTemplateInput, ?cb : Callback<CreateAssessmentTemplateOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateExclusionsPreviewOutput>) : Request {})
+    public function createExclusionsPreview(params : CreateExclusionsPreviewInput, ?cb : Callback<CreateExclusionsPreviewOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateResourceGroupOutput>) : Request {})
     public function createResourceGroup(params : CreateResourceGroupInput, ?cb : Callback<CreateResourceGroupOutput>) : Request;
     
@@ -45,6 +48,9 @@ extern class Inspector extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeCrossAccountAccessRoleOutput>) : Request {})
     public function describeCrossAccountAccessRole(params : DescribeCrossAccountAccessRoleInput, ?cb : Callback<DescribeCrossAccountAccessRoleOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeExclusionsOutput>) : Request {})
+    public function describeExclusions(params : DescribeExclusionsInput, ?cb : Callback<DescribeExclusionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeFindingsOutput>) : Request {})
     public function describeFindings(params : DescribeFindingsInput, ?cb : Callback<DescribeFindingsOutput>) : Request;
     
@@ -53,6 +59,12 @@ extern class Inspector extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeRulesPackagesOutput>) : Request {})
     public function describeRulesPackages(params : DescribeRulesPackagesInput, ?cb : Callback<DescribeRulesPackagesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetAssessmentReportOutput>) : Request {})
+    public function getAssessmentReport(params : GetAssessmentReportInput, ?cb : Callback<GetAssessmentReportOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetExclusionsPreviewOutput>) : Request {})
+    public function getExclusionsPreview(params : GetExclusionsPreviewInput, ?cb : Callback<GetExclusionsPreviewOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetTelemetryMetadataOutput>) : Request {})
     public function getTelemetryMetadata(params : GetTelemetryMetadataInput, ?cb : Callback<GetTelemetryMetadataOutput>) : Request;
@@ -71,6 +83,9 @@ extern class Inspector extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListEventSubscriptionsOutput>) : Request {})
     public function listEventSubscriptions(params : ListEventSubscriptionsInput, ?cb : Callback<ListEventSubscriptionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListExclusionsOutput>) : Request {})
+    public function listExclusions(params : ListExclusionsInput, ?cb : Callback<ListExclusionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListFindingsOutput>) : Request {})
     public function listFindings(params : ListFindingsInput, ?cb : Callback<ListFindingsOutput>) : Request;

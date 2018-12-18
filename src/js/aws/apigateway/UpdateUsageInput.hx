@@ -2,6 +2,6 @@ package js.aws.apigateway;
 
 typedef UpdateUsageInput = {
     var keyId : String;
-    @:optional var patchOperations : _ShapeS4k;
+    @:optional var patchOperations : _ShapeS6b;
     var usagePlanId : String;
 };

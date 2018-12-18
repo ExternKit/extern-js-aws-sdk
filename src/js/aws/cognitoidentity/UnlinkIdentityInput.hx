@@ -1,7 +1,7 @@
 package js.aws.cognitoidentity;
 
 typedef UnlinkIdentityInput = {
-    var LoginsToRemove : _ShapeSr;
+    var LoginsToRemove : _ShapeSs;
     var IdentityId : String;
-    var Logins : _ShapeSv;
+    var Logins : _ShapeSw;
 };

@@ -9,6 +9,7 @@ typedef DescribeWorkspaceDirectoriesOutput = {
         @:optional var SubnetIds : Array<String>;
         @:optional var IamRoleId : String;
         @:optional var WorkspaceSecurityGroupId : String;
+        @:optional var ipGroupIds : _ShapeS3;
         @:optional var State : String;
         @:optional var WorkspaceCreationProperties : {
             @:optional var CustomSecurityGroupId : String;

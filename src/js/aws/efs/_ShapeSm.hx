@@ -1,6 +1,11 @@
 package js.aws.efs;
 
-typedef _ShapeSm = Array<{
-    var Value : String;
-    var Key : String;
-}>;
+typedef _ShapeSm = {
+    var MountTargetId : String;
+    var SubnetId : String;
+    var FileSystemId : String;
+    @:optional var OwnerId : String;
+    @:optional var IpAddress : String;
+    var LifeCycleState : String;
+    @:optional var NetworkInterfaceId : String;
+};

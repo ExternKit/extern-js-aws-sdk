@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef RenewOfferingOutput = {
-    @:optional var offeringTransaction : _ShapeS3d;
+    @:optional var offeringTransaction : _ShapeS5h;
 };

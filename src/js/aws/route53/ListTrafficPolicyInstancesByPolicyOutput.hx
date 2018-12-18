@@ -4,7 +4,7 @@ typedef ListTrafficPolicyInstancesByPolicyOutput = {
     @:optional var TrafficPolicyInstanceNameMarker : String;
     var MaxItems : String;
     @:optional var HostedZoneIdMarker : String;
-    var TrafficPolicyInstances : _ShapeS5p;
+    var TrafficPolicyInstances : _ShapeS6f;
     var IsTruncated : Bool;
     @:optional var TrafficPolicyInstanceTypeMarker : String;
 };

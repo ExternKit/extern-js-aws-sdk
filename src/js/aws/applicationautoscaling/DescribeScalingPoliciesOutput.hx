@@ -5,15 +5,13 @@ typedef DescribeScalingPoliciesOutput = {
     @:optional var ScalingPolicies : Array<{
         var CreationTime : Float;
         var ServiceNamespace : String;
-        @:optional var Alarms : Array<{
-            var AlarmARN : String;
-            var AlarmName : String;
-        }>;
+        @:optional var Alarms : _ShapeS1i;
         var PolicyARN : String;
         var ScalableDimension : String;
         var PolicyName : String;
         var PolicyType : String;
         var ResourceId : String;
-        @:optional var StepScalingPolicyConfiguration : _ShapeSt;
+        @:optional var StepScalingPolicyConfiguration : _ShapeSv;
+        @:optional var TargetTrackingScalingPolicyConfiguration : _ShapeS14;
     }>;
 };

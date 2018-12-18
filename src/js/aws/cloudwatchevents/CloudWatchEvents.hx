@@ -15,6 +15,9 @@ extern class CloudWatchEvents extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteRule(params : DeleteRuleInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeEventBusOutput>) : Request {})
+    public function describeEventBus(params : DescribeEventBusInput, ?cb : Callback<DescribeEventBusOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeRuleOutput>) : Request {})
     public function describeRule(params : DescribeRuleInput, ?cb : Callback<DescribeRuleOutput>) : Request;
     
@@ -36,11 +39,17 @@ extern class CloudWatchEvents extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<PutEventsOutput>) : Request {})
     public function putEvents(params : PutEventsInput, ?cb : Callback<PutEventsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function putPermission(params : PutPermissionInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<PutRuleOutput>) : Request {})
     public function putRule(params : PutRuleInput, ?cb : Callback<PutRuleOutput>) : Request;
     
     @:overload(function (?cb : Callback<PutTargetsOutput>) : Request {})
     public function putTargets(params : PutTargetsInput, ?cb : Callback<PutTargetsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function removePermission(params : RemovePermissionInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<RemoveTargetsOutput>) : Request {})
     public function removeTargets(params : RemoveTargetsInput, ?cb : Callback<RemoveTargetsOutput>) : Request;

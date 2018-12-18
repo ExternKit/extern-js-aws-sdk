@@ -7,6 +7,7 @@ typedef DescribeVolumesOutput = {
         @:optional var InstanceId : String;
         @:optional var RaidArrayId : String;
         @:optional var MountPoint : String;
+        @:optional var Encrypted : Bool;
         @:optional var VolumeId : String;
         @:optional var Device : String;
         @:optional var VolumeType : String;

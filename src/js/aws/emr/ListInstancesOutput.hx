@@ -4,9 +4,12 @@ typedef ListInstancesOutput = {
     @:optional var Instances : Array<{
         @:optional var PublicIpAddress : String;
         @:optional var Ec2InstanceId : String;
+        @:optional var InstanceFleetId : String;
         @:optional var PrivateIpAddress : String;
         @:optional var PublicDnsName : String;
+        @:optional var Market : String;
         @:optional var Id : String;
+        @:optional var InstanceType : String;
         @:optional var EbsVolumes : Array<{
             @:optional var VolumeId : String;
             @:optional var Device : String;

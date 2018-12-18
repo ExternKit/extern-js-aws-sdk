@@ -15,6 +15,9 @@ extern class Route53Domains extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<CheckDomainAvailabilityOutput>) : Request {})
     public function checkDomainAvailability(params : CheckDomainAvailabilityInput, ?cb : Callback<CheckDomainAvailabilityOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CheckDomainTransferabilityOutput>) : Request {})
+    public function checkDomainTransferability(params : CheckDomainTransferabilityInput, ?cb : Callback<CheckDomainTransferabilityOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteTagsForDomainOutput>) : Request {})
     public function deleteTagsForDomain(params : DeleteTagsForDomainInput, ?cb : Callback<DeleteTagsForDomainOutput>) : Request;
     

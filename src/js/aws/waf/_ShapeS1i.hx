@@ -1,6 +1,7 @@
 package js.aws.waf;
 
 typedef _ShapeS1i = {
-    var TextTransformation : String;
-    var FieldToMatch : _ShapeS9;
+    var RuleGroupId : String;
+    @:optional var MetricName : String;
+    @:optional var Name : String;
 };

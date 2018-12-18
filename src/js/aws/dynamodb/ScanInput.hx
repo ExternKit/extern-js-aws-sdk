@@ -10,11 +10,11 @@ typedef ScanInput = {
     @:optional var Segment : Int;
     @:optional var ProjectionExpression : String;
     @:optional var Limit : Int;
-    @:optional var ExpressionAttributeValues : _ShapeS2m;
+    @:optional var ExpressionAttributeValues : _ShapeS3x;
     @:optional var Select : String;
     @:optional var ExclusiveStartKey : _ShapeS6;
     @:optional var ReturnConsumedCapacity : String;
     @:optional var ConditionalOperator : String;
     @:optional var IndexName : String;
-    @:optional var ScanFilter : _ShapeS38;
+    @:optional var ScanFilter : _ShapeS5x;
 };

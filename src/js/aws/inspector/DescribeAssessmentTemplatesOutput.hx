@@ -8,6 +8,8 @@ typedef DescribeAssessmentTemplatesOutput = {
         var rulesPackageArns : _ShapeSj;
         var userAttributesForFindings : _ShapeS4;
         var arn : String;
+        var assessmentRunCount : Int;
+        @:optional var lastAssessmentRunArn : String;
         var assessmentTargetArn : String;
     }>;
     var failedItems : _ShapeS9;

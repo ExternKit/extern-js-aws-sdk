@@ -1,13 +1,16 @@
 package js.aws.ec2;
 
 typedef _ShapeSb = {
-    @:optional var ExpirationTime : Float;
-    @:optional var VpcPeeringConnectionId : String;
-    @:optional var RequesterVpcInfo : _ShapeSc;
-    @:optional var AccepterVpcInfo : _ShapeSc;
-    @:optional var Tags : _ShapeSh;
-    @:optional var Status : {
-        @:optional var Message : String;
-        @:optional var Code : String;
+    @:optional var CreationTime : Float;
+    @:optional var VpcId : String;
+    @:optional var SubnetIds : _ShapeSd;
+    @:optional var TransitGatewayAttachmentId : String;
+    @:optional var VpcOwnerId : String;
+    @:optional var State : String;
+    @:optional var TransitGatewayId : String;
+    @:optional var Options : {
+        @:optional var DnsSupport : String;
+        @:optional var Ipv6Support : String;
     };
+    @:optional var Tags : _ShapeSi;
 };

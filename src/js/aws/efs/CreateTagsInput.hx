@@ -2,5 +2,5 @@ package js.aws.efs;
 
 typedef CreateTagsInput = {
     var FileSystemId : String;
-    var Tags : _ShapeSm;
+    var Tags : _ShapeSq;
 };

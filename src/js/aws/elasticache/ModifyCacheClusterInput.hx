@@ -6,10 +6,10 @@ typedef ModifyCacheClusterInput = {
     @:optional var CacheParameterGroupName : String;
     @:optional var AutoMinorVersionUpgrade : Bool;
     var CacheClusterId : String;
-    @:optional var SecurityGroupIds : _ShapeSq;
+    @:optional var SecurityGroupIds : _ShapeSr;
     @:optional var NotificationTopicStatus : String;
-    @:optional var NewAvailabilityZones : _ShapeSo;
-    @:optional var CacheSecurityGroupNames : _ShapeSp;
+    @:optional var NewAvailabilityZones : _ShapeSp;
+    @:optional var CacheSecurityGroupNames : _ShapeSq;
     @:optional var AZMode : String;
     @:optional var NumCacheNodes : Int;
     @:optional var SnapshotRetentionLimit : Int;
@@ -17,5 +17,5 @@ typedef ModifyCacheClusterInput = {
     @:optional var SnapshotWindow : String;
     @:optional var PreferredMaintenanceWindow : String;
     @:optional var CacheNodeType : String;
-    @:optional var CacheNodeIdsToRemove : _ShapeSy;
+    @:optional var CacheNodeIdsToRemove : _ShapeSz;
 };

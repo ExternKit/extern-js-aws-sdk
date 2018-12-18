@@ -5,6 +5,7 @@ typedef GetMetricStatisticsOutput = {
     @:optional var Datapoints : Array<{
         @:optional var SampleCount : Float;
         @:optional var Timestamp : Float;
+        @:optional var ExtendedStatistics : {};
         @:optional var Sum : Float;
         @:optional var Minimum : Float;
         @:optional var Maximum : Float;

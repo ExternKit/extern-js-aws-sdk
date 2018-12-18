@@ -1,7 +1,7 @@
 package js.aws.cloudfront;
 
 typedef _ShapeSb = {
-    @:optional var Items : Array<{
+    var Items : Array<{
         @:optional var CustomHeaders : {
             @:optional var Items : Array<{
                 var HeaderName : String;
@@ -10,8 +10,10 @@ typedef _ShapeSb = {
             var Quantity : Int;
         };
         @:optional var CustomOriginConfig : {
+            @:optional var OriginReadTimeout : Int;
             var OriginProtocolPolicy : String;
             var HTTPPort : Int;
+            @:optional var OriginKeepaliveTimeout : Int;
             var HTTPSPort : Int;
             @:optional var OriginSslProtocols : {
                 var Items : Array<String>;

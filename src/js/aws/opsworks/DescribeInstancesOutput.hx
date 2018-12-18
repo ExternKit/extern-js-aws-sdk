@@ -20,6 +20,7 @@ typedef DescribeInstancesOutput = {
         @:optional var InstallUpdatesOnBoot : Bool;
         @:optional var PrivateDns : String;
         @:optional var Os : String;
+        @:optional var Arn : String;
         @:optional var ReportedOs : {
             @:optional var Version : String;
             @:optional var Family : String;

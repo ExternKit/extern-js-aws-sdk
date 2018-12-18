@@ -8,5 +8,6 @@ typedef DescribeAvailabilityZonesOutput = {
             @:optional var Message : String;
         }>;
         @:optional var State : String;
+        @:optional var ZoneId : String;
     }>;
 };

@@ -8,6 +8,6 @@ typedef DescribeTargetHealthOutput = {
             @:optional var Reason : String;
         };
         @:optional var HealthCheckPort : String;
-        @:optional var Target : _ShapeS2a;
+        @:optional var Target : _ShapeS3n;
     }>;
 };

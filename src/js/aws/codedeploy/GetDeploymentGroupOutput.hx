@@ -1,5 +1,5 @@
 package js.aws.codedeploy;
 
 typedef GetDeploymentGroupOutput = {
-    @:optional var deploymentGroupInfo : _ShapeS15;
+    @:optional var deploymentGroupInfo : _ShapeS1b;
 };

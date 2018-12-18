@@ -5,4 +5,5 @@ typedef GetApiKeysInput = {
     @:optional var nameQuery : String;
     @:optional var limit : Int;
     @:optional var includeValues : Bool;
+    @:optional var customerId : String;
 };

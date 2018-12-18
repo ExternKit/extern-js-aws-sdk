@@ -2,5 +2,5 @@ package js.aws.elbv2;
 
 typedef DescribeLoadBalancersOutput = {
     @:optional var NextMarker : String;
-    @:optional var LoadBalancers : _ShapeSx;
+    @:optional var LoadBalancers : _ShapeS26;
 };

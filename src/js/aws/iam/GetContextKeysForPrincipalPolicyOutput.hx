@@ -1,3 +1,3 @@
 package js.aws.iam;
 
-typedef GetContextKeysForPrincipalPolicyOutput = _ShapeS3v;
+typedef GetContextKeysForPrincipalPolicyOutput = _ShapeS4m;

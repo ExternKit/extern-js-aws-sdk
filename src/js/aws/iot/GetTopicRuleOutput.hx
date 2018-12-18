@@ -6,9 +6,10 @@ typedef GetTopicRuleOutput = {
         @:optional var awsIotSqlVersion : String;
         @:optional var ruleDisabled : Bool;
         @:optional var description : String;
-        @:optional var actions : _ShapeS1e;
+        @:optional var actions : _ShapeS6e;
         @:optional var sql : String;
         @:optional var ruleName : String;
+        @:optional var errorAction : _ShapeS6f;
     };
     @:optional var ruleArn : String;
 };

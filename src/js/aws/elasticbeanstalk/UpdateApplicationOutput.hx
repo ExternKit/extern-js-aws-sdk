@@ -1,3 +1,3 @@
 package js.aws.elasticbeanstalk;
 
-typedef UpdateApplicationOutput = _ShapeS14;
+typedef UpdateApplicationOutput = _ShapeS1d;

@@ -6,10 +6,11 @@ typedef ModifyReplicationGroupInput = {
     @:optional var ApplyImmediately : Bool;
     @:optional var CacheParameterGroupName : String;
     @:optional var AutoMinorVersionUpgrade : Bool;
-    @:optional var SecurityGroupIds : _ShapeSq;
+    @:optional var SecurityGroupIds : _ShapeSr;
     var ReplicationGroupId : String;
     @:optional var NotificationTopicStatus : String;
-    @:optional var CacheSecurityGroupNames : _ShapeSp;
+    @:optional var NodeGroupId : String;
+    @:optional var CacheSecurityGroupNames : _ShapeSq;
     @:optional var SnapshotRetentionLimit : Int;
     @:optional var NotificationTopicArn : String;
     @:optional var SnapshotWindow : String;

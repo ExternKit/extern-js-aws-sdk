@@ -11,4 +11,5 @@ typedef DeleteObjectsInput = {
         @:optional var Quiet : Bool;
     };
     @:optional var RequestPayer : String;
+    @:optional var BypassGovernanceRetention : Bool;
 };

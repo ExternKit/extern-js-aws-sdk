@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetClientCertificateOutput = _ShapeS27;
+typedef GetClientCertificateOutput = _ShapeS2z;

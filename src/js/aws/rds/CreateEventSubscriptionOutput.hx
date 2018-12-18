@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateEventSubscriptionOutput = {
-    @:optional var EventSubscription : _ShapeS4;
+    @:optional var EventSubscription : _ShapeS5;
 };

@@ -108,6 +108,9 @@ extern class OpsWorks extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeMyUserProfileOutput>) : Request {})
     public function describeMyUserProfile(params : DescribeMyUserProfileInput, ?cb : Callback<DescribeMyUserProfileOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeOperatingSystemsOutput>) : Request {})
+    public function describeOperatingSystems(params : DescribeOperatingSystemsInput, ?cb : Callback<DescribeOperatingSystemsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribePermissionsOutput>) : Request {})
     public function describePermissions(params : DescribePermissionsInput, ?cb : Callback<DescribePermissionsOutput>) : Request;
     
@@ -150,6 +153,9 @@ extern class OpsWorks extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GrantAccessOutput>) : Request {})
     public function grantAccess(params : GrantAccessInput, ?cb : Callback<GrantAccessOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListTagsOutput>) : Request {})
+    public function listTags(params : ListTagsInput, ?cb : Callback<ListTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function rebootInstance(params : RebootInstanceInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -190,10 +196,16 @@ extern class OpsWorks extends Service implements js.extern.Extern<'aws-sdk'>
     public function stopStack(params : StopStackInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function unassignInstance(params : UnassignInstanceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function unassignVolume(params : UnassignVolumeInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateApp(params : UpdateAppInput, ?cb : Callback<Dynamic>) : Request;

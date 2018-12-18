@@ -14,7 +14,7 @@ typedef RunScheduledInstancesInput = {
         @:optional var KernelId : String;
         @:optional var UserData : String;
         @:optional var EbsOptimized : Bool;
-        @:optional var SecurityGroupIds : _ShapeSmv;
+        @:optional var SecurityGroupIds : _ShapeS10x;
         @:optional var KeyName : String;
         @:optional var Monitoring : {
             @:optional var Enabled : Bool;
@@ -37,7 +37,10 @@ typedef RunScheduledInstancesInput = {
         @:optional var RamdiskId : String;
         @:optional var NetworkInterfaces : Array<{
             @:optional var Description : String;
-            @:optional var Groups : _ShapeSmv;
+            @:optional var Ipv6Addresses : Array<{
+                @:optional var Ipv6Address : String;
+            }>;
+            @:optional var Groups : _ShapeS10x;
             @:optional var SubnetId : String;
             @:optional var PrivateIpAddress : String;
             @:optional var PrivateIpAddressConfigs : Array<{
@@ -47,6 +50,7 @@ typedef RunScheduledInstancesInput = {
             @:optional var AssociatePublicIpAddress : Bool;
             @:optional var DeviceIndex : Int;
             @:optional var SecondaryPrivateIpAddressCount : Int;
+            @:optional var Ipv6AddressCount : Int;
             @:optional var DeleteOnTermination : Bool;
             @:optional var NetworkInterfaceId : String;
         }>;

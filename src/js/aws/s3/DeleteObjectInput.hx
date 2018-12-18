@@ -6,4 +6,5 @@ typedef DeleteObjectInput = {
     var Bucket : String;
     @:optional var RequestPayer : String;
     @:optional var VersionId : String;
+    @:optional var BypassGovernanceRetention : Bool;
 };

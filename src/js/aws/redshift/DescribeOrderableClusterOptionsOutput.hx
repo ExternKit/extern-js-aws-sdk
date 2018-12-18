@@ -5,7 +5,7 @@ typedef DescribeOrderableClusterOptionsOutput = {
         @:optional var NodeType : String;
         @:optional var ClusterVersion : String;
         @:optional var ClusterType : String;
-        @:optional var AvailabilityZones : Array<_ShapeS1r>;
+        @:optional var AvailabilityZones : Array<_ShapeS2k>;
     }>;
     @:optional var Marker : String;
 };

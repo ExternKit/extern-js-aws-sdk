@@ -1,6 +1,6 @@
 package js.aws.ecr;
 
 typedef DescribeRepositoriesOutput = {
-    @:optional var repositories : Array<_ShapeS11>;
+    @:optional var repositories : Array<_ShapeS17>;
     @:optional var nextToken : String;
 };

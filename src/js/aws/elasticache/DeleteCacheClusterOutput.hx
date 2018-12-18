@@ -1,5 +1,5 @@
 package js.aws.elasticache;
 
 typedef DeleteCacheClusterOutput = {
-    @:optional var CacheCluster : _ShapeSu;
+    @:optional var CacheCluster : _ShapeSv;
 };

@@ -1,6 +1,6 @@
 package js.aws.redshift;
 
 typedef DescribeClusterParametersOutput = {
-    @:optional var Parameters : _ShapeS2q;
+    @:optional var Parameters : _ShapeS42;
     @:optional var Marker : String;
 };

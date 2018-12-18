@@ -1,6 +1,7 @@
 package js.aws.kinesis;
 
 typedef PutRecordsOutput = {
+    @:optional var EncryptionType : String;
     var Records : Array<{
         @:optional var SequenceNumber : String;
         @:optional var ErrorCode : String;

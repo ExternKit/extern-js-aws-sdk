@@ -1,5 +1,5 @@
 package js.aws.autoscaling;
 
 typedef TerminateInstanceInAutoScalingGroupOutput = {
-    @:optional var Activity : _ShapeS42;
+    @:optional var Activity : _ShapeS51;
 };

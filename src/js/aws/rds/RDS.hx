@@ -12,6 +12,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function addRoleToDBCluster(params : AddRoleToDBClusterInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<AddSourceIdentifierToSubscriptionOutput>) : Request {})
     public function addSourceIdentifierToSubscription(params : AddSourceIdentifierToSubscriptionInput, ?cb : Callback<AddSourceIdentifierToSubscriptionOutput>) : Request;
     
@@ -23,6 +26,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<AuthorizeDBSecurityGroupIngressOutput>) : Request {})
     public function authorizeDBSecurityGroupIngress(params : AuthorizeDBSecurityGroupIngressInput, ?cb : Callback<AuthorizeDBSecurityGroupIngressOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<BacktrackDBClusterOutput>) : Request {})
+    public function backtrackDBCluster(params : BacktrackDBClusterInput, ?cb : Callback<BacktrackDBClusterOutput>) : Request;
     
     @:overload(function (?cb : Callback<CopyDBClusterParameterGroupOutput>) : Request {})
     public function copyDBClusterParameterGroup(params : CopyDBClusterParameterGroupInput, ?cb : Callback<CopyDBClusterParameterGroupOutput>) : Request;
@@ -41,6 +47,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<CreateDBClusterOutput>) : Request {})
     public function createDBCluster(params : CreateDBClusterInput, ?cb : Callback<CreateDBClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateDBClusterEndpointOutput>) : Request {})
+    public function createDBClusterEndpoint(params : CreateDBClusterEndpointInput, ?cb : Callback<CreateDBClusterEndpointOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateDBClusterParameterGroupOutput>) : Request {})
     public function createDBClusterParameterGroup(params : CreateDBClusterParameterGroupInput, ?cb : Callback<CreateDBClusterParameterGroupOutput>) : Request;
@@ -69,11 +78,17 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateEventSubscriptionOutput>) : Request {})
     public function createEventSubscription(params : CreateEventSubscriptionInput, ?cb : Callback<CreateEventSubscriptionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateGlobalClusterOutput>) : Request {})
+    public function createGlobalCluster(params : CreateGlobalClusterInput, ?cb : Callback<CreateGlobalClusterOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateOptionGroupOutput>) : Request {})
     public function createOptionGroup(params : CreateOptionGroupInput, ?cb : Callback<CreateOptionGroupOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteDBClusterOutput>) : Request {})
     public function deleteDBCluster(params : DeleteDBClusterInput, ?cb : Callback<DeleteDBClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteDBClusterEndpointOutput>) : Request {})
+    public function deleteDBClusterEndpoint(params : DeleteDBClusterEndpointInput, ?cb : Callback<DeleteDBClusterEndpointOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteDBClusterParameterGroup(params : DeleteDBClusterParameterGroupInput, ?cb : Callback<Dynamic>) : Request;
@@ -83,6 +98,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DeleteDBInstanceOutput>) : Request {})
     public function deleteDBInstance(params : DeleteDBInstanceInput, ?cb : Callback<DeleteDBInstanceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteDBInstanceAutomatedBackupOutput>) : Request {})
+    public function deleteDBInstanceAutomatedBackup(params : DeleteDBInstanceAutomatedBackupInput, ?cb : Callback<DeleteDBInstanceAutomatedBackupOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteDBParameterGroup(params : DeleteDBParameterGroupInput, ?cb : Callback<Dynamic>) : Request;
@@ -99,6 +117,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteEventSubscriptionOutput>) : Request {})
     public function deleteEventSubscription(params : DeleteEventSubscriptionInput, ?cb : Callback<DeleteEventSubscriptionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteGlobalClusterOutput>) : Request {})
+    public function deleteGlobalCluster(params : DeleteGlobalClusterInput, ?cb : Callback<DeleteGlobalClusterOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteOptionGroup(params : DeleteOptionGroupInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -107,6 +128,12 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeCertificatesOutput>) : Request {})
     public function describeCertificates(params : DescribeCertificatesInput, ?cb : Callback<DescribeCertificatesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeDBClusterBacktracksOutput>) : Request {})
+    public function describeDBClusterBacktracks(params : DescribeDBClusterBacktracksInput, ?cb : Callback<DescribeDBClusterBacktracksOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeDBClusterEndpointsOutput>) : Request {})
+    public function describeDBClusterEndpoints(params : DescribeDBClusterEndpointsInput, ?cb : Callback<DescribeDBClusterEndpointsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeDBClusterParameterGroupsOutput>) : Request {})
     public function describeDBClusterParameterGroups(params : DescribeDBClusterParameterGroupsInput, ?cb : Callback<DescribeDBClusterParameterGroupsOutput>) : Request;
@@ -125,6 +152,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DescribeDBEngineVersionsOutput>) : Request {})
     public function describeDBEngineVersions(params : DescribeDBEngineVersionsInput, ?cb : Callback<DescribeDBEngineVersionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeDBInstanceAutomatedBackupsOutput>) : Request {})
+    public function describeDBInstanceAutomatedBackups(params : DescribeDBInstanceAutomatedBackupsInput, ?cb : Callback<DescribeDBInstanceAutomatedBackupsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeDBInstancesOutput>) : Request {})
     public function describeDBInstances(params : DescribeDBInstancesInput, ?cb : Callback<DescribeDBInstancesOutput>) : Request;
@@ -165,6 +195,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeEventsOutput>) : Request {})
     public function describeEvents(params : DescribeEventsInput, ?cb : Callback<DescribeEventsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeGlobalClustersOutput>) : Request {})
+    public function describeGlobalClusters(params : DescribeGlobalClustersInput, ?cb : Callback<DescribeGlobalClustersOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeOptionGroupOptionsOutput>) : Request {})
     public function describeOptionGroupOptions(params : DescribeOptionGroupOptionsInput, ?cb : Callback<DescribeOptionGroupOptionsOutput>) : Request;
     
@@ -186,6 +219,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeSourceRegionsOutput>) : Request {})
     public function describeSourceRegions(params : DescribeSourceRegionsInput, ?cb : Callback<DescribeSourceRegionsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeValidDBInstanceModificationsOutput>) : Request {})
+    public function describeValidDBInstanceModifications(params : DescribeValidDBInstanceModificationsInput, ?cb : Callback<DescribeValidDBInstanceModificationsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DownloadDBLogFilePortionOutput>) : Request {})
     public function downloadDBLogFilePortion(params : DownloadDBLogFilePortionInput, ?cb : Callback<DownloadDBLogFilePortionOutput>) : Request;
     
@@ -195,8 +231,14 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
     public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyCurrentDBClusterCapacityOutput>) : Request {})
+    public function modifyCurrentDBClusterCapacity(params : ModifyCurrentDBClusterCapacityInput, ?cb : Callback<ModifyCurrentDBClusterCapacityOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ModifyDBClusterOutput>) : Request {})
     public function modifyDBCluster(params : ModifyDBClusterInput, ?cb : Callback<ModifyDBClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyDBClusterEndpointOutput>) : Request {})
+    public function modifyDBClusterEndpoint(params : ModifyDBClusterEndpointInput, ?cb : Callback<ModifyDBClusterEndpointOutput>) : Request;
     
     @:overload(function (?cb : Callback<ModifyDBClusterParameterGroupOutput>) : Request {})
     public function modifyDBClusterParameterGroup(params : ModifyDBClusterParameterGroupInput, ?cb : Callback<ModifyDBClusterParameterGroupOutput>) : Request;
@@ -210,6 +252,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ModifyDBParameterGroupOutput>) : Request {})
     public function modifyDBParameterGroup(params : ModifyDBParameterGroupInput, ?cb : Callback<ModifyDBParameterGroupOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyDBSnapshotOutput>) : Request {})
+    public function modifyDBSnapshot(params : ModifyDBSnapshotInput, ?cb : Callback<ModifyDBSnapshotOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ModifyDBSnapshotAttributeOutput>) : Request {})
     public function modifyDBSnapshotAttribute(params : ModifyDBSnapshotAttributeInput, ?cb : Callback<ModifyDBSnapshotAttributeOutput>) : Request;
     
@@ -218,6 +263,9 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ModifyEventSubscriptionOutput>) : Request {})
     public function modifyEventSubscription(params : ModifyEventSubscriptionInput, ?cb : Callback<ModifyEventSubscriptionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ModifyGlobalClusterOutput>) : Request {})
+    public function modifyGlobalCluster(params : ModifyGlobalClusterInput, ?cb : Callback<ModifyGlobalClusterOutput>) : Request;
     
     @:overload(function (?cb : Callback<ModifyOptionGroupOutput>) : Request {})
     public function modifyOptionGroup(params : ModifyOptionGroupInput, ?cb : Callback<ModifyOptionGroupOutput>) : Request;
@@ -233,6 +281,12 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<RebootDBInstanceOutput>) : Request {})
     public function rebootDBInstance(params : RebootDBInstanceInput, ?cb : Callback<RebootDBInstanceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RemoveFromGlobalClusterOutput>) : Request {})
+    public function removeFromGlobalCluster(params : RemoveFromGlobalClusterInput, ?cb : Callback<RemoveFromGlobalClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function removeRoleFromDBCluster(params : RemoveRoleFromDBClusterInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<RemoveSourceIdentifierFromSubscriptionOutput>) : Request {})
     public function removeSourceIdentifierFromSubscription(params : RemoveSourceIdentifierFromSubscriptionInput, ?cb : Callback<RemoveSourceIdentifierFromSubscriptionOutput>) : Request;
@@ -258,10 +312,25 @@ extern class RDS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<RestoreDBInstanceFromDBSnapshotOutput>) : Request {})
     public function restoreDBInstanceFromDBSnapshot(params : RestoreDBInstanceFromDBSnapshotInput, ?cb : Callback<RestoreDBInstanceFromDBSnapshotOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RestoreDBInstanceFromS3Output>) : Request {})
+    public function restoreDBInstanceFromS3(params : RestoreDBInstanceFromS3Input, ?cb : Callback<RestoreDBInstanceFromS3Output>) : Request;
+    
     @:overload(function (?cb : Callback<RestoreDBInstanceToPointInTimeOutput>) : Request {})
     public function restoreDBInstanceToPointInTime(params : RestoreDBInstanceToPointInTimeInput, ?cb : Callback<RestoreDBInstanceToPointInTimeOutput>) : Request;
     
     @:overload(function (?cb : Callback<RevokeDBSecurityGroupIngressOutput>) : Request {})
     public function revokeDBSecurityGroupIngress(params : RevokeDBSecurityGroupIngressInput, ?cb : Callback<RevokeDBSecurityGroupIngressOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartDBClusterOutput>) : Request {})
+    public function startDBCluster(params : StartDBClusterInput, ?cb : Callback<StartDBClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartDBInstanceOutput>) : Request {})
+    public function startDBInstance(params : StartDBInstanceInput, ?cb : Callback<StartDBInstanceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopDBClusterOutput>) : Request {})
+    public function stopDBCluster(params : StopDBClusterInput, ?cb : Callback<StopDBClusterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopDBInstanceOutput>) : Request {})
+    public function stopDBInstance(params : StopDBInstanceInput, ?cb : Callback<StopDBInstanceOutput>) : Request;
     
 }

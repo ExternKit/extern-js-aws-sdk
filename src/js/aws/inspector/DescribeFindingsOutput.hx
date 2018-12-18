@@ -19,12 +19,31 @@ typedef DescribeFindingsOutput = {
         var updatedAt : Float;
         @:optional var numericSeverity : Float;
         @:optional var title : String;
-        var attributes : _ShapeS24;
+        var attributes : _ShapeS21;
         @:optional var assetAttributes : {
             var schemaVersion : Int;
+            @:optional var tags : Array<_ShapeS2i>;
             @:optional var hostname : String;
             @:optional var agentId : String;
             @:optional var ipv4Addresses : Array<String>;
+            @:optional var networkInterfaces : Array<{
+                @:optional var securityGroups : Array<{
+                    @:optional var groupName : String;
+                    @:optional var groupId : String;
+                }>;
+                @:optional var networkInterfaceId : String;
+                @:optional var subnetId : String;
+                @:optional var ipv6Addresses : Array<String>;
+                @:optional var privateDnsName : String;
+                @:optional var privateIpAddresses : Array<{
+                    @:optional var privateDnsName : String;
+                    @:optional var privateIpAddress : String;
+                }>;
+                @:optional var publicDnsName : String;
+                @:optional var publicIp : String;
+                @:optional var vpcId : String;
+                @:optional var privateIpAddress : String;
+            }>;
             @:optional var amiId : String;
             @:optional var autoScalingGroup : String;
         };

@@ -1,8 +1,10 @@
 package js.aws.elasticache;
 
 typedef CreateReplicationGroupInput = {
+    @:optional var TransitEncryptionEnabled : Bool;
     @:optional var EngineVersion : String;
-    @:optional var SnapshotArns : _ShapeSr;
+    @:optional var SnapshotArns : _ShapeSs;
+    @:optional var AuthToken : String;
     @:optional var NumNodeGroups : Int;
     @:optional var CacheSubnetGroupName : String;
     @:optional var SnapshotName : String;
@@ -11,9 +13,10 @@ typedef CreateReplicationGroupInput = {
     @:optional var CacheParameterGroupName : String;
     @:optional var AutoMinorVersionUpgrade : Bool;
     @:optional var NodeGroupConfiguration : Array<_ShapeSk>;
-    @:optional var SecurityGroupIds : _ShapeSq;
+    @:optional var SecurityGroupIds : _ShapeSr;
     var ReplicationGroupId : String;
-    @:optional var CacheSecurityGroupNames : _ShapeSp;
+    @:optional var AtRestEncryptionEnabled : Bool;
+    @:optional var CacheSecurityGroupNames : _ShapeSq;
     @:optional var SnapshotRetentionLimit : Int;
     @:optional var NotificationTopicArn : String;
     @:optional var SnapshotWindow : String;
@@ -23,7 +26,7 @@ typedef CreateReplicationGroupInput = {
     @:optional var Engine : String;
     @:optional var PrimaryClusterId : String;
     @:optional var Port : Int;
-    @:optional var PreferredCacheClusterAZs : _ShapeSl;
+    @:optional var PreferredCacheClusterAZs : _ShapeSm;
     @:optional var Tags : _ShapeS3;
     @:optional var AutomaticFailoverEnabled : Bool;
 };

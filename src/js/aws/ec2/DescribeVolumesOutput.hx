@@ -1,6 +1,6 @@
 package js.aws.ec2;
 
 typedef DescribeVolumesOutput = {
-    @:optional var Volumes : Array<_ShapeS60>;
+    @:optional var Volumes : Array<_ShapeSbq>;
     @:optional var NextToken : String;
 };

@@ -1,5 +1,6 @@
 package js.aws.ecs;
 
 typedef DescribeClustersInput = {
-    @:optional var clusters : _ShapeSv;
+    @:optional var include : Array<String>;
+    @:optional var clusters : _ShapeSs;
 };

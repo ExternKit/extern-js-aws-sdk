@@ -8,7 +8,7 @@ typedef ListAssessmentRunAgentsOutput = {
         var agentId : String;
         var agentHealthCode : String;
         var agentHealth : String;
-        var telemetryMetadata : _ShapeS2i;
+        var telemetryMetadata : _ShapeS3j;
         @:optional var autoScalingGroup : String;
     }>;
 };

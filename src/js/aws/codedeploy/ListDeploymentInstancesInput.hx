@@ -1,7 +1,8 @@
 package js.aws.codedeploy;
 
 typedef ListDeploymentInstancesInput = {
-    @:optional var instanceStatusFilter : Array<String>;
+    @:optional var instanceTypeFilter : Array<String>;
+    @:optional var instanceStatusFilter : Array<_ShapeS36>;
     var deploymentId : String;
     @:optional var nextToken : String;
 };

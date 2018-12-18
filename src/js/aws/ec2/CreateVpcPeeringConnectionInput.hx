@@ -4,5 +4,6 @@ typedef CreateVpcPeeringConnectionInput = {
     @:optional var PeerVpcId : String;
     @:optional var VpcId : String;
     @:optional var PeerOwnerId : String;
+    @:optional var PeerRegion : String;
     @:optional var DryRun : Bool;
 };

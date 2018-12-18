@@ -18,6 +18,9 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateEndpointOutput>) : Request {})
     public function createEndpoint(params : CreateEndpointInput, ?cb : Callback<CreateEndpointOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateEventSubscriptionOutput>) : Request {})
+    public function createEventSubscription(params : CreateEventSubscriptionInput, ?cb : Callback<CreateEventSubscriptionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateReplicationInstanceOutput>) : Request {})
     public function createReplicationInstance(params : CreateReplicationInstanceInput, ?cb : Callback<CreateReplicationInstanceOutput>) : Request;
     
@@ -32,6 +35,9 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DeleteEndpointOutput>) : Request {})
     public function deleteEndpoint(params : DeleteEndpointInput, ?cb : Callback<DeleteEndpointOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteEventSubscriptionOutput>) : Request {})
+    public function deleteEventSubscription(params : DeleteEventSubscriptionInput, ?cb : Callback<DeleteEventSubscriptionOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteReplicationInstanceOutput>) : Request {})
     public function deleteReplicationInstance(params : DeleteReplicationInstanceInput, ?cb : Callback<DeleteReplicationInstanceOutput>) : Request;
@@ -57,17 +63,32 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeEndpointsOutput>) : Request {})
     public function describeEndpoints(params : DescribeEndpointsInput, ?cb : Callback<DescribeEndpointsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeEventCategoriesOutput>) : Request {})
+    public function describeEventCategories(params : DescribeEventCategoriesInput, ?cb : Callback<DescribeEventCategoriesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeEventSubscriptionsOutput>) : Request {})
+    public function describeEventSubscriptions(params : DescribeEventSubscriptionsInput, ?cb : Callback<DescribeEventSubscriptionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeEventsOutput>) : Request {})
+    public function describeEvents(params : DescribeEventsInput, ?cb : Callback<DescribeEventsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeOrderableReplicationInstancesOutput>) : Request {})
     public function describeOrderableReplicationInstances(params : DescribeOrderableReplicationInstancesInput, ?cb : Callback<DescribeOrderableReplicationInstancesOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeRefreshSchemasStatusOutput>) : Request {})
     public function describeRefreshSchemasStatus(params : DescribeRefreshSchemasStatusInput, ?cb : Callback<DescribeRefreshSchemasStatusOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeReplicationInstanceTaskLogsOutput>) : Request {})
+    public function describeReplicationInstanceTaskLogs(params : DescribeReplicationInstanceTaskLogsInput, ?cb : Callback<DescribeReplicationInstanceTaskLogsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeReplicationInstancesOutput>) : Request {})
     public function describeReplicationInstances(params : DescribeReplicationInstancesInput, ?cb : Callback<DescribeReplicationInstancesOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeReplicationSubnetGroupsOutput>) : Request {})
     public function describeReplicationSubnetGroups(params : DescribeReplicationSubnetGroupsInput, ?cb : Callback<DescribeReplicationSubnetGroupsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeReplicationTaskAssessmentResultsOutput>) : Request {})
+    public function describeReplicationTaskAssessmentResults(params : DescribeReplicationTaskAssessmentResultsInput, ?cb : Callback<DescribeReplicationTaskAssessmentResultsOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeReplicationTasksOutput>) : Request {})
     public function describeReplicationTasks(params : DescribeReplicationTasksInput, ?cb : Callback<DescribeReplicationTasksOutput>) : Request;
@@ -87,20 +108,35 @@ extern class DMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ModifyEndpointOutput>) : Request {})
     public function modifyEndpoint(params : ModifyEndpointInput, ?cb : Callback<ModifyEndpointOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyEventSubscriptionOutput>) : Request {})
+    public function modifyEventSubscription(params : ModifyEventSubscriptionInput, ?cb : Callback<ModifyEventSubscriptionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ModifyReplicationInstanceOutput>) : Request {})
     public function modifyReplicationInstance(params : ModifyReplicationInstanceInput, ?cb : Callback<ModifyReplicationInstanceOutput>) : Request;
     
     @:overload(function (?cb : Callback<ModifyReplicationSubnetGroupOutput>) : Request {})
     public function modifyReplicationSubnetGroup(params : ModifyReplicationSubnetGroupInput, ?cb : Callback<ModifyReplicationSubnetGroupOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyReplicationTaskOutput>) : Request {})
+    public function modifyReplicationTask(params : ModifyReplicationTaskInput, ?cb : Callback<ModifyReplicationTaskOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RebootReplicationInstanceOutput>) : Request {})
+    public function rebootReplicationInstance(params : RebootReplicationInstanceInput, ?cb : Callback<RebootReplicationInstanceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<RefreshSchemasOutput>) : Request {})
     public function refreshSchemas(params : RefreshSchemasInput, ?cb : Callback<RefreshSchemasOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ReloadTablesOutput>) : Request {})
+    public function reloadTables(params : ReloadTablesInput, ?cb : Callback<ReloadTablesOutput>) : Request;
     
     @:overload(function (?cb : Callback<RemoveTagsFromResourceOutput>) : Request {})
     public function removeTagsFromResource(params : RemoveTagsFromResourceInput, ?cb : Callback<RemoveTagsFromResourceOutput>) : Request;
     
     @:overload(function (?cb : Callback<StartReplicationTaskOutput>) : Request {})
     public function startReplicationTask(params : StartReplicationTaskInput, ?cb : Callback<StartReplicationTaskOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartReplicationTaskAssessmentOutput>) : Request {})
+    public function startReplicationTaskAssessment(params : StartReplicationTaskAssessmentInput, ?cb : Callback<StartReplicationTaskAssessmentOutput>) : Request;
     
     @:overload(function (?cb : Callback<StopReplicationTaskOutput>) : Request {})
     public function stopReplicationTask(params : StopReplicationTaskInput, ?cb : Callback<StopReplicationTaskOutput>) : Request;

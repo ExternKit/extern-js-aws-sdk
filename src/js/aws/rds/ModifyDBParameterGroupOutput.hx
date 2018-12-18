@@ -1,3 +1,3 @@
 package js.aws.rds;
 
-typedef ModifyDBParameterGroupOutput = _ShapeS6x;
+typedef ModifyDBParameterGroupOutput = _ShapeS8l;

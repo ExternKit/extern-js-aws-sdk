@@ -6,5 +6,6 @@ typedef PutScalingPolicyInput = {
     var PolicyName : String;
     @:optional var PolicyType : String;
     var ResourceId : String;
-    @:optional var StepScalingPolicyConfiguration : _ShapeSt;
+    @:optional var StepScalingPolicyConfiguration : _ShapeSv;
+    @:optional var TargetTrackingScalingPolicyConfiguration : _ShapeS14;
 };

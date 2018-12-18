@@ -5,6 +5,7 @@ typedef PutIntegrationResponseInput = {
     var restApiId : String;
     @:optional var responseTemplates : _ShapeSk;
     @:optional var selectionPattern : String;
+    @:optional var contentHandling : String;
     var httpMethod : String;
     @:optional var responseParameters : _ShapeSk;
     var statusCode : String;

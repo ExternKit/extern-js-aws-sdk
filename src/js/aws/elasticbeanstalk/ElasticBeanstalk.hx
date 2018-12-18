@@ -36,6 +36,9 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<CreateEnvironmentOutput>) : Request {})
     public function createEnvironment(params : CreateEnvironmentInput, ?cb : Callback<CreateEnvironmentOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreatePlatformVersionOutput>) : Request {})
+    public function createPlatformVersion(params : CreatePlatformVersionInput, ?cb : Callback<CreatePlatformVersionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateStorageLocationOutput>) : Request {})
     public function createStorageLocation(params : CreateStorageLocationInput, ?cb : Callback<CreateStorageLocationOutput>) : Request;
     
@@ -50,6 +53,12 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteEnvironmentConfiguration(params : DeleteEnvironmentConfigurationInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DeletePlatformVersionOutput>) : Request {})
+    public function deletePlatformVersion(params : DeletePlatformVersionInput, ?cb : Callback<DeletePlatformVersionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeAccountAttributesOutput>) : Request {})
+    public function describeAccountAttributes(params : DescribeAccountAttributesInput, ?cb : Callback<DescribeAccountAttributesOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeApplicationVersionsOutput>) : Request {})
     public function describeApplicationVersions(params : DescribeApplicationVersionsInput, ?cb : Callback<DescribeApplicationVersionsOutput>) : Request;
@@ -84,8 +93,17 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<DescribeInstancesHealthOutput>) : Request {})
     public function describeInstancesHealth(params : DescribeInstancesHealthInput, ?cb : Callback<DescribeInstancesHealthOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribePlatformVersionOutput>) : Request {})
+    public function describePlatformVersion(params : DescribePlatformVersionInput, ?cb : Callback<DescribePlatformVersionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListAvailableSolutionStacksOutput>) : Request {})
     public function listAvailableSolutionStacks(params : ListAvailableSolutionStacksInput, ?cb : Callback<ListAvailableSolutionStacksOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListPlatformVersionsOutput>) : Request {})
+    public function listPlatformVersions(params : ListPlatformVersionsInput, ?cb : Callback<ListPlatformVersionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
+    public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function rebuildEnvironment(params : RebuildEnvironmentInput, ?cb : Callback<Dynamic>) : Request;
@@ -108,6 +126,9 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     @:overload(function (?cb : Callback<UpdateApplicationOutput>) : Request {})
     public function updateApplication(params : UpdateApplicationInput, ?cb : Callback<UpdateApplicationOutput>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateApplicationResourceLifecycleOutput>) : Request {})
+    public function updateApplicationResourceLifecycle(params : UpdateApplicationResourceLifecycleInput, ?cb : Callback<UpdateApplicationResourceLifecycleOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateApplicationVersionOutput>) : Request {})
     public function updateApplicationVersion(params : UpdateApplicationVersionInput, ?cb : Callback<UpdateApplicationVersionOutput>) : Request;
     
@@ -116,6 +137,9 @@ extern class ElasticBeanstalk extends Service implements js.extern.Extern<'aws-s
     
     @:overload(function (?cb : Callback<UpdateEnvironmentOutput>) : Request {})
     public function updateEnvironment(params : UpdateEnvironmentInput, ?cb : Callback<UpdateEnvironmentOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function updateTagsForResource(params : UpdateTagsForResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<ValidateConfigurationSettingsOutput>) : Request {})
     public function validateConfigurationSettings(params : ValidateConfigurationSettingsInput, ?cb : Callback<ValidateConfigurationSettingsOutput>) : Request;

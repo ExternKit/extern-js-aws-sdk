@@ -15,8 +15,14 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CancelKeyDeletionOutput>) : Request {})
     public function cancelKeyDeletion(params : CancelKeyDeletionInput, ?cb : Callback<CancelKeyDeletionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ConnectCustomKeyStoreOutput>) : Request {})
+    public function connectCustomKeyStore(params : ConnectCustomKeyStoreInput, ?cb : Callback<ConnectCustomKeyStoreOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function createAlias(params : CreateAliasInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateCustomKeyStoreOutput>) : Request {})
+    public function createCustomKeyStore(params : CreateCustomKeyStoreInput, ?cb : Callback<CreateCustomKeyStoreOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateGrantOutput>) : Request {})
     public function createGrant(params : CreateGrantInput, ?cb : Callback<CreateGrantOutput>) : Request;
@@ -30,8 +36,14 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteAlias(params : DeleteAliasInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteCustomKeyStoreOutput>) : Request {})
+    public function deleteCustomKeyStore(params : DeleteCustomKeyStoreInput, ?cb : Callback<DeleteCustomKeyStoreOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteImportedKeyMaterial(params : DeleteImportedKeyMaterialInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeCustomKeyStoresOutput>) : Request {})
+    public function describeCustomKeyStores(params : DescribeCustomKeyStoresInput, ?cb : Callback<DescribeCustomKeyStoresOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeKeyOutput>) : Request {})
     public function describeKey(params : DescribeKeyInput, ?cb : Callback<DescribeKeyOutput>) : Request;
@@ -41,6 +53,9 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function disableKeyRotation(params : DisableKeyRotationInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<DisconnectCustomKeyStoreOutput>) : Request {})
+    public function disconnectCustomKeyStore(params : DisconnectCustomKeyStoreInput, ?cb : Callback<DisconnectCustomKeyStoreOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function enableKey(params : EnableKeyInput, ?cb : Callback<Dynamic>) : Request;
@@ -84,6 +99,9 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListKeysOutput>) : Request {})
     public function listKeys(params : ListKeysInput, ?cb : Callback<ListKeysOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListResourceTagsOutput>) : Request {})
+    public function listResourceTags(params : ListResourceTagsInput, ?cb : Callback<ListResourceTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListRetirableGrantsOutput>) : Request {})
     public function listRetirableGrants(params : ListRetirableGrantsInput, ?cb : Callback<ListRetirableGrantsOutput>) : Request;
     
@@ -103,7 +121,16 @@ extern class KMS extends Service implements js.extern.Extern<'aws-sdk'>
     public function scheduleKeyDeletion(params : ScheduleKeyDeletionInput, ?cb : Callback<ScheduleKeyDeletionOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateAlias(params : UpdateAliasInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateCustomKeyStoreOutput>) : Request {})
+    public function updateCustomKeyStore(params : UpdateCustomKeyStoreInput, ?cb : Callback<UpdateCustomKeyStoreOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateKeyDescription(params : UpdateKeyDescriptionInput, ?cb : Callback<Dynamic>) : Request;

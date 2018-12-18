@@ -5,6 +5,7 @@ typedef BatchCheckLayerAvailabilityOutput = {
         @:optional var layerAvailability : String;
         @:optional var layerDigest : String;
         @:optional var layerSize : Int;
+        @:optional var mediaType : String;
     }>;
     @:optional var failures : Array<{
         @:optional var failureCode : String;

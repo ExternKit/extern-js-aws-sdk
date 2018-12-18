@@ -27,6 +27,9 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateHostedZoneOutput>) : Request {})
     public function createHostedZone(params : CreateHostedZoneInput, ?cb : Callback<CreateHostedZoneOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateQueryLoggingConfigOutput>) : Request {})
+    public function createQueryLoggingConfig(params : CreateQueryLoggingConfigInput, ?cb : Callback<CreateQueryLoggingConfigOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateReusableDelegationSetOutput>) : Request {})
     public function createReusableDelegationSet(params : CreateReusableDelegationSetInput, ?cb : Callback<CreateReusableDelegationSetOutput>) : Request;
     
@@ -39,11 +42,17 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateTrafficPolicyVersionOutput>) : Request {})
     public function createTrafficPolicyVersion(params : CreateTrafficPolicyVersionInput, ?cb : Callback<CreateTrafficPolicyVersionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateVPCAssociationAuthorizationOutput>) : Request {})
+    public function createVPCAssociationAuthorization(params : CreateVPCAssociationAuthorizationInput, ?cb : Callback<CreateVPCAssociationAuthorizationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteHealthCheckOutput>) : Request {})
     public function deleteHealthCheck(params : DeleteHealthCheckInput, ?cb : Callback<DeleteHealthCheckOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteHostedZoneOutput>) : Request {})
     public function deleteHostedZone(params : DeleteHostedZoneInput, ?cb : Callback<DeleteHostedZoneOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteQueryLoggingConfigOutput>) : Request {})
+    public function deleteQueryLoggingConfig(params : DeleteQueryLoggingConfigInput, ?cb : Callback<DeleteQueryLoggingConfigOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteReusableDelegationSetOutput>) : Request {})
     public function deleteReusableDelegationSet(params : DeleteReusableDelegationSetInput, ?cb : Callback<DeleteReusableDelegationSetOutput>) : Request;
@@ -54,14 +63,17 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteTrafficPolicyInstanceOutput>) : Request {})
     public function deleteTrafficPolicyInstance(params : DeleteTrafficPolicyInstanceInput, ?cb : Callback<DeleteTrafficPolicyInstanceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteVPCAssociationAuthorizationOutput>) : Request {})
+    public function deleteVPCAssociationAuthorization(params : DeleteVPCAssociationAuthorizationInput, ?cb : Callback<DeleteVPCAssociationAuthorizationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DisassociateVPCFromHostedZoneOutput>) : Request {})
     public function disassociateVPCFromHostedZone(params : DisassociateVPCFromHostedZoneInput, ?cb : Callback<DisassociateVPCFromHostedZoneOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetAccountLimitOutput>) : Request {})
+    public function getAccountLimit(params : GetAccountLimitInput, ?cb : Callback<GetAccountLimitOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetChangeOutput>) : Request {})
     public function getChange(params : GetChangeInput, ?cb : Callback<GetChangeOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<GetChangeDetailsOutput>) : Request {})
-    public function getChangeDetails(params : GetChangeDetailsInput, ?cb : Callback<GetChangeDetailsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetCheckerIpRangesOutput>) : Request {})
     public function getCheckerIpRanges(params : GetCheckerIpRangesInput, ?cb : Callback<GetCheckerIpRangesOutput>) : Request;
@@ -87,8 +99,17 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetHostedZoneCountOutput>) : Request {})
     public function getHostedZoneCount(params : GetHostedZoneCountInput, ?cb : Callback<GetHostedZoneCountOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetHostedZoneLimitOutput>) : Request {})
+    public function getHostedZoneLimit(params : GetHostedZoneLimitInput, ?cb : Callback<GetHostedZoneLimitOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetQueryLoggingConfigOutput>) : Request {})
+    public function getQueryLoggingConfig(params : GetQueryLoggingConfigInput, ?cb : Callback<GetQueryLoggingConfigOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetReusableDelegationSetOutput>) : Request {})
     public function getReusableDelegationSet(params : GetReusableDelegationSetInput, ?cb : Callback<GetReusableDelegationSetOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetReusableDelegationSetLimitOutput>) : Request {})
+    public function getReusableDelegationSetLimit(params : GetReusableDelegationSetLimitInput, ?cb : Callback<GetReusableDelegationSetLimitOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetTrafficPolicyOutput>) : Request {})
     public function getTrafficPolicy(params : GetTrafficPolicyInput, ?cb : Callback<GetTrafficPolicyOutput>) : Request;
@@ -98,12 +119,6 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetTrafficPolicyInstanceCountOutput>) : Request {})
     public function getTrafficPolicyInstanceCount(params : GetTrafficPolicyInstanceCountInput, ?cb : Callback<GetTrafficPolicyInstanceCountOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<ListChangeBatchesByHostedZoneOutput>) : Request {})
-    public function listChangeBatchesByHostedZone(params : ListChangeBatchesByHostedZoneInput, ?cb : Callback<ListChangeBatchesByHostedZoneOutput>) : Request;
-    
-    @:overload(function (?cb : Callback<ListChangeBatchesByRRSetOutput>) : Request {})
-    public function listChangeBatchesByRRSet(params : ListChangeBatchesByRRSetInput, ?cb : Callback<ListChangeBatchesByRRSetOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListGeoLocationsOutput>) : Request {})
     public function listGeoLocations(params : ListGeoLocationsInput, ?cb : Callback<ListGeoLocationsOutput>) : Request;
@@ -116,6 +131,9 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListHostedZonesByNameOutput>) : Request {})
     public function listHostedZonesByName(params : ListHostedZonesByNameInput, ?cb : Callback<ListHostedZonesByNameOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListQueryLoggingConfigsOutput>) : Request {})
+    public function listQueryLoggingConfigs(params : ListQueryLoggingConfigsInput, ?cb : Callback<ListQueryLoggingConfigsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListResourceRecordSetsOutput>) : Request {})
     public function listResourceRecordSets(params : ListResourceRecordSetsInput, ?cb : Callback<ListResourceRecordSetsOutput>) : Request;
@@ -143,6 +161,9 @@ extern class Route53 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListTrafficPolicyVersionsOutput>) : Request {})
     public function listTrafficPolicyVersions(params : ListTrafficPolicyVersionsInput, ?cb : Callback<ListTrafficPolicyVersionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListVPCAssociationAuthorizationsOutput>) : Request {})
+    public function listVPCAssociationAuthorizations(params : ListVPCAssociationAuthorizationsInput, ?cb : Callback<ListVPCAssociationAuthorizationsOutput>) : Request;
     
     @:overload(function (?cb : Callback<TestDNSAnswerOutput>) : Request {})
     public function testDNSAnswer(params : TestDNSAnswerInput, ?cb : Callback<TestDNSAnswerOutput>) : Request;

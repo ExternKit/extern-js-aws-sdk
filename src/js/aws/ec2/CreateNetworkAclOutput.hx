@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef CreateNetworkAclOutput = {
-    @:optional var NetworkAcl : _ShapeS4d;
+    @:optional var NetworkAcl : _ShapeS9c;
 };

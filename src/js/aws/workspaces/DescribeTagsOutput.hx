@@ -1,5 +1,5 @@
 package js.aws.workspaces;
 
 typedef DescribeTagsOutput = {
-    @:optional var TagList : _ShapeS3;
+    @:optional var TagList : _ShapeSi;
 };

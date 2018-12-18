@@ -2,14 +2,15 @@ package js.aws.cloudformation;
 
 typedef DescribeChangeSetOutput = {
     @:optional var Description : String;
-    @:optional var Parameters : _ShapeSb;
+    @:optional var Parameters : _ShapeSe;
     @:optional var CreationTime : Float;
     @:optional var ExecutionStatus : String;
-    @:optional var NotificationARNs : _ShapeSk;
+    @:optional var RollbackConfiguration : _ShapeSn;
+    @:optional var NotificationARNs : _ShapeSt;
     @:optional var NextToken : String;
     @:optional var StackName : String;
     @:optional var StackId : String;
-    @:optional var Capabilities : _ShapeSg;
+    @:optional var Capabilities : _ShapeSj;
     @:optional var ChangeSetId : String;
     @:optional var Changes : Array<{
         @:optional var ResourceChange : {
@@ -34,6 +35,6 @@ typedef DescribeChangeSetOutput = {
     }>;
     @:optional var StatusReason : String;
     @:optional var ChangeSetName : String;
-    @:optional var Tags : _ShapeSm;
+    @:optional var Tags : _ShapeSv;
     @:optional var Status : String;
 };

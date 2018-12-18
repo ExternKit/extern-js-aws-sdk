@@ -1,6 +1,7 @@
 package js.aws.elasticbeanstalk;
 
 typedef DescribeConfigurationOptionsOutput = {
+    @:optional var PlatformArn : String;
     @:optional var Options : Array<{
         @:optional var UserDefined : Bool;
         @:optional var MaxLength : Int;

@@ -1,5 +1,5 @@
 package js.aws.cloudfront;
 
 typedef GetInvalidationOutput = {
-    @:optional var Invalidation : _ShapeS28;
+    @:optional var Invalidation : _ShapeS38;
 };

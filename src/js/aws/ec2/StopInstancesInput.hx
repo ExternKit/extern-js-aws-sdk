@@ -1,7 +1,8 @@
 package js.aws.ec2;
 
 typedef StopInstancesInput = {
-    var InstanceIds : _ShapeS8h;
+    @:optional var Hibernate : Bool;
+    var InstanceIds : _ShapeSg6;
     @:optional var Force : Bool;
     @:optional var DryRun : Bool;
 };

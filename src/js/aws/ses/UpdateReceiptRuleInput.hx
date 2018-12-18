@@ -2,5 +2,5 @@ package js.aws.ses;
 
 typedef UpdateReceiptRuleInput = {
     var RuleSetName : String;
-    var Rule : _ShapeSd;
+    var Rule : _ShapeS18;
 };

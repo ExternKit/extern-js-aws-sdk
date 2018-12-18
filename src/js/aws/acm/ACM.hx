@@ -21,6 +21,9 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeCertificateOutput>) : Request {})
     public function describeCertificate(params : DescribeCertificateInput, ?cb : Callback<DescribeCertificateOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ExportCertificateOutput>) : Request {})
+    public function exportCertificate(params : ExportCertificateInput, ?cb : Callback<ExportCertificateOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetCertificateOutput>) : Request {})
     public function getCertificate(params : GetCertificateInput, ?cb : Callback<GetCertificateOutput>) : Request;
     
@@ -41,5 +44,8 @@ extern class ACM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function resendValidationEmail(params : ResendValidationEmailInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function updateCertificateOptions(params : UpdateCertificateOptionsInput, ?cb : Callback<Dynamic>) : Request;
     
 }

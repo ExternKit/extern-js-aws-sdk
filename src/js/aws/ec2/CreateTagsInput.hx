@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef CreateTagsInput = {
-    var Resources : _ShapeS5y;
+    var Resources : _ShapeSb0;
     @:optional var DryRun : Bool;
-    var Tags : _ShapeSh;
+    var Tags : _ShapeSi;
 };

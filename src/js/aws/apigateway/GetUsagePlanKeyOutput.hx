@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetUsagePlanKeyOutput = _ShapeS1n;
+typedef GetUsagePlanKeyOutput = _ShapeS26;

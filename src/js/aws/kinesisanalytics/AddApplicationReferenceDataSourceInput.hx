@@ -10,6 +10,6 @@ typedef AddApplicationReferenceDataSourceInput = {
             var BucketARN : String;
             var ReferenceRoleARN : String;
         };
-        var ReferenceSchema : _ShapeSc;
+        var ReferenceSchema : _ShapeSi;
     };
 };

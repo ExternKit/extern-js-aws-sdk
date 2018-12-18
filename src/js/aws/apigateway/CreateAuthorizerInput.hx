@@ -6,7 +6,7 @@ typedef CreateAuthorizerInput = {
     var type : String;
     @:optional var authorizerResultTtlInSeconds : Int;
     @:optional var authorizerCredentials : String;
-    var identitySource : String;
+    @:optional var identitySource : String;
     @:optional var providerARNs : _ShapeSb;
     @:optional var identityValidationExpression : String;
     @:optional var authType : String;

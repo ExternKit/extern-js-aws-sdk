@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef GetDeviceOutput = {
-    @:optional var device : _ShapeSo;
+    @:optional var device : _ShapeS14;
 };

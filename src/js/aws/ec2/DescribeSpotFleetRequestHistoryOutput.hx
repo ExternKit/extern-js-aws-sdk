@@ -5,11 +5,7 @@ typedef DescribeSpotFleetRequestHistoryOutput = {
     var SpotFleetRequestId : String;
     var HistoryRecords : Array<{
         var Timestamp : Float;
-        var EventInformation : {
-            @:optional var InstanceId : String;
-            @:optional var EventSubType : String;
-            @:optional var EventDescription : String;
-        };
+        var EventInformation : _ShapeShf;
         var EventType : String;
     }>;
     var LastEvaluatedTime : Float;

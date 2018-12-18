@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeReservedInstancesListingsOutput = {
-    @:optional var ReservedInstancesListings : _ShapeS20;
+    @:optional var ReservedInstancesListings : _ShapeS3h;
 };

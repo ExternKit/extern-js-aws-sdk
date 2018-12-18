@@ -8,10 +8,12 @@ typedef DescribeTrailsOutput = {
         @:optional var IncludeGlobalServiceEvents : Bool;
         @:optional var KmsKeyId : String;
         @:optional var IsMultiRegionTrail : Bool;
+        @:optional var IsOrganizationTrail : Bool;
         @:optional var SnsTopicARN : String;
         @:optional var SnsTopicName : String;
         @:optional var S3KeyPrefix : String;
         @:optional var CloudWatchLogsLogGroupArn : String;
+        @:optional var HasCustomEventSelectors : Bool;
         @:optional var HomeRegion : String;
         @:optional var LogFileValidationEnabled : Bool;
         @:optional var Name : String;

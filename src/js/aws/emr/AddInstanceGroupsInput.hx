@@ -1,6 +1,6 @@
 package js.aws.emr;
 
 typedef AddInstanceGroupsInput = {
-    var InstanceGroups : _ShapeS2;
+    var InstanceGroups : _ShapeSq;
     var JobFlowId : String;
 };

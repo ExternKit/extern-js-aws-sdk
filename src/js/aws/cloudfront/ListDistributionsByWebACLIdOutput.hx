@@ -1,5 +1,5 @@
 package js.aws.cloudfront;
 
 typedef ListDistributionsByWebACLIdOutput = {
-    @:optional var DistributionList : _ShapeS36;
+    @:optional var DistributionList : _ShapeS4p;
 };

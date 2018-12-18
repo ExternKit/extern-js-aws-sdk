@@ -1,6 +1,6 @@
 package js.aws.inspector;
 
 typedef ListFindingsOutput = {
-    var findingArns : _ShapeS36;
+    var findingArns : _ShapeS45;
     @:optional var nextToken : String;
 };

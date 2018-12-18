@@ -7,6 +7,7 @@ typedef CreateTrailInput = {
     @:optional var IncludeGlobalServiceEvents : Bool;
     @:optional var KmsKeyId : String;
     @:optional var IsMultiRegionTrail : Bool;
+    @:optional var IsOrganizationTrail : Bool;
     @:optional var SnsTopicName : String;
     @:optional var S3KeyPrefix : String;
     @:optional var CloudWatchLogsLogGroupArn : String;

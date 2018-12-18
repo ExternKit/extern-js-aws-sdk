@@ -1,5 +1,5 @@
 package js.aws.ssm;
 
 typedef CreateDocumentOutput = {
-    @:optional var DocumentDescription : _ShapeS1c;
+    @:optional var DocumentDescription : _ShapeS2a;
 };

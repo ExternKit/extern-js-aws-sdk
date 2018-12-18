@@ -81,11 +81,17 @@ extern class Glacier extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListPartsOutput>) : Request {})
     public function listParts(params : ListPartsInput, ?cb : Callback<ListPartsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListProvisionedCapacityOutput>) : Request {})
+    public function listProvisionedCapacity(params : ListProvisionedCapacityInput, ?cb : Callback<ListProvisionedCapacityOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListTagsForVaultOutput>) : Request {})
     public function listTagsForVault(params : ListTagsForVaultInput, ?cb : Callback<ListTagsForVaultOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListVaultsOutput>) : Request {})
     public function listVaults(params : ListVaultsInput, ?cb : Callback<ListVaultsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PurchaseProvisionedCapacityOutput>) : Request {})
+    public function purchaseProvisionedCapacity(params : PurchaseProvisionedCapacityInput, ?cb : Callback<PurchaseProvisionedCapacityOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function removeTagsFromVault(params : RemoveTagsFromVaultInput, ?cb : Callback<Dynamic>) : Request;

@@ -15,6 +15,12 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateDevicePoolOutput>) : Request {})
     public function createDevicePool(params : CreateDevicePoolInput, ?cb : Callback<CreateDevicePoolOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateInstanceProfileOutput>) : Request {})
+    public function createInstanceProfile(params : CreateInstanceProfileInput, ?cb : Callback<CreateInstanceProfileOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateNetworkProfileOutput>) : Request {})
+    public function createNetworkProfile(params : CreateNetworkProfileInput, ?cb : Callback<CreateNetworkProfileOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateProjectOutput>) : Request {})
     public function createProject(params : CreateProjectInput, ?cb : Callback<CreateProjectOutput>) : Request;
     
@@ -24,8 +30,17 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateUploadOutput>) : Request {})
     public function createUpload(params : CreateUploadInput, ?cb : Callback<CreateUploadOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateVPCEConfigurationOutput>) : Request {})
+    public function createVPCEConfiguration(params : CreateVPCEConfigurationInput, ?cb : Callback<CreateVPCEConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteDevicePoolOutput>) : Request {})
     public function deleteDevicePool(params : DeleteDevicePoolInput, ?cb : Callback<DeleteDevicePoolOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteInstanceProfileOutput>) : Request {})
+    public function deleteInstanceProfile(params : DeleteInstanceProfileInput, ?cb : Callback<DeleteInstanceProfileOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteNetworkProfileOutput>) : Request {})
+    public function deleteNetworkProfile(params : DeleteNetworkProfileInput, ?cb : Callback<DeleteNetworkProfileOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteProjectOutput>) : Request {})
     public function deleteProject(params : DeleteProjectInput, ?cb : Callback<DeleteProjectOutput>) : Request;
@@ -39,11 +54,17 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteUploadOutput>) : Request {})
     public function deleteUpload(params : DeleteUploadInput, ?cb : Callback<DeleteUploadOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteVPCEConfigurationOutput>) : Request {})
+    public function deleteVPCEConfiguration(params : DeleteVPCEConfigurationInput, ?cb : Callback<DeleteVPCEConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetAccountSettingsOutput>) : Request {})
     public function getAccountSettings(params : GetAccountSettingsInput, ?cb : Callback<GetAccountSettingsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetDeviceOutput>) : Request {})
     public function getDevice(params : GetDeviceInput, ?cb : Callback<GetDeviceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetDeviceInstanceOutput>) : Request {})
+    public function getDeviceInstance(params : GetDeviceInstanceInput, ?cb : Callback<GetDeviceInstanceOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetDevicePoolOutput>) : Request {})
     public function getDevicePool(params : GetDevicePoolInput, ?cb : Callback<GetDevicePoolOutput>) : Request;
@@ -51,8 +72,14 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetDevicePoolCompatibilityOutput>) : Request {})
     public function getDevicePoolCompatibility(params : GetDevicePoolCompatibilityInput, ?cb : Callback<GetDevicePoolCompatibilityOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetInstanceProfileOutput>) : Request {})
+    public function getInstanceProfile(params : GetInstanceProfileInput, ?cb : Callback<GetInstanceProfileOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetJobOutput>) : Request {})
     public function getJob(params : GetJobInput, ?cb : Callback<GetJobOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetNetworkProfileOutput>) : Request {})
+    public function getNetworkProfile(params : GetNetworkProfileInput, ?cb : Callback<GetNetworkProfileOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetOfferingStatusOutput>) : Request {})
     public function getOfferingStatus(params : GetOfferingStatusInput, ?cb : Callback<GetOfferingStatusOutput>) : Request;
@@ -75,11 +102,17 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetUploadOutput>) : Request {})
     public function getUpload(params : GetUploadInput, ?cb : Callback<GetUploadOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetVPCEConfigurationOutput>) : Request {})
+    public function getVPCEConfiguration(params : GetVPCEConfigurationInput, ?cb : Callback<GetVPCEConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<InstallToRemoteAccessSessionOutput>) : Request {})
     public function installToRemoteAccessSession(params : InstallToRemoteAccessSessionInput, ?cb : Callback<InstallToRemoteAccessSessionOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListArtifactsOutput>) : Request {})
     public function listArtifacts(params : ListArtifactsInput, ?cb : Callback<ListArtifactsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListDeviceInstancesOutput>) : Request {})
+    public function listDeviceInstances(params : ListDeviceInstancesInput, ?cb : Callback<ListDeviceInstancesOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListDevicePoolsOutput>) : Request {})
     public function listDevicePools(params : ListDevicePoolsInput, ?cb : Callback<ListDevicePoolsOutput>) : Request;
@@ -87,8 +120,17 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListDevicesOutput>) : Request {})
     public function listDevices(params : ListDevicesInput, ?cb : Callback<ListDevicesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListInstanceProfilesOutput>) : Request {})
+    public function listInstanceProfiles(params : ListInstanceProfilesInput, ?cb : Callback<ListInstanceProfilesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListJobsOutput>) : Request {})
     public function listJobs(params : ListJobsInput, ?cb : Callback<ListJobsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListNetworkProfilesOutput>) : Request {})
+    public function listNetworkProfiles(params : ListNetworkProfilesInput, ?cb : Callback<ListNetworkProfilesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListOfferingPromotionsOutput>) : Request {})
+    public function listOfferingPromotions(params : ListOfferingPromotionsInput, ?cb : Callback<ListOfferingPromotionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListOfferingTransactionsOutput>) : Request {})
     public function listOfferingTransactions(params : ListOfferingTransactionsInput, ?cb : Callback<ListOfferingTransactionsOutput>) : Request;
@@ -120,6 +162,9 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListUploadsOutput>) : Request {})
     public function listUploads(params : ListUploadsInput, ?cb : Callback<ListUploadsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListVPCEConfigurationsOutput>) : Request {})
+    public function listVPCEConfigurations(params : ListVPCEConfigurationsInput, ?cb : Callback<ListVPCEConfigurationsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PurchaseOfferingOutput>) : Request {})
     public function purchaseOffering(params : PurchaseOfferingInput, ?cb : Callback<PurchaseOfferingOutput>) : Request;
     
@@ -129,16 +174,34 @@ extern class DeviceFarm extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ScheduleRunOutput>) : Request {})
     public function scheduleRun(params : ScheduleRunInput, ?cb : Callback<ScheduleRunOutput>) : Request;
     
+    @:overload(function (?cb : Callback<StopJobOutput>) : Request {})
+    public function stopJob(params : StopJobInput, ?cb : Callback<StopJobOutput>) : Request;
+    
     @:overload(function (?cb : Callback<StopRemoteAccessSessionOutput>) : Request {})
     public function stopRemoteAccessSession(params : StopRemoteAccessSessionInput, ?cb : Callback<StopRemoteAccessSessionOutput>) : Request;
     
     @:overload(function (?cb : Callback<StopRunOutput>) : Request {})
     public function stopRun(params : StopRunInput, ?cb : Callback<StopRunOutput>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateDeviceInstanceOutput>) : Request {})
+    public function updateDeviceInstance(params : UpdateDeviceInstanceInput, ?cb : Callback<UpdateDeviceInstanceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateDevicePoolOutput>) : Request {})
     public function updateDevicePool(params : UpdateDevicePoolInput, ?cb : Callback<UpdateDevicePoolOutput>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateInstanceProfileOutput>) : Request {})
+    public function updateInstanceProfile(params : UpdateInstanceProfileInput, ?cb : Callback<UpdateInstanceProfileOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateNetworkProfileOutput>) : Request {})
+    public function updateNetworkProfile(params : UpdateNetworkProfileInput, ?cb : Callback<UpdateNetworkProfileOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateProjectOutput>) : Request {})
     public function updateProject(params : UpdateProjectInput, ?cb : Callback<UpdateProjectOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateUploadOutput>) : Request {})
+    public function updateUpload(params : UpdateUploadInput, ?cb : Callback<UpdateUploadOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateVPCEConfigurationOutput>) : Request {})
+    public function updateVPCEConfiguration(params : UpdateVPCEConfigurationInput, ?cb : Callback<UpdateVPCEConfigurationOutput>) : Request;
     
 }

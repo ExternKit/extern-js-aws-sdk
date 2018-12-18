@@ -5,6 +5,7 @@ typedef DescribeTrustsOutput = {
     @:optional var Trusts : Array<{
         @:optional var DirectoryId : String;
         @:optional var TrustState : String;
+        @:optional var SelectiveAuth : String;
         @:optional var TrustId : String;
         @:optional var StateLastUpdatedDateTime : Float;
         @:optional var CreatedDateTime : Float;

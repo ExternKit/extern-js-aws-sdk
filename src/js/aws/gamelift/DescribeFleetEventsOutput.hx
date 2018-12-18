@@ -2,6 +2,7 @@ package js.aws.gamelift;
 
 typedef DescribeFleetEventsOutput = {
     @:optional var Events : Array<{
+        @:optional var PreSignedLogUrl : String;
         @:optional var EventId : String;
         @:optional var Message : String;
         @:optional var EventCode : String;

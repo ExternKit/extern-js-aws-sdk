@@ -1,6 +1,6 @@
 package js.aws.ec2;
 
 typedef ReleaseHostsOutput = {
-    @:optional var Successful : _ShapeSp;
-    @:optional var Unsuccessful : _ShapeSkf;
+    @:optional var Successful : _ShapeS1d;
+    @:optional var Unsuccessful : _ShapeSww;
 };

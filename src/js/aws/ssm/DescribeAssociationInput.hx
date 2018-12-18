@@ -1,6 +1,8 @@
 package js.aws.ssm;
 
 typedef DescribeAssociationInput = {
-    var InstanceId : String;
-    var Name : String;
+    @:optional var InstanceId : String;
+    @:optional var AssociationId : String;
+    @:optional var AssociationVersion : String;
+    @:optional var Name : String;
 };

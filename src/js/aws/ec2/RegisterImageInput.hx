@@ -4,9 +4,10 @@ typedef RegisterImageInput = {
     @:optional var Description : String;
     @:optional var SriovNetSupport : String;
     @:optional var KernelId : String;
+    @:optional var BillingProducts : Array<String>;
     @:optional var ImageLocation : String;
     @:optional var VirtualizationType : String;
-    @:optional var BlockDeviceMappings : _ShapeS3i;
+    @:optional var BlockDeviceMappings : _ShapeS6n;
     @:optional var Architecture : String;
     @:optional var DryRun : Bool;
     @:optional var RootDeviceName : String;

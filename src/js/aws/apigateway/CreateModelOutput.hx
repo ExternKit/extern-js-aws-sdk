@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef CreateModelOutput = _ShapeSs;
+typedef CreateModelOutput = _ShapeS14;

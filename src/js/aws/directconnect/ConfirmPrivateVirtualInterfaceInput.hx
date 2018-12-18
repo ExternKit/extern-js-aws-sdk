@@ -1,6 +1,7 @@
 package js.aws.directconnect;
 
 typedef ConfirmPrivateVirtualInterfaceInput = {
-    var virtualGatewayId : String;
+    @:optional var virtualGatewayId : String;
     var virtualInterfaceId : String;
+    @:optional var directConnectGatewayId : String;
 };

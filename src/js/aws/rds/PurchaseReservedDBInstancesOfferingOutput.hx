@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef PurchaseReservedDBInstancesOfferingOutput = {
-    @:optional var ReservedDBInstance : _ShapeS66;
+    @:optional var ReservedDBInstance : _ShapeS7h;
 };

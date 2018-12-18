@@ -1,5 +1,5 @@
 package js.aws.iam;
 
 typedef CreateVirtualMFADeviceOutput = {
-    var VirtualMFADevice : _ShapeS1x;
+    var VirtualMFADevice : _ShapeS2f;
 };

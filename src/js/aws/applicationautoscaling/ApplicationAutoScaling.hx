@@ -15,6 +15,9 @@ extern class ApplicationAutoScaling extends Service implements js.extern.Extern<
     @:overload(function (?cb : Callback<DeleteScalingPolicyOutput>) : Request {})
     public function deleteScalingPolicy(params : DeleteScalingPolicyInput, ?cb : Callback<DeleteScalingPolicyOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteScheduledActionOutput>) : Request {})
+    public function deleteScheduledAction(params : DeleteScheduledActionInput, ?cb : Callback<DeleteScheduledActionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeregisterScalableTargetOutput>) : Request {})
     public function deregisterScalableTarget(params : DeregisterScalableTargetInput, ?cb : Callback<DeregisterScalableTargetOutput>) : Request;
     
@@ -27,8 +30,14 @@ extern class ApplicationAutoScaling extends Service implements js.extern.Extern<
     @:overload(function (?cb : Callback<DescribeScalingPoliciesOutput>) : Request {})
     public function describeScalingPolicies(params : DescribeScalingPoliciesInput, ?cb : Callback<DescribeScalingPoliciesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeScheduledActionsOutput>) : Request {})
+    public function describeScheduledActions(params : DescribeScheduledActionsInput, ?cb : Callback<DescribeScheduledActionsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PutScalingPolicyOutput>) : Request {})
     public function putScalingPolicy(params : PutScalingPolicyInput, ?cb : Callback<PutScalingPolicyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutScheduledActionOutput>) : Request {})
+    public function putScheduledAction(params : PutScheduledActionInput, ?cb : Callback<PutScheduledActionOutput>) : Request;
     
     @:overload(function (?cb : Callback<RegisterScalableTargetOutput>) : Request {})
     public function registerScalableTarget(params : RegisterScalableTargetInput, ?cb : Callback<RegisterScalableTargetOutput>) : Request;

@@ -1,7 +1,7 @@
 package js.aws.waf;
 
 typedef _ShapeSh = {
-    var IPSetId : String;
-    var IPSetDescriptors : Array<_ShapeSj>;
+    var GeoMatchSetId : String;
+    var GeoMatchConstraints : Array<_ShapeSj>;
     @:optional var Name : String;
 };

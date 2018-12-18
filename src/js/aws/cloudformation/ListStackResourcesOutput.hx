@@ -6,6 +6,10 @@ typedef ListStackResourcesOutput = {
         var ResourceStatus : String;
         var ResourceType : String;
         var LogicalResourceId : String;
+        @:optional var DriftInformation : {
+            @:optional var LastCheckTimestamp : Float;
+            var StackResourceDriftStatus : String;
+        };
         @:optional var ResourceStatusReason : String;
         var LastUpdatedTimestamp : Float;
     }>;

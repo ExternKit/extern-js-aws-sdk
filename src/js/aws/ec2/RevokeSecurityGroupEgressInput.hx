@@ -7,7 +7,7 @@ typedef RevokeSecurityGroupEgressInput = {
     @:optional var FromPort : Int;
     @:optional var SourceSecurityGroupOwnerId : String;
     @:optional var SourceSecurityGroupName : String;
-    @:optional var IpPermissions : _ShapeS1b;
+    @:optional var IpPermissions : _ShapeS2o;
     @:optional var DryRun : Bool;
     @:optional var ToPort : Int;
 };

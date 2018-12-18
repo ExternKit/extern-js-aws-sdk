@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CopyDBClusterSnapshotOutput = {
-    @:optional var DBClusterSnapshot : _ShapeSt;
+    @:optional var DBClusterSnapshot : _ShapeSx;
 };

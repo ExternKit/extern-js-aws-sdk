@@ -1,6 +1,7 @@
 package js.aws.ssm;
 
 typedef DeleteAssociationInput = {
-    var InstanceId : String;
-    var Name : String;
+    @:optional var InstanceId : String;
+    @:optional var AssociationId : String;
+    @:optional var Name : String;
 };

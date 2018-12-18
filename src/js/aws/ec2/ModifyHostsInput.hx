@@ -2,5 +2,5 @@ package js.aws.ec2;
 
 typedef ModifyHostsInput = {
     var AutoPlacement : String;
-    var HostIds : _ShapeS9r;
+    var HostIds : _ShapeSj0;
 };

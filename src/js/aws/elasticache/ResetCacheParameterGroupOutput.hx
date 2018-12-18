@@ -1,3 +1,3 @@
 package js.aws.elasticache;
 
-typedef ResetCacheParameterGroupOutput = _ShapeS3s;
+typedef ResetCacheParameterGroupOutput = _ShapeS42;

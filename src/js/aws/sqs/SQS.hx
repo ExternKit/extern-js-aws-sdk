@@ -42,6 +42,9 @@ extern class SQS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListDeadLetterSourceQueuesOutput>) : Request {})
     public function listDeadLetterSourceQueues(params : ListDeadLetterSourceQueuesInput, ?cb : Callback<ListDeadLetterSourceQueuesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListQueueTagsOutput>) : Request {})
+    public function listQueueTags(params : ListQueueTagsInput, ?cb : Callback<ListQueueTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListQueuesOutput>) : Request {})
     public function listQueues(params : ListQueuesInput, ?cb : Callback<ListQueuesOutput>) : Request;
     
@@ -62,5 +65,11 @@ extern class SQS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function setQueueAttributes(params : SetQueueAttributesInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagQueue(params : TagQueueInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagQueue(params : UntagQueueInput, ?cb : Callback<Dynamic>) : Request;
     
 }

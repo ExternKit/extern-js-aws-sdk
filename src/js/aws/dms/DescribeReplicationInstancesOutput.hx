@@ -2,5 +2,5 @@ package js.aws.dms;
 
 typedef DescribeReplicationInstancesOutput = {
     @:optional var Marker : String;
-    @:optional var ReplicationInstances : Array<_ShapeSh>;
+    @:optional var ReplicationInstances : Array<_ShapeSy>;
 };

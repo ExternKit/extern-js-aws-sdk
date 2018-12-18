@@ -15,18 +15,16 @@ typedef _ShapeSv = {
             @:optional var inputArtifacts : Array<{
                 var name : String;
             }>;
+            @:optional var region : String;
             var actionTypeId : _ShapeSs;
             @:optional var runOrder : Int;
-            @:optional var configuration : _ShapeS1f;
+            @:optional var configuration : _ShapeS1h;
         }>;
         @:optional var blockers : Array<{
             var name : String;
             var type : String;
         }>;
     }>;
-    var artifactStore : {
-        var type : String;
-        var location : String;
-        @:optional var encryptionKey : _ShapeS11;
-    };
+    @:optional var artifactStore : _ShapeSy;
+    @:optional var artifactStores : {};
 };

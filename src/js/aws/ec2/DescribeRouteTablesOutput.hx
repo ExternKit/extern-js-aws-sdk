@@ -1,5 +1,6 @@
 package js.aws.ec2;
 
 typedef DescribeRouteTablesOutput = {
-    @:optional var RouteTables : Array<_ShapeS5a>;
+    @:optional var NextToken : String;
+    @:optional var RouteTables : Array<_ShapeSae>;
 };

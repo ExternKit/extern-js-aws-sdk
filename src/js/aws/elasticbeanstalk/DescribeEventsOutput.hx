@@ -8,6 +8,7 @@ typedef DescribeEventsOutput = {
         @:optional var EnvironmentName : String;
         @:optional var EventDate : Float;
         @:optional var Severity : String;
+        @:optional var PlatformArn : String;
         @:optional var TemplateName : String;
         @:optional var RequestId : String;
     }>;

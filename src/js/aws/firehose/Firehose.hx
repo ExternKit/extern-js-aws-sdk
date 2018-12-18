@@ -24,11 +24,26 @@ extern class Firehose extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListDeliveryStreamsOutput>) : Request {})
     public function listDeliveryStreams(params : ListDeliveryStreamsInput, ?cb : Callback<ListDeliveryStreamsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListTagsForDeliveryStreamOutput>) : Request {})
+    public function listTagsForDeliveryStream(params : ListTagsForDeliveryStreamInput, ?cb : Callback<ListTagsForDeliveryStreamOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PutRecordOutput>) : Request {})
     public function putRecord(params : PutRecordInput, ?cb : Callback<PutRecordOutput>) : Request;
     
     @:overload(function (?cb : Callback<PutRecordBatchOutput>) : Request {})
     public function putRecordBatch(params : PutRecordBatchInput, ?cb : Callback<PutRecordBatchOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StartDeliveryStreamEncryptionOutput>) : Request {})
+    public function startDeliveryStreamEncryption(params : StartDeliveryStreamEncryptionInput, ?cb : Callback<StartDeliveryStreamEncryptionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopDeliveryStreamEncryptionOutput>) : Request {})
+    public function stopDeliveryStreamEncryption(params : StopDeliveryStreamEncryptionInput, ?cb : Callback<StopDeliveryStreamEncryptionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<TagDeliveryStreamOutput>) : Request {})
+    public function tagDeliveryStream(params : TagDeliveryStreamInput, ?cb : Callback<TagDeliveryStreamOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UntagDeliveryStreamOutput>) : Request {})
+    public function untagDeliveryStream(params : UntagDeliveryStreamInput, ?cb : Callback<UntagDeliveryStreamOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateDestinationOutput>) : Request {})
     public function updateDestination(params : UpdateDestinationInput, ?cb : Callback<UpdateDestinationOutput>) : Request;

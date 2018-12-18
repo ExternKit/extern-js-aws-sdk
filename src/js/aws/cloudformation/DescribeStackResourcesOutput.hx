@@ -10,6 +10,7 @@ typedef DescribeStackResourcesOutput = {
         @:optional var StackName : String;
         @:optional var StackId : String;
         var LogicalResourceId : String;
+        @:optional var DriftInformation : _ShapeS3o;
         @:optional var ResourceStatusReason : String;
     }>;
 };

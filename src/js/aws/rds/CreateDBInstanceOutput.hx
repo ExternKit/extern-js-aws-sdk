@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBInstanceOutput = {
-    @:optional var DBInstance : _ShapeS1v;
+    @:optional var DBInstance : _ShapeS29;
 };

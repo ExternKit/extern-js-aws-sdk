@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef CreateDeploymentOutput = _ShapeSl;
+typedef CreateDeploymentOutput = _ShapeSn;

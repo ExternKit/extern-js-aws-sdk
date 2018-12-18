@@ -1,6 +1,6 @@
 package js.aws.route53;
 
 typedef CreateTrafficPolicyInstanceOutput = {
-    var TrafficPolicyInstance : _ShapeS2w;
+    var TrafficPolicyInstance : _ShapeS35;
     var Location : String;
 };

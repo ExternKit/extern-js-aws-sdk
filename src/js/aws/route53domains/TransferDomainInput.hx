@@ -4,12 +4,12 @@ typedef TransferDomainInput = {
     @:optional var PrivacyProtectTechContact : Bool;
     @:optional var PrivacyProtectAdminContact : Bool;
     @:optional var PrivacyProtectRegistrantContact : Bool;
-    var TechContact : _ShapeSu;
+    var TechContact : _ShapeSz;
     @:optional var AutoRenew : Bool;
-    var AdminContact : _ShapeSu;
-    @:optional var AuthCode : _ShapeS2h;
-    @:optional var Nameservers : _ShapeSo;
-    var RegistrantContact : _ShapeSu;
+    var AdminContact : _ShapeSz;
+    @:optional var AuthCode : _ShapeS7;
+    @:optional var Nameservers : _ShapeSt;
+    var RegistrantContact : _ShapeSz;
     var DurationInYears : Int;
     var DomainName : String;
     @:optional var IdnLangCode : String;

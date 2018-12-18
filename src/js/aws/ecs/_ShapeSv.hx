@@ -1,3 +1,5 @@
 package js.aws.ecs;
 
-typedef _ShapeSv = Array<String>;
+typedef _ShapeSv = {
+    var type : String;
+};

@@ -10,7 +10,7 @@ typedef DescribeReservedInstancesOutput = {
         @:optional var End : Float;
         @:optional var OfferingType : String;
         @:optional var CurrencyCode : String;
-        @:optional var RecurringCharges : _ShapeSds;
+        @:optional var RecurringCharges : _ShapeSnv;
         @:optional var Scope : String;
         @:optional var InstanceType : String;
         @:optional var Start : Float;
@@ -18,7 +18,7 @@ typedef DescribeReservedInstancesOutput = {
         @:optional var ReservedInstancesId : String;
         @:optional var ProductDescription : String;
         @:optional var FixedPrice : Float;
-        @:optional var Tags : _ShapeSh;
+        @:optional var Tags : _ShapeSi;
         @:optional var OfferingClass : String;
     }>;
 };

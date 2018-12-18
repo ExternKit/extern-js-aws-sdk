@@ -3,7 +3,7 @@ package js.aws.ec2;
 typedef DescribeReservedInstancesOfferingsInput = {
     @:optional var AvailabilityZone : String;
     @:optional var MaxResults : Int;
-    @:optional var Filters : _ShapeS7y;
+    @:optional var Filters : _ShapeSf8;
     @:optional var NextToken : String;
     @:optional var ReservedInstancesOfferingIds : Array<String>;
     @:optional var MaxDuration : Int;

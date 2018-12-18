@@ -1,5 +1,7 @@
 package js.aws.cloudformation;
 
 typedef GetTemplateInput = {
-    var StackName : String;
+    @:optional var TemplateStage : String;
+    @:optional var StackName : String;
+    @:optional var ChangeSetName : String;
 };

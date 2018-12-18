@@ -4,5 +4,5 @@ typedef PutActionRevisionInput = {
     var actionName : String;
     var stageName : String;
     var pipelineName : String;
-    var actionRevision : _ShapeS32;
+    var actionRevision : _ShapeS3b;
 };

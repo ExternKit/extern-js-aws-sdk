@@ -8,5 +8,6 @@ typedef _ShapeS6 = {
     @:optional var enabled : Bool;
     @:optional var id : String;
     @:optional var value : String;
+    @:optional var customerId : String;
     @:optional var lastUpdatedDate : Float;
 };

@@ -2,5 +2,5 @@ package js.aws.opsworks;
 
 typedef SetTimeBasedAutoScalingInput = {
     var InstanceId : String;
-    @:optional var AutoScalingSchedule : _ShapeS40;
+    @:optional var AutoScalingSchedule : _ShapeS4b;
 };

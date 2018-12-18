@@ -2,5 +2,5 @@ package js.aws.cognitoidentityserviceprovider;
 
 typedef ForgetDeviceInput = {
     var DeviceKey : String;
-    @:optional var AccessToken : _ShapeS1k;
+    @:optional var AccessToken : _ShapeS1v;
 };

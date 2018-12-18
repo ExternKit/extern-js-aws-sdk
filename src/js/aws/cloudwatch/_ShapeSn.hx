@@ -1,0 +1,30 @@
+package js.aws.cloudwatch;
+
+typedef _ShapeSn = Array<{
+    @:optional var AlarmArn : String;
+    @:optional var ExtendedStatistic : String;
+    @:optional var InsufficientDataActions : _ShapeSs;
+    @:optional var Dimensions : _ShapeS10;
+    @:optional var TreatMissingData : String;
+    @:optional var Threshold : Float;
+    @:optional var StateReason : String;
+    @:optional var ComparisonOperator : String;
+    @:optional var AlarmActions : _ShapeSs;
+    @:optional var Period : Int;
+    @:optional var Metrics : _ShapeS1c;
+    @:optional var AlarmName : String;
+    @:optional var AlarmConfigurationUpdatedTimestamp : Float;
+    @:optional var AlarmDescription : String;
+    @:optional var Namespace : String;
+    @:optional var DatapointsToAlarm : Int;
+    @:optional var ActionsEnabled : Bool;
+    @:optional var OKActions : _ShapeSs;
+    @:optional var EvaluationPeriods : Int;
+    @:optional var EvaluateLowSampleCountPercentile : String;
+    @:optional var StateValue : String;
+    @:optional var StateReasonData : String;
+    @:optional var MetricName : String;
+    @:optional var Statistic : String;
+    @:optional var Unit : String;
+    @:optional var StateUpdatedTimestamp : Float;
+}>;

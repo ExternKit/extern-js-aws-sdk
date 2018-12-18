@@ -2,8 +2,9 @@ package js.aws.lambda;
 
 typedef CreateEventSourceMappingInput = {
     @:optional var Enabled : Bool;
+    @:optional var StartingPositionTimestamp : Float;
     var FunctionName : String;
     @:optional var BatchSize : Int;
     var EventSourceArn : String;
-    var StartingPosition : String;
+    @:optional var StartingPosition : String;
 };

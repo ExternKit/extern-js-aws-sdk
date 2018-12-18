@@ -1,0 +1,70 @@
+package js.aws.ecs;
+
+typedef _ShapeS10 = {
+    @:optional var createdAt : Float;
+    @:optional var createdBy : String;
+    @:optional var networkConfiguration : _ShapeSq;
+    @:optional var tags : _ShapeS3;
+    @:optional var runningCount : Int;
+    @:optional var serviceRegistries : _ShapeSg;
+    @:optional var platformVersion : String;
+    @:optional var roleArn : String;
+    @:optional var loadBalancers : _ShapeSd;
+    @:optional var enableECSManagedTags : Bool;
+    @:optional var taskDefinition : String;
+    @:optional var deploymentConfiguration : _ShapeSj;
+    @:optional var taskSets : Array<{
+        @:optional var taskSetArn : String;
+        @:optional var createdAt : Float;
+        @:optional var networkConfiguration : _ShapeSq;
+        @:optional var runningCount : Int;
+        @:optional var platformVersion : String;
+        @:optional var loadBalancers : _ShapeSd;
+        @:optional var stabilityStatusAt : Float;
+        @:optional var taskDefinition : String;
+        @:optional var computedDesiredCount : Int;
+        @:optional var scale : {
+            @:optional var unit : String;
+            @:optional var value : Float;
+        };
+        @:optional var id : String;
+        @:optional var pendingCount : Int;
+        @:optional var updatedAt : Float;
+        @:optional var status : String;
+        @:optional var stabilityStatus : String;
+        @:optional var startedBy : String;
+        @:optional var externalId : String;
+        @:optional var launchType : String;
+    }>;
+    @:optional var serviceArn : String;
+    @:optional var clusterArn : String;
+    @:optional var pendingCount : Int;
+    @:optional var status : String;
+    @:optional var serviceName : String;
+    @:optional var deployments : Array<{
+        @:optional var createdAt : Float;
+        @:optional var networkConfiguration : _ShapeSq;
+        @:optional var runningCount : Int;
+        @:optional var platformVersion : String;
+        @:optional var taskDefinition : String;
+        @:optional var id : String;
+        @:optional var pendingCount : Int;
+        @:optional var updatedAt : Float;
+        @:optional var status : String;
+        @:optional var desiredCount : Int;
+        @:optional var launchType : String;
+    }>;
+    @:optional var events : Array<{
+        @:optional var createdAt : Float;
+        @:optional var id : String;
+        @:optional var message : String;
+    }>;
+    @:optional var deploymentController : _ShapeSv;
+    @:optional var placementConstraints : _ShapeSk;
+    @:optional var desiredCount : Int;
+    @:optional var healthCheckGracePeriodSeconds : Int;
+    @:optional var schedulingStrategy : String;
+    @:optional var launchType : String;
+    @:optional var placementStrategy : _ShapeSn;
+    @:optional var propagateTags : String;
+};

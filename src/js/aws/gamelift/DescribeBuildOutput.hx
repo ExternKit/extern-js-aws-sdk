@@ -1,5 +1,5 @@
 package js.aws.gamelift;
 
 typedef DescribeBuildOutput = {
-    @:optional var Build : _ShapeSh;
+    @:optional var Build : _ShapeSn;
 };

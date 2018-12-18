@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CreateSnapshotCopyGrantOutput = {
-    @:optional var SnapshotCopyGrant : _ShapeS25;
+    @:optional var SnapshotCopyGrant : _ShapeS30;
 };

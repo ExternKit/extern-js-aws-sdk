@@ -2,26 +2,15 @@ package js.aws.kinesis;
 
 typedef DescribeStreamOutput = {
     var StreamDescription : {
-        var Shards : Array<{
-            @:optional var AdjacentParentShardId : String;
-            var SequenceNumberRange : {
-                @:optional var EndingSequenceNumber : String;
-                var StartingSequenceNumber : String;
-            };
-            var HashKeyRange : {
-                var EndingHashKey : String;
-                var StartingHashKey : String;
-            };
-            var ShardId : String;
-            @:optional var ParentShardId : String;
-        }>;
+        var Shards : _ShapeSp;
+        @:optional var EncryptionType : String;
         var StreamARN : String;
         var HasMoreShards : Bool;
+        @:optional var KeyId : String;
         var RetentionPeriodHours : Int;
-        var EnhancedMonitoring : Array<{
-            @:optional var ShardLevelMetrics : _ShapeSr;
-        }>;
+        var EnhancedMonitoring : _ShapeSw;
         var StreamName : String;
+        var StreamCreationTimestamp : Float;
         var StreamStatus : String;
     };
 };

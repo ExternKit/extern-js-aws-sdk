@@ -2,5 +2,5 @@ package js.aws.elbv2;
 
 typedef RegisterTargetsInput = {
     var TargetGroupArn : String;
-    var Targets : _ShapeS29;
+    var Targets : _ShapeS3m;
 };

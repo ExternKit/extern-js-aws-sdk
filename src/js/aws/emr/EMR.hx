@@ -12,6 +12,9 @@ extern class EMR extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddInstanceFleetOutput>) : Request {})
+    public function addInstanceFleet(params : AddInstanceFleetInput, ?cb : Callback<AddInstanceFleetOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AddInstanceGroupsOutput>) : Request {})
     public function addInstanceGroups(params : AddInstanceGroupsInput, ?cb : Callback<AddInstanceGroupsOutput>) : Request;
     
@@ -20,6 +23,9 @@ extern class EMR extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<AddTagsOutput>) : Request {})
     public function addTags(params : AddTagsInput, ?cb : Callback<AddTagsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CancelStepsOutput>) : Request {})
+    public function cancelSteps(params : CancelStepsInput, ?cb : Callback<CancelStepsOutput>) : Request;
     
     @:overload(function (?cb : Callback<CreateSecurityConfigurationOutput>) : Request {})
     public function createSecurityConfiguration(params : CreateSecurityConfigurationInput, ?cb : Callback<CreateSecurityConfigurationOutput>) : Request;
@@ -45,6 +51,9 @@ extern class EMR extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListClustersOutput>) : Request {})
     public function listClusters(params : ListClustersInput, ?cb : Callback<ListClustersOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListInstanceFleetsOutput>) : Request {})
+    public function listInstanceFleets(params : ListInstanceFleetsInput, ?cb : Callback<ListInstanceFleetsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListInstanceGroupsOutput>) : Request {})
     public function listInstanceGroups(params : ListInstanceGroupsInput, ?cb : Callback<ListInstanceGroupsOutput>) : Request;
     
@@ -58,7 +67,16 @@ extern class EMR extends Service implements js.extern.Extern<'aws-sdk'>
     public function listSteps(params : ListStepsInput, ?cb : Callback<ListStepsOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function modifyInstanceFleet(params : ModifyInstanceFleetInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function modifyInstanceGroups(params : ModifyInstanceGroupsInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<PutAutoScalingPolicyOutput>) : Request {})
+    public function putAutoScalingPolicy(params : PutAutoScalingPolicyInput, ?cb : Callback<PutAutoScalingPolicyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RemoveAutoScalingPolicyOutput>) : Request {})
+    public function removeAutoScalingPolicy(params : RemoveAutoScalingPolicyInput, ?cb : Callback<RemoveAutoScalingPolicyOutput>) : Request;
     
     @:overload(function (?cb : Callback<RemoveTagsOutput>) : Request {})
     public function removeTags(params : RemoveTagsInput, ?cb : Callback<RemoveTagsOutput>) : Request;

@@ -5,6 +5,7 @@ typedef CreateVolumeInput = {
     @:optional var KmsKeyId : String;
     @:optional var SnapshotId : String;
     @:optional var Encrypted : Bool;
+    @:optional var TagSpecifications : _ShapeS19;
     @:optional var DryRun : Bool;
     @:optional var VolumeType : String;
     @:optional var Iops : Int;

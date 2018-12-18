@@ -2,5 +2,5 @@ package js.aws.inspector;
 
 typedef DescribeFindingsInput = {
     @:optional var locale : String;
-    var findingArns : _ShapeSv;
+    var findingArns : _ShapeSy;
 };

@@ -14,7 +14,8 @@ typedef GetTemplateSummaryOutput = {
     }>;
     @:optional var Version : String;
     @:optional var CapabilitiesReason : String;
-    @:optional var Capabilities : _ShapeSg;
-    @:optional var ResourceTypes : _ShapeSi;
+    @:optional var Capabilities : _ShapeSj;
+    @:optional var ResourceTypes : _ShapeSl;
     @:optional var Metadata : String;
+    @:optional var DeclaredTransforms : _ShapeS5r;
 };

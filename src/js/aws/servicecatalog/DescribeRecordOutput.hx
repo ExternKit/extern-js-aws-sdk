@@ -6,6 +6,6 @@ typedef DescribeRecordOutput = {
         @:optional var OutputValue : String;
         @:optional var OutputKey : String;
     }>;
-    @:optional var RecordDetail : _ShapeS1a;
+    @:optional var RecordDetail : _ShapeS6e;
     @:optional var NextPageToken : String;
 };

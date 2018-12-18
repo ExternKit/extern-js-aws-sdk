@@ -5,6 +5,7 @@ typedef FilterLogEventsInput = {
     var logGroupName : String;
     @:optional var limit : Int;
     @:optional var startTime : Int;
+    @:optional var logStreamNamePrefix : String;
     @:optional var endTime : Int;
     @:optional var nextToken : String;
     @:optional var interleaved : Bool;

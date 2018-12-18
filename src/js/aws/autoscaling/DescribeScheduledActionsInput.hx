@@ -1,7 +1,7 @@
 package js.aws.autoscaling;
 
 typedef DescribeScheduledActionsInput = {
-    @:optional var ScheduledActionNames : Array<String>;
+    @:optional var ScheduledActionNames : _ShapeSe;
     @:optional var NextToken : String;
     @:optional var EndTime : Float;
     @:optional var AutoScalingGroupName : String;

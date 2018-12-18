@@ -1,8 +1,9 @@
 package js.aws.apigateway;
 
 typedef _ShapeS14 = {
-    @:optional var responseTemplates : _ShapeSk;
-    @:optional var selectionPattern : String;
-    @:optional var responseParameters : _ShapeSk;
-    @:optional var statusCode : String;
+    @:optional var schema : String;
+    @:optional var name : String;
+    @:optional var description : String;
+    @:optional var id : String;
+    @:optional var contentType : String;
 };

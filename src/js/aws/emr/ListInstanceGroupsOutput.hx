@@ -3,19 +3,17 @@ package js.aws.emr;
 typedef ListInstanceGroupsOutput = {
     @:optional var InstanceGroups : Array<{
         @:optional var RunningInstanceCount : Int;
-        @:optional var EbsBlockDevices : Array<{
-            @:optional var VolumeSpecification : _ShapeSg;
-            @:optional var Device : String;
-        }>;
+        @:optional var EbsBlockDevices : _ShapeS42;
         @:optional var EbsOptimized : Bool;
         @:optional var Market : String;
         @:optional var InstanceGroupType : String;
-        @:optional var ShrinkPolicy : _ShapeS33;
+        @:optional var ShrinkPolicy : _ShapeS4e;
         @:optional var Id : String;
-        @:optional var Configurations : _ShapeS9;
+        @:optional var Configurations : _ShapeSh;
         @:optional var InstanceType : String;
         @:optional var RequestedInstanceCount : Int;
         @:optional var BidPrice : String;
+        @:optional var AutoScalingPolicy : _ShapeS4i;
         @:optional var Name : String;
         @:optional var Status : {
             @:optional var Timeline : {

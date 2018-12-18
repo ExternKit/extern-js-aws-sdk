@@ -1,3 +1,3 @@
 package js.aws.redshift;
 
-typedef DescribeLoggingStatusOutput = _ShapeS3x;
+typedef DescribeLoggingStatusOutput = _ShapeS5l;

@@ -1,9 +1,7 @@
 package js.aws.codedeploy;
 
-typedef _ShapeS1p = {
-    @:optional var enabled : Bool;
-    @:optional var ignorePollAlarmFailure : Bool;
-    @:optional var alarms : Array<{
-        @:optional var name : String;
-    }>;
-};
+typedef _ShapeS1p = Array<{
+    @:optional var triggerEvents : Array<String>;
+    @:optional var triggerTargetArn : String;
+    @:optional var triggerName : String;
+}>;

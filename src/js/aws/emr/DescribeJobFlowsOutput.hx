@@ -3,6 +3,7 @@ package js.aws.emr;
 typedef DescribeJobFlowsOutput = {
     @:optional var JobFlows : Array<{
         @:optional var VisibleToAllUsers : Bool;
+        @:optional var ScaleDownBehavior : String;
         @:optional var AmiVersion : String;
         var Instances : {
             @:optional var InstanceGroups : Array<{
@@ -23,7 +24,7 @@ typedef DescribeJobFlowsOutput = {
             }>;
             var SlaveInstanceType : String;
             @:optional var TerminationProtected : Bool;
-            @:optional var Placement : _ShapeS1u;
+            @:optional var Placement : _ShapeS2v;
             @:optional var NormalizedInstanceHours : Int;
             @:optional var MasterPublicDnsName : String;
             @:optional var KeepJobFlowAliveWhenNoSteps : Bool;
@@ -37,7 +38,7 @@ typedef DescribeJobFlowsOutput = {
         @:optional var ServiceRole : String;
         @:optional var LogUri : String;
         @:optional var Steps : Array<{
-            var StepConfig : _ShapeSm;
+            var StepConfig : _ShapeS1c;
             var ExecutionStatusDetail : {
                 @:optional var EndDateTime : Float;
                 var CreationDateTime : Float;
@@ -47,10 +48,11 @@ typedef DescribeJobFlowsOutput = {
             };
         }>;
         var JobFlowId : String;
+        @:optional var AutoScalingRole : String;
         @:optional var JobFlowRole : String;
-        @:optional var SupportedProducts : _ShapeS23;
+        @:optional var SupportedProducts : _ShapeS34;
         @:optional var BootstrapActions : Array<{
-            @:optional var BootstrapActionConfig : _ShapeS21;
+            @:optional var BootstrapActionConfig : _ShapeS32;
         }>;
         var Name : String;
         var ExecutionStatusDetail : {

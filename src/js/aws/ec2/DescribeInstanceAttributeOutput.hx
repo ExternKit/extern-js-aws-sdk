@@ -1,19 +1,19 @@
 package js.aws.ec2;
 
 typedef DescribeInstanceAttributeOutput = {
-    @:optional var SriovNetSupport : _ShapeS39;
-    @:optional var Groups : _ShapeS4t;
-    @:optional var KernelId : _ShapeS39;
-    @:optional var UserData : _ShapeS39;
+    @:optional var SriovNetSupport : _ShapeS5b;
+    @:optional var Groups : _ShapeS9q;
+    @:optional var KernelId : _ShapeS5b;
+    @:optional var UserData : _ShapeS5b;
     @:optional var InstanceId : String;
-    @:optional var DisableApiTermination : _ShapeSbc;
-    @:optional var EbsOptimized : _ShapeSbc;
-    @:optional var InstanceInitiatedShutdownBehavior : _ShapeS39;
-    @:optional var SourceDestCheck : _ShapeSbc;
-    @:optional var InstanceType : _ShapeS39;
-    @:optional var BlockDeviceMappings : _ShapeSbd;
-    @:optional var RootDeviceName : _ShapeS39;
-    @:optional var ProductCodes : _ShapeSae;
-    @:optional var EnaSupport : _ShapeSbc;
-    @:optional var RamdiskId : _ShapeS39;
+    @:optional var DisableApiTermination : _ShapeSkl;
+    @:optional var EbsOptimized : _ShapeSkl;
+    @:optional var InstanceInitiatedShutdownBehavior : _ShapeS5b;
+    @:optional var SourceDestCheck : _ShapeSkl;
+    @:optional var InstanceType : _ShapeS5b;
+    @:optional var BlockDeviceMappings : _ShapeSki;
+    @:optional var RootDeviceName : _ShapeS5b;
+    @:optional var ProductCodes : _ShapeSib;
+    @:optional var EnaSupport : _ShapeSkl;
+    @:optional var RamdiskId : _ShapeS5b;
 };

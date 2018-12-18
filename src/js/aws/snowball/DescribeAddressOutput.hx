@@ -1,5 +1,5 @@
 package js.aws.snowball;
 
 typedef DescribeAddressOutput = {
-    @:optional var Address : _ShapeS5;
+    @:optional var Address : _ShapeS8;
 };

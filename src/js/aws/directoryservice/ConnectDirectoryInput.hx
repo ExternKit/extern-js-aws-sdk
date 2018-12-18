@@ -5,10 +5,10 @@ typedef ConnectDirectoryInput = {
     var ConnectSettings : {
         var VpcId : String;
         var CustomerUserName : String;
-        var CustomerDnsIps : _ShapeSp;
-        var SubnetIds : _ShapeSn;
+        var CustomerDnsIps : _ShapeS11;
+        var SubnetIds : _ShapeSz;
     };
-    var Password : _ShapeSj;
+    var Password : _ShapeSv;
     var Name : String;
     var Size : String;
     @:optional var ShortName : String;

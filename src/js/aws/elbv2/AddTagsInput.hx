@@ -1,6 +1,6 @@
 package js.aws.elbv2;
 
 typedef AddTagsInput = {
-    var ResourceArns : _ShapeS2;
-    var Tags : _ShapeS4;
+    var ResourceArns : _ShapeS9;
+    var Tags : _ShapeSb;
 };

@@ -12,6 +12,9 @@ extern class ELBv2 extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddListenerCertificatesOutput>) : Request {})
+    public function addListenerCertificates(params : AddListenerCertificatesInput, ?cb : Callback<AddListenerCertificatesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AddTagsOutput>) : Request {})
     public function addTags(params : AddTagsInput, ?cb : Callback<AddTagsOutput>) : Request;
     
@@ -41,6 +44,12 @@ extern class ELBv2 extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<DeregisterTargetsOutput>) : Request {})
     public function deregisterTargets(params : DeregisterTargetsInput, ?cb : Callback<DeregisterTargetsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeAccountLimitsOutput>) : Request {})
+    public function describeAccountLimits(params : DescribeAccountLimitsInput, ?cb : Callback<DescribeAccountLimitsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeListenerCertificatesOutput>) : Request {})
+    public function describeListenerCertificates(params : DescribeListenerCertificatesInput, ?cb : Callback<DescribeListenerCertificatesOutput>) : Request;
     
     @:overload(function (?cb : Callback<DescribeListenersOutput>) : Request {})
     public function describeListeners(params : DescribeListenersInput, ?cb : Callback<DescribeListenersOutput>) : Request;
@@ -87,8 +96,14 @@ extern class ELBv2 extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<RegisterTargetsOutput>) : Request {})
     public function registerTargets(params : RegisterTargetsInput, ?cb : Callback<RegisterTargetsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<RemoveListenerCertificatesOutput>) : Request {})
+    public function removeListenerCertificates(params : RemoveListenerCertificatesInput, ?cb : Callback<RemoveListenerCertificatesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<RemoveTagsOutput>) : Request {})
     public function removeTags(params : RemoveTagsInput, ?cb : Callback<RemoveTagsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<SetIpAddressTypeOutput>) : Request {})
+    public function setIpAddressType(params : SetIpAddressTypeInput, ?cb : Callback<SetIpAddressTypeOutput>) : Request;
     
     @:overload(function (?cb : Callback<SetRulePrioritiesOutput>) : Request {})
     public function setRulePriorities(params : SetRulePrioritiesInput, ?cb : Callback<SetRulePrioritiesOutput>) : Request;

@@ -12,6 +12,9 @@ extern class Lambda extends Service implements js.extern.Extern<'aws-sdk'>
 
     public function new(?params : Dynamic) : Void;
     
+    @:overload(function (?cb : Callback<AddLayerVersionPermissionOutput>) : Request {})
+    public function addLayerVersionPermission(params : AddLayerVersionPermissionInput, ?cb : Callback<AddLayerVersionPermissionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<AddPermissionOutput>) : Request {})
     public function addPermission(params : AddPermissionInput, ?cb : Callback<AddPermissionOutput>) : Request;
     
@@ -33,6 +36,15 @@ extern class Lambda extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteFunction(params : DeleteFunctionInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteFunctionConcurrency(params : DeleteFunctionConcurrencyInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteLayerVersion(params : DeleteLayerVersionInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<GetAccountSettingsOutput>) : Request {})
+    public function getAccountSettings(params : GetAccountSettingsInput, ?cb : Callback<GetAccountSettingsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetAliasOutput>) : Request {})
     public function getAlias(params : GetAliasInput, ?cb : Callback<GetAliasOutput>) : Request;
     
@@ -44,6 +56,12 @@ extern class Lambda extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GetFunctionConfigurationOutput>) : Request {})
     public function getFunctionConfiguration(params : GetFunctionConfigurationInput, ?cb : Callback<GetFunctionConfigurationOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetLayerVersionOutput>) : Request {})
+    public function getLayerVersion(params : GetLayerVersionInput, ?cb : Callback<GetLayerVersionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetLayerVersionPolicyOutput>) : Request {})
+    public function getLayerVersionPolicy(params : GetLayerVersionPolicyInput, ?cb : Callback<GetLayerVersionPolicyOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetPolicyOutput>) : Request {})
     public function getPolicy(params : GetPolicyInput, ?cb : Callback<GetPolicyOutput>) : Request;
@@ -63,14 +81,38 @@ extern class Lambda extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListFunctionsOutput>) : Request {})
     public function listFunctions(params : ListFunctionsInput, ?cb : Callback<ListFunctionsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListLayerVersionsOutput>) : Request {})
+    public function listLayerVersions(params : ListLayerVersionsInput, ?cb : Callback<ListLayerVersionsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListLayersOutput>) : Request {})
+    public function listLayers(params : ListLayersInput, ?cb : Callback<ListLayersOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListTagsOutput>) : Request {})
+    public function listTags(params : ListTagsInput, ?cb : Callback<ListTagsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListVersionsByFunctionOutput>) : Request {})
     public function listVersionsByFunction(params : ListVersionsByFunctionInput, ?cb : Callback<ListVersionsByFunctionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PublishLayerVersionOutput>) : Request {})
+    public function publishLayerVersion(params : PublishLayerVersionInput, ?cb : Callback<PublishLayerVersionOutput>) : Request;
     
     @:overload(function (?cb : Callback<PublishVersionOutput>) : Request {})
     public function publishVersion(params : PublishVersionInput, ?cb : Callback<PublishVersionOutput>) : Request;
     
+    @:overload(function (?cb : Callback<PutFunctionConcurrencyOutput>) : Request {})
+    public function putFunctionConcurrency(params : PutFunctionConcurrencyInput, ?cb : Callback<PutFunctionConcurrencyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function removeLayerVersionPermission(params : RemoveLayerVersionPermissionInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function removePermission(params : RemovePermissionInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<UpdateAliasOutput>) : Request {})
     public function updateAlias(params : UpdateAliasInput, ?cb : Callback<UpdateAliasOutput>) : Request;

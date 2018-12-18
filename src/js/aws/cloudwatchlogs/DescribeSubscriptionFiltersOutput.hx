@@ -5,6 +5,7 @@ typedef DescribeSubscriptionFiltersOutput = {
         @:optional var filterPattern : String;
         @:optional var filterName : String;
         @:optional var roleArn : String;
+        @:optional var distribution : String;
         @:optional var logGroupName : String;
         @:optional var creationTime : Int;
         @:optional var destinationArn : String;

@@ -7,7 +7,7 @@ typedef DescribeImagesOutput = {
         @:optional var imageDigest : String;
         @:optional var imagePushedAt : Float;
         @:optional var repositoryName : String;
-        @:optional var imageTags : Array<String>;
+        @:optional var imageTags : _ShapeS1t;
     }>;
     @:optional var nextToken : String;
 };

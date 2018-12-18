@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef RestoreDBClusterFromSnapshotOutput = {
-    @:optional var DBCluster : _ShapeS1i;
+    @:optional var DBCluster : _ShapeS1q;
 };

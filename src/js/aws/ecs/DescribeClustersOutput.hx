@@ -1,6 +1,6 @@
 package js.aws.ecs;
 
 typedef DescribeClustersOutput = {
-    @:optional var clusters : Array<_ShapeS4>;
-    @:optional var failures : _ShapeS1w;
+    @:optional var clusters : Array<_ShapeS8>;
+    @:optional var failures : _ShapeS3m;
 };

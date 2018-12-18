@@ -63,6 +63,12 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateSAMLProviderOutput>) : Request {})
     public function createSAMLProvider(params : CreateSAMLProviderInput, ?cb : Callback<CreateSAMLProviderOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateServiceLinkedRoleOutput>) : Request {})
+    public function createServiceLinkedRole(params : CreateServiceLinkedRoleInput, ?cb : Callback<CreateServiceLinkedRoleOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateServiceSpecificCredentialOutput>) : Request {})
+    public function createServiceSpecificCredential(params : CreateServiceSpecificCredentialInput, ?cb : Callback<CreateServiceSpecificCredentialOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateUserOutput>) : Request {})
     public function createUser(params : CreateUserInput, ?cb : Callback<CreateUserOutput>) : Request;
     
@@ -106,6 +112,9 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     public function deleteRole(params : DeleteRoleInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteRolePermissionsBoundary(params : DeleteRolePermissionsBoundaryInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteRolePolicy(params : DeleteRolePolicyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
@@ -117,11 +126,20 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteServerCertificate(params : DeleteServerCertificateInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteServiceLinkedRoleOutput>) : Request {})
+    public function deleteServiceLinkedRole(params : DeleteServiceLinkedRoleInput, ?cb : Callback<DeleteServiceLinkedRoleOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteServiceSpecificCredential(params : DeleteServiceSpecificCredentialInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteSigningCertificate(params : DeleteSigningCertificateInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteUser(params : DeleteUserInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteUserPermissionsBoundary(params : DeleteUserPermissionsBoundaryInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteUserPolicy(params : DeleteUserPolicyInput, ?cb : Callback<Dynamic>) : Request;
@@ -143,6 +161,9 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<GenerateCredentialReportOutput>) : Request {})
     public function generateCredentialReport(params : GenerateCredentialReportInput, ?cb : Callback<GenerateCredentialReportOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GenerateServiceLastAccessedDetailsOutput>) : Request {})
+    public function generateServiceLastAccessedDetails(params : GenerateServiceLastAccessedDetailsInput, ?cb : Callback<GenerateServiceLastAccessedDetailsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetAccessKeyLastUsedOutput>) : Request {})
     public function getAccessKeyLastUsed(params : GetAccessKeyLastUsedInput, ?cb : Callback<GetAccessKeyLastUsedOutput>) : Request;
@@ -201,6 +222,15 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetServerCertificateOutput>) : Request {})
     public function getServerCertificate(params : GetServerCertificateInput, ?cb : Callback<GetServerCertificateOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetServiceLastAccessedDetailsOutput>) : Request {})
+    public function getServiceLastAccessedDetails(params : GetServiceLastAccessedDetailsInput, ?cb : Callback<GetServiceLastAccessedDetailsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetServiceLastAccessedDetailsWithEntitiesOutput>) : Request {})
+    public function getServiceLastAccessedDetailsWithEntities(params : GetServiceLastAccessedDetailsWithEntitiesInput, ?cb : Callback<GetServiceLastAccessedDetailsWithEntitiesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetServiceLinkedRoleDeletionStatusOutput>) : Request {})
+    public function getServiceLinkedRoleDeletionStatus(params : GetServiceLinkedRoleDeletionStatusInput, ?cb : Callback<GetServiceLinkedRoleDeletionStatusOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetUserOutput>) : Request {})
     public function getUser(params : GetUserInput, ?cb : Callback<GetUserOutput>) : Request;
     
@@ -249,11 +279,17 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListPoliciesOutput>) : Request {})
     public function listPolicies(params : ListPoliciesInput, ?cb : Callback<ListPoliciesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListPoliciesGrantingServiceAccessOutput>) : Request {})
+    public function listPoliciesGrantingServiceAccess(params : ListPoliciesGrantingServiceAccessInput, ?cb : Callback<ListPoliciesGrantingServiceAccessOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListPolicyVersionsOutput>) : Request {})
     public function listPolicyVersions(params : ListPolicyVersionsInput, ?cb : Callback<ListPolicyVersionsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListRolePoliciesOutput>) : Request {})
     public function listRolePolicies(params : ListRolePoliciesInput, ?cb : Callback<ListRolePoliciesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListRoleTagsOutput>) : Request {})
+    public function listRoleTags(params : ListRoleTagsInput, ?cb : Callback<ListRoleTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListRolesOutput>) : Request {})
     public function listRoles(params : ListRolesInput, ?cb : Callback<ListRolesOutput>) : Request;
@@ -267,11 +303,17 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListServerCertificatesOutput>) : Request {})
     public function listServerCertificates(params : ListServerCertificatesInput, ?cb : Callback<ListServerCertificatesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListServiceSpecificCredentialsOutput>) : Request {})
+    public function listServiceSpecificCredentials(params : ListServiceSpecificCredentialsInput, ?cb : Callback<ListServiceSpecificCredentialsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListSigningCertificatesOutput>) : Request {})
     public function listSigningCertificates(params : ListSigningCertificatesInput, ?cb : Callback<ListSigningCertificatesOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListUserPoliciesOutput>) : Request {})
     public function listUserPolicies(params : ListUserPoliciesInput, ?cb : Callback<ListUserPoliciesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListUserTagsOutput>) : Request {})
+    public function listUserTags(params : ListUserTagsInput, ?cb : Callback<ListUserTagsOutput>) : Request;
     
     @:overload(function (?cb : Callback<ListUsersOutput>) : Request {})
     public function listUsers(params : ListUsersInput, ?cb : Callback<ListUsersOutput>) : Request;
@@ -283,7 +325,13 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     public function putGroupPolicy(params : PutGroupPolicyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function putRolePermissionsBoundary(params : PutRolePermissionsBoundaryInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putRolePolicy(params : PutRolePolicyInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function putUserPermissionsBoundary(params : PutUserPermissionsBoundaryInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putUserPolicy(params : PutUserPolicyInput, ?cb : Callback<Dynamic>) : Request;
@@ -297,6 +345,9 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function removeUserFromGroup(params : RemoveUserFromGroupInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<ResetServiceSpecificCredentialOutput>) : Request {})
+    public function resetServiceSpecificCredential(params : ResetServiceSpecificCredentialInput, ?cb : Callback<ResetServiceSpecificCredentialOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function resyncMFADevice(params : ResyncMFADeviceInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -308,6 +359,18 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<SimulatePrincipalPolicyOutput>) : Request {})
     public function simulatePrincipalPolicy(params : SimulatePrincipalPolicyInput, ?cb : Callback<SimulatePrincipalPolicyOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagRole(params : TagRoleInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagUser(params : TagUserInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagRole(params : UntagRoleInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagUser(params : UntagUserInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateAccessKey(params : UpdateAccessKeyInput, ?cb : Callback<Dynamic>) : Request;
@@ -327,6 +390,12 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateOpenIDConnectProviderThumbprint(params : UpdateOpenIDConnectProviderThumbprintInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateRoleOutput>) : Request {})
+    public function updateRole(params : UpdateRoleInput, ?cb : Callback<UpdateRoleOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateRoleDescriptionOutput>) : Request {})
+    public function updateRoleDescription(params : UpdateRoleDescriptionInput, ?cb : Callback<UpdateRoleDescriptionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateSAMLProviderOutput>) : Request {})
     public function updateSAMLProvider(params : UpdateSAMLProviderInput, ?cb : Callback<UpdateSAMLProviderOutput>) : Request;
     
@@ -335,6 +404,9 @@ extern class IAM extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateServerCertificate(params : UpdateServerCertificateInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function updateServiceSpecificCredential(params : UpdateServiceSpecificCredentialInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function updateSigningCertificate(params : UpdateSigningCertificateInput, ?cb : Callback<Dynamic>) : Request;

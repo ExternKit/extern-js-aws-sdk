@@ -6,10 +6,11 @@ typedef UpdateEnvironmentInput = {
     @:optional var VersionLabel : String;
     @:optional var EnvironmentId : String;
     @:optional var GroupName : String;
-    @:optional var OptionsToRemove : _ShapeS20;
+    @:optional var OptionsToRemove : _ShapeS2e;
     @:optional var EnvironmentName : String;
-    @:optional var OptionSettings : _ShapeS1n;
+    @:optional var PlatformArn : String;
+    @:optional var OptionSettings : _ShapeS21;
     @:optional var SolutionStackName : String;
     @:optional var TemplateName : String;
-    @:optional var Tier : _ShapeS10;
+    @:optional var Tier : _ShapeS11;
 };

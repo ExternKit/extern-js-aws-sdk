@@ -1,3 +1,3 @@
 package js.aws.glacier;
 
-typedef DescribeVaultOutput = _ShapeSq;
+typedef DescribeVaultOutput = _ShapeS1a;

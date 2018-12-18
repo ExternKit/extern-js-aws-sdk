@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBClusterOutput = {
-    @:optional var DBCluster : _ShapeS1i;
+    @:optional var DBCluster : _ShapeS1q;
 };

@@ -1,14 +1,20 @@
 package js.aws.cloudfront;
 
 typedef _ShapeSn = {
-    @:optional var SmoothStreaming : Bool;
-    var ViewerProtocolPolicy : String;
-    @:optional var Compress : Bool;
-    @:optional var AllowedMethods : _ShapeS12;
-    @:optional var MaxTTL : Int;
-    var ForwardedValues : _ShapeSo;
-    var MinTTL : Int;
-    @:optional var DefaultTTL : Int;
-    var TargetOriginId : String;
-    var TrustedSigners : _ShapeSy;
+    @:optional var Items : Array<{
+        var Members : {
+            var Items : Array<{
+                var OriginId : String;
+            }>;
+            var Quantity : Int;
+        };
+        var FailoverCriteria : {
+            var StatusCodes : {
+                var Items : Array<Int>;
+                var Quantity : Int;
+            };
+        };
+        var Id : String;
+    }>;
+    var Quantity : Int;
 };

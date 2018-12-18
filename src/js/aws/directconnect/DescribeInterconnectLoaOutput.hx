@@ -1,5 +1,5 @@
 package js.aws.directconnect;
 
 typedef DescribeInterconnectLoaOutput = {
-    @:optional var loa : _ShapeS1k;
+    @:optional var loa : _ShapeS2u;
 };

@@ -1,8 +1,9 @@
 package js.aws.ec2;
 
 typedef DescribeFlowLogsInput = {
-    @:optional var FlowLogIds : _ShapeS2c;
+    @:optional var FlowLogIds : _ShapeSd;
     @:optional var MaxResults : Int;
     @:optional var NextToken : String;
-    @:optional var Filter : _ShapeS7y;
+    @:optional var DryRun : Bool;
+    @:optional var Filter : _ShapeSf8;
 };

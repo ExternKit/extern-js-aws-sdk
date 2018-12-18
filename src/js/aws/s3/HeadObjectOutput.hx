@@ -2,6 +2,7 @@ package js.aws.s3;
 
 typedef HeadObjectOutput = {
     @:optional var LastModified : Float;
+    @:optional var ObjectLockLegalHoldStatus : String;
     @:optional var ReplicationStatus : String;
     @:optional var ContentEncoding : String;
     @:optional var SSEKMSKeyId : _ShapeSj;
@@ -12,6 +13,7 @@ typedef HeadObjectOutput = {
     @:optional var RequestCharged : String;
     @:optional var Expiration : String;
     @:optional var ContentLanguage : String;
+    @:optional var ObjectLockRetainUntilDate : _ShapeS1g;
     @:optional var ContentType : String;
     @:optional var CacheControl : String;
     @:optional var Metadata : _ShapeS11;
@@ -23,6 +25,7 @@ typedef HeadObjectOutput = {
     @:optional var PartsCount : Int;
     @:optional var ETag : String;
     @:optional var SSECustomerKeyMD5 : String;
+    @:optional var ObjectLockMode : String;
     @:optional var ServerSideEncryption : String;
     @:optional var Restore : String;
     @:optional var ContentLength : Int;

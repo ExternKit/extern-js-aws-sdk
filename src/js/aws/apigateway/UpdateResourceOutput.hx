@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateResourceOutput = _ShapeSu;
+typedef UpdateResourceOutput = _ShapeS18;

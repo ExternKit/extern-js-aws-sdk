@@ -1,5 +1,5 @@
 package js.aws.configservice;
 
 typedef PutConfigurationRecorderInput = {
-    var ConfigurationRecorder : _ShapeS1o;
+    var ConfigurationRecorder : _ShapeS3h;
 };

@@ -3,12 +3,13 @@ package js.aws.directconnect;
 typedef CreatePublicVirtualInterfaceInput = {
     var connectionId : String;
     var newPublicVirtualInterface : {
+        @:optional var addressFamily : String;
         var vlan : Int;
-        var amazonAddress : String;
+        @:optional var amazonAddress : String;
         var asn : Int;
-        var customerAddress : String;
+        @:optional var customerAddress : String;
         @:optional var authKey : String;
-        var routeFilterPrefixes : _ShapeSr;
+        @:optional var routeFilterPrefixes : _ShapeS11;
         var virtualInterfaceName : String;
     };
 };

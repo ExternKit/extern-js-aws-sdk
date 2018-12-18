@@ -8,7 +8,8 @@ typedef DescribeAutoScalingInstancesOutput = {
         var AutoScalingGroupName : String;
         var ProtectedFromScaleIn : Bool;
         var LifecycleState : String;
-        var LaunchConfigurationName : String;
+        @:optional var LaunchConfigurationName : String;
         var HealthStatus : String;
+        @:optional var LaunchTemplate : _ShapeSy;
     }>;
 };

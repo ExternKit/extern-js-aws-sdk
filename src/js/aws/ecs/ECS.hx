@@ -18,6 +18,12 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateServiceOutput>) : Request {})
     public function createService(params : CreateServiceInput, ?cb : Callback<CreateServiceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteAccountSettingOutput>) : Request {})
+    public function deleteAccountSetting(params : DeleteAccountSettingInput, ?cb : Callback<DeleteAccountSettingOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteAttributesOutput>) : Request {})
+    public function deleteAttributes(params : DeleteAttributesInput, ?cb : Callback<DeleteAttributesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteClusterOutput>) : Request {})
     public function deleteCluster(params : DeleteClusterInput, ?cb : Callback<DeleteClusterOutput>) : Request;
     
@@ -48,6 +54,12 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DiscoverPollEndpointOutput>) : Request {})
     public function discoverPollEndpoint(params : DiscoverPollEndpointInput, ?cb : Callback<DiscoverPollEndpointOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListAccountSettingsOutput>) : Request {})
+    public function listAccountSettings(params : ListAccountSettingsInput, ?cb : Callback<ListAccountSettingsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListAttributesOutput>) : Request {})
+    public function listAttributes(params : ListAttributesInput, ?cb : Callback<ListAttributesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListClustersOutput>) : Request {})
     public function listClusters(params : ListClustersInput, ?cb : Callback<ListClustersOutput>) : Request;
     
@@ -57,6 +69,9 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListServicesOutput>) : Request {})
     public function listServices(params : ListServicesInput, ?cb : Callback<ListServicesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListTagsForResourceOutput>) : Request {})
+    public function listTagsForResource(params : ListTagsForResourceInput, ?cb : Callback<ListTagsForResourceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListTaskDefinitionFamiliesOutput>) : Request {})
     public function listTaskDefinitionFamilies(params : ListTaskDefinitionFamiliesInput, ?cb : Callback<ListTaskDefinitionFamiliesOutput>) : Request;
     
@@ -65,6 +80,12 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<ListTasksOutput>) : Request {})
     public function listTasks(params : ListTasksInput, ?cb : Callback<ListTasksOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutAccountSettingOutput>) : Request {})
+    public function putAccountSetting(params : PutAccountSettingInput, ?cb : Callback<PutAccountSettingOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutAttributesOutput>) : Request {})
+    public function putAttributes(params : PutAttributesInput, ?cb : Callback<PutAttributesOutput>) : Request;
     
     @:overload(function (?cb : Callback<RegisterContainerInstanceOutput>) : Request {})
     public function registerContainerInstance(params : RegisterContainerInstanceInput, ?cb : Callback<RegisterContainerInstanceOutput>) : Request;
@@ -87,8 +108,17 @@ extern class ECS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<SubmitTaskStateChangeOutput>) : Request {})
     public function submitTaskStateChange(params : SubmitTaskStateChangeInput, ?cb : Callback<SubmitTaskStateChangeOutput>) : Request;
     
+    @:overload(function (?cb : Callback<TagResourceOutput>) : Request {})
+    public function tagResource(params : TagResourceInput, ?cb : Callback<TagResourceOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UntagResourceOutput>) : Request {})
+    public function untagResource(params : UntagResourceInput, ?cb : Callback<UntagResourceOutput>) : Request;
+    
     @:overload(function (?cb : Callback<UpdateContainerAgentOutput>) : Request {})
     public function updateContainerAgent(params : UpdateContainerAgentInput, ?cb : Callback<UpdateContainerAgentOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateContainerInstancesStateOutput>) : Request {})
+    public function updateContainerInstancesState(params : UpdateContainerInstancesStateInput, ?cb : Callback<UpdateContainerInstancesStateOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateServiceOutput>) : Request {})
     public function updateService(params : UpdateServiceInput, ?cb : Callback<UpdateServiceOutput>) : Request;

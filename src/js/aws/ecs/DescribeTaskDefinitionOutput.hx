@@ -1,5 +1,6 @@
 package js.aws.ecs;
 
 typedef DescribeTaskDefinitionOutput = {
-    @:optional var taskDefinition : _ShapeS12;
+    @:optional var tags : _ShapeS3;
+    @:optional var taskDefinition : _ShapeS23;
 };

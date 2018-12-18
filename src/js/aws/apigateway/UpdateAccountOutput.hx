@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef UpdateAccountOutput = _ShapeS29;
+typedef UpdateAccountOutput = _ShapeS31;

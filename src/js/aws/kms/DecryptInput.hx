@@ -1,7 +1,7 @@
 package js.aws.kms;
 
 typedef DecryptInput = {
-    @:optional var GrantTokens : _ShapeSe;
-    @:optional var EncryptionContext : _ShapeSb;
+    @:optional var GrantTokens : _ShapeSn;
+    @:optional var EncryptionContext : _ShapeSk;
     var CiphertextBlob : Dynamic;
 };

@@ -1,7 +1,7 @@
 package js.aws.ec2;
 
 typedef ModifyReservedInstancesInput = {
-    var ReservedInstancesIds : _ShapeSdj;
+    var ReservedInstancesIds : _ShapeSnn;
     @:optional var ClientToken : String;
-    var TargetConfigurations : Array<_ShapeSe7>;
+    var TargetConfigurations : Array<_ShapeSo8>;
 };

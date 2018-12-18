@@ -1,3 +1,3 @@
 package js.aws.lambda;
 
-typedef UpdateAliasOutput = _ShapeSg;
+typedef UpdateAliasOutput = _ShapeSr;

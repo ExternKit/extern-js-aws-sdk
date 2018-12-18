@@ -3,7 +3,7 @@ package js.aws.rds;
 typedef DescribeReservedDBInstancesInput = {
     @:optional var DBInstanceClass : String;
     @:optional var MultiAZ : Bool;
-    @:optional var Filters : _ShapeS3b;
+    @:optional var Filters : _ShapeS44;
     @:optional var Duration : String;
     @:optional var Marker : String;
     @:optional var OfferingType : String;

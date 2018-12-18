@@ -6,8 +6,8 @@ typedef DescribeInstancesHealthOutput = {
         @:optional var AvailabilityZone : String;
         @:optional var Color : String;
         @:optional var InstanceId : String;
-        @:optional var Causes : _ShapeS35;
-        @:optional var ApplicationMetrics : _ShapeS37;
+        @:optional var Causes : _ShapeS43;
+        @:optional var ApplicationMetrics : _ShapeS45;
         @:optional var InstanceType : String;
         @:optional var System : {
             @:optional var LoadAverage : Array<Float>;
@@ -15,6 +15,7 @@ typedef DescribeInstancesHealthOutput = {
                 @:optional var SoftIRQ : Float;
                 @:optional var IOWait : Float;
                 @:optional var IRQ : Float;
+                @:optional var Privileged : Float;
                 @:optional var System : Float;
                 @:optional var Idle : Float;
                 @:optional var Nice : Float;

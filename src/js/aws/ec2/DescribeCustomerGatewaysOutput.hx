@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeCustomerGatewaysOutput = {
-    @:optional var CustomerGateways : Array<_ShapeS30>;
+    @:optional var CustomerGateways : Array<_ShapeS4q>;
 };

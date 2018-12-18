@@ -7,9 +7,11 @@ typedef DescribeScalingPoliciesOutput = {
         @:optional var ComparisonOperator : String;
         @:optional var FleetId : String;
         @:optional var EvaluationPeriods : Int;
+        @:optional var TargetConfiguration : _ShapeS5t;
         @:optional var ScalingAdjustmentType : String;
         @:optional var MetricName : String;
         @:optional var Name : String;
+        @:optional var PolicyType : String;
         @:optional var Status : String;
         @:optional var ScalingAdjustment : Int;
     }>;

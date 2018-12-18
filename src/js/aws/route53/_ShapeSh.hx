@@ -13,6 +13,7 @@ typedef _ShapeSh = {
         var DNSName : String;
     };
     @:optional var TTL : Int;
+    @:optional var MultiValueAnswer : Bool;
     @:optional var ResourceRecords : Array<{
         var Value : String;
     }>;

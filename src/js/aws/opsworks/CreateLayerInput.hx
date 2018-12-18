@@ -1,10 +1,11 @@
 package js.aws.opsworks;
 
 typedef CreateLayerInput = {
+    @:optional var CloudWatchLogsConfiguration : _ShapeS19;
     var Shortname : String;
     @:optional var AutoAssignPublicIps : Bool;
-    @:optional var VolumeConfigurations : _ShapeS19;
-    @:optional var LifecycleEventConfiguration : _ShapeS1c;
+    @:optional var VolumeConfigurations : _ShapeS1f;
+    @:optional var LifecycleEventConfiguration : _ShapeS1i;
     @:optional var EnableAutoHealing : Bool;
     var StackId : String;
     @:optional var InstallUpdatesOnBoot : Bool;
@@ -13,7 +14,7 @@ typedef CreateLayerInput = {
     @:optional var Packages : _ShapeS3;
     @:optional var AutoAssignElasticIps : Bool;
     @:optional var CustomJson : String;
-    @:optional var CustomRecipes : _ShapeS1b;
+    @:optional var CustomRecipes : _ShapeS1h;
     @:optional var UseEbsOptimizedInstances : Bool;
     var Name : String;
     var Type : String;

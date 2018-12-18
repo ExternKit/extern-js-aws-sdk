@@ -1,11 +1,12 @@
 package js.aws.ec2;
 
-typedef _ShapeSbd = Array<{
-    @:optional var Ebs : {
-        @:optional var AttachTime : Float;
-        @:optional var VolumeId : String;
-        @:optional var DeleteOnTermination : Bool;
-        @:optional var Status : String;
-    };
-    @:optional var DeviceName : String;
-}>;
+typedef _ShapeSbd = {
+    @:optional var State : String;
+    @:optional var DestinationCidrBlock : String;
+    @:optional var Type : String;
+    @:optional var TransitGatewayAttachments : Array<{
+        @:optional var ResourceType : String;
+        @:optional var TransitGatewayAttachmentId : String;
+        @:optional var ResourceId : String;
+    }>;
+};

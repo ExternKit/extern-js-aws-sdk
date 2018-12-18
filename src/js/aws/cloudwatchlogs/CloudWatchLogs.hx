@@ -13,6 +13,9 @@ extern class CloudWatchLogs extends Service implements js.extern.Extern<'aws-sdk
     public function new(?params : Dynamic) : Void;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function associateKmsKey(params : AssociateKmsKeyInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function cancelExportTask(params : CancelExportTaskInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<CreateExportTaskOutput>) : Request {})
@@ -37,6 +40,9 @@ extern class CloudWatchLogs extends Service implements js.extern.Extern<'aws-sdk
     public function deleteMetricFilter(params : DeleteMetricFilterInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function deleteResourcePolicy(params : DeleteResourcePolicyInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deleteRetentionPolicy(params : DeleteRetentionPolicyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
@@ -57,14 +63,35 @@ extern class CloudWatchLogs extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<DescribeMetricFiltersOutput>) : Request {})
     public function describeMetricFilters(params : DescribeMetricFiltersInput, ?cb : Callback<DescribeMetricFiltersOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeQueriesOutput>) : Request {})
+    public function describeQueries(params : DescribeQueriesInput, ?cb : Callback<DescribeQueriesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeResourcePoliciesOutput>) : Request {})
+    public function describeResourcePolicies(params : DescribeResourcePoliciesInput, ?cb : Callback<DescribeResourcePoliciesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeSubscriptionFiltersOutput>) : Request {})
     public function describeSubscriptionFilters(params : DescribeSubscriptionFiltersInput, ?cb : Callback<DescribeSubscriptionFiltersOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function disassociateKmsKey(params : DisassociateKmsKeyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<FilterLogEventsOutput>) : Request {})
     public function filterLogEvents(params : FilterLogEventsInput, ?cb : Callback<FilterLogEventsOutput>) : Request;
     
     @:overload(function (?cb : Callback<GetLogEventsOutput>) : Request {})
     public function getLogEvents(params : GetLogEventsInput, ?cb : Callback<GetLogEventsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetLogGroupFieldsOutput>) : Request {})
+    public function getLogGroupFields(params : GetLogGroupFieldsInput, ?cb : Callback<GetLogGroupFieldsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetLogRecordOutput>) : Request {})
+    public function getLogRecord(params : GetLogRecordInput, ?cb : Callback<GetLogRecordOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<GetQueryResultsOutput>) : Request {})
+    public function getQueryResults(params : GetQueryResultsInput, ?cb : Callback<GetQueryResultsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListTagsLogGroupOutput>) : Request {})
+    public function listTagsLogGroup(params : ListTagsLogGroupInput, ?cb : Callback<ListTagsLogGroupOutput>) : Request;
     
     @:overload(function (?cb : Callback<PutDestinationOutput>) : Request {})
     public function putDestination(params : PutDestinationInput, ?cb : Callback<PutDestinationOutput>) : Request;
@@ -78,13 +105,28 @@ extern class CloudWatchLogs extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putMetricFilter(params : PutMetricFilterInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<PutResourcePolicyOutput>) : Request {})
+    public function putResourcePolicy(params : PutResourcePolicyInput, ?cb : Callback<PutResourcePolicyOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putRetentionPolicy(params : PutRetentionPolicyInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function putSubscriptionFilter(params : PutSubscriptionFilterInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<StartQueryOutput>) : Request {})
+    public function startQuery(params : StartQueryInput, ?cb : Callback<StartQueryOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<StopQueryOutput>) : Request {})
+    public function stopQuery(params : StopQueryInput, ?cb : Callback<StopQueryOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function tagLogGroup(params : TagLogGroupInput, ?cb : Callback<Dynamic>) : Request;
+    
     @:overload(function (?cb : Callback<TestMetricFilterOutput>) : Request {})
     public function testMetricFilter(params : TestMetricFilterInput, ?cb : Callback<TestMetricFilterOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function untagLogGroup(params : UntagLogGroupInput, ?cb : Callback<Dynamic>) : Request;
     
 }

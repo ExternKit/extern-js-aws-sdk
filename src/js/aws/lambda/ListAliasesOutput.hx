@@ -2,5 +2,5 @@ package js.aws.lambda;
 
 typedef ListAliasesOutput = {
     @:optional var NextMarker : String;
-    @:optional var Aliases : Array<_ShapeSg>;
+    @:optional var Aliases : Array<_ShapeSr>;
 };

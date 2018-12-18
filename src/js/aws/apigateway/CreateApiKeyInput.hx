@@ -10,4 +10,5 @@ typedef CreateApiKeyInput = {
     }>;
     @:optional var enabled : Bool;
     @:optional var value : String;
+    @:optional var customerId : String;
 };

@@ -1,8 +1,8 @@
 package js.aws.ssm;
 
 typedef ModifyDocumentPermissionInput = {
-    @:optional var AccountIdsToRemove : _ShapeS2m;
+    @:optional var AccountIdsToRemove : _ShapeS8h;
     var PermissionType : String;
-    @:optional var AccountIdsToAdd : _ShapeS2m;
+    @:optional var AccountIdsToAdd : _ShapeS8h;
     var Name : String;
 };

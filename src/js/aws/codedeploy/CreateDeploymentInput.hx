@@ -8,5 +8,7 @@ typedef CreateDeploymentInput = {
     var applicationName : String;
     @:optional var ignoreApplicationStopFailures : Bool;
     @:optional var deploymentConfigName : String;
-    @:optional var autoRollbackConfiguration : _ShapeS1t;
+    @:optional var autoRollbackConfiguration : _ShapeS1z;
+    @:optional var fileExistsBehavior : String;
+    @:optional var targetInstances : _ShapeS4c;
 };

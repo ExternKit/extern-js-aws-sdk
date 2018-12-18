@@ -45,4 +45,7 @@ extern class EFS extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function modifyMountTargetSecurityGroups(params : ModifyMountTargetSecurityGroupsInput, ?cb : Callback<Dynamic>) : Request;
     
+    @:overload(function (?cb : Callback<UpdateFileSystemOutput>) : Request {})
+    public function updateFileSystem(params : UpdateFileSystemInput, ?cb : Callback<UpdateFileSystemOutput>) : Request;
+    
 }

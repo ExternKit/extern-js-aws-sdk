@@ -36,6 +36,12 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<CreateCachediSCSIVolumeOutput>) : Request {})
     public function createCachediSCSIVolume(params : CreateCachediSCSIVolumeInput, ?cb : Callback<CreateCachediSCSIVolumeOutput>) : Request;
     
+    @:overload(function (?cb : Callback<CreateNFSFileShareOutput>) : Request {})
+    public function createNFSFileShare(params : CreateNFSFileShareInput, ?cb : Callback<CreateNFSFileShareOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<CreateSMBFileShareOutput>) : Request {})
+    public function createSMBFileShare(params : CreateSMBFileShareInput, ?cb : Callback<CreateSMBFileShareOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CreateSnapshotOutput>) : Request {})
     public function createSnapshot(params : CreateSnapshotInput, ?cb : Callback<CreateSnapshotOutput>) : Request;
     
@@ -56,6 +62,9 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<DeleteChapCredentialsOutput>) : Request {})
     public function deleteChapCredentials(params : DeleteChapCredentialsInput, ?cb : Callback<DeleteChapCredentialsOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DeleteFileShareOutput>) : Request {})
+    public function deleteFileShare(params : DeleteFileShareInput, ?cb : Callback<DeleteFileShareOutput>) : Request;
     
     @:overload(function (?cb : Callback<DeleteGatewayOutput>) : Request {})
     public function deleteGateway(params : DeleteGatewayInput, ?cb : Callback<DeleteGatewayOutput>) : Request;
@@ -90,6 +99,15 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<DescribeMaintenanceStartTimeOutput>) : Request {})
     public function describeMaintenanceStartTime(params : DescribeMaintenanceStartTimeInput, ?cb : Callback<DescribeMaintenanceStartTimeOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DescribeNFSFileSharesOutput>) : Request {})
+    public function describeNFSFileShares(params : DescribeNFSFileSharesInput, ?cb : Callback<DescribeNFSFileSharesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeSMBFileSharesOutput>) : Request {})
+    public function describeSMBFileShares(params : DescribeSMBFileSharesInput, ?cb : Callback<DescribeSMBFileSharesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<DescribeSMBSettingsOutput>) : Request {})
+    public function describeSMBSettings(params : DescribeSMBSettingsInput, ?cb : Callback<DescribeSMBSettingsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DescribeSnapshotScheduleOutput>) : Request {})
     public function describeSnapshotSchedule(params : DescribeSnapshotScheduleInput, ?cb : Callback<DescribeSnapshotScheduleOutput>) : Request;
     
@@ -117,6 +135,12 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<DisableGatewayOutput>) : Request {})
     public function disableGateway(params : DisableGatewayInput, ?cb : Callback<DisableGatewayOutput>) : Request;
     
+    @:overload(function (?cb : Callback<JoinDomainOutput>) : Request {})
+    public function joinDomain(params : JoinDomainInput, ?cb : Callback<JoinDomainOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<ListFileSharesOutput>) : Request {})
+    public function listFileShares(params : ListFileSharesInput, ?cb : Callback<ListFileSharesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListGatewaysOutput>) : Request {})
     public function listGateways(params : ListGatewaysInput, ?cb : Callback<ListGatewaysOutput>) : Request;
     
@@ -138,6 +162,12 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     @:overload(function (?cb : Callback<ListVolumesOutput>) : Request {})
     public function listVolumes(params : ListVolumesInput, ?cb : Callback<ListVolumesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<NotifyWhenUploadedOutput>) : Request {})
+    public function notifyWhenUploaded(params : NotifyWhenUploadedInput, ?cb : Callback<NotifyWhenUploadedOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<RefreshCacheOutput>) : Request {})
+    public function refreshCache(params : RefreshCacheInput, ?cb : Callback<RefreshCacheOutput>) : Request;
+    
     @:overload(function (?cb : Callback<RemoveTagsFromResourceOutput>) : Request {})
     public function removeTagsFromResource(params : RemoveTagsFromResourceInput, ?cb : Callback<RemoveTagsFromResourceOutput>) : Request;
     
@@ -152,6 +182,9 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<SetLocalConsolePasswordOutput>) : Request {})
     public function setLocalConsolePassword(params : SetLocalConsolePasswordInput, ?cb : Callback<SetLocalConsolePasswordOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<SetSMBGuestPasswordOutput>) : Request {})
+    public function setSMBGuestPassword(params : SetSMBGuestPasswordInput, ?cb : Callback<SetSMBGuestPasswordOutput>) : Request;
     
     @:overload(function (?cb : Callback<ShutdownGatewayOutput>) : Request {})
     public function shutdownGateway(params : ShutdownGatewayInput, ?cb : Callback<ShutdownGatewayOutput>) : Request;
@@ -173,6 +206,12 @@ extern class StorageGateway extends Service implements js.extern.Extern<'aws-sdk
     
     @:overload(function (?cb : Callback<UpdateMaintenanceStartTimeOutput>) : Request {})
     public function updateMaintenanceStartTime(params : UpdateMaintenanceStartTimeInput, ?cb : Callback<UpdateMaintenanceStartTimeOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateNFSFileShareOutput>) : Request {})
+    public function updateNFSFileShare(params : UpdateNFSFileShareInput, ?cb : Callback<UpdateNFSFileShareOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<UpdateSMBFileShareOutput>) : Request {})
+    public function updateSMBFileShare(params : UpdateSMBFileShareInput, ?cb : Callback<UpdateSMBFileShareOutput>) : Request;
     
     @:overload(function (?cb : Callback<UpdateSnapshotScheduleOutput>) : Request {})
     public function updateSnapshotSchedule(params : UpdateSnapshotScheduleInput, ?cb : Callback<UpdateSnapshotScheduleOutput>) : Request;

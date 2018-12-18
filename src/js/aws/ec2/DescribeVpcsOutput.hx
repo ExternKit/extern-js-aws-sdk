@@ -1,5 +1,5 @@
 package js.aws.ec2;
 
 typedef DescribeVpcsOutput = {
-    @:optional var Vpcs : Array<_ShapeS66>;
+    @:optional var Vpcs : Array<_ShapeS4y>;
 };

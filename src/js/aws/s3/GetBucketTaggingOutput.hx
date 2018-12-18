@@ -1,5 +1,5 @@
 package js.aws.s3;
 
 typedef GetBucketTaggingOutput = {
-    var TagSet : _ShapeS59;
+    var TagSet : _ShapeS3j;
 };

@@ -9,7 +9,7 @@ typedef DescribeImagesOutput = {
         @:optional var SriovNetSupport : String;
         @:optional var ImageType : String;
         @:optional var KernelId : String;
-        @:optional var StateReason : _ShapeSas;
+        @:optional var StateReason : _ShapeSk0;
         @:optional var OwnerId : String;
         @:optional var Hypervisor : String;
         @:optional var ImageLocation : String;
@@ -17,14 +17,14 @@ typedef DescribeImagesOutput = {
         @:optional var VirtualizationType : String;
         @:optional var State : String;
         @:optional var Public : Bool;
-        @:optional var BlockDeviceMappings : _ShapeSah;
+        @:optional var BlockDeviceMappings : _ShapeSjm;
         @:optional var Architecture : String;
         @:optional var RootDeviceName : String;
-        @:optional var ProductCodes : _ShapeSae;
+        @:optional var ProductCodes : _ShapeSib;
         @:optional var RootDeviceType : String;
         @:optional var EnaSupport : Bool;
         @:optional var RamdiskId : String;
         @:optional var Name : String;
-        @:optional var Tags : _ShapeSh;
+        @:optional var Tags : _ShapeSi;
     }>;
 };

@@ -2,5 +2,5 @@ package js.aws.codedeploy;
 
 typedef BatchGetDeploymentInstancesOutput = {
     @:optional var errorMessage : String;
-    @:optional var instancesSummary : Array<_ShapeS22>;
+    @:optional var instancesSummary : Array<_ShapeS35>;
 };

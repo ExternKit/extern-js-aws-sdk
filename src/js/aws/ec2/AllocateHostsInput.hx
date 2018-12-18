@@ -6,4 +6,5 @@ typedef AllocateHostsInput = {
     @:optional var AutoPlacement : String;
     var Quantity : Int;
     var InstanceType : String;
+    @:optional var TagSpecifications : _ShapeS19;
 };

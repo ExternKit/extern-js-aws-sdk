@@ -27,11 +27,17 @@ extern class CodeDeploy extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<BatchGetDeploymentInstancesOutput>) : Request {})
     public function batchGetDeploymentInstances(params : BatchGetDeploymentInstancesInput, ?cb : Callback<BatchGetDeploymentInstancesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<BatchGetDeploymentTargetsOutput>) : Request {})
+    public function batchGetDeploymentTargets(params : BatchGetDeploymentTargetsInput, ?cb : Callback<BatchGetDeploymentTargetsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<BatchGetDeploymentsOutput>) : Request {})
     public function batchGetDeployments(params : BatchGetDeploymentsInput, ?cb : Callback<BatchGetDeploymentsOutput>) : Request;
     
     @:overload(function (?cb : Callback<BatchGetOnPremisesInstancesOutput>) : Request {})
     public function batchGetOnPremisesInstances(params : BatchGetOnPremisesInstancesInput, ?cb : Callback<BatchGetOnPremisesInstancesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function continueDeployment(params : ContinueDeploymentInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<CreateApplicationOutput>) : Request {})
     public function createApplication(params : CreateApplicationInput, ?cb : Callback<CreateApplicationOutput>) : Request;
@@ -54,6 +60,9 @@ extern class CodeDeploy extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DeleteDeploymentGroupOutput>) : Request {})
     public function deleteDeploymentGroup(params : DeleteDeploymentGroupInput, ?cb : Callback<DeleteDeploymentGroupOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DeleteGitHubAccountTokenOutput>) : Request {})
+    public function deleteGitHubAccountToken(params : DeleteGitHubAccountTokenInput, ?cb : Callback<DeleteGitHubAccountTokenOutput>) : Request;
+    
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function deregisterOnPremisesInstance(params : DeregisterOnPremisesInstanceInput, ?cb : Callback<Dynamic>) : Request;
     
@@ -75,6 +84,9 @@ extern class CodeDeploy extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<GetDeploymentInstanceOutput>) : Request {})
     public function getDeploymentInstance(params : GetDeploymentInstanceInput, ?cb : Callback<GetDeploymentInstanceOutput>) : Request;
     
+    @:overload(function (?cb : Callback<GetDeploymentTargetOutput>) : Request {})
+    public function getDeploymentTarget(params : GetDeploymentTargetInput, ?cb : Callback<GetDeploymentTargetOutput>) : Request;
+    
     @:overload(function (?cb : Callback<GetOnPremisesInstanceOutput>) : Request {})
     public function getOnPremisesInstance(params : GetOnPremisesInstanceInput, ?cb : Callback<GetOnPremisesInstanceOutput>) : Request;
     
@@ -93,11 +105,20 @@ extern class CodeDeploy extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ListDeploymentInstancesOutput>) : Request {})
     public function listDeploymentInstances(params : ListDeploymentInstancesInput, ?cb : Callback<ListDeploymentInstancesOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListDeploymentTargetsOutput>) : Request {})
+    public function listDeploymentTargets(params : ListDeploymentTargetsInput, ?cb : Callback<ListDeploymentTargetsOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListDeploymentsOutput>) : Request {})
     public function listDeployments(params : ListDeploymentsInput, ?cb : Callback<ListDeploymentsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ListGitHubAccountTokenNamesOutput>) : Request {})
+    public function listGitHubAccountTokenNames(params : ListGitHubAccountTokenNamesInput, ?cb : Callback<ListGitHubAccountTokenNamesOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListOnPremisesInstancesOutput>) : Request {})
     public function listOnPremisesInstances(params : ListOnPremisesInstancesInput, ?cb : Callback<ListOnPremisesInstancesOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<PutLifecycleEventHookExecutionStatusOutput>) : Request {})
+    public function putLifecycleEventHookExecutionStatus(params : PutLifecycleEventHookExecutionStatusInput, ?cb : Callback<PutLifecycleEventHookExecutionStatusOutput>) : Request;
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function registerApplicationRevision(params : RegisterApplicationRevisionInput, ?cb : Callback<Dynamic>) : Request;
@@ -107,6 +128,9 @@ extern class CodeDeploy extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<Dynamic>) : Request {})
     public function removeTagsFromOnPremisesInstances(params : RemoveTagsFromOnPremisesInstancesInput, ?cb : Callback<Dynamic>) : Request;
+    
+    @:overload(function (?cb : Callback<Dynamic>) : Request {})
+    public function skipWaitTimeForInstanceTermination(params : SkipWaitTimeForInstanceTerminationInput, ?cb : Callback<Dynamic>) : Request;
     
     @:overload(function (?cb : Callback<StopDeploymentOutput>) : Request {})
     public function stopDeployment(params : StopDeploymentInput, ?cb : Callback<StopDeploymentOutput>) : Request;

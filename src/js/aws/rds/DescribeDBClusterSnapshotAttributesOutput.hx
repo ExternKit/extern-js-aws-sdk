@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef DescribeDBClusterSnapshotAttributesOutput = {
-    @:optional var DBClusterSnapshotAttributesResult : _ShapeS3r;
+    @:optional var DBClusterSnapshotAttributesResult : _ShapeS4r;
 };

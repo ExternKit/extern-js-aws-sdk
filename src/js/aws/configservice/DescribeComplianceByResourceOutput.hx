@@ -5,6 +5,6 @@ typedef DescribeComplianceByResourceOutput = {
     @:optional var ComplianceByResources : Array<{
         @:optional var ResourceType : String;
         @:optional var ResourceId : String;
-        @:optional var Compliance : _ShapeSj;
+        @:optional var Compliance : _ShapeS1i;
     }>;
 };

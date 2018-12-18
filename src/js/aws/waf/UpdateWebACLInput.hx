@@ -1,10 +1,10 @@
 package js.aws.waf;
 
 typedef UpdateWebACLInput = {
-    @:optional var DefaultAction : _ShapeS17;
+    @:optional var DefaultAction : _ShapeS1w;
     @:optional var Updates : Array<{
         var Action : String;
-        var ActivatedRule : _ShapeS1c;
+        var ActivatedRule : _ShapeS21;
     }>;
     var ChangeToken : String;
     var WebACLId : String;

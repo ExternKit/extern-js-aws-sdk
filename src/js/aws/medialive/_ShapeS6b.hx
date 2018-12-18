@@ -1,0 +1,61 @@
+package js.aws.medialive;
+
+typedef _ShapeS6b = {
+    @:optional var NullPacketBitrate : Float;
+    @:optional var ProgramNum : Int;
+    @:optional var PcrPid : String;
+    @:optional var Bitrate : Int;
+    @:optional var AudioFramesPerPes : Int;
+    @:optional var RateMode : String;
+    @:optional var EbpAudioInterval : String;
+    @:optional var TransportStreamId : Int;
+    @:optional var FragmentTime : Float;
+    @:optional var SegmentationMarkers : String;
+    @:optional var DvbTeletextPid : String;
+    @:optional var EcmPid : String;
+    @:optional var AudioBufferModel : String;
+    @:optional var EsRateInPes : String;
+    @:optional var DvbSdtSettings : {
+        @:optional var ServiceProviderName : String;
+        @:optional var RepInterval : Int;
+        @:optional var ServiceName : String;
+        @:optional var OutputSdt : String;
+    };
+    @:optional var DvbTdtSettings : {
+        @:optional var RepInterval : Int;
+    };
+    @:optional var EtvSignalPid : String;
+    @:optional var CcDescriptor : String;
+    @:optional var AudioStreamType : String;
+    @:optional var PcrPeriod : Int;
+    @:optional var EtvPlatformPid : String;
+    @:optional var KlvDataPids : String;
+    @:optional var Klv : String;
+    @:optional var EbpPlacement : String;
+    @:optional var TimedMetadataPid : String;
+    @:optional var PcrControl : String;
+    @:optional var SegmentationStyle : String;
+    @:optional var AudioPids : String;
+    @:optional var PmtPid : String;
+    @:optional var BufferModel : String;
+    @:optional var AribCaptionsPidControl : String;
+    @:optional var Scte35Control : String;
+    @:optional var DvbSubPids : String;
+    @:optional var Scte27Pids : String;
+    @:optional var DvbNitSettings : {
+        @:optional var RepInterval : Int;
+        var NetworkId : Int;
+        var NetworkName : String;
+    };
+    @:optional var TimedMetadataBehavior : String;
+    @:optional var AbsentInputAudioBehavior : String;
+    @:optional var AribCaptionsPid : String;
+    @:optional var SegmentationTime : Float;
+    @:optional var Arib : String;
+    @:optional var Ebif : String;
+    @:optional var EbpLookaheadMs : Int;
+    @:optional var VideoPid : String;
+    @:optional var PatInterval : Int;
+    @:optional var PmtInterval : Int;
+    @:optional var Scte35Pid : String;
+};

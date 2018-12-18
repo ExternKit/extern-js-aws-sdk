@@ -1,5 +1,5 @@
 package js.aws.redshift;
 
 typedef CopyClusterSnapshotOutput = {
-    @:optional var Snapshot : _ShapeSd;
+    @:optional var Snapshot : _ShapeSm;
 };

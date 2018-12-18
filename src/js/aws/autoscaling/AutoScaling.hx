@@ -21,6 +21,12 @@ extern class AutoScaling extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<AttachLoadBalancersOutput>) : Request {})
     public function attachLoadBalancers(params : AttachLoadBalancersInput, ?cb : Callback<AttachLoadBalancersOutput>) : Request;
     
+    @:overload(function (?cb : Callback<BatchDeleteScheduledActionOutput>) : Request {})
+    public function batchDeleteScheduledAction(params : BatchDeleteScheduledActionInput, ?cb : Callback<BatchDeleteScheduledActionOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<BatchPutScheduledUpdateGroupActionOutput>) : Request {})
+    public function batchPutScheduledUpdateGroupAction(params : BatchPutScheduledUpdateGroupActionInput, ?cb : Callback<BatchPutScheduledUpdateGroupActionOutput>) : Request;
+    
     @:overload(function (?cb : Callback<CompleteLifecycleActionOutput>) : Request {})
     public function completeLifecycleAction(params : CompleteLifecycleActionInput, ?cb : Callback<CompleteLifecycleActionOutput>) : Request;
     

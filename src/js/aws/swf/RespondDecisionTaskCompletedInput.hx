@@ -49,6 +49,7 @@ typedef RespondDecisionTaskCompletedInput = {
             var name : String;
             @:optional var startToCloseTimeout : String;
             var id : String;
+            @:optional var control : String;
             @:optional var input : String;
         };
         @:optional var signalExternalWorkflowExecutionDecisionAttributes : {

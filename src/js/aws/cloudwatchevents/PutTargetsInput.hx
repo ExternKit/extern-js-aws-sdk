@@ -1,6 +1,6 @@
 package js.aws.cloudwatchevents;
 
 typedef PutTargetsInput = {
-    var Targets : _ShapeSp;
+    var Targets : _ShapeSu;
     var Rule : String;
 };

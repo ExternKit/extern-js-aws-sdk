@@ -3,7 +3,7 @@ package js.aws.ecr;
 typedef DescribeImagesInput = {
     @:optional var maxResults : Int;
     @:optional var registryId : String;
-    @:optional var imageIds : _ShapeSh;
+    @:optional var imageIds : _ShapeSi;
     @:optional var filter : {
         @:optional var tagStatus : String;
     };

@@ -1,5 +1,5 @@
 package js.aws.snowball;
 
 typedef CreateAddressInput = {
-    var Address : _ShapeS5;
+    var Address : _ShapeS8;
 };

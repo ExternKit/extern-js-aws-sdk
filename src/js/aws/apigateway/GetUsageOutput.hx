@@ -1,3 +1,3 @@
 package js.aws.apigateway;
 
-typedef GetUsageOutput = _ShapeS3q;
+typedef GetUsageOutput = _ShapeS59;

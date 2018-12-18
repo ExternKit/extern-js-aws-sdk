@@ -18,6 +18,7 @@ typedef DescribeAssessmentRunsOutput = {
         }>;
         var dataCollected : Bool;
         @:optional var startedAt : Float;
+        var findingCounts : {};
         var notifications : Array<{
             var date : Float;
             var error : Bool;

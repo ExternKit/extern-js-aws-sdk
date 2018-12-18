@@ -1,6 +1,6 @@
 package js.aws.apigateway;
 
 typedef GetUsagePlansOutput = {
-    @:optional var items : Array<_ShapeS1l>;
+    @:optional var items : Array<_ShapeS24>;
     @:optional var position : String;
 };

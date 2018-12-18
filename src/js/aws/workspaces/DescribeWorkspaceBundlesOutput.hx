@@ -9,6 +9,9 @@ typedef DescribeWorkspaceBundlesOutput = {
             @:optional var Capacity : String;
         };
         @:optional var BundleId : String;
+        @:optional var RootStorage : {
+            @:optional var Capacity : String;
+        };
         @:optional var ComputeType : {
             @:optional var Name : String;
         };

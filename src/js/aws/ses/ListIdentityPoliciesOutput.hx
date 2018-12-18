@@ -1,5 +1,5 @@
 package js.aws.ses;
 
 typedef ListIdentityPoliciesOutput = {
-    var PolicyNames : _ShapeS2d;
+    var PolicyNames : _ShapeS3v;
 };

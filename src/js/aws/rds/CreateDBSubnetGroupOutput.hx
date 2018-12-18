@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CreateDBSubnetGroupOutput = {
-    @:optional var DBSubnetGroup : _ShapeS1z;
+    @:optional var DBSubnetGroup : _ShapeS2d;
 };

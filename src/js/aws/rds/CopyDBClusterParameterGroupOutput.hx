@@ -1,5 +1,5 @@
 package js.aws.rds;
 
 typedef CopyDBClusterParameterGroupOutput = {
-    @:optional var DBClusterParameterGroup : _ShapeSq;
+    @:optional var DBClusterParameterGroup : _ShapeSu;
 };

@@ -8,8 +8,8 @@ typedef UpdateItemInput = {
     var Key : _ShapeS6;
     @:optional var ReturnItemCollectionMetrics : String;
     @:optional var UpdateExpression : String;
-    @:optional var ExpressionAttributeValues : _ShapeS2m;
-    @:optional var Expected : _ShapeS2e;
+    @:optional var ExpressionAttributeValues : _ShapeS3x;
+    @:optional var Expected : _ShapeS3p;
     @:optional var AttributeUpdates : {};
     @:optional var ReturnConsumedCapacity : String;
     @:optional var ConditionalOperator : String;

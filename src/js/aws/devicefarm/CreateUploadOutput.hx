@@ -1,5 +1,5 @@
 package js.aws.devicefarm;
 
 typedef CreateUploadOutput = {
-    @:optional var upload : _ShapeS12;
+    @:optional var upload : _ShapeS1n;
 };

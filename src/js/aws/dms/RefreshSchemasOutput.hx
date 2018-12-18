@@ -1,5 +1,5 @@
 package js.aws.dms;
 
 typedef RefreshSchemasOutput = {
-    @:optional var RefreshSchemasStatus : _ShapeS25;
+    @:optional var RefreshSchemasStatus : _ShapeS30;
 };

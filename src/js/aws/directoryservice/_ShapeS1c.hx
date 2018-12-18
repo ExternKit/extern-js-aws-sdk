@@ -1,6 +1,6 @@
 package js.aws.directoryservice;
 
-typedef _ShapeS1c = {
-    var VpcId : String;
-    var SubnetIds : _ShapeSn;
-};
+typedef _ShapeS1c = Array<{
+    @:optional var Value : String;
+    @:optional var Name : String;
+}>;

@@ -39,6 +39,9 @@ extern class ElastiCache extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<CreateSnapshotOutput>) : Request {})
     public function createSnapshot(params : CreateSnapshotInput, ?cb : Callback<CreateSnapshotOutput>) : Request;
     
+    @:overload(function (?cb : Callback<DecreaseReplicaCountOutput>) : Request {})
+    public function decreaseReplicaCount(params : DecreaseReplicaCountInput, ?cb : Callback<DecreaseReplicaCountOutput>) : Request;
+    
     @:overload(function (?cb : Callback<DeleteCacheClusterOutput>) : Request {})
     public function deleteCacheCluster(params : DeleteCacheClusterInput, ?cb : Callback<DeleteCacheClusterOutput>) : Request;
     
@@ -93,6 +96,9 @@ extern class ElastiCache extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<DescribeSnapshotsOutput>) : Request {})
     public function describeSnapshots(params : DescribeSnapshotsInput, ?cb : Callback<DescribeSnapshotsOutput>) : Request;
     
+    @:overload(function (?cb : Callback<IncreaseReplicaCountOutput>) : Request {})
+    public function increaseReplicaCount(params : IncreaseReplicaCountInput, ?cb : Callback<IncreaseReplicaCountOutput>) : Request;
+    
     @:overload(function (?cb : Callback<ListAllowedNodeTypeModificationsOutput>) : Request {})
     public function listAllowedNodeTypeModifications(params : ListAllowedNodeTypeModificationsInput, ?cb : Callback<ListAllowedNodeTypeModificationsOutput>) : Request;
     
@@ -111,6 +117,9 @@ extern class ElastiCache extends Service implements js.extern.Extern<'aws-sdk'>
     @:overload(function (?cb : Callback<ModifyReplicationGroupOutput>) : Request {})
     public function modifyReplicationGroup(params : ModifyReplicationGroupInput, ?cb : Callback<ModifyReplicationGroupOutput>) : Request;
     
+    @:overload(function (?cb : Callback<ModifyReplicationGroupShardConfigurationOutput>) : Request {})
+    public function modifyReplicationGroupShardConfiguration(params : ModifyReplicationGroupShardConfigurationInput, ?cb : Callback<ModifyReplicationGroupShardConfigurationOutput>) : Request;
+    
     @:overload(function (?cb : Callback<PurchaseReservedCacheNodesOfferingOutput>) : Request {})
     public function purchaseReservedCacheNodesOffering(params : PurchaseReservedCacheNodesOfferingInput, ?cb : Callback<PurchaseReservedCacheNodesOfferingOutput>) : Request;
     
@@ -125,5 +134,8 @@ extern class ElastiCache extends Service implements js.extern.Extern<'aws-sdk'>
     
     @:overload(function (?cb : Callback<RevokeCacheSecurityGroupIngressOutput>) : Request {})
     public function revokeCacheSecurityGroupIngress(params : RevokeCacheSecurityGroupIngressInput, ?cb : Callback<RevokeCacheSecurityGroupIngressOutput>) : Request;
+    
+    @:overload(function (?cb : Callback<TestFailoverOutput>) : Request {})
+    public function testFailover(params : TestFailoverInput, ?cb : Callback<TestFailoverOutput>) : Request;
     
 }

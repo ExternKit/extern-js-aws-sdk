@@ -10,6 +10,7 @@ typedef DescribeHostsOutput = {
             @:optional var Sockets : Int;
         };
         @:optional var AvailabilityZone : String;
+        @:optional var ReleaseTime : Float;
         @:optional var ClientToken : String;
         @:optional var AutoPlacement : String;
         @:optional var Instances : Array<{
@@ -27,5 +28,7 @@ typedef DescribeHostsOutput = {
         @:optional var HostId : String;
         @:optional var HostReservationId : String;
         @:optional var State : String;
+        @:optional var AllocationTime : Float;
+        @:optional var Tags : _ShapeSi;
     }>;
 };
